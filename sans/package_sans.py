@@ -1,4 +1,4 @@
-"""Package and seal Friday Sans 1.0 from the hinted faces in fonts-hinted/.
+"""Package and seal Friday Sans from the hinted faces in fonts-hinted/.
 
 Same allowlist and checks as Friday Mono's package_v48.py: TTF + WOFF2 with a
 lossless roundtrip check, licences, manifests, SHA256SUMS and a zip.
@@ -14,7 +14,7 @@ def _web_compress(data, **kwargs):
     return _original_compress(data, **kwargs)
 brotli.compress = _web_compress
 
-VERSION = '1.0'
+VERSION = '1.1'
 S = Path(__file__).resolve().parent
 R = S.parent
 SRC = R.parent / 'Source'

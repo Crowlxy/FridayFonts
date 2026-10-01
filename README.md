@@ -5,7 +5,7 @@
 | | 用途 | 欧文の元 | 和文の元 | 最新版 |
 |---|---|---|---|---|
 | **Friday Mono** | コーディング用の等幅（欧文 600 / 和文 1200） | Iosevka | Noto Sans CJK JP | v48（Version 4.800） |
-| **Friday Sans** | 文章・UI 用のプロポーショナル | Inter | Noto Sans CJK JP | 1.0（Version 1.000） |
+| **Friday Sans** | 文章・UI 用のプロポーショナル | Inter | Noto Sans CJK JP | 1.1（Version 1.100） |
 
 フォントは [Releases](../../releases) からダウンロードできます。
 旧名は **Inori Mono**（v47 まで）。名前以外は v47 と同一です。
@@ -27,7 +27,7 @@ Friday Mono と同じ和文（手描きの仮名を含む）に、Inter の欧�
 Regular / Medium / Bold の3本。macOS の標準（SF Pro + ヒラギノ角ゴ）と同じ大きさ・字間の考え方で組んであり、
 太さは和欧混植の見本を見て、それより少し軽く決めています。
 
-使い方・設計は [sans/RELEASE-1.0.md](sans/RELEASE-1.0.md)。
+使い方・設計は [sans/RELEASE-1.1.md](sans/RELEASE-1.1.md)。
 
 ### SF Pro・ヒラギノのアウトラインは使っていません
 

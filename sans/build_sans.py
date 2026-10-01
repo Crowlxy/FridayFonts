@@ -18,7 +18,7 @@ never copied; every number taken from it is a literal below.
            Inter's kerning is kept as drawn.
 
 The CJK is Friday Mono's, moved into a 1000 em (see build_sans_cjk.py).  The
-vertical metrics follow Hiragino Sans: 880/-120 with a 500 line gap.
+line height follows Hiragino Sans (1.5), split evenly above and below.
 
 No hints yet.  They are applied once, after the Latin/CJK balance is frozen.
 """
@@ -84,14 +84,21 @@ def latin_target(style):
         if stem <= s1 or (s1, a1) == lad[-1]:
             return stem, a0 + (a1 - a0) * (stem - s0) / (s1 - s0)
 
-#: Hiragino Sans W3 hhea/typo: 880/-120, line gap 500 (line height 1.5).
-ASCENT, DESCENT, LINE_GAP = 880, -120, 500
+#: Hiragino Sans W3 leads 1.5: 880/-120 with a 500 line gap.  1.0 had exactly
+#: that, but Windows does not split a line gap evenly -- DirectWrite and WPF
+#: put it on one side of the line, so text sat off centre in every box.  1.1
+#: keeps the 1.5 lead and the em box (880/-120) but splits the 500 in halves
+#: into ascent and descent, with no gap: the em box centre (380) is the line
+#: box centre in every renderer.  usWin* is the same pair so GDI leads 1.5
+#: too; it clips only 〱 〲 (1323/-538), the vertical-only repeat marks.
+EM_TOP, EM_BOTTOM = 880, -120
+ASCENT, DESCENT, LINE_GAP = EM_TOP + 250, EM_BOTTOM - 250, 0
 
 STYLES = [("Regular", 400), ("Medium", 500), ("Bold", 700)]
 FAMILY = "Friday Sans"
 VENDOR = "INOR"
-VERSION = "Version 1.000"
-REVISION = 1.000
+VERSION = "Version 1.100"
+REVISION = 1.100
 COPYRIGHT = (
     "Copyright 2026 The Friday Project Authors. "
     "Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter). "
@@ -395,8 +402,9 @@ def assemble(style, weight, latin, cjk, out_path):
         if g.numberOfContours:
             boxes[n] = (g.xMin, g.yMin, g.xMax, g.yMax)
         fb.font["hmtx"].metrics[n] = (metrics[n][0], getattr(g, "xMin", 0))
-    win_asc = int(math.ceil(max(b[3] for b in boxes.values())))
-    win_desc = int(math.ceil(-min(b[1] for b in boxes.values())))
+    win_asc, win_desc = ASCENT, -DESCENT
+    clipped = sorted(n for n, b in boxes.items() if b[3] > win_asc or b[1] < -win_desc)
+    assert clipped == ["jp.uni3031", "jp.uni3032"], clipped
 
     def top(ch):
         b = boxes.get(cmap.get(ord(ch)))
