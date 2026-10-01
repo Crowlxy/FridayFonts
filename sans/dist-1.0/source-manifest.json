@@ -1,0 +1,18 @@
+[
+  {
+    "source": "Source/Inter/Inter-4.1/InterVariable.ttf",
+    "sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf"
+  },
+  {
+    "source": "Source/noto-cjk/NotoSansCJKjp-VF.ttf",
+    "sha256": "240c9b83bf7b386edbae39995ae7e068ed4583f484d92e4a74c34158b5f27b1a"
+  },
+  {
+    "source": "InoriMono-v3-build/drawings/vector-masters.json",
+    "sha256": "5810c8ea305f350a5ff1f129bad5a77ec4fb8a28f7c86056672642c876ecc4be"
+  },
+  {
+    "source": "InoriMono-v3-build/drawings/approved-hand-outlines.json",
+    "sha256": "18290f487e9bcab842cd48c6499068fa734fb49118f9740c993578b6daf4753b"
+  }
+]

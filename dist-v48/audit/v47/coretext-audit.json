@@ -1,0 +1,86 @@
+[
+  {
+    "file" : "InoriMono-Bold.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMono-Bold",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMono-BoldItalic.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMono-BoldItalic",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMono-Italic.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMono-Italic",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMono-Medium.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMono-Medium",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMono-MediumItalic.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMono-MediumItalic",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMono-Regular.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMono-Regular",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMonoPlain-Bold.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMonoPlain-Bold",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMonoPlain-BoldItalic.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMonoPlain-BoldItalic",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMonoPlain-Italic.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMonoPlain-Italic",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMonoPlain-Medium.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMonoPlain-Medium",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMonoPlain-MediumItalic.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMonoPlain-MediumItalic",
+    "register" : true,
+    "sample_fallbacks" : 0
+  },
+  {
+    "file" : "InoriMonoPlain-Regular.ttf",
+    "glyphs" : 20600,
+    "postscript" : "InoriMonoPlain-Regular",
+    "register" : true,
+    "sample_fallbacks" : 0
+  }
+]

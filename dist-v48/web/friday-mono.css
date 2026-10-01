@@ -1,0 +1,96 @@
+/* Friday Mono v48 — SIL OFL 1.1; see ../OFL.txt */
+@font-face {
+  font-family: "Friday Mono";
+  src: url("FridayMono-Bold.woff2") format("woff2"), url("../ttf/FridayMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono";
+  src: url("FridayMono-BoldItalic.woff2") format("woff2"), url("../ttf/FridayMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono";
+  src: url("FridayMono-Italic.woff2") format("woff2"), url("../ttf/FridayMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono";
+  src: url("FridayMono-Medium.woff2") format("woff2"), url("../ttf/FridayMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono";
+  src: url("FridayMono-MediumItalic.woff2") format("woff2"), url("../ttf/FridayMono-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono";
+  src: url("FridayMono-Regular.woff2") format("woff2"), url("../ttf/FridayMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono Plain";
+  src: url("FridayMonoPlain-Bold.woff2") format("woff2"), url("../ttf/FridayMonoPlain-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono Plain";
+  src: url("FridayMonoPlain-BoldItalic.woff2") format("woff2"), url("../ttf/FridayMonoPlain-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono Plain";
+  src: url("FridayMonoPlain-Italic.woff2") format("woff2"), url("../ttf/FridayMonoPlain-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono Plain";
+  src: url("FridayMonoPlain-Medium.woff2") format("woff2"), url("../ttf/FridayMonoPlain-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono Plain";
+  src: url("FridayMonoPlain-MediumItalic.woff2") format("woff2"), url("../ttf/FridayMonoPlain-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Friday Mono Plain";
+  src: url("FridayMonoPlain-Regular.woff2") format("woff2"), url("../ttf/FridayMonoPlain-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

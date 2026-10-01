@@ -1,0 +1,50 @@
+[
+  {
+    "file": "FridayMono-Bold.ttf",
+    "sha256": "36f0b1ad1e6a48faacb0c3ac4fb135ed381e718a1f937a46819b803b5bd96d6f"
+  },
+  {
+    "file": "FridayMono-BoldItalic.ttf",
+    "sha256": "001ab17dd4b0ba9ca11691270940e879b50b3e1d943323d9d7422cb5b30d0012"
+  },
+  {
+    "file": "FridayMono-Italic.ttf",
+    "sha256": "1cd45d5e971d4c7af0d564cfeb56780a987d4497241108f8cceceed389ce45d6"
+  },
+  {
+    "file": "FridayMono-Medium.ttf",
+    "sha256": "9be5aee4ed728e933c38057befd171a9f986a8db5aa7af0b7b762cad707a33aa"
+  },
+  {
+    "file": "FridayMono-MediumItalic.ttf",
+    "sha256": "8a695468e18d0d736392389c4ed8e71c760a667c086d2b3e371c91d43dd90c81"
+  },
+  {
+    "file": "FridayMono-Regular.ttf",
+    "sha256": "f023f82abc44b8f26cea4ab6f69b1fccdd98b798c915750ed2b57ad90c64e89f"
+  },
+  {
+    "file": "FridayMonoPlain-Bold.ttf",
+    "sha256": "a5b9146f0349bacb2aa0225684aa292c10125568af1e651216a45b2084081ef1"
+  },
+  {
+    "file": "FridayMonoPlain-BoldItalic.ttf",
+    "sha256": "407824b996eae9321894e44b456edc8a4e05abd2bdb247835f64e250dc3336f2"
+  },
+  {
+    "file": "FridayMonoPlain-Italic.ttf",
+    "sha256": "7966a52cbdcc36ac7e21d1debcd5a476a78d72817ceaaafd6dc1b3656151e22b"
+  },
+  {
+    "file": "FridayMonoPlain-Medium.ttf",
+    "sha256": "2787e8b54447467e7b5e2722251131ceeddffddf92f2c19ae913a3787e77c49f"
+  },
+  {
+    "file": "FridayMonoPlain-MediumItalic.ttf",
+    "sha256": "de2d02f1db01289432a1766411b33197f9e65321006cf046a38803eecf16631d"
+  },
+  {
+    "file": "FridayMonoPlain-Regular.ttf",
+    "sha256": "1faa27e54aadbcacc2ccca432277b02d0d8d2fbad4ecc81f16ce8948913b9583"
+  }
+]

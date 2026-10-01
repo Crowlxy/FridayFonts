@@ -1,0 +1,86 @@
+[
+  {
+    "file": "InoriMono-Bold.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "35e92bd98cbc084d612683bb6acbc134766891a78671c540a9a992a63145c844"
+  },
+  {
+    "file": "InoriMono-BoldItalic.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "7319b2d98037423a2cfa40cc940202a5702e210c198b97f6efd1836daee01079"
+  },
+  {
+    "file": "InoriMono-Italic.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "05c9818ae92447c4c6936cbf2e7210c789f7ef3089e30b1a6b53d979b3e41a80"
+  },
+  {
+    "file": "InoriMono-Medium.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "bd723fa18903853bf7bf8dfb3b0377f32d20e727dc334fe5b202bdbeb5bb7511"
+  },
+  {
+    "file": "InoriMono-MediumItalic.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "0f3929335658f2f1e9e047bce5eaf572a82ca9998247e7a07f8cbadc7350365d"
+  },
+  {
+    "file": "InoriMono-Regular.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "be7c9cc7ac4dfac4373c3e55827d6656a13ff75ffabf9353effdcc6a3967c300"
+  },
+  {
+    "file": "InoriMonoPlain-Bold.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "8949405d4cc4cba7818b34e167617eacd4562d49ce1c12857ac14d021364a083"
+  },
+  {
+    "file": "InoriMonoPlain-BoldItalic.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "66887624f6d07c2b7bc3c93612e5a21946437e9f563ad256d746bdf0f34b363a"
+  },
+  {
+    "file": "InoriMonoPlain-Italic.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "ba8ec08c2a3c545da28e10841684e0c140751994402fe3001b6ef91b878ebc24"
+  },
+  {
+    "file": "InoriMonoPlain-Medium.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "f4612d4dc808fb92234a933205fe13f6a2a259fd821cef882cc8f7faf829d43b"
+  },
+  {
+    "file": "InoriMonoPlain-MediumItalic.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "090c1f04b704c6c8daae25570b598b3429e9a09aa1f3c231a67b32f37f1bf310"
+  },
+  {
+    "file": "InoriMonoPlain-Regular.ttf",
+    "ppem": 16,
+    "glyphs_rasterized": 19311,
+    "errors": [],
+    "sha256": "431b94f0ffdfabd8e1ca1efd201933a3be23334b3d78c31ca5570a6f9c77748f"
+  }
+]

@@ -1,0 +1,16 @@
+brotli==1.2.0
+fonttools==4.64.0
+ImageIO==2.37.4
+lazy-loader==0.5
+networkx==3.6.1
+numpy==2.5.2
+packaging==26.3
+pillow==12.3.0
+scikit-image==0.26.0
+scipy==1.18.1
+skia-pathops==0.9.2
+tifffile==2026.8.23
+ttfautohint-py==0.6.1
+
+# CJK hinting (cjkhint.py) runs Chlorophytum from chlorophytum/package-lock.json:
+# npm ci --prefix chlorophytum   (Node.js, @chlorophytum/cli 0.50)

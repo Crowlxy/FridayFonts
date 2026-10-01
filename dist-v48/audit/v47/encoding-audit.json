@@ -1,0 +1,50 @@
+[
+  {
+    "encoding": "cp1252",
+    "standard_characters": 218,
+    "missing": [],
+    "private_use_excluded": 0
+  },
+  {
+    "encoding": "cp1250",
+    "standard_characters": 218,
+    "missing": [],
+    "private_use_excluded": 0
+  },
+  {
+    "encoding": "cp1251",
+    "standard_characters": 222,
+    "missing": [],
+    "private_use_excluded": 0
+  },
+  {
+    "encoding": "cp1253",
+    "standard_characters": 206,
+    "missing": [],
+    "private_use_excluded": 0
+  },
+  {
+    "encoding": "cp1254",
+    "standard_characters": 216,
+    "missing": [],
+    "private_use_excluded": 0
+  },
+  {
+    "encoding": "cp1257",
+    "standard_characters": 211,
+    "missing": [],
+    "private_use_excluded": 0
+  },
+  {
+    "encoding": "cp932",
+    "standard_characters": 7484,
+    "missing": [],
+    "private_use_excluded": 1884
+  },
+  {
+    "encoding": "shift_jis_2004",
+    "standard_characters": 11367,
+    "missing": [],
+    "private_use_excluded": 0
+  }
+]

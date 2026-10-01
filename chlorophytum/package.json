@@ -1,0 +1,16 @@
+{
+  "name": "inori-cjk-hint",
+  "private": true,
+  "description": "Chlorophytum CJK hinting used by cjkhint.py",
+  "dependencies": {
+    "@chlorophytum/cli": "0.50.0",
+    "@chlorophytum/font-format-ttf": "0.50.0",
+    "@chlorophytum/hint-store-provider-file": "0.50.0",
+    "@chlorophytum/hm-combine": "0.50.0",
+    "@chlorophytum/hm-ideograph": "0.50.1",
+    "@chlorophytum/hm-select-glyphs": "0.50.0"
+  },
+  "overrides": {
+    "ot-builder": "1.8.0"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "source": "Source/Iosevka/IosevkaCustom-Bold.ttf",
+    "sha256": "a468a70aeb7813a7bb5fe7601075433552756111a102b426f192802ef44a2bfd"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustom-BoldItalic.ttf",
+    "sha256": "b09ab1bf4832d7a789c23821d8c7426b88ae4f2815da1ac8e54f22aa8e819864"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustom-Italic.ttf",
+    "sha256": "8087d4dfc1fb5eec78e9c505739979ce602731ec8f63bbd9e9a3cdf8c10d203b"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustom-Medium.ttf",
+    "sha256": "d1ce98a65396477736dd6e166b1847183f46daa3c60719baaa6b7e7423b0203c"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustom-MediumItalic.ttf",
+    "sha256": "07ad0307797e6039f3bf4f2b7c3d3c54f2fb0d08a46541a88b8bfbdaec11e11e"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustom-Regular.ttf",
+    "sha256": "e3227ea54566f721db9ca5fc84f90c5c2efaf8b93c73045a40d2cfa3e9c89a9c"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustomUnslashed-Bold.ttf",
+    "sha256": "e87e721681a9d3966a190d9a746d0bcc71de0f95fa56bbb98b95a391ce159cb6"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustomUnslashed-BoldItalic.ttf",
+    "sha256": "3eed305d40d68084b4d7af3329fe477ce397fb694bfe76c46687823d1b434b39"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustomUnslashed-Italic.ttf",
+    "sha256": "d5b851cac855e38a7dafc3a0c21dcdfb4db2ed32dd6c1e592c02bcb9063e16b1"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustomUnslashed-Medium.ttf",
+    "sha256": "6bfa7bc1f118ea121ffbdbcfbf80927366e83a7db1004de0c5247bb9d528c633"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustomUnslashed-MediumItalic.ttf",
+    "sha256": "2ff8006807b46a7e1ed000a4014ca76d691fde69336be3fe842c37bf04f23f5c"
+  },
+  {
+    "source": "Source/Iosevka/IosevkaCustomUnslashed-Regular.ttf",
+    "sha256": "09dc19eb49fc9b1aef2d3134188e1988da075030ff51ddfa59dd68efd0d90c24"
+  },
+  {
+    "source": "Source/noto-cjk/NotoSansCJKjp-VF.ttf",
+    "sha256": "240c9b83bf7b386edbae39995ae7e068ed4583f484d92e4a74c34158b5f27b1a"
+  },
+  {
+    "source": "InoriMono-v3-build/drawings/vector-masters.json",
+    "sha256": "5810c8ea305f350a5ff1f129bad5a77ec4fb8a28f7c86056672642c876ecc4be"
+  },
+  {
+    "source": "InoriMono-v3-build/drawings/approved-hand-outlines.json",
+    "sha256": "18290f487e9bcab842cd48c6499068fa734fb49118f9740c993578b6daf4753b"
+  }
+]
