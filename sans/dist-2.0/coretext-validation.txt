@@ -1,0 +1,4 @@
+Regular (FridaySans-Regular): sample glyphs / fallback checked; AV 21.408 vs A+V 23.008
+Medium (FridaySans-Medium): sample glyphs / fallback checked; AV 22.240 vs A+V 23.840
+Bold (FridaySans-Bold): sample glyphs / fallback checked; AV 23.760 vs A+V 25.376
+CORETEXT CHECKS PASSED

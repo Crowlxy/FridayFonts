@@ -1,0 +1,57 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Friday Sans — かな・カタカナの小サイズ比較</title>
+<style>
+/* FONT_CSS */
+*{box-sizing:border-box}body{margin:0;padding:22px;background:#fafaf8;color:#202624;font:15px/1.6 system-ui,sans-serif}h1{font-size:24px}h2{font:600 16px system-ui}p{max-width:100ch}label{display:inline-flex;align-items:center;gap:8px;margin:4px 18px 4px 0}select,button,textarea,input{font:inherit;padding:6px}textarea{width:100%;height:165px;margin:12px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(360px,1fr));gap:14px}.card{border:1px solid #c8ccc7;border-radius:10px;padding:14px;overflow:auto}.sample{font-synthesis:none;letter-spacing:0;line-height:1.9;white-space:pre;min-width:max-content}.base{font-family:base,sans-serif}.kanji{font-family:kanji,sans-serif}.kana{font-family:kana,sans-serif}.off .sample{display:none}.dark{background:#17191b;color:#eee}.dark .card{border-color:#555}.dark textarea,.dark select,.dark button,.dark input{background:#25292b;color:#eee;border:1px solid #777}.muted{color:#697069}.dark .muted{color:#bdc3bb}.status{color:#875531}.dark .status{color:#edbc86}.guide .sample{background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(1.9em - 1px),#d7dcd7 calc(1.9em - 1px),#d7dcd7 1.9em)}.result textarea{height:90px}.result input{width:210px}@media(max-width:1100px){.grid{grid-template-columns:1fr}}
+</style>
+<h1>Friday Sans — かな・カタカナの小サイズ比較</h1>
+<p>左：通常2.1。中央：漢字だけを補正した試作。右：漢字補正に、かな・カタカナの調整を加えた今回の試作です。中央と右を比べると、かなの変更だけを確認できます。Windows実機では未確認です。</p>
+<p>このHTMLだけをWindowsにコピーし、Edge / Chromeで開けます。フォント内蔵・インストール不要。最初はブラウザズーム100%、Windows表示倍率100%で12・14・16pxを比べ、その後125%・150%と実際に使うアプリで確認してください。</p>
+<label>ウェイト<select id="weight"><option value="400">Regular</option><option value="500">Medium</option><option value="700">Bold</option></select></label>
+<label>サイズ<select id="size"><option>10</option><option>11</option><option>12</option><option>13</option><option selected>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>20</option><option>24</option><option>32</option></select>px</label>
+<label>文章<select id="preset"><option value="mixed">アプリの文章</option><option value="hiragana">ひらがな一覧</option><option value="katakana">カタカナ一覧</option><option value="marks">小書き・濁点・結合文字</option></select></label>
+<button id="theme" type="button">背景を暗くする</button><button id="guide" type="button">行ガイドを表示</button>
+<p id="environment" class="muted"></p><p id="status" class="status" role="status">フォント読み込み中…</p>
+<textarea id="text" aria-label="比較する文章" spellcheck="false"></textarea>
+<div class="grid" id="proofs"></div>
+<p class="muted">補正は11〜18 device ppemで働きます。画面倍率・ブラウザズームによっては、この範囲を外れて3列の差が小さくなることがあります。通常2.1の字形・文字幅を保ち、横方向の輪郭は動かしていません。半角カタカナは今回の補正対象外です。</p>
+<div class="result"><h2>確認結果を残す</h2>
+<label>Windows表示倍率<select id="scale"><option>100%</option><option>125%</option><option>150%</option><option>175%</option><option>200%</option><option>不明</option></select></label>
+<label>Windowsのバージョン<input id="os" placeholder="例：Windows 11 24H2"></label>
+<label>判定<select id="verdict"><option>未判定</option><option>今回の試作が良い</option><option>中央の漢字試作が良い</option><option>通常2.1が良い</option><option>差が分からない</option><option>文字やサイズによって異なる</option></select></label>
+<textarea id="notes" aria-label="気になった文字や見え方" placeholder="例：Regular 12pxの『ゃ』が薄い。14pxの『る・ろ』は良い。『ぱ・ピ』の丸は潰れていない。"></textarea>
+<button id="save" type="button">この条件の結果をJSONで保存</button><p id="saved" role="status"></p>
+</div>
+<script>
+const $=id=>document.getElementById(id);let fontsReady=false;
+const presets={
+mixed:'設定 Settings　表示 Display　保存 Save\n読みやすい文字で、毎日の作業を快適に。\nWindows 11　キャンセル　ファイルを開く\nきさふとや ぎざぷどゃ　るろりれ ぬねめ\nシツソン　リルレロ　ユコニ　フラワー\nきゃ きゅ きょ　キャ キュ キョ\nがぎぐげご ぱぴぷぺぽ ガギグゲゴ パピプペポ\n価格 ¥12,345 / 20% OFF / 0123456789\n日田目国語書機　警響議識曜覧鬱鷹\nカ゚キク か゚きく き゚セ゚ツ゚ト゚ㇷ゚\n𠮷野家　髙橋　﨑山 / ｶﾀｶﾅ ｶﾞﾊﾟ',
+hiragana:'あいうえお かきくけこ さしすせそ\nたちつてと なにぬねの はひふへほ\nまみむめも やゆよ らりるれろ わをん\nがぎぐげご ざじずぜぞ だぢづでど\nばびぶべぼ ぱぴぷぺぽ ゔ\nぁぃぅぇぉ っゃゅょゎ ゕゖ\nきさふとや ぎざぷどゃ るろりれぬねめ\nきゃきゅきょ しゃしゅしょ ちゃちゅちょ',
+katakana:'アイウエオ カキクケコ サシスセソ\nタチツテト ナニヌネノ ハヒフヘホ\nマミムメモ ヤユヨ ラリルレロ ワヲン\nガギグゲゴ ザジズゼゾ ダヂヅデド\nバビブベボ パピプペポ ヴ\nァィゥェォ ッャュョヮ ヵヶ\nシツソン リルレロ ユコニ フラワー\nキャキュキョ シャシュショ チャチュチョ\nㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ\nｱｲｳｴｵ ｶﾀｶﾅ ｶﾞﾊﾟ（半角は今回対象外）',
+marks:'るろ ぬねめ あお ぱぽ ピプ ペポ\nぁぃぅぇぉ っゃゅょゎ ゕゖ\nァィゥェォ ッャュョヮ ヵヶ\nがぎぐげご ばびぶべぼ ぱぴぷぺぽ\nガギグゲゴ バビブベボ パピプペポ\nがぎぐげご ぱぴぷぺぽ\nか゚き゚く゚け゚こ゚ カ゚キ゚ク゚ケ゚コ゚\nセ゚ツ゚ト゚ㇷ゚ / あ゙いう\nあーいーうー アーイーウー ーｰ\n日本語とEnglish 100% ¥12,345'};
+for(const [family,title] of [['base','通常2.1'],['kanji','漢字のみの試作'],['kana','今回：漢字＋かな調整']]){
+ const c=document.createElement('section');c.className='card '+family;c.dataset.family=family;
+ const h=document.createElement('h2');h.textContent=title;c.append(h);
+ const s=document.createElement('div');s.className='sample '+family;c.append(s);$('proofs').append(c);
+}
+function environment(){const estimate=Number($('size').value)*devicePixelRatio;$('environment').textContent=`${navigator.userAgent} / DPR ${devicePixelRatio} / ${$('size').value} CSS px × DPR ≈ ${estimate.toFixed(2)} device px（目安） / viewport ${innerWidth} × ${innerHeight}`;}
+function sync(){for(const s of document.querySelectorAll('.sample')){s.textContent=$('text').value;s.style.fontSize=$('size').value+'px';s.style.fontWeight=$('weight').value;}environment();}
+async function load(){
+ for(const c of document.querySelectorAll('.card'))c.classList.add('off');
+ try{const fonts=await Promise.all(['base','kanji','kana'].flatMap(f=>[400,500,700].map(async w=>{const loaded=await document.fonts.load(`${w} 16px "${f}"`,'あいうカタカナ Settings 𠮷');if(!loaded.length)throw new Error(`${f} ${w}`);return loaded;})));
+ fontsReady=true;updateStatus();
+ for(const c of document.querySelectorAll('.card'))c.classList.remove('off');
+ }catch(e){$('status').textContent='フォント読込失敗：'+e.message;}sync();
+}
+function updateStatus(){if(fontsReady)$('status').textContent=`9/9フォント読込成功。3種類 × Regular / Medium / Bold。現在 ${$('weight').selectedOptions[0].text}。`;}
+$('weight').addEventListener('change',()=>{sync();updateStatus();});
+$('size').addEventListener('change',sync);$('text').addEventListener('input',sync);
+$('preset').addEventListener('change',()=>{$('text').value=presets[$('preset').value];sync();});
+$('theme').addEventListener('click',()=>{const dark=document.body.classList.toggle('dark');$('theme').textContent=dark?'背景を明るくする':'背景を暗くする';});
+$('guide').addEventListener('click',()=>{const on=document.body.classList.toggle('guide');$('guide').textContent=on?'行ガイドを隠す':'行ガイドを表示';});
+$('save').addEventListener('click',()=>{
+ const result={created_at:new Date().toISOString(),font_trial:'Friday Sans Kana Trial 2.201',os:$('os').value,windows_display_scale:$('scale').value,browser_zoom:'記録時に100%か確認してください',user_agent:navigator.userAgent,dpr:devicePixelRatio,viewport:[innerWidth,innerHeight],weight:Number($('weight').value),css_px:Number($('size').value),dark:document.body.classList.contains('dark'),preset:$('preset').value,text:$('text').value,verdict:$('verdict').value,notes:$('notes').value};
+ const url=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`friday-kana-${result.weight}-${result.css_px}px-${Date.now()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('saved').textContent='この条件の確認結果を保存しました。サイズやウェイトごとに保存できます。';
+});
+window.addEventListener('resize',environment);$('text').value=presets.mixed;sync();load();
+</script></html>

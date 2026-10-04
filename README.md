@@ -4,13 +4,22 @@
 
 | | 用途 | 欧文の元 | 和文の元 | 最新版 |
 |---|---|---|---|---|
-| **Friday Mono** | コーディング用の等幅（欧文 600 / 和文 1200） | Iosevka | Noto Sans CJK JP | v48（Version 4.800） |
-| **Friday Sans** | 文章・UI 用のプロポーショナル | Inter | Noto Sans CJK JP | 1.1（Version 1.100） |
+| **Friday Mono JP / Plain JP** | 日本語入りの等幅（欧文 600 / 和文 1200） | Iosevka | Noto Sans CJK JP | 4.9（正体3ウエイト） |
+| **Friday Mono** | 日本語なしの等幅（600） | Iosevka | — | 4.9（正体3ウエイト） |
+| **Friday Sans** | 文章・UI 用のプロポーショナル | Inter | Noto Sans CJK JP | 2.1（Version 2.100） |
 
 フォントは [Releases](../../releases) からダウンロードできます。
 旧名は **Inori Mono**（v47 まで）。名前以外は v47 と同一です。
 
 ## Friday Mono
+
+4.9では最新のWindows修正候補RC3を基準に、日本語入りを **Friday Mono JP**、
+ゼロだけ違う **Friday Mono Plain JP** にしました。日本語なしの **Friday Mono** は、
+OTF等幅5書体の収録範囲を比較して作成しています。英語版のPlainはありません。
+各Regular / Medium / Bold、計9本です。
+使い方・収録方針・検査範囲は [4.9の説明](dist-mono-4.9/README.md)、
+配布パッケージは [FridayMono-4.9.zip](FridayMono-4.9.zip)です。
+4.9のItalicは未作成です。以下は旧4.8（日本語入り・旧ファミリ名）の説明です。
 
 日本語と欧文を同じ濃度で組める等幅コーディング書体。Regular / Medium / Bold と各イタリック、
 `0` に斜線の入った **Friday Mono** と斜線なしの **Friday Mono Plain** の計12本。
@@ -24,10 +33,14 @@
 ## Friday Sans
 
 Friday Mono と同じ和文（手描きの仮名を含む）に、Inter の欧文を組み合わせたプロポーショナル書体。
-Regular / Medium / Bold の3本。macOS の標準（SF Pro + ヒラギノ角ゴ）と同じ大きさ・字間の考え方で組んであり、
-太さは和欧混植の見本を見て、それより少し軽く決めています。
+Regular / Medium / Bold の3本。2.0で英数字の寸法・太さ・字間をヒラギノの和欧比率に合わせて調整し、
+2.1で結合濁点・半濁点の配置と「𠮷」の収録を修正しました。
 
-使い方・設計は [sans/RELEASE-1.1.md](sans/RELEASE-1.1.md)。
+使い方・検証は [sans/dist-2.1/README.md](sans/dist-2.1/README.md)。Windows向けの漢字ヒント改善候補は
+[sans/grid-trial-2.1/README.md](sans/grid-trial-2.1/README.md)に分けています。Windows実機での確認は残っています。
+かな・カタカナの小サイズ調整を加えた **Friday Sans Kana Trial 2.2** と、通常版・漢字試作を並べるWindows確認セットは
+[sans/kana-trial-2.2/README.md](sans/kana-trial-2.2/README.md)。字形と文字幅を保った別ファミリーの試作です。
+1.1の設計記録は [sans/RELEASE-1.1.md](sans/RELEASE-1.1.md)。以下のSF Proとの数値・重ね合わせの例は1.1時点の記録です。
 
 ### SF Pro・ヒラギノのアウトラインは使っていません
 

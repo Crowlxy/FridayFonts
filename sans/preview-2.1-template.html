@@ -1,0 +1,51 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Friday Sans 2.1 — 修正と漢字ヒントの比較</title>
+<style>
+/* FONT_CSS */
+*{box-sizing:border-box}body{margin:0;padding:24px;background:#fafaf8;color:#222;font:15px/1.6 system-ui,sans-serif}h1{font-size:24px}p{max-width:95ch}label{display:inline-flex;gap:8px;margin-right:18px}select,button,textarea{font:inherit;padding:6px}textarea{width:100%;height:160px;margin:16px 0}.status{color:#824c2a}.grid{display:grid;grid-template-columns:repeat(4,minmax(280px,1fr));gap:16px}.card{border:1px solid #ccc;border-radius:10px;padding:16px;overflow:auto}h2{font:600 16px system-ui}.sample{font-synthesis:none;letter-spacing:0;line-height:1.8;white-space:pre;min-width:max-content}.old{font-family:old,sans-serif}.fixed{font-family:fixed,sans-serif}.gridfont{font-family:grid,sans-serif}.hiragino{font-family:reference,sans-serif}.tag{font:12px system-ui;color:#777;margin:16px 0 8px}.dark{background:#17191b;color:#eee}.dark .card{border-color:#555}.dark textarea,.dark select,.dark button{background:#25292b;color:#eee;border:1px solid #777}.off .sample{display:none}.dark .tag{color:#bbb}@media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
+<h1>Friday Sans 2.1 — 修正と漢字ヒントの比較</h1>
+<p>2.1は結合濁点・半濁点の配置と「𠮷」の収録を修正しました。漢字ヒント試作は同じ字形に11〜18 device ppem限定で既存漢字のヒントを追加します。仮名と英数字の描画は2.1と同じです。Windows実機の確認はまだです。</p>
+<p>このファイルだけをWindowsへコピーし、Edge / Chromeで開けます。フォント内蔵・インストール不要。ブラウザズーム100%、Windows表示倍率100% / 125% / 150%、同じ画面で比較してください。ここで確認できるのはブラウザ描画です。各ネイティブアプリの確認も必要です。</p>
+<label>ウェイト <select id="weight"><option value="400">Regular / W3</option><option value="500">Medium / W4</option><option value="700">Bold / W6</option></select></label>
+<label>サイズ <select id="size"><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option selected>16</option><option>18</option><option>20</option><option>24</option><option>32</option></select>px</label>
+<button id="theme" type="button">背景を暗くする</button>
+<p id="environment"></p><p id="status" class="status" role="status">フォント読み込み中…</p>
+<textarea id="text" aria-label="比較する文章" spellcheck="false">設定 Settings　表示 Display　保存 Save　取消 Cancel
+日本語とEnglishが自然につながる。Windows 11 の表示設定
+価格 ¥12,345（税込） / 20% OFF / 2026年10月1日 09:41
+きさそふユリレル りれろるゃゅょ 日田目 警響議識曜覧鬱鷹
+カ゚キク か゚きく き゚く゚け゚こ゚ セ゚ツ゚ト゚ㇷ゚
+あ゙いう / がきく ぱひふ / がきく ぱひふ
+𠮷野家 𠮷田 / 吉田 髙橋 﨑山 / （入力）「情報」［設定］
+111,111 / 888,888 / 0123456789</textarea>
+<p>2.0の「𠮷」はブラウザで代替フォントが使われます。2.1と試作は収録済み。試作の「𠮷」は新しい字形なのでヒントを付けていません。ヒラギノのデータは内蔵せず、ローカルW3/W4/W6を読み込めた場合だけ表示します。</p>
+<div class="grid" id="proofs"></div>
+<p>試作の範囲はCSS pxではなくdevice ppemです。高DPIでは同じCSSサイズでもヒントが働く範囲を外れることがあります。DPRだけではWindows表示倍率とブラウザズームを個別に区別できません。</p>
+<script>
+const $=id=>document.getElementById(id);let generation=0;
+for(const [cls,title] of [['old','2.0：修正前'],['fixed','2.1：配置・収録修正'],['gridfont','漢字ヒント試作'],['hiragino','Hiragino Sans']]){
+ const card=document.createElement('section');card.className='card '+cls;card.dataset.family=cls==='gridfont'?'grid':cls;
+ const h=document.createElement('h2');h.textContent=title;card.append(h);
+ const sample=document.createElement('div');sample.className='sample '+cls;sample.dataset.editable='1';card.append(sample);
+ const tag=document.createElement('div');tag.className='tag';tag.textContent='標準数字 / 等幅数字（tnum）';card.append(tag);
+ for(const tnum of [false,true]){const number=document.createElement('div');number.className='sample '+cls;number.style.fontVariantNumeric=tnum?'tabular-nums':'normal';number.textContent='111,111 / 888,888 / 0123456789';card.append(number);}
+ $('proofs').append(card);
+}
+function sync(){for(const e of document.querySelectorAll('.sample')){e.style.fontSize=$('size').value+'px';e.style.fontWeight=$('weight').value;if(e.dataset.editable)e.textContent=$('text').value;}environment();}
+function environment(){$('environment').textContent=`${navigator.userAgent} / DPR ${devicePixelRatio} / viewport ${innerWidth} × ${innerHeight}`;}
+async function load(){
+ const token=++generation;const weight=$('weight').value;const w={400:'W3',500:'W4',700:'W6'}[weight];
+ $('status').textContent='フォント読み込み中…';for(const c of document.querySelectorAll('.card'))c.classList.add('off');
+ try{
+  const loaded=await Promise.all(['old','fixed','grid'].map(async family=>{const f=await document.fonts.load(`${weight} 16px "${family}"`,'設定 Settings 𠮷');if(!f.length)throw new Error(family+'読込失敗');return family;}));
+  let reference=false;const h=new FontFace('reference',`local("HiraginoSans-${w}")`,{weight});try{await h.load();document.fonts.add(h);reference=true;}catch{}
+  if(token!==generation)return;
+  for(const c of document.querySelectorAll('.card'))c.classList.toggle('off',c.classList.contains('hiragino')&&!reference);
+  $('status').textContent=`2.0 / 2.1 / 漢字ヒント試作の3フォント読込成功。${reference?'Hiragino Sans '+w+'読込成功。':'ヒラギノ'+w+'未搭載またはアクセス不可：ヒラギノ欄を非表示にしました。'}`;
+ }catch(e){if(token===generation)$('status').textContent='読込失敗：'+e.message;}
+ sync();
+}
+$('weight').addEventListener('change',load);$('size').addEventListener('change',sync);$('text').addEventListener('input',sync);
+$('theme').addEventListener('click',()=>{const dark=document.body.classList.toggle('dark');$('theme').textContent=dark?'背景を明るくする':'背景を暗くする';});window.addEventListener('resize',environment);sync();load();
+</script></html>

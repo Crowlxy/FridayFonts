@@ -1,0 +1,26 @@
+[
+  {
+    "style": "Regular",
+    "family": "Friday Sans",
+    "version": "2.000",
+    "japanese_programs_removed": 13798,
+    "source_sha256": "ea81e7d621628a2c29b1fd80b036febee51f34a0196a5e55fb21060c87755e2f",
+    "ttf_sha256": "ac39f70e5f0c1bf9944def116a8a46458209054224c6dc22e3af2a3f10c64f5c"
+  },
+  {
+    "style": "Medium",
+    "family": "Friday Sans",
+    "version": "2.000",
+    "japanese_programs_removed": 13799,
+    "source_sha256": "88276b5a650c6915c5a5a5431121952bf6194e25bb4b1c55889b6ee799dc58a2",
+    "ttf_sha256": "8d2cb40867a266b7990994053118e9bf61e566ba9d843dcd201b51795e797462"
+  },
+  {
+    "style": "Bold",
+    "family": "Friday Sans",
+    "version": "2.000",
+    "japanese_programs_removed": 13799,
+    "source_sha256": "40e809d46ec79681f0ba9785a1f774862767a103dc3143ae4c85c7fba0ee7afe",
+    "ttf_sha256": "b4f1ee40e136d9152ea3ff81c3f3b847e5accedb79d3d06c2184854302d15073"
+  }
+]

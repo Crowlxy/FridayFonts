@@ -1,0 +1,4406 @@
+[
+  {
+    "style": "Regular",
+    "ttf_sha256": "9b881d14df43ca84b54a199a17b37d3ae5b7cdf0db2465e34af646ded1f492e3",
+    "source_sha256": "70bbf34dfa09a0224477f37a825ddd806d4d8dc41b0ae4fc8537099656ad809f",
+    "native_sha256": "ea81e7d621628a2c29b1fd80b036febee51f34a0196a5e55fb21060c87755e2f",
+    "kana_programs": 404,
+    "changed_glyphs": [
+      "jp.glyph65157",
+      "jp.glyph65158",
+      "jp.glyph65159",
+      "jp.glyph65160",
+      "jp.glyph65161",
+      "jp.glyph65162",
+      "jp.glyph65163",
+      "jp.glyph65164",
+      "jp.glyph65165",
+      "jp.glyph65166",
+      "jp.glyph65167",
+      "jp.glyph65168",
+      "jp.glyph65169",
+      "jp.glyph65170",
+      "jp.glyph65171",
+      "jp.glyph65172",
+      "jp.glyph65173",
+      "jp.glyph65174",
+      "jp.glyph65175",
+      "jp.glyph65176",
+      "jp.glyph65177",
+      "jp.glyph65178",
+      "jp.glyph65179",
+      "jp.glyph65180",
+      "jp.glyph65181",
+      "jp.glyph65182",
+      "jp.glyph65183",
+      "jp.glyph65184",
+      "jp.glyph65185",
+      "jp.glyph65186",
+      "jp.glyph65187",
+      "jp.glyph65188",
+      "jp.glyph65189",
+      "jp.glyph65190",
+      "jp.glyph65191",
+      "jp.glyph65192",
+      "jp.glyph65193",
+      "jp.glyph65194",
+      "jp.glyph65195",
+      "jp.glyph65196",
+      "jp.glyph65197",
+      "jp.glyph65198",
+      "jp.glyph65199",
+      "jp.glyph65200",
+      "jp.glyph65201",
+      "jp.glyph65202",
+      "jp.glyph65203",
+      "jp.glyph65204",
+      "jp.glyph65205",
+      "jp.glyph65206",
+      "jp.glyph65207",
+      "jp.glyph65208",
+      "jp.glyph65209",
+      "jp.glyph65210",
+      "jp.glyph65211",
+      "jp.glyph65212",
+      "jp.glyph65213",
+      "jp.glyph65214",
+      "jp.glyph65215",
+      "jp.glyph65216",
+      "jp.glyph65217",
+      "jp.glyph65218",
+      "jp.glyph65219",
+      "jp.glyph65220",
+      "jp.glyph65221",
+      "jp.glyph65222",
+      "jp.glyph65223",
+      "jp.glyph65224",
+      "jp.glyph65225",
+      "jp.glyph65226",
+      "jp.glyph65227",
+      "jp.glyph65228",
+      "jp.glyph65229",
+      "jp.glyph65230",
+      "jp.glyph65231",
+      "jp.glyph65232",
+      "jp.glyph65233",
+      "jp.glyph65234",
+      "jp.glyph65235",
+      "jp.glyph65236",
+      "jp.glyph65237",
+      "jp.glyph65238",
+      "jp.glyph65239",
+      "jp.glyph65240",
+      "jp.glyph65241",
+      "jp.glyph65242",
+      "jp.glyph65243",
+      "jp.glyph65244",
+      "jp.glyph65245",
+      "jp.glyph65246",
+      "jp.glyph65247",
+      "jp.glyph65248",
+      "jp.glyph65249",
+      "jp.glyph65250",
+      "jp.glyph65251",
+      "jp.glyph65252",
+      "jp.glyph65253",
+      "jp.glyph65254",
+      "jp.glyph65255",
+      "jp.glyph65256",
+      "jp.glyph65257",
+      "jp.glyph65258",
+      "jp.glyph65259",
+      "jp.glyph65260",
+      "jp.glyph65261",
+      "jp.glyph65262",
+      "jp.glyph65263",
+      "jp.glyph65264",
+      "jp.glyph65265",
+      "jp.glyph65266",
+      "jp.glyph65267",
+      "jp.glyph65268",
+      "jp.glyph65269",
+      "jp.glyph65270",
+      "jp.glyph65271",
+      "jp.glyph65272",
+      "jp.glyph65273",
+      "jp.glyph65274",
+      "jp.glyph65275",
+      "jp.glyph65276",
+      "jp.glyph65277",
+      "jp.glyph65278",
+      "jp.glyph65279",
+      "jp.glyph65280",
+      "jp.glyph65281",
+      "jp.glyph65282",
+      "jp.glyph65283",
+      "jp.glyph65284",
+      "jp.glyph65285",
+      "jp.glyph65286",
+      "jp.glyph65287",
+      "jp.glyph65288",
+      "jp.glyph65289",
+      "jp.glyph65290",
+      "jp.glyph65291",
+      "jp.glyph65292",
+      "jp.glyph65293",
+      "jp.glyph65294",
+      "jp.glyph65295",
+      "jp.glyph65296",
+      "jp.glyph65297",
+      "jp.glyph65298",
+      "jp.glyph65299",
+      "jp.glyph65300",
+      "jp.glyph65301",
+      "jp.glyph65302",
+      "jp.glyph65303",
+      "jp.glyph65304",
+      "jp.glyph65305",
+      "jp.glyph65306",
+      "jp.glyph65307",
+      "jp.glyph65308",
+      "jp.glyph65309",
+      "jp.glyph65310",
+      "jp.glyph65311",
+      "jp.glyph65312",
+      "jp.glyph65313",
+      "jp.glyph65314",
+      "jp.glyph65315",
+      "jp.glyph65316",
+      "jp.glyph65317",
+      "jp.glyph65318",
+      "jp.glyph65319",
+      "jp.glyph65320",
+      "jp.glyph65321",
+      "jp.glyph65322",
+      "jp.glyph65323",
+      "jp.glyph65324",
+      "jp.glyph65325",
+      "jp.glyph65326",
+      "jp.glyph65327",
+      "jp.glyph65328",
+      "jp.glyph65329",
+      "jp.glyph65330",
+      "jp.glyph65331",
+      "jp.glyph65332",
+      "jp.glyph65333",
+      "jp.glyph65334",
+      "jp.glyph65335",
+      "jp.glyph65336",
+      "jp.glyph65337",
+      "jp.glyph65338",
+      "jp.glyph65339",
+      "jp.glyph65340",
+      "jp.glyph65341",
+      "jp.glyph65343",
+      "jp.glyph65344",
+      "jp.glyph65345",
+      "jp.glyph65346",
+      "jp.glyph65347",
+      "jp.glyph65348",
+      "jp.glyph65349",
+      "jp.glyph65350",
+      "jp.glyph65351",
+      "jp.glyph65352",
+      "jp.glyph65353",
+      "jp.glyph65354",
+      "jp.glyph65355",
+      "jp.glyph65356",
+      "jp.glyph65357",
+      "jp.glyph65358",
+      "jp.uni2027",
+      "jp.uni3041",
+      "jp.uni3042",
+      "jp.uni3043",
+      "jp.uni3044",
+      "jp.uni3045",
+      "jp.uni3046",
+      "jp.uni3047",
+      "jp.uni3048",
+      "jp.uni3049",
+      "jp.uni304A",
+      "jp.uni304B",
+      "jp.uni304C",
+      "jp.uni304D",
+      "jp.uni304E",
+      "jp.uni304F",
+      "jp.uni3050",
+      "jp.uni3051",
+      "jp.uni3052",
+      "jp.uni3053",
+      "jp.uni3054",
+      "jp.uni3055",
+      "jp.uni3056",
+      "jp.uni3057",
+      "jp.uni3058",
+      "jp.uni3059",
+      "jp.uni305A",
+      "jp.uni305B",
+      "jp.uni305C",
+      "jp.uni305D",
+      "jp.uni305E",
+      "jp.uni305F",
+      "jp.uni3060",
+      "jp.uni3061",
+      "jp.uni3062",
+      "jp.uni3063",
+      "jp.uni3064",
+      "jp.uni3065",
+      "jp.uni3066",
+      "jp.uni3067",
+      "jp.uni3068",
+      "jp.uni3069",
+      "jp.uni306A",
+      "jp.uni306B",
+      "jp.uni306C",
+      "jp.uni306D",
+      "jp.uni306E",
+      "jp.uni306F",
+      "jp.uni3070",
+      "jp.uni3071",
+      "jp.uni3072",
+      "jp.uni3073",
+      "jp.uni3074",
+      "jp.uni3075",
+      "jp.uni3076",
+      "jp.uni3077",
+      "jp.uni3078",
+      "jp.uni3079",
+      "jp.uni307A",
+      "jp.uni307B",
+      "jp.uni307C",
+      "jp.uni307D",
+      "jp.uni307E",
+      "jp.uni307F",
+      "jp.uni3080",
+      "jp.uni3081",
+      "jp.uni3082",
+      "jp.uni3083",
+      "jp.uni3084",
+      "jp.uni3085",
+      "jp.uni3086",
+      "jp.uni3087",
+      "jp.uni3088",
+      "jp.uni3089",
+      "jp.uni308A",
+      "jp.uni308B",
+      "jp.uni308C",
+      "jp.uni308D",
+      "jp.uni308E",
+      "jp.uni308F",
+      "jp.uni3090",
+      "jp.uni3092",
+      "jp.uni3093",
+      "jp.uni3094",
+      "jp.uni3095",
+      "jp.uni3096",
+      "jp.uni3099",
+      "jp.uni309B",
+      "jp.uni309C",
+      "jp.uni309D",
+      "jp.uni309E",
+      "jp.uni309F",
+      "jp.uni30A0",
+      "jp.uni30A1",
+      "jp.uni30A2",
+      "jp.uni30A3",
+      "jp.uni30A4",
+      "jp.uni30A5",
+      "jp.uni30A6",
+      "jp.uni30A7",
+      "jp.uni30A8",
+      "jp.uni30A9",
+      "jp.uni30AA",
+      "jp.uni30AB",
+      "jp.uni30AC",
+      "jp.uni30AD",
+      "jp.uni30AE",
+      "jp.uni30AF",
+      "jp.uni30B0",
+      "jp.uni30B1",
+      "jp.uni30B2",
+      "jp.uni30B3",
+      "jp.uni30B4",
+      "jp.uni30B5",
+      "jp.uni30B6",
+      "jp.uni30B7",
+      "jp.uni30B8",
+      "jp.uni30B9",
+      "jp.uni30BA",
+      "jp.uni30BB",
+      "jp.uni30BC",
+      "jp.uni30BD",
+      "jp.uni30BE",
+      "jp.uni30BF",
+      "jp.uni30C0",
+      "jp.uni30C1",
+      "jp.uni30C2",
+      "jp.uni30C3",
+      "jp.uni30C4",
+      "jp.uni30C5",
+      "jp.uni30C6",
+      "jp.uni30C7",
+      "jp.uni30C8",
+      "jp.uni30C9",
+      "jp.uni30CA",
+      "jp.uni30CB",
+      "jp.uni30CC",
+      "jp.uni30CD",
+      "jp.uni30CE",
+      "jp.uni30CF",
+      "jp.uni30D0",
+      "jp.uni30D1",
+      "jp.uni30D2",
+      "jp.uni30D3",
+      "jp.uni30D4",
+      "jp.uni30D5",
+      "jp.uni30D6",
+      "jp.uni30D7",
+      "jp.uni30D8",
+      "jp.uni30D9",
+      "jp.uni30DA",
+      "jp.uni30DB",
+      "jp.uni30DC",
+      "jp.uni30DD",
+      "jp.uni30DE",
+      "jp.uni30DF",
+      "jp.uni30E0",
+      "jp.uni30E1",
+      "jp.uni30E2",
+      "jp.uni30E3",
+      "jp.uni30E4",
+      "jp.uni30E5",
+      "jp.uni30E6",
+      "jp.uni30E7",
+      "jp.uni30E8",
+      "jp.uni30E9",
+      "jp.uni30EA",
+      "jp.uni30EB",
+      "jp.uni30EC",
+      "jp.uni30ED",
+      "jp.uni30EE",
+      "jp.uni30EF",
+      "jp.uni30F0",
+      "jp.uni30F1",
+      "jp.uni30F2",
+      "jp.uni30F3",
+      "jp.uni30F4",
+      "jp.uni30F5",
+      "jp.uni30F6",
+      "jp.uni30F7",
+      "jp.uni30F8",
+      "jp.uni30F9",
+      "jp.uni30FA",
+      "jp.uni30FC",
+      "jp.uni30FD",
+      "jp.uni30FE",
+      "jp.uni30FF",
+      "jp.uni31F0",
+      "jp.uni31F1",
+      "jp.uni31F2",
+      "jp.uni31F3",
+      "jp.uni31F4",
+      "jp.uni31F5",
+      "jp.uni31F6",
+      "jp.uni31F7",
+      "jp.uni31F8",
+      "jp.uni31F9",
+      "jp.uni31FA",
+      "jp.uni31FB",
+      "jp.uni31FC",
+      "jp.uni31FD",
+      "jp.uni31FE",
+      "jp.uni31FF"
+    ],
+    "unchanged_kana_glyphs": [
+      "jp.uni3091",
+      "jp.uni309A"
+    ],
+    "shaping": {
+      "ccmp_pairs": [
+        {
+          "base": "か",
+          "glyph": "jp.ccmp.u304B.handakuten",
+          "body_shift": [
+            -14,
+            -2
+          ],
+          "mark_center": [
+            869.65,
+            719.88
+          ],
+          "mark_scale": 1.004589164127405
+        },
+        {
+          "base": "き",
+          "glyph": "jp.ccmp.u304D.handakuten",
+          "body_shift": [
+            -40,
+            -2
+          ],
+          "mark_center": [
+            856.41,
+            729.57
+          ],
+          "mark_scale": 1.0045891641274056
+        },
+        {
+          "base": "く",
+          "glyph": "jp.ccmp.u304F.handakuten",
+          "body_shift": [
+            -42,
+            -1
+          ],
+          "mark_center": [
+            720.74,
+            530.39
+          ],
+          "mark_scale": 1.0870160447790596
+        },
+        {
+          "base": "け",
+          "glyph": "jp.ccmp.u3051.handakuten",
+          "body_shift": [
+            -10,
+            -14
+          ],
+          "mark_center": [
+            859.3,
+            743.63
+          ],
+          "mark_scale": 0.9838934787159557
+        },
+        {
+          "base": "こ",
+          "glyph": "jp.ccmp.u3053.handakuten",
+          "body_shift": [
+            -17,
+            -11
+          ],
+          "mark_center": [
+            864.12,
+            745.88
+          ],
+          "mark_scale": 1.015059769579173
+        },
+        {
+          "base": "カ",
+          "glyph": "jp.ccmp.u30AB.handakuten",
+          "body_shift": [
+            -22,
+            -6
+          ],
+          "mark_center": [
+            863.67,
+            720.16
+          ],
+          "mark_scale": 0.9965463458914469
+        },
+        {
+          "base": "キ",
+          "glyph": "jp.ccmp.u30AD.handakuten",
+          "body_shift": [
+            -23,
+            -17
+          ],
+          "mark_center": [
+            858.55,
+            752.19
+          ],
+          "mark_scale": 0.9965463458914469
+        },
+        {
+          "base": "ク",
+          "glyph": "jp.ccmp.u30AF.handakuten",
+          "body_shift": [
+            -44,
+            -23
+          ],
+          "mark_center": [
+            873.0,
+            743.24
+          ],
+          "mark_scale": 0.9965463458914474
+        },
+        {
+          "base": "ケ",
+          "glyph": "jp.ccmp.u30B1.handakuten",
+          "body_shift": [
+            -38,
+            -17
+          ],
+          "mark_center": [
+            864.61,
+            744.84
+          ],
+          "mark_scale": 0.9965463458914469
+        },
+        {
+          "base": "コ",
+          "glyph": "jp.ccmp.u30B3.handakuten",
+          "body_shift": [
+            -18,
+            -29
+          ],
+          "mark_center": [
+            871.14,
+            764.19
+          ],
+          "mark_scale": 0.9965463458914469
+        },
+        {
+          "base": "セ",
+          "glyph": "jp.ccmp.u30BB.handakuten",
+          "body_shift": [
+            -29,
+            -17
+          ],
+          "mark_center": [
+            871.62,
+            750.08
+          ],
+          "mark_scale": 0.9965463458914469
+        },
+        {
+          "base": "ツ",
+          "glyph": "jp.ccmp.u30C4.handakuten",
+          "body_shift": [
+            -24,
+            -24
+          ],
+          "mark_center": [
+            871.38,
+            752.39
+          ],
+          "mark_scale": 0.9965463458914469
+        },
+        {
+          "base": "ト",
+          "glyph": "jp.ccmp.u30C8.handakuten",
+          "body_shift": [
+            -27,
+            -13
+          ],
+          "mark_center": [
+            737.3,
+            683.39
+          ],
+          "mark_scale": 1.0787727762959454
+        },
+        {
+          "base": "ㇷ",
+          "glyph": "jp.ccmp.u31F7.handakuten",
+          "body_shift": [
+            -30,
+            -59
+          ],
+          "mark_center": [
+            784.25,
+            572.81
+          ],
+          "mark_scale": 0.8264510324955024
+        }
+      ],
+      "fallback_base_count": 193,
+      "anchors": {
+        "jp.uni3041": [
+          846,
+          624
+        ],
+        "jp.uni3042": [
+          900,
+          756
+        ],
+        "jp.uni3043": [
+          846,
+          534
+        ],
+        "jp.uni3044": [
+          915,
+          675
+        ],
+        "jp.uni3045": [
+          800,
+          597
+        ],
+        "jp.uni3046": [
+          800,
+          742
+        ],
+        "jp.uni3047": [
+          840,
+          598
+        ],
+        "jp.uni3048": [
+          904,
+          748
+        ],
+        "jp.uni3049": [
+          882,
+          587
+        ],
+        "jp.uni304A": [
+          940,
+          756
+        ],
+        "jp.uni304B": [
+          870,
+          720
+        ],
+        "jp.uni304C": [
+          940,
+          805
+        ],
+        "jp.uni304D": [
+          856,
+          730
+        ],
+        "jp.uni304E": [
+          940,
+          804
+        ],
+        "jp.uni304F": [
+          721,
+          530
+        ],
+        "jp.uni3050": [
+          840,
+          760
+        ],
+        "jp.uni3051": [
+          859,
+          744
+        ],
+        "jp.uni3052": [
+          940,
+          798
+        ],
+        "jp.uni3053": [
+          864,
+          746
+        ],
+        "jp.uni3054": [
+          940,
+          820
+        ],
+        "jp.uni3055": [
+          848,
+          757
+        ],
+        "jp.uni3056": [
+          940,
+          820
+        ],
+        "jp.uni3057": [
+          892,
+          744
+        ],
+        "jp.uni3058": [
+          880,
+          744
+        ],
+        "jp.uni3059": [
+          926,
+          747
+        ],
+        "jp.uni305A": [
+          927,
+          791
+        ],
+        "jp.uni305B": [
+          919,
+          732
+        ],
+        "jp.uni305C": [
+          940,
+          767
+        ],
+        "jp.uni305D": [
+          874,
+          728
+        ],
+        "jp.uni305E": [
+          908,
+          728
+        ],
+        "jp.uni305F": [
+          905,
+          754
+        ],
+        "jp.uni3060": [
+          940,
+          755
+        ],
+        "jp.uni3061": [
+          845,
+          756
+        ],
+        "jp.uni3062": [
+          940,
+          820
+        ],
+        "jp.uni3063": [
+          846,
+          466
+        ],
+        "jp.uni3064": [
+          902,
+          619
+        ],
+        "jp.uni3065": [
+          940,
+          811
+        ],
+        "jp.uni3066": [
+          880,
+          684
+        ],
+        "jp.uni3067": [
+          924,
+          684
+        ],
+        "jp.uni3068": [
+          822,
+          747
+        ],
+        "jp.uni3069": [
+          940,
+          796
+        ],
+        "jp.uni306A": [
+          927,
+          763
+        ],
+        "jp.uni306B": [
+          895,
+          728
+        ],
+        "jp.uni306C": [
+          940,
+          739
+        ],
+        "jp.uni306D": [
+          940,
+          747
+        ],
+        "jp.uni306E": [
+          903,
+          686
+        ],
+        "jp.uni306F": [
+          940,
+          735
+        ],
+        "jp.uni3070": [
+          940,
+          795
+        ],
+        "jp.uni3071": [
+          940,
+          814
+        ],
+        "jp.uni3072": [
+          940,
+          715
+        ],
+        "jp.uni3073": [
+          940,
+          810
+        ],
+        "jp.uni3074": [
+          940,
+          810
+        ],
+        "jp.uni3075": [
+          940,
+          735
+        ],
+        "jp.uni3076": [
+          940,
+          735
+        ],
+        "jp.uni3077": [
+          940,
+          735
+        ],
+        "jp.uni3078": [
+          940,
+          607
+        ],
+        "jp.uni3079": [
+          938,
+          718
+        ],
+        "jp.uni307A": [
+          938,
+          656
+        ],
+        "jp.uni307B": [
+          940,
+          733
+        ],
+        "jp.uni307C": [
+          940,
+          781
+        ],
+        "jp.uni307D": [
+          940,
+          787
+        ],
+        "jp.uni307E": [
+          862,
+          755
+        ],
+        "jp.uni307F": [
+          940,
+          720
+        ],
+        "jp.uni3080": [
+          916,
+          751
+        ],
+        "jp.uni3081": [
+          901,
+          746
+        ],
+        "jp.uni3082": [
+          865,
+          755
+        ],
+        "jp.uni3083": [
+          861,
+          596
+        ],
+        "jp.uni3084": [
+          928,
+          752
+        ],
+        "jp.uni3085": [
+          852,
+          577
+        ],
+        "jp.uni3086": [
+          902,
+          752
+        ],
+        "jp.uni3087": [
+          800,
+          582
+        ],
+        "jp.uni3088": [
+          850,
+          748
+        ],
+        "jp.uni3089": [
+          847,
+          747
+        ],
+        "jp.uni308A": [
+          800,
+          754
+        ],
+        "jp.uni308B": [
+          851,
+          720
+        ],
+        "jp.uni308C": [
+          940,
+          745
+        ],
+        "jp.uni308D": [
+          846,
+          717
+        ],
+        "jp.uni308E": [
+          864,
+          607
+        ],
+        "jp.uni308F": [
+          924,
+          745
+        ],
+        "jp.uni3090": [
+          884,
+          727
+        ],
+        "jp.uni3091": [
+          925,
+          732
+        ],
+        "jp.uni3092": [
+          877,
+          761
+        ],
+        "jp.uni3093": [
+          940,
+          744
+        ],
+        "jp.uni3094": [
+          940,
+          743
+        ],
+        "jp.uni3095": [
+          903,
+          580
+        ],
+        "jp.uni3096": [
+          859,
+          561
+        ],
+        "jp.uni309F": [
+          853,
+          801
+        ],
+        "jp.uni30A1": [
+          859,
+          514
+        ],
+        "jp.uni30A2": [
+          925,
+          691
+        ],
+        "jp.uni30A3": [
+          800,
+          575
+        ],
+        "jp.uni30A4": [
+          857,
+          739
+        ],
+        "jp.uni30A5": [
+          825,
+          586
+        ],
+        "jp.uni30A6": [
+          875,
+          753
+        ],
+        "jp.uni30A7": [
+          843,
+          481
+        ],
+        "jp.uni30A8": [
+          912,
+          645
+        ],
+        "jp.uni30A9": [
+          856,
+          578
+        ],
+        "jp.uni30AA": [
+          895,
+          734
+        ],
+        "jp.uni30AB": [
+          864,
+          720
+        ],
+        "jp.uni30AC": [
+          940,
+          793
+        ],
+        "jp.uni30AD": [
+          859,
+          752
+        ],
+        "jp.uni30AE": [
+          940,
+          820
+        ],
+        "jp.uni30AF": [
+          873,
+          743
+        ],
+        "jp.uni30B0": [
+          940,
+          817
+        ],
+        "jp.uni30B1": [
+          865,
+          745
+        ],
+        "jp.uni30B2": [
+          940,
+          805
+        ],
+        "jp.uni30B3": [
+          871,
+          764
+        ],
+        "jp.uni30B4": [
+          937,
+          820
+        ],
+        "jp.uni30B5": [
+          918,
+          739
+        ],
+        "jp.uni30B6": [
+          940,
+          773
+        ],
+        "jp.uni30B7": [
+          908,
+          728
+        ],
+        "jp.uni30B8": [
+          937,
+          762
+        ],
+        "jp.uni30B9": [
+          893,
+          679
+        ],
+        "jp.uni30BA": [
+          940,
+          820
+        ],
+        "jp.uni30BB": [
+          872,
+          750
+        ],
+        "jp.uni30BC": [
+          940,
+          814
+        ],
+        "jp.uni30BD": [
+          843,
+          681
+        ],
+        "jp.uni30BE": [
+          940,
+          820
+        ],
+        "jp.uni30BF": [
+          866,
+          762
+        ],
+        "jp.uni30C0": [
+          940,
+          818
+        ],
+        "jp.uni30C1": [
+          909,
+          731
+        ],
+        "jp.uni30C2": [
+          938,
+          731
+        ],
+        "jp.uni30C3": [
+          838,
+          541
+        ],
+        "jp.uni30C4": [
+          871,
+          752
+        ],
+        "jp.uni30C5": [
+          940,
+          820
+        ],
+        "jp.uni30C6": [
+          911,
+          705
+        ],
+        "jp.uni30C7": [
+          940,
+          820
+        ],
+        "jp.uni30C8": [
+          737,
+          683
+        ],
+        "jp.uni30C9": [
+          862,
+          742
+        ],
+        "jp.uni30CA": [
+          918,
+          735
+        ],
+        "jp.uni30CB": [
+          884,
+          626
+        ],
+        "jp.uni30CC": [
+          818,
+          691
+        ],
+        "jp.uni30CD": [
+          919,
+          753
+        ],
+        "jp.uni30CE": [
+          800,
+          713
+        ],
+        "jp.uni30CF": [
+          917,
+          668
+        ],
+        "jp.uni30D0": [
+          940,
+          804
+        ],
+        "jp.uni30D1": [
+          940,
+          793
+        ],
+        "jp.uni30D2": [
+          854,
+          725
+        ],
+        "jp.uni30D3": [
+          917,
+          795
+        ],
+        "jp.uni30D4": [
+          932,
+          783
+        ],
+        "jp.uni30D5": [
+          854,
+          666
+        ],
+        "jp.uni30D6": [
+          940,
+          763
+        ],
+        "jp.uni30D7": [
+          940,
+          736
+        ],
+        "jp.uni30D8": [
+          940,
+          607
+        ],
+        "jp.uni30D9": [
+          934,
+          721
+        ],
+        "jp.uni30DA": [
+          934,
+          660
+        ],
+        "jp.uni30DB": [
+          927,
+          738
+        ],
+        "jp.uni30DC": [
+          940,
+          786
+        ],
+        "jp.uni30DD": [
+          923,
+          816
+        ],
+        "jp.uni30DE": [
+          922,
+          668
+        ],
+        "jp.uni30DF": [
+          807,
+          717
+        ],
+        "jp.uni30E0": [
+          928,
+          735
+        ],
+        "jp.uni30E1": [
+          866,
+          726
+        ],
+        "jp.uni30E2": [
+          904,
+          685
+        ],
+        "jp.uni30E3": [
+          861,
+          576
+        ],
+        "jp.uni30E4": [
+          909,
+          751
+        ],
+        "jp.uni30E5": [
+          853,
+          470
+        ],
+        "jp.uni30E6": [
+          922,
+          641
+        ],
+        "jp.uni30E7": [
+          800,
+          514
+        ],
+        "jp.uni30E8": [
+          826,
+          680
+        ],
+        "jp.uni30E9": [
+          871,
+          710
+        ],
+        "jp.uni30EA": [
+          800,
+          721
+        ],
+        "jp.uni30EB": [
+          940,
+          712
+        ],
+        "jp.uni30EC": [
+          901,
+          708
+        ],
+        "jp.uni30ED": [
+          854,
+          660
+        ],
+        "jp.uni30EE": [
+          819,
+          505
+        ],
+        "jp.uni30EF": [
+          869,
+          679
+        ],
+        "jp.uni30F0": [
+          914,
+          730
+        ],
+        "jp.uni30F1": [
+          923,
+          661
+        ],
+        "jp.uni30F2": [
+          873,
+          695
+        ],
+        "jp.uni30F3": [
+          918,
+          688
+        ],
+        "jp.uni30F4": [
+          940,
+          810
+        ],
+        "jp.uni30F5": [
+          800,
+          578
+        ],
+        "jp.uni30F6": [
+          850,
+          578
+        ],
+        "jp.uni30F7": [
+          935,
+          820
+        ],
+        "jp.uni30F8": [
+          940,
+          793
+        ],
+        "jp.uni30F9": [
+          931,
+          820
+        ],
+        "jp.uni30FA": [
+          935,
+          820
+        ],
+        "jp.uni31F0": [
+          800,
+          606
+        ],
+        "jp.uni31F1": [
+          848,
+          576
+        ],
+        "jp.uni31F2": [
+          823,
+          527
+        ],
+        "jp.uni31F3": [
+          800,
+          561
+        ],
+        "jp.uni31F4": [
+          800,
+          526
+        ],
+        "jp.uni31F5": [
+          851,
+          513
+        ],
+        "jp.uni31F6": [
+          800,
+          579
+        ],
+        "jp.uni31F7": [
+          784,
+          573
+        ],
+        "jp.uni31F8": [
+          862,
+          455
+        ],
+        "jp.uni31F9": [
+          839,
+          610
+        ],
+        "jp.uni31FA": [
+          875,
+          562
+        ],
+        "jp.uni31FB": [
+          800,
+          543
+        ],
+        "jp.uni31FC": [
+          800,
+          554
+        ],
+        "jp.uni31FD": [
+          872,
+          560
+        ],
+        "jp.uni31FE": [
+          870,
+          544
+        ],
+        "jp.uni31FF": [
+          800,
+          502
+        ]
+      }
+    },
+    "private_unhinted_components": [
+      {
+        "glyph": "jp.ccmp.component.jp.uni304B.outline",
+        "original_body": "jp.uni304B",
+        "composition": "jp.ccmp.u304B.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni304D.outline",
+        "original_body": "jp.uni304D",
+        "composition": "jp.ccmp.u304D.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni304F.outline",
+        "original_body": "jp.uni304F",
+        "composition": "jp.ccmp.u304F.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni3051.outline",
+        "original_body": "jp.uni3051",
+        "composition": "jp.ccmp.u3051.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni3053.outline",
+        "original_body": "jp.uni3053",
+        "composition": "jp.ccmp.u3053.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AB.outline",
+        "original_body": "jp.uni30AB",
+        "composition": "jp.ccmp.u30AB.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AD.outline",
+        "original_body": "jp.uni30AD",
+        "composition": "jp.ccmp.u30AD.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AF.outline",
+        "original_body": "jp.uni30AF",
+        "composition": "jp.ccmp.u30AF.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30B1.outline",
+        "original_body": "jp.uni30B1",
+        "composition": "jp.ccmp.u30B1.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30B3.outline",
+        "original_body": "jp.uni30B3",
+        "composition": "jp.ccmp.u30B3.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30BB.outline",
+        "original_body": "jp.uni30BB",
+        "composition": "jp.ccmp.u30BB.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30C4.outline",
+        "original_body": "jp.uni30C4",
+        "composition": "jp.ccmp.u30C4.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30C8.outline",
+        "original_body": "jp.uni30C8",
+        "composition": "jp.ccmp.u30C8.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni31F7.outline",
+        "original_body": "jp.uni31F7",
+        "composition": "jp.ccmp.u31F7.handakuten"
+      }
+    ],
+    "policy": {
+      "range": [
+        11,
+        18
+      ],
+      "max_ink_change_percent": 5,
+      "max_y_shift_pixels": 0.5,
+      "max_phase_pixels": 0.25,
+      "min_softness_improvement_pp": 0.75,
+      "counter_threshold": 128,
+      "engine": "FreeType 2.14.3",
+      "windows_verified": false,
+      "fractional_guards": "Each integer bucket: -0.5, -0.4375, -0.375, -0.25, -0.125, 0, 0.125, 0.25, 0.375, 0.4375 ppem; <=5.05% ink change and no alpha128 counter loss",
+      "phase_only_skips_legacy_program": true,
+      "unhinted_combining_ring": "U+309A: retain original raster for scaled ccmp components. Precomposed voiced/half-voiced kana still use their own restrained fits."
+    },
+    "family": "Friday Sans Kana Trial",
+    "windows_verified": false
+  },
+  {
+    "style": "Medium",
+    "ttf_sha256": "f45ac32a80002d388ee858b11f91774ef7f2e597134dece40e21d8279f44e7ab",
+    "source_sha256": "d20d88ba74a74519d6a8971eca29bc22d313853f7184f393cc939cbaea51ef7e",
+    "native_sha256": "88276b5a650c6915c5a5a5431121952bf6194e25bb4b1c55889b6ee799dc58a2",
+    "kana_programs": 405,
+    "changed_glyphs": [
+      "jp.glyph65157",
+      "jp.glyph65158",
+      "jp.glyph65159",
+      "jp.glyph65160",
+      "jp.glyph65161",
+      "jp.glyph65162",
+      "jp.glyph65163",
+      "jp.glyph65164",
+      "jp.glyph65165",
+      "jp.glyph65166",
+      "jp.glyph65167",
+      "jp.glyph65168",
+      "jp.glyph65169",
+      "jp.glyph65170",
+      "jp.glyph65171",
+      "jp.glyph65172",
+      "jp.glyph65173",
+      "jp.glyph65174",
+      "jp.glyph65175",
+      "jp.glyph65176",
+      "jp.glyph65177",
+      "jp.glyph65178",
+      "jp.glyph65179",
+      "jp.glyph65180",
+      "jp.glyph65181",
+      "jp.glyph65182",
+      "jp.glyph65183",
+      "jp.glyph65184",
+      "jp.glyph65185",
+      "jp.glyph65186",
+      "jp.glyph65187",
+      "jp.glyph65188",
+      "jp.glyph65189",
+      "jp.glyph65190",
+      "jp.glyph65191",
+      "jp.glyph65192",
+      "jp.glyph65193",
+      "jp.glyph65194",
+      "jp.glyph65195",
+      "jp.glyph65196",
+      "jp.glyph65197",
+      "jp.glyph65198",
+      "jp.glyph65199",
+      "jp.glyph65200",
+      "jp.glyph65201",
+      "jp.glyph65202",
+      "jp.glyph65203",
+      "jp.glyph65204",
+      "jp.glyph65205",
+      "jp.glyph65206",
+      "jp.glyph65207",
+      "jp.glyph65208",
+      "jp.glyph65209",
+      "jp.glyph65210",
+      "jp.glyph65211",
+      "jp.glyph65212",
+      "jp.glyph65213",
+      "jp.glyph65214",
+      "jp.glyph65215",
+      "jp.glyph65216",
+      "jp.glyph65217",
+      "jp.glyph65218",
+      "jp.glyph65219",
+      "jp.glyph65220",
+      "jp.glyph65221",
+      "jp.glyph65222",
+      "jp.glyph65223",
+      "jp.glyph65224",
+      "jp.glyph65225",
+      "jp.glyph65226",
+      "jp.glyph65227",
+      "jp.glyph65228",
+      "jp.glyph65229",
+      "jp.glyph65230",
+      "jp.glyph65231",
+      "jp.glyph65232",
+      "jp.glyph65233",
+      "jp.glyph65234",
+      "jp.glyph65235",
+      "jp.glyph65236",
+      "jp.glyph65237",
+      "jp.glyph65238",
+      "jp.glyph65239",
+      "jp.glyph65240",
+      "jp.glyph65241",
+      "jp.glyph65242",
+      "jp.glyph65243",
+      "jp.glyph65244",
+      "jp.glyph65245",
+      "jp.glyph65246",
+      "jp.glyph65247",
+      "jp.glyph65248",
+      "jp.glyph65249",
+      "jp.glyph65250",
+      "jp.glyph65251",
+      "jp.glyph65252",
+      "jp.glyph65253",
+      "jp.glyph65254",
+      "jp.glyph65255",
+      "jp.glyph65256",
+      "jp.glyph65257",
+      "jp.glyph65258",
+      "jp.glyph65259",
+      "jp.glyph65260",
+      "jp.glyph65261",
+      "jp.glyph65262",
+      "jp.glyph65263",
+      "jp.glyph65264",
+      "jp.glyph65265",
+      "jp.glyph65266",
+      "jp.glyph65267",
+      "jp.glyph65268",
+      "jp.glyph65269",
+      "jp.glyph65270",
+      "jp.glyph65271",
+      "jp.glyph65272",
+      "jp.glyph65273",
+      "jp.glyph65274",
+      "jp.glyph65275",
+      "jp.glyph65276",
+      "jp.glyph65277",
+      "jp.glyph65278",
+      "jp.glyph65279",
+      "jp.glyph65280",
+      "jp.glyph65281",
+      "jp.glyph65282",
+      "jp.glyph65283",
+      "jp.glyph65284",
+      "jp.glyph65285",
+      "jp.glyph65286",
+      "jp.glyph65287",
+      "jp.glyph65288",
+      "jp.glyph65289",
+      "jp.glyph65290",
+      "jp.glyph65291",
+      "jp.glyph65292",
+      "jp.glyph65293",
+      "jp.glyph65294",
+      "jp.glyph65295",
+      "jp.glyph65296",
+      "jp.glyph65297",
+      "jp.glyph65298",
+      "jp.glyph65299",
+      "jp.glyph65300",
+      "jp.glyph65301",
+      "jp.glyph65302",
+      "jp.glyph65303",
+      "jp.glyph65304",
+      "jp.glyph65305",
+      "jp.glyph65306",
+      "jp.glyph65307",
+      "jp.glyph65308",
+      "jp.glyph65309",
+      "jp.glyph65310",
+      "jp.glyph65311",
+      "jp.glyph65312",
+      "jp.glyph65313",
+      "jp.glyph65314",
+      "jp.glyph65315",
+      "jp.glyph65316",
+      "jp.glyph65317",
+      "jp.glyph65318",
+      "jp.glyph65319",
+      "jp.glyph65320",
+      "jp.glyph65321",
+      "jp.glyph65322",
+      "jp.glyph65323",
+      "jp.glyph65324",
+      "jp.glyph65325",
+      "jp.glyph65326",
+      "jp.glyph65327",
+      "jp.glyph65328",
+      "jp.glyph65329",
+      "jp.glyph65330",
+      "jp.glyph65331",
+      "jp.glyph65332",
+      "jp.glyph65333",
+      "jp.glyph65334",
+      "jp.glyph65335",
+      "jp.glyph65336",
+      "jp.glyph65337",
+      "jp.glyph65338",
+      "jp.glyph65339",
+      "jp.glyph65340",
+      "jp.glyph65341",
+      "jp.glyph65343",
+      "jp.glyph65344",
+      "jp.glyph65345",
+      "jp.glyph65346",
+      "jp.glyph65347",
+      "jp.glyph65348",
+      "jp.glyph65349",
+      "jp.glyph65350",
+      "jp.glyph65351",
+      "jp.glyph65352",
+      "jp.glyph65353",
+      "jp.glyph65354",
+      "jp.glyph65355",
+      "jp.glyph65356",
+      "jp.glyph65357",
+      "jp.glyph65358",
+      "jp.uni2027",
+      "jp.uni3041",
+      "jp.uni3042",
+      "jp.uni3043",
+      "jp.uni3044",
+      "jp.uni3045",
+      "jp.uni3046",
+      "jp.uni3047",
+      "jp.uni3048",
+      "jp.uni3049",
+      "jp.uni304A",
+      "jp.uni304B",
+      "jp.uni304C",
+      "jp.uni304D",
+      "jp.uni304E",
+      "jp.uni304F",
+      "jp.uni3050",
+      "jp.uni3051",
+      "jp.uni3052",
+      "jp.uni3053",
+      "jp.uni3054",
+      "jp.uni3055",
+      "jp.uni3056",
+      "jp.uni3057",
+      "jp.uni3058",
+      "jp.uni3059",
+      "jp.uni305A",
+      "jp.uni305B",
+      "jp.uni305C",
+      "jp.uni305D",
+      "jp.uni305E",
+      "jp.uni305F",
+      "jp.uni3060",
+      "jp.uni3061",
+      "jp.uni3062",
+      "jp.uni3063",
+      "jp.uni3064",
+      "jp.uni3065",
+      "jp.uni3066",
+      "jp.uni3067",
+      "jp.uni3068",
+      "jp.uni3069",
+      "jp.uni306A",
+      "jp.uni306B",
+      "jp.uni306C",
+      "jp.uni306D",
+      "jp.uni306E",
+      "jp.uni306F",
+      "jp.uni3070",
+      "jp.uni3071",
+      "jp.uni3072",
+      "jp.uni3073",
+      "jp.uni3074",
+      "jp.uni3075",
+      "jp.uni3076",
+      "jp.uni3077",
+      "jp.uni3078",
+      "jp.uni3079",
+      "jp.uni307A",
+      "jp.uni307B",
+      "jp.uni307C",
+      "jp.uni307D",
+      "jp.uni307E",
+      "jp.uni307F",
+      "jp.uni3080",
+      "jp.uni3081",
+      "jp.uni3082",
+      "jp.uni3083",
+      "jp.uni3084",
+      "jp.uni3085",
+      "jp.uni3086",
+      "jp.uni3087",
+      "jp.uni3088",
+      "jp.uni3089",
+      "jp.uni308A",
+      "jp.uni308B",
+      "jp.uni308C",
+      "jp.uni308D",
+      "jp.uni308E",
+      "jp.uni308F",
+      "jp.uni3090",
+      "jp.uni3091",
+      "jp.uni3092",
+      "jp.uni3093",
+      "jp.uni3094",
+      "jp.uni3095",
+      "jp.uni3096",
+      "jp.uni3099",
+      "jp.uni309B",
+      "jp.uni309C",
+      "jp.uni309D",
+      "jp.uni309E",
+      "jp.uni309F",
+      "jp.uni30A0",
+      "jp.uni30A1",
+      "jp.uni30A2",
+      "jp.uni30A3",
+      "jp.uni30A4",
+      "jp.uni30A5",
+      "jp.uni30A6",
+      "jp.uni30A7",
+      "jp.uni30A8",
+      "jp.uni30A9",
+      "jp.uni30AA",
+      "jp.uni30AB",
+      "jp.uni30AC",
+      "jp.uni30AD",
+      "jp.uni30AE",
+      "jp.uni30AF",
+      "jp.uni30B0",
+      "jp.uni30B1",
+      "jp.uni30B2",
+      "jp.uni30B3",
+      "jp.uni30B4",
+      "jp.uni30B5",
+      "jp.uni30B6",
+      "jp.uni30B7",
+      "jp.uni30B8",
+      "jp.uni30B9",
+      "jp.uni30BA",
+      "jp.uni30BB",
+      "jp.uni30BC",
+      "jp.uni30BD",
+      "jp.uni30BE",
+      "jp.uni30BF",
+      "jp.uni30C0",
+      "jp.uni30C1",
+      "jp.uni30C2",
+      "jp.uni30C3",
+      "jp.uni30C4",
+      "jp.uni30C5",
+      "jp.uni30C6",
+      "jp.uni30C7",
+      "jp.uni30C8",
+      "jp.uni30C9",
+      "jp.uni30CA",
+      "jp.uni30CB",
+      "jp.uni30CC",
+      "jp.uni30CD",
+      "jp.uni30CE",
+      "jp.uni30CF",
+      "jp.uni30D0",
+      "jp.uni30D1",
+      "jp.uni30D2",
+      "jp.uni30D3",
+      "jp.uni30D4",
+      "jp.uni30D5",
+      "jp.uni30D6",
+      "jp.uni30D7",
+      "jp.uni30D8",
+      "jp.uni30D9",
+      "jp.uni30DA",
+      "jp.uni30DB",
+      "jp.uni30DC",
+      "jp.uni30DD",
+      "jp.uni30DE",
+      "jp.uni30DF",
+      "jp.uni30E0",
+      "jp.uni30E1",
+      "jp.uni30E2",
+      "jp.uni30E3",
+      "jp.uni30E4",
+      "jp.uni30E5",
+      "jp.uni30E6",
+      "jp.uni30E7",
+      "jp.uni30E8",
+      "jp.uni30E9",
+      "jp.uni30EA",
+      "jp.uni30EB",
+      "jp.uni30EC",
+      "jp.uni30ED",
+      "jp.uni30EE",
+      "jp.uni30EF",
+      "jp.uni30F0",
+      "jp.uni30F1",
+      "jp.uni30F2",
+      "jp.uni30F3",
+      "jp.uni30F4",
+      "jp.uni30F5",
+      "jp.uni30F6",
+      "jp.uni30F7",
+      "jp.uni30F8",
+      "jp.uni30F9",
+      "jp.uni30FA",
+      "jp.uni30FC",
+      "jp.uni30FD",
+      "jp.uni30FE",
+      "jp.uni30FF",
+      "jp.uni31F0",
+      "jp.uni31F1",
+      "jp.uni31F2",
+      "jp.uni31F3",
+      "jp.uni31F4",
+      "jp.uni31F5",
+      "jp.uni31F6",
+      "jp.uni31F7",
+      "jp.uni31F8",
+      "jp.uni31F9",
+      "jp.uni31FA",
+      "jp.uni31FB",
+      "jp.uni31FC",
+      "jp.uni31FD",
+      "jp.uni31FE",
+      "jp.uni31FF"
+    ],
+    "unchanged_kana_glyphs": [
+      "jp.uni309A"
+    ],
+    "shaping": {
+      "ccmp_pairs": [
+        {
+          "base": "か",
+          "glyph": "jp.ccmp.u304B.handakuten",
+          "body_shift": [
+            -12,
+            -3
+          ],
+          "mark_center": [
+            868.18,
+            728.37
+          ],
+          "mark_scale": 1.0072769715736287
+        },
+        {
+          "base": "き",
+          "glyph": "jp.ccmp.u304D.handakuten",
+          "body_shift": [
+            -39,
+            -2
+          ],
+          "mark_center": [
+            856.94,
+            731.86
+          ],
+          "mark_scale": 1.0072769715736287
+        },
+        {
+          "base": "く",
+          "glyph": "jp.ccmp.u304F.handakuten",
+          "body_shift": [
+            -43,
+            -1
+          ],
+          "mark_center": [
+            724.8,
+            529.0
+          ],
+          "mark_scale": 1.0904709978395863
+        },
+        {
+          "base": "け",
+          "glyph": "jp.ccmp.u3051.handakuten",
+          "body_shift": [
+            -12,
+            -16
+          ],
+          "mark_center": [
+            860.39,
+            751.58
+          ],
+          "mark_scale": 0.9824225249139497
+        },
+        {
+          "base": "こ",
+          "glyph": "jp.ccmp.u3053.handakuten",
+          "body_shift": [
+            -18,
+            -11
+          ],
+          "mark_center": [
+            860.95,
+            751.86
+          ],
+          "mark_scale": 1.0181238964772266
+        },
+        {
+          "base": "カ",
+          "glyph": "jp.ccmp.u30AB.handakuten",
+          "body_shift": [
+            -21,
+            -6
+          ],
+          "mark_center": [
+            863.65,
+            727.27
+          ],
+          "mark_scale": 1.0024332702797805
+        },
+        {
+          "base": "キ",
+          "glyph": "jp.ccmp.u30AD.handakuten",
+          "body_shift": [
+            -22,
+            -16
+          ],
+          "mark_center": [
+            859.29,
+            750.46
+          ],
+          "mark_scale": 1.0024332702797798
+        },
+        {
+          "base": "ク",
+          "glyph": "jp.ccmp.u30AF.handakuten",
+          "body_shift": [
+            -41,
+            -22
+          ],
+          "mark_center": [
+            870.87,
+            743.94
+          ],
+          "mark_scale": 1.0024332702797798
+        },
+        {
+          "base": "ケ",
+          "glyph": "jp.ccmp.u30B1.handakuten",
+          "body_shift": [
+            -35,
+            -16
+          ],
+          "mark_center": [
+            864.72,
+            744.71
+          ],
+          "mark_scale": 1.0024332702797798
+        },
+        {
+          "base": "コ",
+          "glyph": "jp.ccmp.u30B3.handakuten",
+          "body_shift": [
+            -20,
+            -30
+          ],
+          "mark_center": [
+            869.0,
+            762.72
+          ],
+          "mark_scale": 1.0024332702797798
+        },
+        {
+          "base": "セ",
+          "glyph": "jp.ccmp.u30BB.handakuten",
+          "body_shift": [
+            -28,
+            -18
+          ],
+          "mark_center": [
+            870.13,
+            751.82
+          ],
+          "mark_scale": 1.0024332702797805
+        },
+        {
+          "base": "ツ",
+          "glyph": "jp.ccmp.u30C4.handakuten",
+          "body_shift": [
+            -24,
+            -25
+          ],
+          "mark_center": [
+            869.4,
+            748.77
+          ],
+          "mark_scale": 1.0024332702797798
+        },
+        {
+          "base": "ト",
+          "glyph": "jp.ccmp.u30C8.handakuten",
+          "body_shift": [
+            -28,
+            -13
+          ],
+          "mark_center": [
+            741.09,
+            684.14
+          ],
+          "mark_scale": 1.0856272965457376
+        },
+        {
+          "base": "ㇷ",
+          "glyph": "jp.ccmp.u31F7.handakuten",
+          "body_shift": [
+            -22,
+            -56
+          ],
+          "mark_center": [
+            791.99,
+            574.77
+          ],
+          "mark_scale": 0.8280409196015329
+        }
+      ],
+      "fallback_base_count": 193,
+      "anchors": {
+        "jp.uni3041": [
+          850,
+          630
+        ],
+        "jp.uni3042": [
+          906,
+          762
+        ],
+        "jp.uni3043": [
+          855,
+          539
+        ],
+        "jp.uni3044": [
+          922,
+          682
+        ],
+        "jp.uni3045": [
+          800,
+          605
+        ],
+        "jp.uni3046": [
+          806,
+          752
+        ],
+        "jp.uni3047": [
+          845,
+          605
+        ],
+        "jp.uni3048": [
+          908,
+          756
+        ],
+        "jp.uni3049": [
+          886,
+          593
+        ],
+        "jp.uni304A": [
+          940,
+          763
+        ],
+        "jp.uni304B": [
+          868,
+          728
+        ],
+        "jp.uni304C": [
+          940,
+          814
+        ],
+        "jp.uni304D": [
+          857,
+          732
+        ],
+        "jp.uni304E": [
+          940,
+          812
+        ],
+        "jp.uni304F": [
+          725,
+          529
+        ],
+        "jp.uni3050": [
+          845,
+          768
+        ],
+        "jp.uni3051": [
+          860,
+          752
+        ],
+        "jp.uni3052": [
+          940,
+          809
+        ],
+        "jp.uni3053": [
+          861,
+          752
+        ],
+        "jp.uni3054": [
+          940,
+          820
+        ],
+        "jp.uni3055": [
+          850,
+          759
+        ],
+        "jp.uni3056": [
+          940,
+          819
+        ],
+        "jp.uni3057": [
+          899,
+          751
+        ],
+        "jp.uni3058": [
+          886,
+          751
+        ],
+        "jp.uni3059": [
+          928,
+          755
+        ],
+        "jp.uni305A": [
+          935,
+          803
+        ],
+        "jp.uni305B": [
+          921,
+          738
+        ],
+        "jp.uni305C": [
+          940,
+          772
+        ],
+        "jp.uni305D": [
+          877,
+          736
+        ],
+        "jp.uni305E": [
+          912,
+          736
+        ],
+        "jp.uni305F": [
+          908,
+          761
+        ],
+        "jp.uni3060": [
+          940,
+          763
+        ],
+        "jp.uni3061": [
+          851,
+          763
+        ],
+        "jp.uni3062": [
+          940,
+          820
+        ],
+        "jp.uni3063": [
+          853,
+          475
+        ],
+        "jp.uni3064": [
+          909,
+          628
+        ],
+        "jp.uni3065": [
+          940,
+          819
+        ],
+        "jp.uni3066": [
+          881,
+          692
+        ],
+        "jp.uni3067": [
+          927,
+          692
+        ],
+        "jp.uni3068": [
+          823,
+          748
+        ],
+        "jp.uni3069": [
+          940,
+          807
+        ],
+        "jp.uni306A": [
+          933,
+          769
+        ],
+        "jp.uni306B": [
+          898,
+          734
+        ],
+        "jp.uni306C": [
+          940,
+          746
+        ],
+        "jp.uni306D": [
+          940,
+          754
+        ],
+        "jp.uni306E": [
+          909,
+          695
+        ],
+        "jp.uni306F": [
+          940,
+          741
+        ],
+        "jp.uni3070": [
+          940,
+          804
+        ],
+        "jp.uni3071": [
+          940,
+          820
+        ],
+        "jp.uni3072": [
+          940,
+          723
+        ],
+        "jp.uni3073": [
+          940,
+          817
+        ],
+        "jp.uni3074": [
+          940,
+          816
+        ],
+        "jp.uni3075": [
+          940,
+          741
+        ],
+        "jp.uni3076": [
+          940,
+          741
+        ],
+        "jp.uni3077": [
+          940,
+          743
+        ],
+        "jp.uni3078": [
+          940,
+          617
+        ],
+        "jp.uni3079": [
+          940,
+          724
+        ],
+        "jp.uni307A": [
+          940,
+          664
+        ],
+        "jp.uni307B": [
+          940,
+          740
+        ],
+        "jp.uni307C": [
+          940,
+          789
+        ],
+        "jp.uni307D": [
+          940,
+          793
+        ],
+        "jp.uni307E": [
+          866,
+          762
+        ],
+        "jp.uni307F": [
+          940,
+          727
+        ],
+        "jp.uni3080": [
+          924,
+          757
+        ],
+        "jp.uni3081": [
+          908,
+          752
+        ],
+        "jp.uni3082": [
+          872,
+          762
+        ],
+        "jp.uni3083": [
+          869,
+          605
+        ],
+        "jp.uni3084": [
+          935,
+          760
+        ],
+        "jp.uni3085": [
+          856,
+          583
+        ],
+        "jp.uni3086": [
+          907,
+          758
+        ],
+        "jp.uni3087": [
+          800,
+          588
+        ],
+        "jp.uni3088": [
+          857,
+          755
+        ],
+        "jp.uni3089": [
+          854,
+          755
+        ],
+        "jp.uni308A": [
+          800,
+          761
+        ],
+        "jp.uni308B": [
+          858,
+          728
+        ],
+        "jp.uni308C": [
+          940,
+          752
+        ],
+        "jp.uni308D": [
+          854,
+          725
+        ],
+        "jp.uni308E": [
+          870,
+          612
+        ],
+        "jp.uni308F": [
+          929,
+          751
+        ],
+        "jp.uni3090": [
+          891,
+          735
+        ],
+        "jp.uni3091": [
+          930,
+          740
+        ],
+        "jp.uni3092": [
+          883,
+          768
+        ],
+        "jp.uni3093": [
+          940,
+          752
+        ],
+        "jp.uni3094": [
+          940,
+          751
+        ],
+        "jp.uni3095": [
+          908,
+          585
+        ],
+        "jp.uni3096": [
+          863,
+          566
+        ],
+        "jp.uni309F": [
+          859,
+          801
+        ],
+        "jp.uni30A1": [
+          867,
+          519
+        ],
+        "jp.uni30A2": [
+          933,
+          698
+        ],
+        "jp.uni30A3": [
+          800,
+          584
+        ],
+        "jp.uni30A4": [
+          866,
+          745
+        ],
+        "jp.uni30A5": [
+          834,
+          591
+        ],
+        "jp.uni30A6": [
+          884,
+          758
+        ],
+        "jp.uni30A7": [
+          847,
+          488
+        ],
+        "jp.uni30A8": [
+          915,
+          652
+        ],
+        "jp.uni30A9": [
+          860,
+          580
+        ],
+        "jp.uni30AA": [
+          898,
+          739
+        ],
+        "jp.uni30AB": [
+          864,
+          727
+        ],
+        "jp.uni30AC": [
+          940,
+          799
+        ],
+        "jp.uni30AD": [
+          859,
+          750
+        ],
+        "jp.uni30AE": [
+          940,
+          810
+        ],
+        "jp.uni30AF": [
+          871,
+          744
+        ],
+        "jp.uni30B0": [
+          940,
+          820
+        ],
+        "jp.uni30B1": [
+          865,
+          745
+        ],
+        "jp.uni30B2": [
+          940,
+          812
+        ],
+        "jp.uni30B3": [
+          869,
+          763
+        ],
+        "jp.uni30B4": [
+          940,
+          820
+        ],
+        "jp.uni30B5": [
+          921,
+          744
+        ],
+        "jp.uni30B6": [
+          940,
+          776
+        ],
+        "jp.uni30B7": [
+          914,
+          734
+        ],
+        "jp.uni30B8": [
+          940,
+          767
+        ],
+        "jp.uni30B9": [
+          900,
+          686
+        ],
+        "jp.uni30BA": [
+          940,
+          782
+        ],
+        "jp.uni30BB": [
+          870,
+          752
+        ],
+        "jp.uni30BC": [
+          940,
+          820
+        ],
+        "jp.uni30BD": [
+          853,
+          686
+        ],
+        "jp.uni30BE": [
+          940,
+          820
+        ],
+        "jp.uni30BF": [
+          875,
+          768
+        ],
+        "jp.uni30C0": [
+          940,
+          816
+        ],
+        "jp.uni30C1": [
+          913,
+          737
+        ],
+        "jp.uni30C2": [
+          940,
+          737
+        ],
+        "jp.uni30C3": [
+          848,
+          546
+        ],
+        "jp.uni30C4": [
+          869,
+          749
+        ],
+        "jp.uni30C5": [
+          940,
+          820
+        ],
+        "jp.uni30C6": [
+          915,
+          711
+        ],
+        "jp.uni30C7": [
+          940,
+          820
+        ],
+        "jp.uni30C8": [
+          741,
+          684
+        ],
+        "jp.uni30C9": [
+          875,
+          750
+        ],
+        "jp.uni30CA": [
+          921,
+          740
+        ],
+        "jp.uni30CB": [
+          887,
+          633
+        ],
+        "jp.uni30CC": [
+          827,
+          699
+        ],
+        "jp.uni30CD": [
+          929,
+          757
+        ],
+        "jp.uni30CE": [
+          806,
+          720
+        ],
+        "jp.uni30CF": [
+          926,
+          673
+        ],
+        "jp.uni30D0": [
+          940,
+          810
+        ],
+        "jp.uni30D1": [
+          940,
+          801
+        ],
+        "jp.uni30D2": [
+          858,
+          730
+        ],
+        "jp.uni30D3": [
+          922,
+          805
+        ],
+        "jp.uni30D4": [
+          937,
+          790
+        ],
+        "jp.uni30D5": [
+          864,
+          673
+        ],
+        "jp.uni30D6": [
+          940,
+          767
+        ],
+        "jp.uni30D7": [
+          940,
+          742
+        ],
+        "jp.uni30D8": [
+          940,
+          615
+        ],
+        "jp.uni30D9": [
+          940,
+          725
+        ],
+        "jp.uni30DA": [
+          940,
+          666
+        ],
+        "jp.uni30DB": [
+          934,
+          742
+        ],
+        "jp.uni30DC": [
+          940,
+          790
+        ],
+        "jp.uni30DD": [
+          929,
+          820
+        ],
+        "jp.uni30DE": [
+          931,
+          675
+        ],
+        "jp.uni30DF": [
+          813,
+          724
+        ],
+        "jp.uni30E0": [
+          935,
+          739
+        ],
+        "jp.uni30E1": [
+          877,
+          732
+        ],
+        "jp.uni30E2": [
+          907,
+          691
+        ],
+        "jp.uni30E3": [
+          866,
+          582
+        ],
+        "jp.uni30E4": [
+          918,
+          757
+        ],
+        "jp.uni30E5": [
+          856,
+          475
+        ],
+        "jp.uni30E6": [
+          924,
+          648
+        ],
+        "jp.uni30E7": [
+          800,
+          518
+        ],
+        "jp.uni30E8": [
+          833,
+          685
+        ],
+        "jp.uni30E9": [
+          880,
+          716
+        ],
+        "jp.uni30EA": [
+          800,
+          725
+        ],
+        "jp.uni30EB": [
+          940,
+          717
+        ],
+        "jp.uni30EC": [
+          909,
+          714
+        ],
+        "jp.uni30ED": [
+          862,
+          665
+        ],
+        "jp.uni30EE": [
+          830,
+          511
+        ],
+        "jp.uni30EF": [
+          878,
+          685
+        ],
+        "jp.uni30F0": [
+          917,
+          735
+        ],
+        "jp.uni30F1": [
+          926,
+          668
+        ],
+        "jp.uni30F2": [
+          882,
+          700
+        ],
+        "jp.uni30F3": [
+          924,
+          695
+        ],
+        "jp.uni30F4": [
+          940,
+          816
+        ],
+        "jp.uni30F5": [
+          800,
+          583
+        ],
+        "jp.uni30F6": [
+          854,
+          581
+        ],
+        "jp.uni30F7": [
+          939,
+          820
+        ],
+        "jp.uni30F8": [
+          940,
+          798
+        ],
+        "jp.uni30F9": [
+          936,
+          820
+        ],
+        "jp.uni30FA": [
+          939,
+          820
+        ],
+        "jp.uni31F0": [
+          804,
+          612
+        ],
+        "jp.uni31F1": [
+          851,
+          583
+        ],
+        "jp.uni31F2": [
+          828,
+          533
+        ],
+        "jp.uni31F3": [
+          800,
+          564
+        ],
+        "jp.uni31F4": [
+          800,
+          533
+        ],
+        "jp.uni31F5": [
+          856,
+          519
+        ],
+        "jp.uni31F6": [
+          800,
+          582
+        ],
+        "jp.uni31F7": [
+          792,
+          575
+        ],
+        "jp.uni31F8": [
+          867,
+          464
+        ],
+        "jp.uni31F9": [
+          844,
+          613
+        ],
+        "jp.uni31FA": [
+          880,
+          565
+        ],
+        "jp.uni31FB": [
+          800,
+          548
+        ],
+        "jp.uni31FC": [
+          800,
+          556
+        ],
+        "jp.uni31FD": [
+          876,
+          563
+        ],
+        "jp.uni31FE": [
+          874,
+          547
+        ],
+        "jp.uni31FF": [
+          800,
+          509
+        ]
+      }
+    },
+    "private_unhinted_components": [
+      {
+        "glyph": "jp.ccmp.component.jp.uni304B.outline",
+        "original_body": "jp.uni304B",
+        "composition": "jp.ccmp.u304B.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni304D.outline",
+        "original_body": "jp.uni304D",
+        "composition": "jp.ccmp.u304D.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni304F.outline",
+        "original_body": "jp.uni304F",
+        "composition": "jp.ccmp.u304F.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni3051.outline",
+        "original_body": "jp.uni3051",
+        "composition": "jp.ccmp.u3051.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni3053.outline",
+        "original_body": "jp.uni3053",
+        "composition": "jp.ccmp.u3053.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AB.outline",
+        "original_body": "jp.uni30AB",
+        "composition": "jp.ccmp.u30AB.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AD.outline",
+        "original_body": "jp.uni30AD",
+        "composition": "jp.ccmp.u30AD.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AF.outline",
+        "original_body": "jp.uni30AF",
+        "composition": "jp.ccmp.u30AF.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30B1.outline",
+        "original_body": "jp.uni30B1",
+        "composition": "jp.ccmp.u30B1.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30B3.outline",
+        "original_body": "jp.uni30B3",
+        "composition": "jp.ccmp.u30B3.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30BB.outline",
+        "original_body": "jp.uni30BB",
+        "composition": "jp.ccmp.u30BB.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30C4.outline",
+        "original_body": "jp.uni30C4",
+        "composition": "jp.ccmp.u30C4.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30C8.outline",
+        "original_body": "jp.uni30C8",
+        "composition": "jp.ccmp.u30C8.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni31F7.outline",
+        "original_body": "jp.uni31F7",
+        "composition": "jp.ccmp.u31F7.handakuten"
+      }
+    ],
+    "policy": {
+      "range": [
+        11,
+        18
+      ],
+      "max_ink_change_percent": 5,
+      "max_y_shift_pixels": 0.5,
+      "max_phase_pixels": 0.25,
+      "min_softness_improvement_pp": 0.75,
+      "counter_threshold": 128,
+      "engine": "FreeType 2.14.3",
+      "windows_verified": false,
+      "fractional_guards": "Each integer bucket: -0.5, -0.4375, -0.375, -0.25, -0.125, 0, 0.125, 0.25, 0.375, 0.4375 ppem; <=5.05% ink change and no alpha128 counter loss",
+      "phase_only_skips_legacy_program": true,
+      "unhinted_combining_ring": "U+309A: retain original raster for scaled ccmp components. Precomposed voiced/half-voiced kana still use their own restrained fits."
+    },
+    "family": "Friday Sans Kana Trial",
+    "windows_verified": false
+  },
+  {
+    "style": "Bold",
+    "ttf_sha256": "96be4926057e9d66924f93005b771edddba109d5b3899c83e2d69da517453a4f",
+    "source_sha256": "84482e9e09444ad8a60de99d6894a6161768fdd3d4f6d530d937c82c439da7bf",
+    "native_sha256": "40e809d46ec79681f0ba9785a1f774862767a103dc3143ae4c85c7fba0ee7afe",
+    "kana_programs": 404,
+    "changed_glyphs": [
+      "jp.glyph65157",
+      "jp.glyph65158",
+      "jp.glyph65159",
+      "jp.glyph65160",
+      "jp.glyph65161",
+      "jp.glyph65162",
+      "jp.glyph65163",
+      "jp.glyph65164",
+      "jp.glyph65165",
+      "jp.glyph65166",
+      "jp.glyph65167",
+      "jp.glyph65168",
+      "jp.glyph65169",
+      "jp.glyph65170",
+      "jp.glyph65171",
+      "jp.glyph65172",
+      "jp.glyph65173",
+      "jp.glyph65174",
+      "jp.glyph65175",
+      "jp.glyph65176",
+      "jp.glyph65177",
+      "jp.glyph65178",
+      "jp.glyph65179",
+      "jp.glyph65180",
+      "jp.glyph65181",
+      "jp.glyph65182",
+      "jp.glyph65183",
+      "jp.glyph65184",
+      "jp.glyph65185",
+      "jp.glyph65186",
+      "jp.glyph65187",
+      "jp.glyph65188",
+      "jp.glyph65189",
+      "jp.glyph65190",
+      "jp.glyph65191",
+      "jp.glyph65192",
+      "jp.glyph65193",
+      "jp.glyph65194",
+      "jp.glyph65195",
+      "jp.glyph65196",
+      "jp.glyph65197",
+      "jp.glyph65198",
+      "jp.glyph65199",
+      "jp.glyph65200",
+      "jp.glyph65201",
+      "jp.glyph65202",
+      "jp.glyph65203",
+      "jp.glyph65204",
+      "jp.glyph65205",
+      "jp.glyph65206",
+      "jp.glyph65207",
+      "jp.glyph65208",
+      "jp.glyph65209",
+      "jp.glyph65210",
+      "jp.glyph65211",
+      "jp.glyph65212",
+      "jp.glyph65213",
+      "jp.glyph65214",
+      "jp.glyph65215",
+      "jp.glyph65216",
+      "jp.glyph65217",
+      "jp.glyph65218",
+      "jp.glyph65219",
+      "jp.glyph65220",
+      "jp.glyph65221",
+      "jp.glyph65222",
+      "jp.glyph65224",
+      "jp.glyph65225",
+      "jp.glyph65226",
+      "jp.glyph65227",
+      "jp.glyph65228",
+      "jp.glyph65229",
+      "jp.glyph65230",
+      "jp.glyph65231",
+      "jp.glyph65232",
+      "jp.glyph65233",
+      "jp.glyph65234",
+      "jp.glyph65235",
+      "jp.glyph65236",
+      "jp.glyph65237",
+      "jp.glyph65238",
+      "jp.glyph65239",
+      "jp.glyph65240",
+      "jp.glyph65241",
+      "jp.glyph65242",
+      "jp.glyph65243",
+      "jp.glyph65244",
+      "jp.glyph65245",
+      "jp.glyph65246",
+      "jp.glyph65247",
+      "jp.glyph65248",
+      "jp.glyph65249",
+      "jp.glyph65250",
+      "jp.glyph65251",
+      "jp.glyph65252",
+      "jp.glyph65253",
+      "jp.glyph65254",
+      "jp.glyph65255",
+      "jp.glyph65256",
+      "jp.glyph65257",
+      "jp.glyph65258",
+      "jp.glyph65259",
+      "jp.glyph65260",
+      "jp.glyph65261",
+      "jp.glyph65262",
+      "jp.glyph65263",
+      "jp.glyph65264",
+      "jp.glyph65265",
+      "jp.glyph65266",
+      "jp.glyph65267",
+      "jp.glyph65268",
+      "jp.glyph65269",
+      "jp.glyph65270",
+      "jp.glyph65271",
+      "jp.glyph65272",
+      "jp.glyph65273",
+      "jp.glyph65274",
+      "jp.glyph65275",
+      "jp.glyph65276",
+      "jp.glyph65277",
+      "jp.glyph65278",
+      "jp.glyph65279",
+      "jp.glyph65280",
+      "jp.glyph65281",
+      "jp.glyph65282",
+      "jp.glyph65283",
+      "jp.glyph65284",
+      "jp.glyph65285",
+      "jp.glyph65286",
+      "jp.glyph65287",
+      "jp.glyph65288",
+      "jp.glyph65289",
+      "jp.glyph65290",
+      "jp.glyph65291",
+      "jp.glyph65292",
+      "jp.glyph65293",
+      "jp.glyph65294",
+      "jp.glyph65295",
+      "jp.glyph65296",
+      "jp.glyph65297",
+      "jp.glyph65298",
+      "jp.glyph65299",
+      "jp.glyph65300",
+      "jp.glyph65301",
+      "jp.glyph65302",
+      "jp.glyph65303",
+      "jp.glyph65304",
+      "jp.glyph65305",
+      "jp.glyph65306",
+      "jp.glyph65307",
+      "jp.glyph65308",
+      "jp.glyph65309",
+      "jp.glyph65310",
+      "jp.glyph65311",
+      "jp.glyph65312",
+      "jp.glyph65313",
+      "jp.glyph65314",
+      "jp.glyph65315",
+      "jp.glyph65316",
+      "jp.glyph65317",
+      "jp.glyph65318",
+      "jp.glyph65319",
+      "jp.glyph65320",
+      "jp.glyph65321",
+      "jp.glyph65322",
+      "jp.glyph65323",
+      "jp.glyph65324",
+      "jp.glyph65325",
+      "jp.glyph65326",
+      "jp.glyph65327",
+      "jp.glyph65328",
+      "jp.glyph65329",
+      "jp.glyph65330",
+      "jp.glyph65331",
+      "jp.glyph65332",
+      "jp.glyph65333",
+      "jp.glyph65334",
+      "jp.glyph65335",
+      "jp.glyph65336",
+      "jp.glyph65337",
+      "jp.glyph65338",
+      "jp.glyph65339",
+      "jp.glyph65340",
+      "jp.glyph65341",
+      "jp.glyph65343",
+      "jp.glyph65344",
+      "jp.glyph65345",
+      "jp.glyph65346",
+      "jp.glyph65347",
+      "jp.glyph65348",
+      "jp.glyph65349",
+      "jp.glyph65350",
+      "jp.glyph65351",
+      "jp.glyph65352",
+      "jp.glyph65353",
+      "jp.glyph65354",
+      "jp.glyph65355",
+      "jp.glyph65356",
+      "jp.glyph65357",
+      "jp.glyph65358",
+      "jp.uni2027",
+      "jp.uni3041",
+      "jp.uni3042",
+      "jp.uni3043",
+      "jp.uni3044",
+      "jp.uni3045",
+      "jp.uni3046",
+      "jp.uni3047",
+      "jp.uni3048",
+      "jp.uni3049",
+      "jp.uni304A",
+      "jp.uni304B",
+      "jp.uni304C",
+      "jp.uni304D",
+      "jp.uni304E",
+      "jp.uni304F",
+      "jp.uni3050",
+      "jp.uni3051",
+      "jp.uni3052",
+      "jp.uni3053",
+      "jp.uni3054",
+      "jp.uni3055",
+      "jp.uni3056",
+      "jp.uni3057",
+      "jp.uni3058",
+      "jp.uni3059",
+      "jp.uni305A",
+      "jp.uni305B",
+      "jp.uni305C",
+      "jp.uni305D",
+      "jp.uni305E",
+      "jp.uni305F",
+      "jp.uni3060",
+      "jp.uni3061",
+      "jp.uni3062",
+      "jp.uni3063",
+      "jp.uni3064",
+      "jp.uni3065",
+      "jp.uni3066",
+      "jp.uni3067",
+      "jp.uni3068",
+      "jp.uni3069",
+      "jp.uni306A",
+      "jp.uni306B",
+      "jp.uni306C",
+      "jp.uni306D",
+      "jp.uni306E",
+      "jp.uni306F",
+      "jp.uni3070",
+      "jp.uni3071",
+      "jp.uni3072",
+      "jp.uni3073",
+      "jp.uni3074",
+      "jp.uni3075",
+      "jp.uni3076",
+      "jp.uni3077",
+      "jp.uni3078",
+      "jp.uni3079",
+      "jp.uni307A",
+      "jp.uni307B",
+      "jp.uni307C",
+      "jp.uni307D",
+      "jp.uni307E",
+      "jp.uni307F",
+      "jp.uni3080",
+      "jp.uni3081",
+      "jp.uni3082",
+      "jp.uni3083",
+      "jp.uni3084",
+      "jp.uni3085",
+      "jp.uni3086",
+      "jp.uni3087",
+      "jp.uni3088",
+      "jp.uni3089",
+      "jp.uni308A",
+      "jp.uni308B",
+      "jp.uni308C",
+      "jp.uni308D",
+      "jp.uni308E",
+      "jp.uni308F",
+      "jp.uni3090",
+      "jp.uni3091",
+      "jp.uni3092",
+      "jp.uni3093",
+      "jp.uni3094",
+      "jp.uni3095",
+      "jp.uni3096",
+      "jp.uni3099",
+      "jp.uni309B",
+      "jp.uni309C",
+      "jp.uni309D",
+      "jp.uni309E",
+      "jp.uni309F",
+      "jp.uni30A0",
+      "jp.uni30A1",
+      "jp.uni30A2",
+      "jp.uni30A3",
+      "jp.uni30A4",
+      "jp.uni30A5",
+      "jp.uni30A6",
+      "jp.uni30A7",
+      "jp.uni30A8",
+      "jp.uni30A9",
+      "jp.uni30AA",
+      "jp.uni30AB",
+      "jp.uni30AC",
+      "jp.uni30AD",
+      "jp.uni30AE",
+      "jp.uni30AF",
+      "jp.uni30B0",
+      "jp.uni30B1",
+      "jp.uni30B2",
+      "jp.uni30B3",
+      "jp.uni30B4",
+      "jp.uni30B5",
+      "jp.uni30B6",
+      "jp.uni30B7",
+      "jp.uni30B8",
+      "jp.uni30B9",
+      "jp.uni30BA",
+      "jp.uni30BB",
+      "jp.uni30BC",
+      "jp.uni30BD",
+      "jp.uni30BE",
+      "jp.uni30BF",
+      "jp.uni30C0",
+      "jp.uni30C1",
+      "jp.uni30C2",
+      "jp.uni30C3",
+      "jp.uni30C4",
+      "jp.uni30C5",
+      "jp.uni30C6",
+      "jp.uni30C7",
+      "jp.uni30C8",
+      "jp.uni30C9",
+      "jp.uni30CA",
+      "jp.uni30CB",
+      "jp.uni30CC",
+      "jp.uni30CD",
+      "jp.uni30CE",
+      "jp.uni30CF",
+      "jp.uni30D0",
+      "jp.uni30D1",
+      "jp.uni30D2",
+      "jp.uni30D3",
+      "jp.uni30D4",
+      "jp.uni30D5",
+      "jp.uni30D6",
+      "jp.uni30D7",
+      "jp.uni30D8",
+      "jp.uni30D9",
+      "jp.uni30DA",
+      "jp.uni30DB",
+      "jp.uni30DC",
+      "jp.uni30DD",
+      "jp.uni30DE",
+      "jp.uni30DF",
+      "jp.uni30E0",
+      "jp.uni30E1",
+      "jp.uni30E2",
+      "jp.uni30E3",
+      "jp.uni30E4",
+      "jp.uni30E5",
+      "jp.uni30E6",
+      "jp.uni30E7",
+      "jp.uni30E8",
+      "jp.uni30E9",
+      "jp.uni30EA",
+      "jp.uni30EB",
+      "jp.uni30EC",
+      "jp.uni30ED",
+      "jp.uni30EE",
+      "jp.uni30EF",
+      "jp.uni30F0",
+      "jp.uni30F1",
+      "jp.uni30F2",
+      "jp.uni30F3",
+      "jp.uni30F4",
+      "jp.uni30F5",
+      "jp.uni30F6",
+      "jp.uni30F7",
+      "jp.uni30F8",
+      "jp.uni30F9",
+      "jp.uni30FA",
+      "jp.uni30FC",
+      "jp.uni30FD",
+      "jp.uni30FE",
+      "jp.uni30FF",
+      "jp.uni31F0",
+      "jp.uni31F1",
+      "jp.uni31F2",
+      "jp.uni31F3",
+      "jp.uni31F4",
+      "jp.uni31F5",
+      "jp.uni31F6",
+      "jp.uni31F7",
+      "jp.uni31F8",
+      "jp.uni31F9",
+      "jp.uni31FA",
+      "jp.uni31FB",
+      "jp.uni31FC",
+      "jp.uni31FD",
+      "jp.uni31FE",
+      "jp.uni31FF"
+    ],
+    "unchanged_kana_glyphs": [
+      "jp.glyph65223",
+      "jp.uni309A"
+    ],
+    "shaping": {
+      "ccmp_pairs": [
+        {
+          "base": "か",
+          "glyph": "jp.ccmp.u304B.handakuten",
+          "body_shift": [
+            -9,
+            -5
+          ],
+          "mark_center": [
+            866.31,
+            740.17
+          ],
+          "mark_scale": 1.0113979600535519
+        },
+        {
+          "base": "き",
+          "glyph": "jp.ccmp.u304D.handakuten",
+          "body_shift": [
+            -38,
+            -3
+          ],
+          "mark_center": [
+            857.35,
+            732.58
+          ],
+          "mark_scale": 1.0113979600535519
+        },
+        {
+          "base": "く",
+          "glyph": "jp.ccmp.u304F.handakuten",
+          "body_shift": [
+            -44,
+            -2
+          ],
+          "mark_center": [
+            731.56,
+            525.75
+          ],
+          "mark_scale": 1.0957324907013284
+        },
+        {
+          "base": "け",
+          "glyph": "jp.ccmp.u3051.handakuten",
+          "body_shift": [
+            -15,
+            -19
+          ],
+          "mark_center": [
+            862.04,
+            761.28
+          ],
+          "mark_scale": 0.9804351992225906
+        },
+        {
+          "base": "こ",
+          "glyph": "jp.ccmp.u3053.handakuten",
+          "body_shift": [
+            -20,
+            -11
+          ],
+          "mark_center": [
+            855.77,
+            759.31
+          ],
+          "mark_scale": 1.0227991184640794
+        },
+        {
+          "base": "カ",
+          "glyph": "jp.ccmp.u30AB.handakuten",
+          "body_shift": [
+            -19,
+            -5
+          ],
+          "mark_center": [
+            864.09,
+            739.26
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "キ",
+          "glyph": "jp.ccmp.u30AD.handakuten",
+          "body_shift": [
+            -22,
+            -16
+          ],
+          "mark_center": [
+            861.06,
+            749.44
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "ク",
+          "glyph": "jp.ccmp.u30AF.handakuten",
+          "body_shift": [
+            -36,
+            -20
+          ],
+          "mark_center": [
+            867.68,
+            746.72
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "ケ",
+          "glyph": "jp.ccmp.u30B1.handakuten",
+          "body_shift": [
+            -31,
+            -16
+          ],
+          "mark_center": [
+            863.64,
+            746.69
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "コ",
+          "glyph": "jp.ccmp.u30B3.handakuten",
+          "body_shift": [
+            -22,
+            -31
+          ],
+          "mark_center": [
+            866.95,
+            762.61
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "セ",
+          "glyph": "jp.ccmp.u30BB.handakuten",
+          "body_shift": [
+            -25,
+            -19
+          ],
+          "mark_center": [
+            867.25,
+            756.22
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "ツ",
+          "glyph": "jp.ccmp.u30C4.handakuten",
+          "body_shift": [
+            -24,
+            -28
+          ],
+          "mark_center": [
+            866.94,
+            745.32
+          ],
+          "mark_scale": 1.0118423294531502
+        },
+        {
+          "base": "ト",
+          "glyph": "jp.ccmp.u30C8.handakuten",
+          "body_shift": [
+            -31,
+            -14
+          ],
+          "mark_center": [
+            747.49,
+            686.72
+          ],
+          "mark_scale": 1.0965319353743272
+        },
+        {
+          "base": "ㇷ",
+          "glyph": "jp.ccmp.u31F7.handakuten",
+          "body_shift": [
+            -8,
+            -51
+          ],
+          "mark_center": [
+            802.88,
+            577.94
+          ],
+          "mark_scale": 0.8309299838114337
+        }
+      ],
+      "fallback_base_count": 193,
+      "anchors": {
+        "jp.uni3041": [
+          858,
+          639
+        ],
+        "jp.uni3042": [
+          915,
+          771
+        ],
+        "jp.uni3043": [
+          869,
+          545
+        ],
+        "jp.uni3044": [
+          932,
+          690
+        ],
+        "jp.uni3045": [
+          800,
+          616
+        ],
+        "jp.uni3046": [
+          817,
+          762
+        ],
+        "jp.uni3047": [
+          852,
+          614
+        ],
+        "jp.uni3048": [
+          914,
+          767
+        ],
+        "jp.uni3049": [
+          893,
+          600
+        ],
+        "jp.uni304A": [
+          940,
+          773
+        ],
+        "jp.uni304B": [
+          866,
+          740
+        ],
+        "jp.uni304C": [
+          940,
+          816
+        ],
+        "jp.uni304D": [
+          857,
+          733
+        ],
+        "jp.uni304E": [
+          940,
+          820
+        ],
+        "jp.uni304F": [
+          732,
+          526
+        ],
+        "jp.uni3050": [
+          853,
+          779
+        ],
+        "jp.uni3051": [
+          862,
+          761
+        ],
+        "jp.uni3052": [
+          940,
+          820
+        ],
+        "jp.uni3053": [
+          856,
+          759
+        ],
+        "jp.uni3054": [
+          940,
+          820
+        ],
+        "jp.uni3055": [
+          846,
+          755
+        ],
+        "jp.uni3056": [
+          940,
+          820
+        ],
+        "jp.uni3057": [
+          908,
+          760
+        ],
+        "jp.uni3058": [
+          894,
+          760
+        ],
+        "jp.uni3059": [
+          930,
+          765
+        ],
+        "jp.uni305A": [
+          940,
+          805
+        ],
+        "jp.uni305B": [
+          924,
+          747
+        ],
+        "jp.uni305C": [
+          940,
+          780
+        ],
+        "jp.uni305D": [
+          880,
+          747
+        ],
+        "jp.uni305E": [
+          919,
+          747
+        ],
+        "jp.uni305F": [
+          912,
+          770
+        ],
+        "jp.uni3060": [
+          940,
+          773
+        ],
+        "jp.uni3061": [
+          861,
+          772
+        ],
+        "jp.uni3062": [
+          940,
+          820
+        ],
+        "jp.uni3063": [
+          863,
+          487
+        ],
+        "jp.uni3064": [
+          918,
+          640
+        ],
+        "jp.uni3065": [
+          940,
+          820
+        ],
+        "jp.uni3066": [
+          882,
+          701
+        ],
+        "jp.uni3067": [
+          931,
+          701
+        ],
+        "jp.uni3068": [
+          818,
+          743
+        ],
+        "jp.uni3069": [
+          940,
+          820
+        ],
+        "jp.uni306A": [
+          940,
+          778
+        ],
+        "jp.uni306B": [
+          903,
+          742
+        ],
+        "jp.uni306C": [
+          940,
+          755
+        ],
+        "jp.uni306D": [
+          940,
+          762
+        ],
+        "jp.uni306E": [
+          918,
+          706
+        ],
+        "jp.uni306F": [
+          940,
+          749
+        ],
+        "jp.uni3070": [
+          940,
+          816
+        ],
+        "jp.uni3071": [
+          940,
+          820
+        ],
+        "jp.uni3072": [
+          940,
+          734
+        ],
+        "jp.uni3073": [
+          940,
+          820
+        ],
+        "jp.uni3074": [
+          940,
+          820
+        ],
+        "jp.uni3075": [
+          940,
+          751
+        ],
+        "jp.uni3076": [
+          940,
+          751
+        ],
+        "jp.uni3077": [
+          940,
+          752
+        ],
+        "jp.uni3078": [
+          940,
+          631
+        ],
+        "jp.uni3079": [
+          940,
+          731
+        ],
+        "jp.uni307A": [
+          940,
+          675
+        ],
+        "jp.uni307B": [
+          940,
+          749
+        ],
+        "jp.uni307C": [
+          940,
+          800
+        ],
+        "jp.uni307D": [
+          940,
+          800
+        ],
+        "jp.uni307E": [
+          871,
+          770
+        ],
+        "jp.uni307F": [
+          940,
+          737
+        ],
+        "jp.uni3080": [
+          937,
+          766
+        ],
+        "jp.uni3081": [
+          919,
+          761
+        ],
+        "jp.uni3082": [
+          882,
+          772
+        ],
+        "jp.uni3083": [
+          880,
+          619
+        ],
+        "jp.uni3084": [
+          940,
+          776
+        ],
+        "jp.uni3085": [
+          864,
+          592
+        ],
+        "jp.uni3086": [
+          915,
+          766
+        ],
+        "jp.uni3087": [
+          803,
+          596
+        ],
+        "jp.uni3088": [
+          867,
+          764
+        ],
+        "jp.uni3089": [
+          865,
+          766
+        ],
+        "jp.uni308A": [
+          806,
+          770
+        ],
+        "jp.uni308B": [
+          869,
+          739
+        ],
+        "jp.uni308C": [
+          940,
+          760
+        ],
+        "jp.uni308D": [
+          864,
+          736
+        ],
+        "jp.uni308E": [
+          878,
+          619
+        ],
+        "jp.uni308F": [
+          937,
+          760
+        ],
+        "jp.uni3090": [
+          900,
+          746
+        ],
+        "jp.uni3091": [
+          938,
+          750
+        ],
+        "jp.uni3092": [
+          893,
+          776
+        ],
+        "jp.uni3093": [
+          940,
+          762
+        ],
+        "jp.uni3094": [
+          940,
+          762
+        ],
+        "jp.uni3095": [
+          915,
+          592
+        ],
+        "jp.uni3096": [
+          868,
+          573
+        ],
+        "jp.uni309F": [
+          868,
+          802
+        ],
+        "jp.uni30A1": [
+          880,
+          527
+        ],
+        "jp.uni30A2": [
+          940,
+          710
+        ],
+        "jp.uni30A3": [
+          803,
+          598
+        ],
+        "jp.uni30A4": [
+          879,
+          755
+        ],
+        "jp.uni30A5": [
+          847,
+          599
+        ],
+        "jp.uni30A6": [
+          899,
+          767
+        ],
+        "jp.uni30A7": [
+          852,
+          500
+        ],
+        "jp.uni30A8": [
+          920,
+          665
+        ],
+        "jp.uni30A9": [
+          865,
+          584
+        ],
+        "jp.uni30AA": [
+          903,
+          747
+        ],
+        "jp.uni30AB": [
+          864,
+          739
+        ],
+        "jp.uni30AC": [
+          940,
+          810
+        ],
+        "jp.uni30AD": [
+          861,
+          749
+        ],
+        "jp.uni30AE": [
+          940,
+          820
+        ],
+        "jp.uni30AF": [
+          868,
+          747
+        ],
+        "jp.uni30B0": [
+          940,
+          820
+        ],
+        "jp.uni30B1": [
+          864,
+          747
+        ],
+        "jp.uni30B2": [
+          940,
+          820
+        ],
+        "jp.uni30B3": [
+          867,
+          763
+        ],
+        "jp.uni30B4": [
+          940,
+          820
+        ],
+        "jp.uni30B5": [
+          927,
+          753
+        ],
+        "jp.uni30B6": [
+          940,
+          783
+        ],
+        "jp.uni30B7": [
+          923,
+          746
+        ],
+        "jp.uni30B8": [
+          940,
+          776
+        ],
+        "jp.uni30B9": [
+          912,
+          698
+        ],
+        "jp.uni30BA": [
+          940,
+          793
+        ],
+        "jp.uni30BB": [
+          867,
+          756
+        ],
+        "jp.uni30BC": [
+          940,
+          820
+        ],
+        "jp.uni30BD": [
+          868,
+          696
+        ],
+        "jp.uni30BE": [
+          940,
+          820
+        ],
+        "jp.uni30BF": [
+          889,
+          780
+        ],
+        "jp.uni30C0": [
+          940,
+          820
+        ],
+        "jp.uni30C1": [
+          920,
+          748
+        ],
+        "jp.uni30C2": [
+          940,
+          748
+        ],
+        "jp.uni30C3": [
+          864,
+          554
+        ],
+        "jp.uni30C4": [
+          867,
+          745
+        ],
+        "jp.uni30C5": [
+          940,
+          820
+        ],
+        "jp.uni30C6": [
+          921,
+          723
+        ],
+        "jp.uni30C7": [
+          940,
+          820
+        ],
+        "jp.uni30C8": [
+          747,
+          687
+        ],
+        "jp.uni30C9": [
+          894,
+          765
+        ],
+        "jp.uni30CA": [
+          925,
+          749
+        ],
+        "jp.uni30CB": [
+          891,
+          647
+        ],
+        "jp.uni30CC": [
+          841,
+          713
+        ],
+        "jp.uni30CD": [
+          940,
+          765
+        ],
+        "jp.uni30CE": [
+          823,
+          733
+        ],
+        "jp.uni30CF": [
+          940,
+          684
+        ],
+        "jp.uni30D0": [
+          940,
+          820
+        ],
+        "jp.uni30D1": [
+          940,
+          816
+        ],
+        "jp.uni30D2": [
+          863,
+          740
+        ],
+        "jp.uni30D3": [
+          930,
+          820
+        ],
+        "jp.uni30D4": [
+          940,
+          771
+        ],
+        "jp.uni30D5": [
+          879,
+          685
+        ],
+        "jp.uni30D6": [
+          940,
+          775
+        ],
+        "jp.uni30D7": [
+          940,
+          753
+        ],
+        "jp.uni30D8": [
+          940,
+          629
+        ],
+        "jp.uni30D9": [
+          940,
+          733
+        ],
+        "jp.uni30DA": [
+          940,
+          678
+        ],
+        "jp.uni30DB": [
+          940,
+          751
+        ],
+        "jp.uni30DC": [
+          940,
+          799
+        ],
+        "jp.uni30DD": [
+          938,
+          820
+        ],
+        "jp.uni30DE": [
+          940,
+          688
+        ],
+        "jp.uni30DF": [
+          823,
+          736
+        ],
+        "jp.uni30E0": [
+          940,
+          747
+        ],
+        "jp.uni30E1": [
+          895,
+          745
+        ],
+        "jp.uni30E2": [
+          910,
+          703
+        ],
+        "jp.uni30E3": [
+          874,
+          593
+        ],
+        "jp.uni30E4": [
+          930,
+          768
+        ],
+        "jp.uni30E5": [
+          859,
+          484
+        ],
+        "jp.uni30E6": [
+          926,
+          661
+        ],
+        "jp.uni30E7": [
+          800,
+          525
+        ],
+        "jp.uni30E8": [
+          843,
+          695
+        ],
+        "jp.uni30E9": [
+          895,
+          726
+        ],
+        "jp.uni30EA": [
+          800,
+          733
+        ],
+        "jp.uni30EB": [
+          940,
+          726
+        ],
+        "jp.uni30EC": [
+          921,
+          725
+        ],
+        "jp.uni30ED": [
+          873,
+          674
+        ],
+        "jp.uni30EE": [
+          846,
+          519
+        ],
+        "jp.uni30EF": [
+          893,
+          697
+        ],
+        "jp.uni30F0": [
+          921,
+          746
+        ],
+        "jp.uni30F1": [
+          930,
+          681
+        ],
+        "jp.uni30F2": [
+          895,
+          711
+        ],
+        "jp.uni30F3": [
+          933,
+          707
+        ],
+        "jp.uni30F4": [
+          940,
+          820
+        ],
+        "jp.uni30F5": [
+          808,
+          590
+        ],
+        "jp.uni30F6": [
+          859,
+          587
+        ],
+        "jp.uni30F7": [
+          940,
+          820
+        ],
+        "jp.uni30F8": [
+          940,
+          808
+        ],
+        "jp.uni30F9": [
+          940,
+          820
+        ],
+        "jp.uni30FA": [
+          940,
+          820
+        ],
+        "jp.uni31F0": [
+          815,
+          623
+        ],
+        "jp.uni31F1": [
+          857,
+          593
+        ],
+        "jp.uni31F2": [
+          835,
+          544
+        ],
+        "jp.uni31F3": [
+          802,
+          570
+        ],
+        "jp.uni31F4": [
+          800,
+          545
+        ],
+        "jp.uni31F5": [
+          863,
+          529
+        ],
+        "jp.uni31F6": [
+          800,
+          588
+        ],
+        "jp.uni31F7": [
+          803,
+          578
+        ],
+        "jp.uni31F8": [
+          875,
+          478
+        ],
+        "jp.uni31F9": [
+          853,
+          618
+        ],
+        "jp.uni31FA": [
+          888,
+          570
+        ],
+        "jp.uni31FB": [
+          804,
+          557
+        ],
+        "jp.uni31FC": [
+          800,
+          561
+        ],
+        "jp.uni31FD": [
+          881,
+          570
+        ],
+        "jp.uni31FE": [
+          880,
+          553
+        ],
+        "jp.uni31FF": [
+          804,
+          521
+        ]
+      }
+    },
+    "private_unhinted_components": [
+      {
+        "glyph": "jp.ccmp.component.jp.uni304B.outline",
+        "original_body": "jp.uni304B",
+        "composition": "jp.ccmp.u304B.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni304D.outline",
+        "original_body": "jp.uni304D",
+        "composition": "jp.ccmp.u304D.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni304F.outline",
+        "original_body": "jp.uni304F",
+        "composition": "jp.ccmp.u304F.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni3051.outline",
+        "original_body": "jp.uni3051",
+        "composition": "jp.ccmp.u3051.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni3053.outline",
+        "original_body": "jp.uni3053",
+        "composition": "jp.ccmp.u3053.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AB.outline",
+        "original_body": "jp.uni30AB",
+        "composition": "jp.ccmp.u30AB.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AD.outline",
+        "original_body": "jp.uni30AD",
+        "composition": "jp.ccmp.u30AD.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30AF.outline",
+        "original_body": "jp.uni30AF",
+        "composition": "jp.ccmp.u30AF.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30B1.outline",
+        "original_body": "jp.uni30B1",
+        "composition": "jp.ccmp.u30B1.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30B3.outline",
+        "original_body": "jp.uni30B3",
+        "composition": "jp.ccmp.u30B3.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30BB.outline",
+        "original_body": "jp.uni30BB",
+        "composition": "jp.ccmp.u30BB.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30C4.outline",
+        "original_body": "jp.uni30C4",
+        "composition": "jp.ccmp.u30C4.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni30C8.outline",
+        "original_body": "jp.uni30C8",
+        "composition": "jp.ccmp.u30C8.handakuten"
+      },
+      {
+        "glyph": "jp.ccmp.component.jp.uni31F7.outline",
+        "original_body": "jp.uni31F7",
+        "composition": "jp.ccmp.u31F7.handakuten"
+      }
+    ],
+    "policy": {
+      "range": [
+        11,
+        18
+      ],
+      "max_ink_change_percent": 5,
+      "max_y_shift_pixels": 0.5,
+      "max_phase_pixels": 0.25,
+      "min_softness_improvement_pp": 0.75,
+      "counter_threshold": 128,
+      "engine": "FreeType 2.14.3",
+      "windows_verified": false,
+      "fractional_guards": "Each integer bucket: -0.5, -0.4375, -0.375, -0.25, -0.125, 0, 0.125, 0.25, 0.375, 0.4375 ppem; <=5.05% ink change and no alpha128 counter loss",
+      "phase_only_skips_legacy_program": true,
+      "unhinted_combining_ring": "U+309A: retain original raster for scaled ccmp components. Precomposed voiced/half-voiced kana still use their own restrained fits."
+    },
+    "family": "Friday Sans Kana Trial",
+    "windows_verified": false
+  }
+]

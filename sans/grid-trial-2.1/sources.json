@@ -1,0 +1,65 @@
+{
+  "inputs": [
+    {
+      "path": "Source/noto-cjk/NotoSansCJKjp-VF.ttf",
+      "sha256": "240c9b83bf7b386edbae39995ae7e068ed4583f484d92e4a74c34158b5f27b1a"
+    },
+    {
+      "path": "InoriMono-v3-build/sans/work/cjk-Regular.pkl",
+      "sha256": "68776e680962b5d7189df539b60b72ddf4fc90dcca43ad51395de924e18d0e0d"
+    },
+    {
+      "path": "InoriMono-v3-build/sans/work/cjk-Medium.pkl",
+      "sha256": "39a573d33f00afbafe47e04520c73ec56079a3c59459136d6b40bc6f7cb841cc"
+    },
+    {
+      "path": "InoriMono-v3-build/sans/work/cjk-Bold.pkl",
+      "sha256": "143e8b378a8a665670086417897f96a30fd9f22de86b104c6658d07bd931bea9"
+    },
+    {
+      "path": "comparisons/unified-sans-trial/fonts-hinted/UnitySansTrial-Regular.ttf",
+      "sha256": "ea81e7d621628a2c29b1fd80b036febee51f34a0196a5e55fb21060c87755e2f"
+    },
+    {
+      "path": "comparisons/unified-sans-trial/fonts-hinted/UnitySansTrial-Medium.ttf",
+      "sha256": "88276b5a650c6915c5a5a5431121952bf6194e25bb4b1c55889b6ee799dc58a2"
+    },
+    {
+      "path": "comparisons/unified-sans-trial/fonts-hinted/UnitySansTrial-Bold.ttf",
+      "sha256": "40e809d46ec79681f0ba9785a1f774862767a103dc3143ae4c85c7fba0ee7afe"
+    },
+    {
+      "path": "FridayFonts/sans/build_2_1.py",
+      "sha256": "6733d55a35276e9a4929b835ad2adf62c1aa1905cb364d7c60faf0a210c5442a"
+    },
+    {
+      "path": "FridayFonts/sans/verify_2_1.py",
+      "sha256": "4362f723e60d473b428c9aa47a9613fc46aa63a907668c9b4284498aafdd4899"
+    },
+    {
+      "path": "FridayFonts/sans/verify_2_1_coretext.swift",
+      "sha256": "dd9afcd4fad2776d347b633ca8763797e73aa8057787fed720f39da57717b55b"
+    },
+    {
+      "path": "FridayFonts/sans/preview_2_1.py",
+      "sha256": "5df7da9408adb5ba718ca91e81c63f09fb99f901d30879f97eb1d7dadeacaf36"
+    },
+    {
+      "path": "FridayFonts/sans/preview-2.1-template.html",
+      "sha256": "195625f3324557c33f173c3165bf12a233b331199490b26eb5fd5d39d13da941"
+    },
+    {
+      "path": "FridayFonts/sans/package_2_1.py",
+      "sha256": "ea5e14ebd072d58a292edf487ee84ddda5a9af5166c4e045dcbbddee61723ae3"
+    }
+  ],
+  "browser": {
+    "platform": "macOS",
+    "browser": "Chrome 153",
+    "DPR": 2,
+    "all_nine_webfonts_loaded": true,
+    "weight_switch_and_dark_background_checked": true,
+    "combining_marks_visually_checked": true
+  },
+  "windows_verified": false
+}

@@ -1,0 +1,4 @@
+@font-face{font-family:"Friday Sans Kana Trial";src:url("FridaySansKanaTrial-Regular.woff2") format("woff2");font-weight:400;font-style:normal;}
+@font-face{font-family:"Friday Sans Kana Trial";src:url("FridaySansKanaTrial-Medium.woff2") format("woff2");font-weight:500;font-style:normal;}
+@font-face{font-family:"Friday Sans Kana Trial";src:url("FridaySansKanaTrial-Bold.woff2") format("woff2");font-weight:700;font-style:normal;}
+.friday-numeric{font-variant-numeric:tabular-nums;}

@@ -1,0 +1,84 @@
+{
+  "inputs": [
+    {
+      "path": "FridayFonts/sans/kana_hint_common.py",
+      "sha256": "827ce129bd013be42e9b01af0712f2fc13998e6ca68fcc9e52231665833b19bb"
+    },
+    {
+      "path": "FridayFonts/sans/explore_kana_hint.py",
+      "sha256": "418ec05ae85cc00ea237e10ef21f7db166107c9f32f76e73c599d5dda9e6cdeb"
+    },
+    {
+      "path": "FridayFonts/sans/optimize_kana_hint.py",
+      "sha256": "bc3b98af0452df46b415fc8d2f1d10db59d6cff91d1f7c8e98879460b671d6d4"
+    },
+    {
+      "path": "FridayFonts/sans/refine_kana_hint.py",
+      "sha256": "c3f39b599e21f6e87255d929fb18cce55112a59f63087be6368107a48ad935ef"
+    },
+    {
+      "path": "FridayFonts/sans/filter_unsafe_kana_donors.py",
+      "sha256": "4a02fad51aef5c0161937354153f86fd5028d21dbff7ac16d8f618cdf3ea3c12"
+    },
+    {
+      "path": "FridayFonts/sans/protect_combining_ring.py",
+      "sha256": "2a76fb2cb8a823058f2775f53e2380583452a4562fa7d800ce588e44e2866fb9"
+    },
+    {
+      "path": "FridayFonts/sans/build_kana_trial_2_2.py",
+      "sha256": "f69d9f1d9e877e51c6a14ccbb567d916e21393bafb8c75db88e5fcffe14b9aa9"
+    },
+    {
+      "path": "FridayFonts/sans/verify_kana_trial_2_2.py",
+      "sha256": "b350cf4142ef64b4b14bbb1f6da8e3bac5ace1a1e567fd08167f1f4413173df3"
+    },
+    {
+      "path": "FridayFonts/sans/preview_kana_trial_2_2.py",
+      "sha256": "d25818df9dce2abbac83b9f3b2a45dc379f112a95db1ac853c661b263032f1ee"
+    },
+    {
+      "path": "FridayFonts/sans/kana-preview-template.html",
+      "sha256": "e773f2ab6e2f5c325a1f4fdf488b6d50a61b202f283dd004265a6a19a966e22e"
+    },
+    {
+      "path": "FridayFonts/sans/package_kana_trial_2_2.py",
+      "sha256": "35ce12efa4458827a3c0b81ba6a5e7c90d94f8aabadba6fa5136f11b35180ae9"
+    },
+    {
+      "path": "FridayFonts/sans/verify_kana_coretext.swift",
+      "sha256": "399038c083e4a64278e4a51bcd202dc2c307a4844f709eeb01ad9ce6e3345fcb"
+    },
+    {
+      "path": "comparisons/unified-sans-trial/fonts-hinted/UnitySansTrial-Regular.ttf",
+      "sha256": "ea81e7d621628a2c29b1fd80b036febee51f34a0196a5e55fb21060c87755e2f"
+    },
+    {
+      "path": "comparisons/unified-sans-trial/fonts-hinted/UnitySansTrial-Medium.ttf",
+      "sha256": "88276b5a650c6915c5a5a5431121952bf6194e25bb4b1c55889b6ee799dc58a2"
+    },
+    {
+      "path": "comparisons/unified-sans-trial/fonts-hinted/UnitySansTrial-Bold.ttf",
+      "sha256": "40e809d46ec79681f0ba9785a1f774862767a103dc3143ae4c85c7fba0ee7afe"
+    },
+    {
+      "path": "FridayFonts/sans/grid-trial-2.1/ttf/FridaySans-Regular.ttf",
+      "sha256": "70bbf34dfa09a0224477f37a825ddd806d4d8dc41b0ae4fc8537099656ad809f"
+    },
+    {
+      "path": "FridayFonts/sans/grid-trial-2.1/ttf/FridaySans-Medium.ttf",
+      "sha256": "d20d88ba74a74519d6a8971eca29bc22d313853f7184f393cc939cbaea51ef7e"
+    },
+    {
+      "path": "FridayFonts/sans/grid-trial-2.1/ttf/FridaySans-Bold.ttf",
+      "sha256": "84482e9e09444ad8a60de99d6894a6161768fdd3d4f6d530d937c82c439da7bf"
+    }
+  ],
+  "browser": {
+    "platform": "macOS",
+    "browser": "Chrome 154",
+    "DPR": 2,
+    "all_nine_webfonts_loaded": true,
+    "weight_dark_and_preset_controls_checked": true
+  },
+  "windows_verified": false
+}

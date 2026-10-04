@@ -1,0 +1,1257 @@
+{
+  "engine": "FreeType 2.14.3",
+  "windows_verified": false,
+  "method": "Full glyph-ID Japanese rasters: native Friday 2.0 vs explicit no-hinting calibrated trial; same size, grayscale, engine. Ink-area change is a diagnostic, not a perceptual weight score.",
+  "results": [
+    {
+      "style": "Regular",
+      "glyphs": 16743,
+      "japanese_glyphs": 13806,
+      "japanese_raster_matches_explicit_no_hinting": 69030,
+      "sizes_px": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "all_outlines_and_layout_preserved": true,
+      "latin_programs_preserved": 2937,
+      "digit_alignment_11_sizes": true
+    },
+    {
+      "style": "Medium",
+      "glyphs": 16743,
+      "japanese_glyphs": 13806,
+      "japanese_raster_matches_explicit_no_hinting": 69030,
+      "sizes_px": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "all_outlines_and_layout_preserved": true,
+      "latin_programs_preserved": 2937,
+      "digit_alignment_11_sizes": true
+    },
+    {
+      "style": "Bold",
+      "glyphs": 16743,
+      "japanese_glyphs": 13806,
+      "japanese_raster_matches_explicit_no_hinting": 69030,
+      "sizes_px": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "all_outlines_and_layout_preserved": true,
+      "latin_programs_preserved": 2937,
+      "digit_alignment_11_sizes": true
+    }
+  ],
+  "sample_stats": [
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 12,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 12,
+      "group": "kanji",
+      "p10": 3.0533527346770173,
+      "median": 6.273542018443945,
+      "p90": 10.134090368870408,
+      "spread": 7.080737634193391
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 12,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 12,
+      "group": "kana",
+      "p10": 2.1973730998784258,
+      "median": 4.711678158374067,
+      "p90": 10.927118995730572,
+      "spread": 8.729745895852146
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 12,
+      "group": "latin",
+      "p10": 3.464504251353877,
+      "median": 6.222344592879869,
+      "p90": 9.737460070793407,
+      "spread": 6.27295581943953
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 12,
+      "group": "latin",
+      "p10": 3.464504251353877,
+      "median": 6.222344592879869,
+      "p90": 9.737460070793407,
+      "spread": 6.27295581943953
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 12,
+      "group": "digits",
+      "p10": 2.435634496162309,
+      "median": 4.284856586314079,
+      "p90": 7.910056659591184,
+      "spread": 5.474422163428875
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 12,
+      "group": "digits",
+      "p10": 2.435634496162309,
+      "median": 4.284856586314079,
+      "p90": 7.910056659591184,
+      "spread": 5.474422163428875
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 14,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 14,
+      "group": "kanji",
+      "p10": -1.8709720893889645,
+      "median": 0.7390050468637277,
+      "p90": 3.392921767698809,
+      "spread": 5.263893857087774
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 14,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 14,
+      "group": "kana",
+      "p10": -3.334461738640282,
+      "median": -0.42365903761923396,
+      "p90": 4.814604130492948,
+      "spread": 8.14906586913323
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 14,
+      "group": "latin",
+      "p10": 0.041742677612248764,
+      "median": 2.754052605272961,
+      "p90": 4.562482383901198,
+      "spread": 4.520739706288949
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 14,
+      "group": "latin",
+      "p10": 0.041742677612248764,
+      "median": 2.754052605272961,
+      "p90": 4.562482383901198,
+      "spread": 4.520739706288949
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 14,
+      "group": "digits",
+      "p10": -0.966891534086981,
+      "median": -0.30752625030995295,
+      "p90": 3.9296939227218175,
+      "spread": 4.896585456808799
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 14,
+      "group": "digits",
+      "p10": -0.966891534086981,
+      "median": -0.30752625030995295,
+      "p90": 3.9296939227218175,
+      "spread": 4.896585456808799
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 16,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 16,
+      "group": "kanji",
+      "p10": -0.758395778665537,
+      "median": 1.650930061627176,
+      "p90": 4.274433548896287,
+      "spread": 5.032829327561823
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 16,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 16,
+      "group": "kana",
+      "p10": -0.9049370549494784,
+      "median": 0.11110134172719333,
+      "p90": 5.945204151598634,
+      "spread": 6.850141206548112
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 16,
+      "group": "latin",
+      "p10": -3.5611965127383645,
+      "median": -1.1041950112125942,
+      "p90": 2.6713653495283074,
+      "spread": 6.232561862266672
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 16,
+      "group": "latin",
+      "p10": -3.5611965127383645,
+      "median": -1.1041950112125942,
+      "p90": 2.6713653495283074,
+      "spread": 6.232561862266672
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 16,
+      "group": "digits",
+      "p10": -4.186163285830219,
+      "median": -3.4767146410158767,
+      "p90": -0.5328332035258777,
+      "spread": 3.653330082304341
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 16,
+      "group": "digits",
+      "p10": -4.186163285830219,
+      "median": -3.4767146410158767,
+      "p90": -0.5328332035258777,
+      "spread": 3.653330082304341
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 18,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 18,
+      "group": "kanji",
+      "p10": -0.3124276490639444,
+      "median": 2.2934935917090726,
+      "p90": 5.570947829256624,
+      "spread": 5.883375478320568
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 18,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 18,
+      "group": "kana",
+      "p10": -0.1143159236050994,
+      "median": 1.1619561752328034,
+      "p90": 5.897725385716384,
+      "spread": 6.012041309321483
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 18,
+      "group": "latin",
+      "p10": -1.2989931474905692,
+      "median": 1.036972315751894,
+      "p90": 3.1377686501948716,
+      "spread": 4.436761797685441
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 18,
+      "group": "latin",
+      "p10": -1.2989931474905692,
+      "median": 1.036972315751894,
+      "p90": 3.1377686501948716,
+      "spread": 4.436761797685441
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 18,
+      "group": "digits",
+      "p10": -2.373584216664458,
+      "median": -1.7728914950863761,
+      "p90": 1.2258172188397367,
+      "spread": 3.599401435504195
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 18,
+      "group": "digits",
+      "p10": -2.373584216664458,
+      "median": -1.7728914950863761,
+      "p90": 1.2258172188397367,
+      "spread": 3.599401435504195
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 20,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 20,
+      "group": "kanji",
+      "p10": 0.7133975816894412,
+      "median": 2.6663728514764173,
+      "p90": 5.473585633486611,
+      "spread": 4.7601880517971695
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 20,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 20,
+      "group": "kana",
+      "p10": 0.08337694519728665,
+      "median": 2.2996030673841705,
+      "p90": 4.914613968738194,
+      "spread": 4.831237023540907
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 20,
+      "group": "latin",
+      "p10": -3.5977613083015147,
+      "median": -1.1841930205926277,
+      "p90": 1.2663741812114173,
+      "spread": 4.8641354895129325
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 20,
+      "group": "latin",
+      "p10": -3.5977613083015147,
+      "median": -1.1841930205926277,
+      "p90": 1.2663741812114173,
+      "spread": 4.8641354895129325
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Regular",
+      "px": 20,
+      "group": "digits",
+      "p10": -4.231986505995148,
+      "median": -3.3368967245955505,
+      "p90": -1.224381992859233,
+      "spread": 3.007604513135915
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Regular",
+      "px": 20,
+      "group": "digits",
+      "p10": -4.231986505995148,
+      "median": -3.3368967245955505,
+      "p90": -1.224381992859233,
+      "spread": 3.007604513135915
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 12,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 12,
+      "group": "kanji",
+      "p10": 1.6214450947372774,
+      "median": 4.603661763149547,
+      "p90": 8.186771379248809,
+      "spread": 6.565326284511531
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 12,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 12,
+      "group": "kana",
+      "p10": 1.9964194330184193,
+      "median": 4.351139400728354,
+      "p90": 9.217461871192318,
+      "spread": 7.2210424381739
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 12,
+      "group": "latin",
+      "p10": 1.7631605524339355,
+      "median": 4.944821398055154,
+      "p90": 7.935989635649762,
+      "spread": 6.172829083215827
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 12,
+      "group": "latin",
+      "p10": 1.7631605524339355,
+      "median": 4.944821398055154,
+      "p90": 7.935989635649762,
+      "spread": 6.172829083215827
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 12,
+      "group": "digits",
+      "p10": 1.9495143506983492,
+      "median": 3.3053279264707136,
+      "p90": 6.373919496829919,
+      "spread": 4.42440514613157
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 12,
+      "group": "digits",
+      "p10": 1.9495143506983492,
+      "median": 3.3053279264707136,
+      "p90": 6.373919496829919,
+      "spread": 4.42440514613157
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 14,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 14,
+      "group": "kanji",
+      "p10": -2.6783557802324642,
+      "median": -0.17504551183307182,
+      "p90": 2.8374774812558194,
+      "spread": 5.515833261488284
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 14,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 14,
+      "group": "kana",
+      "p10": -3.146121364020048,
+      "median": -2.0933029465699415,
+      "p90": 3.07269858425865,
+      "spread": 6.218819948278698
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 14,
+      "group": "latin",
+      "p10": -1.6273651730737713,
+      "median": 1.4682872627497234,
+      "p90": 3.1608562166176175,
+      "spread": 4.7882213896913886
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 14,
+      "group": "latin",
+      "p10": -1.6273651730737713,
+      "median": 1.4682872627497234,
+      "p90": 3.1608562166176175,
+      "spread": 4.7882213896913886
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 14,
+      "group": "digits",
+      "p10": -1.950048439594303,
+      "median": -1.4094007503182127,
+      "p90": 1.814892842368154,
+      "spread": 3.7649412819624573
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 14,
+      "group": "digits",
+      "p10": -1.950048439594303,
+      "median": -1.4094007503182127,
+      "p90": 1.814892842368154,
+      "spread": 3.7649412819624573
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 16,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 16,
+      "group": "kanji",
+      "p10": -1.0000279737018913,
+      "median": 1.559463430819541,
+      "p90": 3.54262401825388,
+      "spread": 4.542651991955772
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 16,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 16,
+      "group": "kana",
+      "p10": -1.2908018020507983,
+      "median": -0.468819020772393,
+      "p90": 4.5666045692724495,
+      "spread": 5.857406371323248
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 16,
+      "group": "latin",
+      "p10": -4.647617122708562,
+      "median": -2.3271765405473657,
+      "p90": 1.4562074829931897,
+      "spread": 6.103824605701751
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 16,
+      "group": "latin",
+      "p10": -4.647617122708562,
+      "median": -2.3271765405473657,
+      "p90": 1.4562074829931897,
+      "spread": 6.103824605701751
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 16,
+      "group": "digits",
+      "p10": -5.223528755401142,
+      "median": -4.449210957543681,
+      "p90": -2.8448922167815374,
+      "spread": 2.3786365386196042
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 16,
+      "group": "digits",
+      "p10": -5.223528755401142,
+      "median": -4.449210957543681,
+      "p90": -2.8448922167815374,
+      "spread": 2.3786365386196042
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 18,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 18,
+      "group": "kanji",
+      "p10": -0.7687525890317225,
+      "median": 1.6046458317414247,
+      "p90": 4.122827256886704,
+      "spread": 4.891579845918426
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 18,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 18,
+      "group": "kana",
+      "p10": -0.6479210244492861,
+      "median": 0.9881406125435643,
+      "p90": 3.7430919973672543,
+      "spread": 4.391013021816541
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 18,
+      "group": "latin",
+      "p10": -2.478458791879626,
+      "median": -0.2581239743295771,
+      "p90": 1.1019278552163403,
+      "spread": 3.5803866470959664
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 18,
+      "group": "latin",
+      "p10": -2.478458791879626,
+      "median": -0.2581239743295771,
+      "p90": 1.1019278552163403,
+      "spread": 3.5803866470959664
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 18,
+      "group": "digits",
+      "p10": -3.0447161410783194,
+      "median": -2.5867378240994277,
+      "p90": 0.24303681677659583,
+      "spread": 3.287752957854915
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 18,
+      "group": "digits",
+      "p10": -3.0447161410783194,
+      "median": -2.5867378240994277,
+      "p90": 0.24303681677659583,
+      "spread": 3.287752957854915
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 20,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 20,
+      "group": "kanji",
+      "p10": -0.3233712482889017,
+      "median": 1.2971564517956224,
+      "p90": 4.824120291471613,
+      "spread": 5.147491539760514
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 20,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 20,
+      "group": "kana",
+      "p10": 0.22805195970907488,
+      "median": 1.950347508722039,
+      "p90": 4.142657410516868,
+      "spread": 3.9146054508077937
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 20,
+      "group": "latin",
+      "p10": -4.880440642129794,
+      "median": -2.734425598779544,
+      "p90": -1.1475359323159022,
+      "spread": 3.7329047098138917
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 20,
+      "group": "latin",
+      "p10": -4.880440642129794,
+      "median": -2.734425598779544,
+      "p90": -1.1475359323159022,
+      "spread": 3.7329047098138917
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Medium",
+      "px": 20,
+      "group": "digits",
+      "p10": -5.546374707425119,
+      "median": -5.017916185949234,
+      "p90": -2.4533676771439117,
+      "spread": 3.093007030281207
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Medium",
+      "px": 20,
+      "group": "digits",
+      "p10": -5.546374707425119,
+      "median": -5.017916185949234,
+      "p90": -2.4533676771439117,
+      "spread": 3.093007030281207
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 12,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 12,
+      "group": "kanji",
+      "p10": 0.9995534959365273,
+      "median": 3.5310617935813804,
+      "p90": 6.464293606066431,
+      "spread": 5.464740110129904
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 12,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 12,
+      "group": "kana",
+      "p10": 1.00174001597813,
+      "median": 4.114744721804097,
+      "p90": 7.531958395331671,
+      "spread": 6.530218379353541
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 12,
+      "group": "latin",
+      "p10": -1.2590494550901632,
+      "median": 2.1971153014339606,
+      "p90": 5.296090456570752,
+      "spread": 6.555139911660915
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 12,
+      "group": "latin",
+      "p10": -1.2590494550901632,
+      "median": 2.1971153014339606,
+      "p90": 5.296090456570752,
+      "spread": 6.555139911660915
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 12,
+      "group": "digits",
+      "p10": 0.6030495394768809,
+      "median": 2.037824146343903,
+      "p90": 4.451331426777928,
+      "spread": 3.8482818873010474
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 12,
+      "group": "digits",
+      "p10": 0.6030495394768809,
+      "median": 2.037824146343903,
+      "p90": 4.451331426777928,
+      "spread": 3.8482818873010474
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 14,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 14,
+      "group": "kanji",
+      "p10": -3.566226395907086,
+      "median": -1.6877909984480133,
+      "p90": 0.7598845412295074,
+      "spread": 4.326110937136594
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 14,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 14,
+      "group": "kana",
+      "p10": -3.45140747228034,
+      "median": -2.6795808634287823,
+      "p90": 1.4738358415925972,
+      "spread": 4.925243313872937
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 14,
+      "group": "latin",
+      "p10": -3.843640695431887,
+      "median": -1.273917594240842,
+      "p90": 0.07696482221160131,
+      "spread": 3.920605517643488
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 14,
+      "group": "latin",
+      "p10": -3.843640695431887,
+      "median": -1.273917594240842,
+      "p90": 0.07696482221160131,
+      "spread": 3.920605517643488
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 14,
+      "group": "digits",
+      "p10": -3.90020503787149,
+      "median": -2.8095124560870044,
+      "p90": -1.9133525960404791,
+      "spread": 1.986852441831011
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 14,
+      "group": "digits",
+      "p10": -3.90020503787149,
+      "median": -2.8095124560870044,
+      "p90": -1.9133525960404791,
+      "spread": 1.986852441831011
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 16,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 16,
+      "group": "kanji",
+      "p10": -2.551813698577532,
+      "median": -0.3386688531603177,
+      "p90": 2.113166412661172,
+      "spread": 4.6649801112387035
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 16,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 16,
+      "group": "kana",
+      "p10": -2.334252733746587,
+      "median": -0.6035200507654548,
+      "p90": 2.170758189882163,
+      "spread": 4.50501092362875
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 16,
+      "group": "latin",
+      "p10": -6.729921031087592,
+      "median": -4.845388366154629,
+      "p90": -0.9361157230735462,
+      "spread": 5.793805308014046
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 16,
+      "group": "latin",
+      "p10": -6.729921031087592,
+      "median": -4.845388366154629,
+      "p90": -0.9361157230735462,
+      "spread": 5.793805308014046
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 16,
+      "group": "digits",
+      "p10": -7.194568294455649,
+      "median": -5.535786588853036,
+      "p90": -4.760261917777058,
+      "spread": 2.434306376678591
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 16,
+      "group": "digits",
+      "p10": -7.194568294455649,
+      "median": -5.535786588853036,
+      "p90": -4.760261917777058,
+      "spread": 2.434306376678591
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 18,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 18,
+      "group": "kanji",
+      "p10": -1.3513708651602108,
+      "median": 0.7490321494697971,
+      "p90": 2.9980934059658586,
+      "spread": 4.349464271126069
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 18,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 18,
+      "group": "kana",
+      "p10": -1.3216980527734123,
+      "median": 0.9369026568685213,
+      "p90": 3.123633214646416,
+      "spread": 4.445331267419828
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 18,
+      "group": "latin",
+      "p10": -5.093348395829364,
+      "median": -3.058747394504324,
+      "p90": -1.6186164801082636,
+      "spread": 3.4747319157211
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 18,
+      "group": "latin",
+      "p10": -5.093348395829364,
+      "median": -3.058747394504324,
+      "p90": -1.6186164801082636,
+      "spread": 3.4747319157211
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 18,
+      "group": "digits",
+      "p10": -4.668405193797158,
+      "median": -3.911895535134019,
+      "p90": -2.9559554938026453,
+      "spread": 1.7124496999945125
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 18,
+      "group": "digits",
+      "p10": -4.668405193797158,
+      "median": -3.911895535134019,
+      "p90": -2.9559554938026453,
+      "spread": 1.7124496999945125
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 20,
+      "group": "kanji",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 20,
+      "group": "kanji",
+      "p10": -0.8851294030192269,
+      "median": 1.498048317333045,
+      "p90": 3.571828387544138,
+      "spread": 4.456957790563365
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 20,
+      "group": "kana",
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "spread": 0.0
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 20,
+      "group": "kana",
+      "p10": -0.09712720396017431,
+      "median": 1.9908577567828378,
+      "p90": 3.9123653034333072,
+      "spread": 4.009492507393482
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 20,
+      "group": "latin",
+      "p10": -1.2065824704064783,
+      "median": 1.781347343729256,
+      "p90": 5.526735388032764,
+      "spread": 6.733317858439242
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 20,
+      "group": "latin",
+      "p10": -1.2065824704064783,
+      "median": 1.781347343729256,
+      "p90": 5.526735388032764,
+      "spread": 6.733317858439242
+    },
+    {
+      "font": "Friday 2.0",
+      "style": "Bold",
+      "px": 20,
+      "group": "digits",
+      "p10": -0.80886396766499,
+      "median": 0.5350358062826466,
+      "p90": 1.6022651602845062,
+      "spread": 2.411129127949496
+    },
+    {
+      "font": "Calibrated trial",
+      "style": "Bold",
+      "px": 20,
+      "group": "digits",
+      "p10": -0.80886396766499,
+      "median": 0.5350358062826466,
+      "p90": 1.6022651602845062,
+      "spread": 2.411129127949496
+    }
+  ]
+}

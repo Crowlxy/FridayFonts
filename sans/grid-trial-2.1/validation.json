@@ -1,0 +1,2057 @@
+{
+  "engine": "FreeType 2.14.3 / HarfBuzz",
+  "windows_verified": false,
+  "faces": [
+    {
+      "style": "Regular",
+      "variant": "outline",
+      "sha256": "66a4e4a94ea4418d2512ffe759a09599d9f86e548d2224aa663a678649f8d18c",
+      "glyphs": 16758,
+      "cmap": 15233,
+      "raster_cases": 167580,
+      "sizes": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        24
+      ],
+      "raster_errors": 0,
+      "new_clipping_glyphs": 0
+    },
+    {
+      "style": "Regular",
+      "variant": "kanji_grid_trial",
+      "sha256": "70bbf34dfa09a0224477f37a825ddd806d4d8dc41b0ae4fc8537099656ad809f",
+      "glyphs": 16758,
+      "cmap": 15233,
+      "raster_cases": 167580,
+      "sizes": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        24
+      ],
+      "raster_errors": 0,
+      "new_clipping_glyphs": 0
+    },
+    {
+      "style": "Medium",
+      "variant": "outline",
+      "sha256": "70024abf87b9198ceb35eb8e29436446eeccef59707dde111ac07043308a1de9",
+      "glyphs": 16758,
+      "cmap": 15233,
+      "raster_cases": 167580,
+      "sizes": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        24
+      ],
+      "raster_errors": 0,
+      "new_clipping_glyphs": 0
+    },
+    {
+      "style": "Medium",
+      "variant": "kanji_grid_trial",
+      "sha256": "d20d88ba74a74519d6a8971eca29bc22d313853f7184f393cc939cbaea51ef7e",
+      "glyphs": 16758,
+      "cmap": 15233,
+      "raster_cases": 167580,
+      "sizes": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        24
+      ],
+      "raster_errors": 0,
+      "new_clipping_glyphs": 0
+    },
+    {
+      "style": "Bold",
+      "variant": "outline",
+      "sha256": "7da2f6f763c63373e3c3000c646aa0b16f239791b4439fd4aea4e030c21d303f",
+      "glyphs": 16758,
+      "cmap": 15233,
+      "raster_cases": 167580,
+      "sizes": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        24
+      ],
+      "raster_errors": 0,
+      "new_clipping_glyphs": 0
+    },
+    {
+      "style": "Bold",
+      "variant": "kanji_grid_trial",
+      "sha256": "84482e9e09444ad8a60de99d6894a6161768fdd3d4f6d530d937c82c439da7bf",
+      "glyphs": 16758,
+      "cmap": 15233,
+      "raster_cases": 167580,
+      "sizes": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        24
+      ],
+      "raster_errors": 0,
+      "new_clipping_glyphs": 0
+    }
+  ],
+  "regressions": [
+    {
+      "style": "Regular",
+      "all_16743_original_outlines_metrics_programs_preserved": true,
+      "combining_pairs_checked": 14,
+      "shaping": {
+        "か゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304B.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304B",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -506,
+              "dy": -48,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "き゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304D.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304D",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -520,
+              "dy": -38,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "く゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304F.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304F",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -655,
+              "dy": -238,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "け゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u3051.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni3051",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -517,
+              "dy": -24,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "こ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u3053.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni3053",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -512,
+              "dy": -22,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "カ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AB.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AB",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -512,
+              "dy": -48,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "キ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AD.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AD",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -517,
+              "dy": -16,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ク゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AF.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AF",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -503,
+              "dy": -25,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ケ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30B1.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30B1",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -511,
+              "dy": -23,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "コ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30B3.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30B3",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -505,
+              "dy": -4,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "セ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30BB.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30BB",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -504,
+              "dy": -18,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ツ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30C4.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30C4",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -505,
+              "dy": -16,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ト゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30C8.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30C8",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -639,
+              "dy": -85,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ㇷ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u31F7.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni31F7",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -592,
+              "dy": -195,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        }
+      },
+      "trial_isolated_raster_matches": 98838,
+      "matched_diagnostics": [
+        {
+          "px": 12,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            31.818181818181817,
+            20.14027007222862
+          ],
+          "ink_change_p10_median_p90": [
+            3.0533527346770173,
+            6.273542018443945,
+            10.134090368870408
+          ]
+        },
+        {
+          "px": 12,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            29.576400644147128,
+            29.576400644147128
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 12,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            19.373226446485198,
+            19.373226446485198
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 12,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            18.10568854552923,
+            18.10568854552923
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            30.073774048893387,
+            18.821070234113712
+          ],
+          "ink_change_p10_median_p90": [
+            -1.8709720893889645,
+            0.7390050468637277,
+            3.392921767698809
+          ]
+        },
+        {
+          "px": 14,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            26.155429937746145,
+            26.155429937746145
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            19.3933822229101,
+            19.3933822229101
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            21.406816703878384,
+            21.406816703878384
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            25.372965641952984,
+            16.485127775450355
+          ],
+          "ink_change_p10_median_p90": [
+            -0.758395778665537,
+            1.650930061627176,
+            4.274433548896287
+          ]
+        },
+        {
+          "px": 16,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            24.160052163537124,
+            24.160052163537124
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            19.259902792208898,
+            19.259902792208898
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            18.837537939629108,
+            18.837537939629108
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            20.442520442520443,
+            20.442520442520443
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            19.132477015559967,
+            19.132477015559967
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            15.212757844208685,
+            15.212757844208685
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            19.441975506995423,
+            19.441975506995423
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tabular_digit_advance": 721
+    },
+    {
+      "style": "Medium",
+      "all_16743_original_outlines_metrics_programs_preserved": true,
+      "combining_pairs_checked": 14,
+      "shaping": {
+        "か゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304B.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304B",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -512,
+              "dy": -42,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "き゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304D.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304D",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -523,
+              "dy": -38,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "く゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304F.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304F",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -655,
+              "dy": -241,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "け゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u3051.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni3051",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -520,
+              "dy": -18,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "こ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u3053.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni3053",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -519,
+              "dy": -18,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "カ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AB.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AB",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -516,
+              "dy": -43,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "キ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AD.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AD",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -521,
+              "dy": -20,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ク゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AF.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AF",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -509,
+              "dy": -26,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ケ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30B1.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30B1",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -515,
+              "dy": -25,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "コ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30B3.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30B3",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -511,
+              "dy": -7,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "セ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30BB.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30BB",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -510,
+              "dy": -18,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ツ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30C4.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30C4",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -511,
+              "dy": -21,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ト゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30C8.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30C8",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -639,
+              "dy": -86,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ㇷ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u31F7.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni31F7",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -588,
+              "dy": -195,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        }
+      },
+      "trial_isolated_raster_matches": 98838,
+      "matched_diagnostics": [
+        {
+          "px": 12,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            25.486970825036792,
+            17.060697518443998
+          ],
+          "ink_change_p10_median_p90": [
+            1.6214450947372774,
+            4.603661763149547,
+            8.186771379248809
+          ]
+        },
+        {
+          "px": 12,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            25.322294760088237,
+            25.322294760088237
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 12,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            18.02824612121062,
+            18.02824612121062
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 12,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            13.026297848321832,
+            13.026297848321832
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            23.01819113502434,
+            16.038120061904372
+          ],
+          "ink_change_p10_median_p90": [
+            -2.6783557802324642,
+            -0.17504551183307182,
+            2.8374774812558194
+          ]
+        },
+        {
+          "px": 14,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            21.494754299412612,
+            21.494754299412612
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            14.42897980478685,
+            14.42897980478685
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            17.394098398343445,
+            17.394098398343445
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            20.348662458671477,
+            16.082448778079485
+          ],
+          "ink_change_p10_median_p90": [
+            -1.0000279737018913,
+            1.559463430819541,
+            3.54262401825388
+          ]
+        },
+        {
+          "px": 16,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            19.356909357887375,
+            19.356909357887375
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            15.767001558779267,
+            15.767001558779267
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            16.811774755685054,
+            16.811774755685054
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            17.679722359940506,
+            17.679722359940506
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            16.026183800036982,
+            16.026183800036982
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            10.51158393230395,
+            10.51158393230395
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            11.670614745877424,
+            11.670614745877424
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tabular_digit_advance": 730
+    },
+    {
+      "style": "Bold",
+      "all_16743_original_outlines_metrics_programs_preserved": true,
+      "combining_pairs_checked": 14,
+      "shaping": {
+        "か゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304B.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304B",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -518,
+              "dy": -34,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "き゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304D.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304D",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -527,
+              "dy": -41,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "く゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u304F.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni304F",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -652,
+              "dy": -248,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "け゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u3051.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni3051",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -522,
+              "dy": -13,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "こ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u3053.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni3053",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -528,
+              "dy": -15,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "カ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AB.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AB",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -520,
+              "dy": -35,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "キ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AD.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AD",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -523,
+              "dy": -25,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ク゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30AF.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30AF",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -516,
+              "dy": -27,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ケ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30B1.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30B1",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -520,
+              "dy": -27,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "コ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30B3.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30B3",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -517,
+              "dy": -11,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "セ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30BB.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30BB",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -517,
+              "dy": -18,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ツ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30C4.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30C4",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -517,
+              "dy": -29,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ト゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u30C8.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni30C8",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -637,
+              "dy": -87,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        },
+        "ㇷ゚": {
+          "ccmp": [
+            {
+              "g": "jp.ccmp.u31F7.handakuten",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            }
+          ],
+          "mark_fallback": [
+            {
+              "g": "jp.uni31F7",
+              "cl": 0,
+              "dx": 0,
+              "dy": 0,
+              "ax": 1000,
+              "ay": 0
+            },
+            {
+              "g": "jp.uni309A",
+              "cl": 0,
+              "dx": -581,
+              "dy": -196,
+              "ax": 0,
+              "ay": 0
+            }
+          ]
+        }
+      },
+      "trial_isolated_raster_matches": 98838,
+      "matched_diagnostics": [
+        {
+          "px": 12,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            20.80660620806606,
+            16.272796575382632
+          ],
+          "ink_change_p10_median_p90": [
+            0.9995534959365273,
+            3.5310617935813804,
+            6.464293606066431
+          ]
+        },
+        {
+          "px": 12,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            20.618998552689337,
+            20.618998552689337
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 12,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            16.29797531874447,
+            16.29797531874447
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 12,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            15.641315744388603,
+            15.641315744388603
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            18.24409250879839,
+            16.344182470527933
+          ],
+          "ink_change_p10_median_p90": [
+            -3.566226395907086,
+            -1.6877909984480133,
+            0.7598845412295074
+          ]
+        },
+        {
+          "px": 14,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            17.251228995532674,
+            17.251228995532674
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            13.396605339033274,
+            13.396605339033274
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 14,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            14.28018720437394,
+            14.28018720437394
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            16.66016691365728,
+            16.229767769176636
+          ],
+          "ink_change_p10_median_p90": [
+            -2.551813698577532,
+            -0.3386688531603177,
+            2.113166412661172
+          ]
+        },
+        {
+          "px": 16,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            14.930250301057557,
+            14.930250301057557
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            11.465527012300186,
+            11.465527012300186
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 16,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            9.677964243272804,
+            9.677964243272804
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "kanji",
+          "low_alpha_ink_median_percent": [
+            14.134365285795852,
+            14.134365285795852
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "kana",
+          "low_alpha_ink_median_percent": [
+            12.4061400212857,
+            12.4061400212857
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "latin",
+          "low_alpha_ink_median_percent": [
+            10.256467910282034,
+            10.256467910282034
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "px": 20,
+          "group": "digits",
+          "low_alpha_ink_median_percent": [
+            11.23697793752004,
+            11.23697793752004
+          ],
+          "ink_change_p10_median_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tabular_digit_advance": 750
+    }
+  ]
+}

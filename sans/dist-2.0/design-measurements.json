@@ -1,0 +1,98 @@
+{
+  "Regular": {
+    "targets": {
+      "reference": "Hiragino Sans W3 (TTC index 0)",
+      "japanese_height_ratio": 0.9988597491448119,
+      "japanese_stem_ratio": 0.9776119402985075,
+      "cap_span_target": 759.133409350057,
+      "x_span_target": 538.3854047890536,
+      "latin_baseline_shift": 6,
+      "stem_n_target": 74.29850746268657,
+      "mean_lowercase_advance_target": 552.4615384615385,
+      "japanese_height_samples": "日田目国中永本語東書",
+      "japanese_stem_samples": "日田目",
+      "inter_opsz": 31.79
+    },
+    "inter": {
+      "wght": 341.44,
+      "stem_n": 74.3,
+      "tracking": 49
+    },
+    "actual": {
+      "cap_top": 765.0,
+      "cap_bottom": 6.0,
+      "x_top": 544.0,
+      "x_bottom": 6.0,
+      "stem_n": 75.0,
+      "mean_lowercase_advance": 552.8846153846154,
+      "win_ascent": 1157,
+      "win_descent": 370
+    },
+    "japanese_glyphs_unchanged": 13806,
+    "source_sha256": "3fe4700c70091b871872360ef4b74aa6006221fd7bc16f1e72123921508ce5a2"
+  },
+  "Medium": {
+    "targets": {
+      "reference": "Hiragino Sans W4 (TTC index 0)",
+      "japanese_height_ratio": 1.0005014840968474,
+      "japanese_stem_ratio": 0.9876543209876543,
+      "cap_span_target": 771.3866442386693,
+      "x_span_target": 550.275816253266,
+      "latin_baseline_shift": 0,
+      "stem_n_target": 90.64209504155545,
+      "mean_lowercase_advance_target": 572.2307692307693,
+      "japanese_height_samples": "日田目国中永本語東書",
+      "japanese_stem_samples": "日田目",
+      "inter_opsz": 29.995
+    },
+    "inter": {
+      "wght": 409.73,
+      "stem_n": 90.64,
+      "tracking": 46
+    },
+    "actual": {
+      "cap_top": 771.0,
+      "cap_bottom": 0.0,
+      "x_top": 550.0,
+      "x_bottom": 0.0,
+      "stem_n": 90.0,
+      "mean_lowercase_advance": 571.9615384615385,
+      "win_ascent": 1181,
+      "win_descent": 370
+    },
+    "japanese_glyphs_unchanged": 13806,
+    "source_sha256": "056de5ca40a89b3c484565c1a818e14b4a264b223511052351e49ab78edefa84"
+  },
+  "Bold": {
+    "targets": {
+      "reference": "Hiragino Sans W6 (TTC index 0)",
+      "japanese_height_ratio": 0.9933296245391279,
+      "japanese_stem_ratio": 0.8947368421052632,
+      "cap_span_target": 790.6903811331458,
+      "x_span_target": 570.1712044854594,
+      "latin_baseline_shift": -12,
+      "stem_n_target": 116.32017403581577,
+      "mean_lowercase_advance_target": 610.3846153846154,
+      "japanese_height_samples": "日田目国中永本語東書",
+      "japanese_stem_samples": "日田目",
+      "inter_opsz": 26.644
+    },
+    "inter": {
+      "wght": 512.73,
+      "stem_n": 116.32,
+      "tracking": 48
+    },
+    "actual": {
+      "cap_top": 779.0,
+      "cap_bottom": -12.0,
+      "x_top": 558.0,
+      "x_bottom": -12.0,
+      "stem_n": 116.0,
+      "mean_lowercase_advance": 610.3461538461538,
+      "win_ascent": 1200,
+      "win_descent": 370
+    },
+    "japanese_glyphs_unchanged": 13806,
+    "source_sha256": "04aca986abefac29e7b6b0d3a77f3bdfe565ee418baced606ec107e7a4f425af"
+  }
+}

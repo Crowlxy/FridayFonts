@@ -1,0 +1,4 @@
+Regular: 14 ccmp pairs, neighboring text, Yoshida-name character/UVS, fallback and kerning checked
+Medium: 14 ccmp pairs, neighboring text, Yoshida-name character/UVS, fallback and kerning checked
+Bold: 14 ccmp pairs, neighboring text, Yoshida-name character/UVS, fallback and kerning checked
+CORETEXT 2.1 CHECKS PASSED
