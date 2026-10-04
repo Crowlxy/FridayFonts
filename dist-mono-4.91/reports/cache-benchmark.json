@@ -1,0 +1,16 @@
+{
+  "first_run_seconds": 461.4862,
+  "first_run_note": "Upright 9 faces already cached; 3 italic masters and their 9 derived faces were built.",
+  "first_run_misses": 12,
+  "warm_run_seconds": 0.4271,
+  "warm_cache_hits": 21,
+  "warm_stages": 21,
+  "scope": "Build and TTF/WOFF2 roundtrip checks only; independent raster audits and ZIP packaging are separate.",
+  "cache_behavior_tests": [
+    "reuse unchanged inputs",
+    "restore missing or corrupt output",
+    "invalidate changed input",
+    "invalidate changed settings",
+    "reject corrupt cache artifact"
+  ]
+}

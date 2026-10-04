@@ -1,30 +1,4 @@
-"""Package the verified 4.91 faces without shipping reference font binaries."""
-from pathlib import Path
-import hashlib,json,shutil,zipfile
-ROOT=Path(__file__).resolve().parent
-OUT=ROOT/'dist-mono-4.91'
-rows=json.loads((OUT/'font-manifest.json').read_text())
-validation=json.loads((OUT/'reports/validation.json').read_text())
-assert len(rows)==len(validation['results'])==18
-italic_audit=json.loads((OUT/'reports/italic-render-audit.json').read_text())
-assert {r['style'] for r in italic_audit}=={'Italic','MediumItalic','BoldItalic'}
-for row in rows:
-    if 'Italic' in row['style']:
-        proof=next(a for a in italic_audit if a['style']==row['style'])
-        assert proof['sha256']==row['source_sha256'] and not proof['raster_errors'] and not proof['empty_at_12px_or_larger']
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-for row in rows:
-    assert sha(OUT/row['ttf'])==row['sha256']
-    assert sha(OUT/row['woff2'])==row['woff2_sha256']
-shutil.copyfile(ROOT/'OFL.txt',OUT/'OFL.txt')
-for p in (ROOT/'dist-v48/licenses').glob('*.txt'):shutil.copyfile(p,OUT/'licenses'/p.name)
-shutil.copyfile(ROOT/'build_mono_49.py',OUT/'reports/build_mono_49.py')
-shutil.copyfile(ROOT/'verify_mono_49.py',OUT/'reports/verify_mono_49.py')
-for name in ('italic_rc3.py','build_cache.py','audit_italic_rc3.py'):
-    shutil.copyfile(ROOT/name,OUT/'reports'/name)
-for p in (ROOT/'rc3-italic').glob('*-audit.json'):
-    shutil.copyfile(p,OUT/'reports'/p.name)
-report='''# Friday Mono 4.91 / 2026-10-04
+# Friday Mono 4.91 / 2026-10-04
 
 最新のMono RC3を基準に、JP版と日本語なし版を作成しました。
 
@@ -111,21 +85,3 @@ FridayFonts/.build-cache/mono/に、修正済みItalicマスターと各ファ�
 ログはreports/build-cache-run.json、初回と再実行の比較はreports/cache-benchmark.jsonです。
 キャッシュは新しい入力の描画検査を省略する根拠にはしません。
 
-'''
-(OUT/'README.md').write_text(report)
-files=sorted(p for p in OUT.rglob('*') if p.is_file() and p.name!='SHA256SUMS.txt')
-assert len(list((OUT/'ttf').glob('*.ttf')))==18
-assert len(list((OUT/'web').glob('*.woff2')))==18
-(OUT/'SHA256SUMS.txt').write_text(''.join(sha(p)+'  '+p.relative_to(OUT).as_posix()+'\n' for p in files))
-archive=ROOT/'FridayMono-4.91.zip'
-with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
-    for p in sorted(OUT.rglob('*')):
-        if p.is_file():z.write(p,Path('FridayMono-4.91')/p.relative_to(OUT))
-with zipfile.ZipFile(archive) as z:
-    assert z.testzip() is None
-    assert sum(n.endswith('.ttf') for n in z.namelist())==18
-    assert sum(n.endswith('.woff2') for n in z.namelist())==18
-    for p in OUT.rglob('*'):
-        if p.is_file():assert hashlib.sha256(z.read('FridayMono-4.91/'+p.relative_to(OUT).as_posix())).hexdigest()==sha(p)
-archive.with_suffix('.zip.sha256').write_text(sha(archive)+'  '+archive.name+'\n')
-print(archive,round(archive.stat().st_size/1024**2,1),'MiB; ZIP CRC, counts, hashes verified')

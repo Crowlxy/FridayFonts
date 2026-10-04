@@ -1,0 +1,142 @@
+{
+  "style": "Italic",
+  "sha256": "32f87396b905e8550ddc3c44b184da3d7bf999643d0810bc3e78ab7e520f2bff",
+  "script_sha256": "0adc7aba2f20c54124de86a1e2eadc13912045d366ccc0288110cff6c62b184f",
+  "freetype": "2.14.3",
+  "glyphs": 20601,
+  "all_glyph_raster_cases": 535626,
+  "raster_errors": [],
+  "empty_at_12px_or_larger": [],
+  "small_subpixel_empty_cases": [],
+  "latin_source_raster_parity_cases": 2470,
+  "enclosure_checks": [
+    {
+      "base": "A",
+      "mark": "⃝",
+      "center_delta": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "base": "A",
+      "mark": "⃞",
+      "center_delta": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "base": "x",
+      "mark": "⃝",
+      "center_delta": [
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "base": "x",
+      "mark": "⃞",
+      "center_delta": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "base": "1",
+      "mark": "⃝",
+      "center_delta": [
+        -0.5,
+        1.0
+      ]
+    },
+    {
+      "base": "1",
+      "mark": "⃞",
+      "center_delta": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "base": "ア",
+      "mark": "⃝",
+      "center_delta": [
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "base": "ア",
+      "mark": "⃞",
+      "center_delta": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "base": "𠮷",
+      "mark": "⃝",
+      "center_delta": [
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "base": "𠮷",
+      "mark": "⃞",
+      "center_delta": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "vertical_checks": [
+    {
+      "char": "と",
+      "glyph": "jp.glyph65196"
+    },
+    {
+      "char": "ど",
+      "glyph": "jp.glyph65197"
+    },
+    {
+      "char": "や",
+      "glyph": "jp.glyph65224"
+    },
+    {
+      "char": "ゃ",
+      "glyph": "jp.glyph65223"
+    },
+    {
+      "char": "き",
+      "glyph": "jp.glyph65169"
+    },
+    {
+      "char": "ぎ",
+      "glyph": "jp.glyph65170"
+    },
+    {
+      "char": "ふ",
+      "glyph": "jp.glyph65209"
+    },
+    {
+      "char": "ぶ",
+      "glyph": "jp.glyph65210"
+    },
+    {
+      "char": "ぷ",
+      "glyph": "jp.glyph65211"
+    },
+    {
+      "char": "さ",
+      "glyph": "jp.glyph65177"
+    },
+    {
+      "char": "ざ",
+      "glyph": "jp.glyph65178"
+    }
+  ],
+  "name_ivs_supported": true,
+  "windows_verified": false
+}

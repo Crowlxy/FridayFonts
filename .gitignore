@@ -38,8 +38,16 @@ trial-*/
 # Chlorophytum's packages and its per-face analysis cache (cjkhint.py).
 chlorophytum/node_modules/
 chlorophytum/cache/
+.build-cache/
 FridayMono-v*.zip
 FridayMono-v*.zip.sha256
+FridayMono-*.zip
+FridayMono-*.zip.sha256
+dist-mono-*/ttf/
+dist-mono-*/web/
+rc3-italic/ttf/
+windows-4.91/*.zip
+windows-4.91/*.sha256
 FridaySans-*.zip
 FridaySans-*.zip.sha256
 

@@ -4,8 +4,8 @@
 
 | | 用途 | 欧文の元 | 和文の元 | 最新版 |
 |---|---|---|---|---|
-| **Friday Mono JP / Plain JP** | 日本語入りの等幅（欧文 600 / 和文 1200） | Iosevka | Noto Sans CJK JP | 4.9（正体3ウエイト） |
-| **Friday Mono** | 日本語なしの等幅（600） | Iosevka | — | 4.9（正体3ウエイト） |
+| **Friday Mono JP / Plain JP** | 日本語入りの等幅（欧文 600 / 和文 1200） | Iosevka | Noto Sans CJK JP | 4.91（3ウエイト＋Italic） |
+| **Friday Mono** | 日本語なしの等幅（600） | Iosevka | — | 4.91（3ウエイト＋Italic） |
 | **Friday Sans** | 文章・UI 用のプロポーショナル | Inter | Noto Sans CJK JP | 2.1（Version 2.100） |
 
 フォントは [Releases](../../releases) からダウンロードできます。
@@ -13,13 +13,15 @@
 
 ## Friday Mono
 
-4.9では最新のWindows修正候補RC3を基準に、日本語入りを **Friday Mono JP**、
+4.91では最新のWindows修正候補RC3を基準に、日本語入りを **Friday Mono JP**、
 ゼロだけ違う **Friday Mono Plain JP** にしました。日本語なしの **Friday Mono** は、
 OTF等幅5書体の収録範囲を比較して作成しています。英語版のPlainはありません。
-各Regular / Medium / Bold、計9本です。
-使い方・収録方針・検査範囲は [4.9の説明](dist-mono-4.9/README.md)、
-配布パッケージは [FridayMono-4.9.zip](FridayMono-4.9.zip)です。
-4.9のItalicは未作成です。以下は旧4.8（日本語入り・旧ファミリ名）の説明です。
+各Regular / Medium / Boldと各Italic、計18本です。
+ItalicにもRC3の修正方針を適用し、専用ヒントと輪郭で検査しています。
+変更のない工程は入力・コード・設定のハッシュに基づくビルドキャッシュで再利用します。
+使い方・収録方針・検査範囲は [4.91の説明](dist-mono-4.91/README.md)、
+配布パッケージは [FridayMono-4.91.zip](FridayMono-4.91.zip)です。
+以下は旧4.8（日本語入り・旧ファミリ名）の説明です。
 
 日本語と欧文を同じ濃度で組める等幅コーディング書体。Regular / Medium / Bold と各イタリック、
 `0` に斜線の入った **Friday Mono** と斜線なしの **Friday Mono Plain** の計12本。
