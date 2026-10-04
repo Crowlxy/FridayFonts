@@ -19,6 +19,14 @@ SansはRegular / Medium / Boldの3本です。各ZIPにTTF・WOFF2・ライセ�
 
 ## Mono 4.91
 
+### Windows Terminal 二重下線テスト版
+
+[テスト版ZIP](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-underline-test-20261004)をWindowsでダウンロードし、`FridayMonoULTest-Regular.ttf`をインストールして、Terminalの書体を **Friday Mono UL Test** に変更してください。日本語入りは **Friday Mono JP UL Test** です。
+
+変換で選択中の文節やANSI二重下線が一重になる問題を確認するため、行の下側の余白を増やしました。行高は1.00emから1.28emに変わります。字形・文字幅・ヒントは4.91と同一です。別名のRegular 3ファミリを同梱しています。
+
+Terminalの計算式では8–24pt・96/120/144/192 DPIの68条件で2本が分離します。実際のWindows描画は確認待ちです。正式版ではありません。[作成スクリプト](build_underline_trial.py)
+
 RC3のかな・縦書き・記号・囲み記号の修正と「𠮷」を反映し、Italicにも同じ修正方針を適用しました。
 Italic専用の欧文字形・ヒントとCVT/prepを維持し、漢字の移動上限をItalicの輪郭で独立に測定しています。
 JPとPlain JPはゼロ関係だけが違います。日本語なし版の文字範囲は、OTF等幅5書体の実ファイルを比較して決めました。
