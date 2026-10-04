@@ -48,6 +48,20 @@ dist-mono-*/web/
 rc3-italic/ttf/
 windows-4.91/*.zip
 windows-4.91/*.sha256
+# Installable binaries and embedded-font comparisons are Release assets.
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.zip
+dist-*/**/windows-check.html
+sans/dist-*/windows-check.html
+sans/*trial*/windows-check.html
+sans/*trial*/preview.html
+sans/dist-*/proof-*.png
+sans/dist-*/shaping-fix.png
+sans/**/proof-*.png
+sans/**/shaping-fix.png
 FridaySans-*.zip
 FridaySans-*.zip.sha256
 
