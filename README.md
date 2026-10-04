@@ -6,9 +6,9 @@
 
 | 書体 | 現行版 | 内容 | ダウンロード |
 |---|---|---|---|
-| **Friday Mono** | 4.91 / Windows確認待ち | 日本語なし、1,088文字 | [Mono 4.91](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v4.91) |
-| **Friday Mono JP** | 4.91 / Windows確認待ち | 日本語入り、19,312文字、斜線入り0 | 同じMono 4.91 ZIP |
-| **Friday Mono Plain JP** | 4.91 / Windows確認待ち | JPとゼロ関係だけ異なる、斜線なし0 | 同じMono 4.91 ZIP |
+| **Friday Mono** | 4.92 | 日本語なし、1,088文字 | [Mono 4.92](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v4.92) |
+| **Friday Mono JP** | 4.92 | 日本語入り、19,312文字、斜線入り0 | 同じMono 4.92 ZIP |
+| **Friday Mono Plain JP** | 4.92 | JPとゼロ関係だけ異なる、斜線なし0 | 同じMono 4.92 ZIP |
 | **Friday Sans** | 2.1 / Windows確認待ち | Inter + Noto Sans CJK JP + 手描きかな | [Sans 2.1](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v2.1) |
 
 Monoは3ファミリ × Regular / Medium / Boldと各Italic、計18本。日本語なし版のPlainはありません。
@@ -17,15 +17,17 @@ SansはRegular / Medium / Boldの3本です。各ZIPにTTF・WOFF2・ライセ�
 
 旧Friday Mono 4.8以前は日本語入りです。4.91で同じ書体を選ぶ場合は、アプリの指定を **Friday Mono JP** に変更してください。
 
-## Mono 4.91
+## Mono 4.92
 
-### Windows Terminal 二重下線テスト版
+Windows Terminalで、IMEの選択文節やANSI二重下線が一重に見えるバグを修正しました。行の下側の余白を120から400 unitsへ増やし、行高を1.00emから1.28emに変更しています。Regularテスト版で二重線と行間をWindows上でユーザー確認済みです。
 
-[テスト版ZIP](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-underline-test-20261004)をWindowsでダウンロードし、`FridayMonoULTest-Regular.ttf`をインストールして、Terminalの書体を **Friday Mono UL Test** に変更してください。日本語入りは **Friday Mono JP UL Test** です。
+全18書体に同じ修正を適用しました。4.91との差分は行の下側の余白と版情報・説明・チェックサムだけです。字形・文字幅・ヒント・収録文字・GSUB/GPOS・下線位置と太さは完全一致しています。
 
-変換で選択中の文節やANSI二重下線が一重になる問題を確認するため、行の下側の余白を増やしました。行高は1.00emから1.28emに変わります。字形・文字幅・ヒントは4.91と同一です。別名のRegular 3ファミリを同梱しています。
+全18書体のTTF/WOFF2を照合し、Terminalの計算式では計1,224条件で二重線が分離することを確認しました。全18書体をWindowsの実アプリで個別に再検証したという意味ではありません。
 
-Terminalの計算式では8–24pt・96/120/144/192 DPIの68条件で2本が分離します。実際のWindows描画は確認待ちです。正式版ではありません。[作成スクリプト](build_underline_trial.py)
+[変更と使い方](dist-mono-4.92/README.md) · [差分検査](dist-mono-4.92/reports/validation.json) · [作成スクリプト](build_mono_492.py)
+
+### 4.91から継承した内容と検査記録
 
 RC3のかな・縦書き・記号・囲み記号の修正と「𠮷」を反映し、Italicにも同じ修正方針を適用しました。
 Italic専用の欧文字形・ヒントとCVT/prepを維持し、漢字の移動上限をItalicの輪郭で独立に測定しています。
@@ -58,6 +60,7 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/build_mono_49.py
 InoriMono-v3-build/.venv/bin/python FridayFonts/verify_mono_49.py
 InoriMono-v3-build/.venv/bin/python FridayFonts/audit_italic_rc3.py
 InoriMono-v3-build/.venv/bin/python FridayFonts/package_mono_49.py
+InoriMono-v3-build/.venv/bin/python FridayFonts/build_mono_492.py
 ```
 
 現在のスクリプトは、隣接するSource・comparisons・FridayFonts-WindowsTestと保存済み入力フォントを使用します。
