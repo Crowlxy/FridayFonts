@@ -11,6 +11,7 @@
     "source_sha256": "c0099186cb389f6e937ade96825c3b23a6bc1cb65e9baecd978bf78c83e48756",
     "source_family": "WinProof Sans RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1000
   },
@@ -26,6 +27,7 @@
     "source_sha256": "c17aa6d27545bf49e6a45e0ffde45df36ae573b22dfce40203e895d25ccb7e29",
     "source_family": "WinProof Sans RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1000
   },
@@ -35,12 +37,18 @@
     "weight": 500,
     "ttf": "ttf/FridaySans-Medium.ttf",
     "woff2": "web/FridaySans-Medium.woff2",
-    "sha256": "60d2e3216831ac3c078cc5a3631039820f92fd95c6e64782a91b6cc1e107db8f",
-    "woff2_sha256": "ea00b7db1f45334fb878f51c178c912822b6b0bdb1ca23a43469ef994c14e135",
+    "sha256": "c2e97ac6c801eeafc6edc8066472ecfa6a7dd0a9dd071f1d2478efc69ca47c0c",
+    "woff2_sha256": "86570f2f8a8f3eb14a16d7ab2953d46f69dbba2f95888b97b577b9aff37af7d9",
     "source": "FridayFonts-WindowsTest/shipping-audit/rc3/fonts/sans-RC3-Medium.ttf",
     "source_sha256": "3d8a667f7ffb405af839e4e3a87984c2df186cd1c2805971b8db270b7e42fd58",
     "source_family": "WinProof Sans RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [
+      "jp.uni3076",
+      "jp.glyph65210",
+      "jp.uni3077",
+      "jp.glyph65211"
+    ],
     "codepoints": 15233,
     "units_per_em": 1000
   },
@@ -56,6 +64,7 @@
     "source_sha256": "5948db45478eee42379ba91a8eda3c18945f0b06a53b9daaf0d5a32f51cb4ec0",
     "source_family": "WinProof Sans RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1000
   },
@@ -65,12 +74,18 @@
     "weight": 700,
     "ttf": "ttf/FridaySans-Bold.ttf",
     "woff2": "web/FridaySans-Bold.woff2",
-    "sha256": "732e06f8dfe38650f9f27e730dbc1617e1b7407c0cab6b7aad17ae7928eee344",
-    "woff2_sha256": "04cd60c89004fdb64ebf376f39d7b543ddc9714d013852b0e26c2d2d405bd0b9",
+    "sha256": "c0ca47e21e3f2aa733222e2210722082e67211a7e5508e3add21cff2d373c4c1",
+    "woff2_sha256": "8486921c0a95ef65fe8dbb2d072b0255bf45856800152b4414caf0b0e37b602a",
     "source": "FridayFonts-WindowsTest/shipping-audit/rc3/fonts/sans-RC3-Bold.ttf",
     "source_sha256": "5a8a7dc63ec30ca328df1599d2adc8dd9ccb2101bf1457ec69c21fa9088f8094",
     "source_family": "WinProof Sans RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [
+      "jp.uni3076",
+      "jp.glyph65210",
+      "jp.uni3077",
+      "jp.glyph65211"
+    ],
     "codepoints": 15233,
     "units_per_em": 1000
   },
@@ -86,6 +101,7 @@
     "source_sha256": "b4dda33128086c65c3a904f12ef652a9ce6f1b1580ac06c68f0ec5fa8cc7c7da",
     "source_family": "WinProof Sans UI RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1050
   },
@@ -101,6 +117,7 @@
     "source_sha256": "1414dfb9826eee31f3ab499eb17b4707dce52485adbee066206a6ef4aa8af9f6",
     "source_family": "WinProof Sans UI RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1050
   },
@@ -116,6 +133,7 @@
     "source_sha256": "7566e1cbb72576896c3c17ae880547e747108627394f1f0900d65c06b6be1a41",
     "source_family": "WinProof Sans UI RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1050
   },
@@ -131,6 +149,7 @@
     "source_sha256": "8188a6b6d25c2e1dc6ba1410ee6f1fb3c7f1ab5a239530c41d1b154469d0727c",
     "source_family": "WinProof Sans UI RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1050
   },
@@ -146,6 +165,7 @@
     "source_sha256": "37f76632ead673d14edbe45f560ad97a2eba0fa1ab42f917a14d018db1fc91c0",
     "source_family": "WinProof Sans UI RC3",
     "glyphs": 16758,
+    "repaired_glyphs": [],
     "codepoints": 15233,
     "units_per_em": 1050
   }

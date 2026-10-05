@@ -25,6 +25,60 @@ WEIGHT = {'Light': 300, 'Regular': 400, 'Medium': 500, 'SemiBold': 600, 'Bold': 
 FAMILIES = [('sans', 'Friday Sans', 'Friday Sans 2.5: proportional Japanese text face (Inter + Noto Sans CJK JP + hand-drawn kana). Windows RC3 candidate promoted to release; Light and SemiBold added.'),
             ('ui', 'Friday Sans UI', 'Friday Sans UI 2.5: Friday Sans sized and spaced for interface text. Windows RC3 candidate promoted to release; Light and SemiBold added.')]
 from fontTools.ttLib import TTFont
+import pickle, sys
+sys.path.insert(0, str(FF)); sys.path.insert(0, str(FF / 'tools'))
+import shapes
+
+# Friday Sans 1.1 refit every Japanese glyph whose ink crossed its cell as if
+# it were a proportional Noto symbol (advance = ink + 100, centred).  The
+# hand-drawn ぶ ぷ cross x=0 by 2-10 units once thickened, so Medium and Bold
+# shipped them 1064-1083 wide and about 50 units to the right, in their
+# vertical forms too.  They go back to the 1000 cell at the CJK master's own
+# position; the centre mark anchor moves with them.  Sans UI refits kana to
+# its own widths and is unaffected; Light / SemiBold were built without it.
+WIDE_KANA = {'jp.uni3076': 'jp.glyph65210', 'jp.uni3077': 'jp.glyph65211'}
+CJK_MASTER = str(ROOT / 'InoriMono-v3-build/sans/work/cjk-%s.pkl')
+
+
+def repair_wide_kana(f, style):
+    """Return the glyphs changed; asserts the shipped state it repairs."""
+    master = pickle.load(open(CJK_MASTER % style, 'rb'))
+    glyf, hmtx = f['glyf'], f['hmtx']
+    changed, shifts = [], {}
+    for name, vertical in WIDE_KANA.items():
+        rec, cell = master['glyphs'][name[3:]]
+        assert cell == 1000
+        target = round(shapes.bbox(rec)[0])
+        g = glyf[name]; g.recalcBounds(glyf)
+        adv, lsb = hmtx[name]
+        if adv == 1000:
+            continue
+        assert lsb == g.xMin == 50 and target < 0 and hmtx[vertical] == (1000, 50), (style, name)
+        dx = target - g.xMin
+        for n in (name, vertical):
+            h = glyf[n]
+            assert not h.isComposite() and not getattr(h, 'program', None) or not h.program.getBytecode()
+            h.coordinates.translate((dx, 0)); h.recalcBounds(glyf)
+            hmtx[n] = (1000, h.xMin)
+            changed.append(n)
+        shifts[name] = dx
+    if not shifts:
+        return []
+    moved = 0
+    for lookup in f['GPOS'].table.LookupList.Lookup:
+        for st in lookup.SubTable:
+            t = st.ExtSubTable if lookup.LookupType == 9 else st
+            if getattr(t, 'LookupType', lookup.LookupType) != 4:
+                continue
+            for name, record in zip(t.BaseCoverage.glyphs, t.BaseArray.BaseRecord):
+                if name in shifts:
+                    for anchor in record.BaseAnchor:
+                        # The dakuten anchor sits at a fixed x for every kana;
+                        # only the centred one followed the refit.
+                        if anchor is not None and anchor.XCoordinate != 940:
+                            anchor.XCoordinate += shifts[name]; moved += 1
+    assert moved == len(shifts), (style, moved)
+    return changed
 
 
 def sha(p):
@@ -57,6 +111,8 @@ def main():
             before = TTFont(source, recalcTimestamp=False)
             assert f['OS/2'].usWeightClass == WEIGHT[style], (source, f['OS/2'].usWeightClass)
             assert bool(f['OS/2'].fsSelection & 32) == (style == 'Bold')
+            repaired = repair_wide_kana(f, style) if key == 'sans' and style in ('Medium', 'Bold') else []
+            assert len(repaired) == (4 if key == 'sans' and style in ('Medium', 'Bold') else 0), (key, style, repaired)
             names(f, family, style, description)
             stem = family.replace(' ', '') + '-' + style
             path, web = OUT / 'ttf' / (stem + '.ttf'), OUT / 'web' / (stem + '.woff2')
@@ -64,9 +120,16 @@ def main():
             cur, w = TTFont(path, recalcTimestamp=False), TTFont(web)
             before['head'].fontRevision = cur['head'].fontRevision
             before['head'].checkSumAdjustment = cur['head'].checkSumAdjustment
+            touched = {'glyf', 'loca', 'hmtx', 'GPOS', 'hhea', 'head'} if repaired else set()
             for tag in before.keys():
-                if tag not in ('GlyphOrder', 'name'):
+                if tag not in ('GlyphOrder', 'name') and tag not in touched:
                     assert before.getTableData(tag) == cur.getTableData(tag), (stem, tag)
+            if repaired:
+                bg, cg = before['glyf'], cur['glyf']
+                diff = [n for n in cur.getGlyphOrder()
+                        if bg[n].getCoordinates(bg)[0] != cg[n].getCoordinates(cg)[0] or before['hmtx'][n] != cur['hmtx'][n]]
+                assert sorted(diff) == sorted(repaired), (stem, diff)
+                assert all(cur['hmtx'][n][0] == 1000 for n in repaired)
             for tag in cur.keys():
                 if tag not in ('GlyphOrder', 'head', 'glyf', 'loca'):
                     assert cur.getTableData(tag) == w.getTableData(tag), (stem, tag, 'woff2')
@@ -76,6 +139,7 @@ def main():
                              woff2=f'web/{stem}.woff2', sha256=sha(path), woff2_sha256=sha(web),
                              source=str(source.relative_to(ROOT)), source_sha256=sha(source),
                              source_family=before['name'].getDebugName(16), glyphs=len(cur.getGlyphOrder()),
+                             repaired_glyphs=repaired,
                              codepoints=len(cur.getBestCmap()), units_per_em=cur['head'].unitsPerEm))
             css.append('@font-face{font-family:"%s";src:url("%s.woff2") format("woff2");font-weight:%d;font-style:normal;font-display:swap;}'
                        % (family, stem, WEIGHT[style]))
