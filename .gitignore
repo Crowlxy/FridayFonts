@@ -69,3 +69,6 @@ FridaySans-*.zip.sha256
 work/
 fonts-hinted/
 trial/
+
+# Light / SemiBold intermediate builds (build_weights.py).
+build-weights/

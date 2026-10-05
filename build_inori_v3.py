@@ -42,6 +42,25 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "Source"))
 IOSEVKA = os.path.join(SRC, "Iosevka", "IosevkaCustom-%s.ttf")
 IOSEVKA_UNSLASHED = os.path.join(
     SRC, "Iosevka", "IosevkaCustomUnslashed-%s.ttf")
+# Light and SemiBold have no npm-built Iosevka static; derive_iosevka_weights.py
+# offsets the nearest shipped master to SF Mono's stem and writes them to
+# Source/Iosevka/derived.
+
+
+class _IosevkaPath(str):
+    """`IOSEVKA % style` that resolves derived weights to Source/Iosevka/derived."""
+
+    def __new__(cls, stem):
+        return str.__new__(cls, os.path.join(SRC, "Iosevka", stem + "-%s.ttf"))
+
+    def __mod__(self, style):
+        derived = style.startswith(("Light", "SemiBold"))
+        folder = os.path.join(SRC, "Iosevka", "derived") if derived else os.path.join(SRC, "Iosevka")
+        return os.path.join(folder, os.path.basename(str.__str__(self)) % style)
+
+
+IOSEVKA = _IosevkaPath("IosevkaCustom")
+IOSEVKA_UNSLASHED = _IosevkaPath("IosevkaCustomUnslashed")
 NOTO_CJK = os.path.join(SRC, "noto-cjk", "NotoSansCJKjp-VF.ttf")
 
 # Iosevka's italic is a real italic master, not a slant of the upright: the
@@ -89,6 +108,7 @@ SF = {
     "Regular": (85.4, 79.1),
     "Medium":  (100.6, 90.3),
     "Bold":    (136.2, 119.6),
+    "SemiBold": (116.2, 103.0),  # SF Mono Semibold, tools/measure.py
     "Black":   (174.8, 144.0),   # SF Mono Heavy
 }
 SF_CELL = 618.2
@@ -104,6 +124,7 @@ SF_INK = {
     "Regular": 0.7583,
     "Medium":  0.7741,
     "Bold":    0.8136,
+    "SemiBold": 0.7915,
     "Black":   0.8562,
 }
 
@@ -408,12 +429,19 @@ def jp_stem_target(latin_stem):
 # columns wide and are read by column index, so a style's column must not move
 # when a weight is dropped from the shipping family.  The ladder is fixed; the
 # family is the subset of it that ships.
-LADDER = ["Light", "Regular", "Medium", "Bold", "Black"]
+# SemiBold came later; it is appended so the five original columns keep their
+# indices.  Its SF_WIDTH column is measured from SF Mono Semibold the same way
+# (tools/measure_open.py ink width over H), which reproduces the Bold column
+# to the third decimal.
+SF_WIDTH_SEMIBOLD = {'a': 0.906, 'b': 0.977, 'c': 0.947, 'd': 0.977, 'e': 0.949, 'f': 0.977, 'g': 0.987, 'h': 0.949, 'i': 0.93, 'j': 0.753, 'k': 0.964, 'l': 0.93, 'm': 1.084, 'n': 0.944, 'o': 0.984, 'p': 0.977, 'q': 0.977, 'r': 1.023, 's': 0.902, 't': 0.937, 'u': 0.944, 'v': 1.038, 'w': 1.202, 'x': 1.01, 'y': 1.051, 'z': 0.884, 'A': 1.166, 'B': 1.011, 'C': 1.071, 'D': 1.053, 'E': 0.885, 'F': 0.885, 'G': 1.066, 'H': 1.0, 'I': 0.832, 'J': 0.922, 'K': 1.083, 'L': 0.889, 'M': 1.064, 'N': 0.99, 'O': 1.088, 'P': 0.99, 'Q': 1.088, 'R': 1.026, 'S': 1.05, 'T': 1.084, 'U': 1.048, 'V': 1.166, 'W': 1.263, 'X': 1.17, 'Y': 1.18, 'Z': 1.011, '0': 1.039, '1': 1.024, '2': 0.987, '3': 1.045, '4': 1.076, '5': 1.018, '6': 1.048, '7': 1.0, '8': 1.088, '9': 1.048}
+SF_WIDTH = {c: v + (SF_WIDTH_SEMIBOLD[c],) for c, v in SF_WIDTH.items()}
+LADDER = ["Light", "Regular", "Medium", "Bold", "Black", "SemiBold"]
 STYLES_INDEX = {n: i for i, n in enumerate(LADDER)}
 
 STYLES = [
     # name, os2 weight
-    ("Regular", 400), ("Medium", 500), ("Bold", 700),
+    ("Light", 300), ("Regular", 400), ("Medium", 500), ("SemiBold", 600),
+    ("Bold", 700),
 ]
 
 VERSION = "Version 4.800"
@@ -1310,6 +1338,48 @@ HAND_ALL = HAND_DRAWN + tuple(
     ch for outs in HAND_DERIVE.values() for ch, _ in outs)
 
 
+#: Friday Mono v47/v48 (and every later Mono up to 4.92) shipped the per-glyph
+#: kana bar pass; Friday Sans does not.  A new Mono weight sets this True so it
+#: is built the same way as the weights it sits beside.
+KANA_BAR_MATCH_DEFAULT = os.environ.get("FRIDAY_KANA_BAR_MATCH") == "1"
+
+
+def generated_hand_outlines(out, cmap):
+    """Hand kana for a weight with no approved proof, by the approved route.
+
+    `shared_master.build` is what produced approved-hand-outlines.json for
+    Regular / Medium / Bold: one fixed centreline per character, stroke weight
+    fitted to this face's own Noto-derived neighbours.  The two edits made
+    to the approved file afterwards are replayed: `thin_ki.py` (き -2.5) and
+    `fix_voiced_bodies.py` (ぎ ど ざ take the plain drawing as their body).
+    """
+    sys.path.insert(0, HERE)
+    from tools import shared_master
+    import thin_ki
+    import fix_voiced_bodies as voiced
+    from fontTools.misc.transform import Transform
+    targets = {ch: out[cmap[ord(ch)]] for ch in "しつか" + "".join(HAND_ALL)}
+    glyphs, _ = shared_master.build(targets)
+    ki, ok = shapes.dilate_checked(glyphs["き"], thin_ki.AMOUNT, "き")
+    if not ok or shapes._contours(ki) != shapes._contours(glyphs["き"]):
+        raise ValueError("き: the generated erosion did not take")
+    glyphs["き"] = ki
+    for v, plain in voiced.BODIES.items():
+        parts = voiced.contours(glyphs[v])
+        body, mark = parts[0], [x for c in parts[1:] for x in c]
+        bb, kb = shapes.bbox(body), shapes.bbox(glyphs[plain])
+        room = (bb[2] - bb[0]) - (kb[2] - kb[0])
+        assert -1.0 <= room < 5.0, (v, "width", round(room, 2))
+        dx = (bb[0] + bb[2]) / 2.0 - (kb[0] + kb[2]) / 2.0
+        dy = bb[3] - kb[3]
+        moved = shapes.transform(glyphs[plain], Transform(1, 0, 0, 1, dx, dy))
+        merged = moved + mark
+        assert (shapes._contours(shapes.remove_overlap(merged, v))
+                == shapes._contours(moved) + shapes._contours(mark)), v
+        glyphs[v] = merged
+    return glyphs
+
+
 def hand_redraw(out, cmap, style):
     """Use one fixed hand-drawing-derived skeleton across all three weights.
 
@@ -1325,7 +1395,10 @@ def hand_redraw(out, cmap, style):
         current_hash = hashlib.sha256(fh.read()).hexdigest()
     if approved["master_sha256"] != current_hash:
         raise ValueError("Approved proof no longer matches the current master")
-    replacements = approved["styles"][style]
+    if style in approved["styles"] and not os.environ.get("FRIDAY_HAND_REGENERATE"):
+        replacements = approved["styles"][style]
+    else:
+        replacements = generated_hand_outlines(out, cmap)
     for ch, rec in replacements.items():
         out[cmap[ord(ch)]] = rec
     return list(replacements), []
@@ -1430,6 +1503,17 @@ def _terminal_stub(rec):
         d = abs(a - b)
         return min(d, 180.0 - d)
 
+    # 20 degrees found every terminal at Regular / Medium / Bold.  Light's
+    # thinner join lands at 20.4 on `あ`; a second, slightly wider pass runs
+    # only when the first finds nothing, so the shipped weights are unchanged.
+    for limit in (20.0, 22.0):
+        found = _first_parallel(cands, pts, n, away, parallel, limit)
+        if found is not None:
+            return found
+    return None
+
+
+def _first_parallel(cands, pts, n, away, parallel, limit):
     for _, i, length in cands:
         head = away(i, -1, length)
         tail = away((i + 1) % n, 1, length)
@@ -1442,7 +1526,7 @@ def _terminal_stub(rec):
         edge = (pts[(i + 1) % n][0] - pts[i][0],
                 pts[(i + 1) % n][1] - pts[i][1])
         join = (pts[tail][0] - pts[head][0], pts[tail][1] - pts[head][1])
-        if math.hypot(*join) < 1.0 or parallel(edge, join) > 20.0:
+        if math.hypot(*join) < 1.0 or parallel(edge, join) > limit:
             continue
         tip = ((pts[i][0] + pts[(i + 1) % n][0]) / 2.0,
                (pts[i][1] + pts[(i + 1) % n][1]) / 2.0)
@@ -1802,7 +1886,7 @@ def build_cjk(style, target_stem, want_frame, want_centre):
         # worse: half the katakana take it and half are refused.  So kana keep
         # Noto's own bars at their solved wght.  Off since Friday Sans 1.0;
         # Friday Mono v47/v48 shipped with the per-glyph pass.
-        KANA_BAR_MATCH = False
+        KANA_BAR_MATCH = KANA_BAR_MATCH_DEFAULT
         for name in names:
             rec = out.get(name)
             if not rec:

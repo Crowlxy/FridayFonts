@@ -1,0 +1,209 @@
+{
+  "results": [
+    {
+      "file": "FridayMono-Light.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 420,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        9,
+        12,
+        14,
+        16,
+        20,
+        32
+      ],
+      "source_raster_parity_cases": 7476,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMono-SemiBold.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 420,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        9,
+        12,
+        14,
+        16,
+        20,
+        32
+      ],
+      "source_raster_parity_cases": 7476,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMono-LightItalic.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 420,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        9,
+        12,
+        14,
+        16,
+        20,
+        32
+      ],
+      "source_raster_parity_cases": 7476,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMono-SemiBoldItalic.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 420,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        9,
+        12,
+        14,
+        16,
+        20,
+        32
+      ],
+      "source_raster_parity_cases": 7476,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoJP-Light.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoJP-SemiBold.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoJP-LightItalic.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoJP-SemiBoldItalic.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoPlainJP-Light.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [
+        "zero",
+        "zero.alt"
+      ],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoPlainJP-SemiBold.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [
+        "zero",
+        "zero.alt"
+      ],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoPlainJP-LightItalic.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [
+        "zero",
+        "zero.alt"
+      ],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    },
+    {
+      "file": "FridayMonoPlainJP-SemiBoldItalic.ttf",
+      "source_outline_hint_metric_parity": true,
+      "changed_zero_glyphs": [
+        "zero",
+        "zero.alt"
+      ],
+      "canonical_pairs": 883,
+      "canonical_mismatches": 0,
+      "raster_sizes": [
+        12,
+        14,
+        16
+      ],
+      "source_raster_parity_cases": 6,
+      "raster_errors": 0,
+      "zero_features_and_standardized_variation": true
+    }
+  ],
+  "limitation": "FreeType and HarfBuzz on macOS; no Windows native rendering certification for the 4.93 Light/SemiBold faces. Upright RC3 data preserved; italic repairs independently applied and tested."
+}

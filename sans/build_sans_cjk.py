@@ -74,12 +74,17 @@ def is_fullwidth_cp(cp):
 # build_cjk asks this for every codepoint's cell; patch it before the call.
 mono.is_fullwidth_cp = is_fullwidth_cp
 
-STYLES = [("Regular", 400), ("Medium", 500), ("Bold", 700)]
+STYLES = [("Light", 300), ("Regular", 400), ("Medium", 500), ("SemiBold", 600),
+          ("Bold", 700)]
 
 #: Kanji stems where Friday Sans departs from Friday Mono.  Bold at Mono's 113
 #: read as a black block in running text beside the Latin; 100 (between
 #: Hiragino W5 and W6) was chosen by eye on 2026-10-01.
-SANS_JP_STEM = {"Bold": 100.0}
+SANS_JP_STEM = {"Bold": 100.0,
+                # SemiBold sits where Friday Mono's does between its Medium and
+                # Bold (91.5 of 78.5..113, t=0.377), on Sans' 78.5..100.
+                "SemiBold": 86.6}
+# Light keeps Friday Mono's Light target, as Regular and Medium keep theirs.
 
 
 def log(msg):
@@ -229,7 +234,9 @@ def main():
         cjk, cmap, cell_of, vert, report = mono.build_cjk(
             style, jp_t, want_frame, want_centre)
         log("  CJK %s" % report)
-        if jp_t != mono_targets(style)[0]:
+        # Light / SemiBold have no frozen hand proof: build_cjk fitted their
+        # hand kana to this face's own neighbours already.
+        if jp_t != mono_targets(style)[0] and style in ("Regular", "Medium", "Bold"):
             reweight_hand(style, cjk, cmap)
         glyphs = to_sans(cjk, cell_of)
         full = sum(1 for _, a in glyphs.values() if a == EM)

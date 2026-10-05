@@ -118,6 +118,52 @@ def two_top_control(source, hinted, bad):
         name, number_ranges(points), number_ranges(ppems))
 
 
+def one_digit_control(source, hinted, bad):
+    """`two_top_control` for any single digit whose top or bottom is one pixel off.
+
+    SemiBold rounds the bottom overshoot of `3` (and the italic `8`) one row
+    low under ttfautohint.  Same remedy as `2`: a ppem delta on the points of
+    that edge, the outline itself untouched.  Returns None unless every bad
+    size has exactly one odd digit, off by exactly one pixel on one edge.
+    """
+    shifts = collections.defaultdict(list)   # (digit, edge) -> ppems
+    for px, odd in sorted(bad.items()):
+        if len(odd) != 1:
+            return None
+        (digit,) = odd
+        boxes = digit_boxes(hinted, px)
+        common = collections.Counter(boxes.values()).most_common(1)[0][0]
+        got = boxes[digit]
+        if not got or not common:
+            return None
+        if got[0] == common[0] - 1 and got[1] == common[1]:
+            shifts[(digit, "top")].append(px)       # one row too high
+        elif got[1] == common[1] + 1 and got[0] == common[0]:
+            shifts[(digit, "bottom")].append(px)    # one row too low
+        else:
+            return None
+    font = TTFont(source, lazy=False)
+    lines = []
+    for (digit, edge), ppems in sorted(shifts.items()):
+        name = font.getBestCmap().get(ord(digit))
+        glyph = font["glyf"][name] if name else None
+        if glyph is None or glyph.isComposite():
+            font.close()
+            return None
+        coords, _, _ = glyph.getCoordinates(font["glyf"])
+        ys = [y for _, y in coords]
+        if edge == "top":
+            points = [i for i, y in enumerate(ys) if y >= max(ys) - 1]
+            shift = -1
+        else:
+            points = [i for i, y in enumerate(ys) if y <= min(ys) + 1]
+            shift = 1
+        lines.append("%s touch %s yshift %d @ %s\n" % (
+            name, number_ranges(points), shift, number_ranges(ppems)))
+    font.close()
+    return "".join(lines) or None
+
+
 def report(path):
     bad = digit_rows(path)
     name = os.path.basename(path)
@@ -161,6 +207,8 @@ def main():
             ttfautohint(in_file=path, out_file=trial, **options)
             trial_bad = digit_rows(trial)
             control = two_top_control(path, trial, trial_bad) if trial_bad else None
+            if trial_bad and not control:
+                control = one_digit_control(path, trial, trial_bad)
             chosen = trial
             if control:
                 with open(control_path, "w", encoding="ascii") as stream:

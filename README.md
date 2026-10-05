@@ -6,16 +6,32 @@
 
 | 書体 | 現行版 | 内容 | ダウンロード |
 |---|---|---|---|
-| **Friday Mono** | 4.92 | 日本語なし、1,088文字 | [Mono 4.92](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v4.92) |
-| **Friday Mono JP** | 4.92 | 日本語入り、19,312文字、斜線入り0 | 同じMono 4.92 ZIP |
-| **Friday Mono Plain JP** | 4.92 | JPとゼロ関係だけ異なる、斜線なし0 | 同じMono 4.92 ZIP |
-| **Friday Sans** | 2.1 / Windows確認待ち | Inter + Noto Sans CJK JP + 手描きかな | [Sans 2.1](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v2.1) |
+| **Friday Mono** | 4.93 | 日本語なし、1,088文字 | Mono 4.93（公開準備中） |
+| **Friday Mono JP** | 4.93 | 日本語入り、19,312文字、斜線入り0 | 同じMono 4.93 ZIP |
+| **Friday Mono Plain JP** | 4.93 | JPとゼロ関係だけ異なる、斜線なし0 | 同じMono 4.93 ZIP |
+| **Friday Sans** | 2.5 | Inter + Noto Sans CJK JP + 手描きかな、本文用 | Sans 2.5（公開準備中） |
+| **Friday Sans UI** | 2.5 | Friday Sansを画面の文字向けに調整 | 同じSans 2.5 ZIP |
 
-Monoは3ファミリ × Regular / Medium / Boldと各Italic、計18本。日本語なし版のPlainはありません。
-SansはRegular / Medium / Boldの3本です。各ZIPにTTF・WOFF2・ライセンス・検査記録を同梱しています。
+Monoは3ファミリ × Light / Regular / Medium / SemiBold / Boldと各Italic、計30本。日本語なし版のPlainはありません。
+Sans・Sans UIは各Light / Regular / Medium / SemiBold / Boldの計10本です。各ZIPにTTF・WOFF2・ライセンス・検査記録を同梱します。
 旧版は[Releases](https://github.com/Crowlxy/FridayFonts/releases)に保存しています。
 
 旧Friday Mono 4.8以前は日本語入りです。4.91で同じ書体を選ぶ場合は、アプリの指定を **Friday Mono JP** に変更してください。
+
+## Mono 4.93 / Sans 2.5
+
+全書体にLight（300）とSemiBold（600）を追加しました。MonoはItalicも含みます。
+Sans・Sans UIは、Windows検証候補RC3（WinProof Sans RC3 / WinProof Sans UI RC3）を正式名に戻して現行版にしました。
+
+既存のRegular / Medium / Boldは字形を変えていません。Monoは4.92、SansはRC3と同じです。
+新しいウェイトは、既存のウェイトと同じ工程（欧文・和文・手描きかな・ヒント・Windows対策・RC3修正）で作りました。
+線の太さは、欧文・漢字・かなとも全5段階で細い順に揃えています。
+
+Light / SemiBoldはWindows実機で未確認です。新ウェイトの手描きかなも、まだ目視承認を受けていません。
+
+- Mono 4.93：[変更・検証・残る事項](dist-mono-4.93/README.md)
+- Sans 2.5：[変更・検証・残る事項](sans/dist-2.5/README.md)
+- 作成スクリプト：[weights/](weights/)
 
 ## Mono 4.92
 
@@ -42,7 +58,7 @@ FreeType / HarfBuzzで派生18本を検査し、Italic全字形の1,606,878描�
 - [Italic全字形描画検査](dist-mono-4.91/reports/italic-render-audit.json)
 - [キャッシュ速度測定](dist-mono-4.91/reports/cache-benchmark.json)
 
-## Sans 2.1
+## Sans 2.1（旧版）
 
 結合濁点・半濁点の合成と配置、「𠮷」とIVSを修正した版です。
 [変更と検査範囲](sans/dist-2.1/README.md)。Windows実アプリでの確認が残るため、こちらもプレリリースです。

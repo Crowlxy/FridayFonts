@@ -37,14 +37,18 @@ import sys
 from fontTools.ttLib import TTFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TOOL = os.path.join(HERE, "chlorophytum")
+# The analysis cache and node_modules live in the research workspace; point
+# FRIDAY_CHLOROPHYTUM there (or run `npm ci --prefix chlorophytum` here).
+TOOL = os.environ.get("FRIDAY_CHLOROPHYTUM") or os.path.join(HERE, "chlorophytum")
 CACHE = os.path.join(TOOL, "cache")
 CHECK_SIZES = (12, 16, 20)
 
 
 def weight_of(path):
     name = os.path.basename(path)
-    for weight in ("Medium", "Bold"):
+    # SemiBold before Bold: "-SemiBold" does not contain "-Bold", but test the
+    # longer names first so a later rename cannot make one swallow the other.
+    for weight in ("SemiBold", "Light", "Medium", "Bold"):
         if "-" + weight in name:
             return weight
     return "Regular"
@@ -108,7 +112,7 @@ def hint(path):
         print("  %-30s already carries CJK hints, skipped" % os.path.basename(path))
         return
     font.close()
-    config = os.path.join(TOOL, "inori-%s.json" % weight_of(path))
+    config = os.path.join(TOOL, "%s-%s.json" % (os.environ.get("FRIDAY_CJK_CONFIG", "inori"), weight_of(path)))
     cache = os.path.join(CACHE, cache_key(path) + ".gz")
     scratch = os.path.abspath(path) + ".cjkhint"
     hints, out = scratch + ".hint.gz", scratch + ".ttf"

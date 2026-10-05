@@ -1,0 +1,332 @@
+{
+  "Friday Sans": {
+    "weights": {
+      "Light": {
+        "latin_stem": 57.0,
+        "kanji_stem": 49.0,
+        "kana_stroke": 50.18,
+        "hand_kana_vs_neighbours": {
+          "き": 0.936,
+          "ぎ": 0.901,
+          "さ": 0.963,
+          "ざ": 0.921,
+          "と": 1.016,
+          "ど": 0.954,
+          "ふ": 0.938,
+          "ぶ": 0.892,
+          "ぷ": 0.898,
+          "ゃ": 0.938,
+          "や": 0.979
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "Regular": {
+        "latin_stem": 75.0,
+        "kanji_stem": 64.0,
+        "kana_stroke": 64.24,
+        "hand_kana_vs_neighbours": {
+          "き": 0.98,
+          "ぎ": 0.933,
+          "さ": 0.991,
+          "ざ": 0.933,
+          "と": 1.029,
+          "ど": 0.951,
+          "ふ": 0.945,
+          "ぶ": 0.886,
+          "ぷ": 0.888,
+          "ゃ": 0.937,
+          "や": 0.992
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "Medium": {
+        "latin_stem": 90.0,
+        "kanji_stem": 78.5,
+        "kana_stroke": 78.53,
+        "hand_kana_vs_neighbours": {
+          "き": 0.984,
+          "ぎ": 0.927,
+          "さ": 1.011,
+          "ざ": 0.939,
+          "と": 1.014,
+          "ど": 0.924,
+          "ふ": 0.91,
+          "ぶ": 0.864,
+          "ぷ": 0.887,
+          "ゃ": 0.937,
+          "や": 0.994
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "SemiBold": {
+        "latin_stem": 101.0,
+        "kanji_stem": 87.0,
+        "kana_stroke": 86.76,
+        "hand_kana_vs_neighbours": {
+          "き": 0.991,
+          "ぎ": 0.927,
+          "さ": 1.012,
+          "ざ": 0.937,
+          "と": 1.044,
+          "ど": 0.944,
+          "ふ": 0.931,
+          "ぶ": 0.861,
+          "ぷ": 0.86,
+          "ゃ": 0.936,
+          "や": 0.989
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "Bold": {
+        "latin_stem": 116.0,
+        "kanji_stem": 100.0,
+        "kana_stroke": 99.85,
+        "hand_kana_vs_neighbours": {
+          "き": 0.994,
+          "ぎ": 0.924,
+          "さ": 1.035,
+          "ざ": 0.943,
+          "と": 1.039,
+          "ど": 0.929,
+          "ふ": 0.927,
+          "ぶ": 0.85,
+          "ぷ": 0.853,
+          "ゃ": 0.943,
+          "や": 1.033
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      }
+    },
+    "ladder": {
+      "latin_stem": {
+        "values": [
+          57.0,
+          75.0,
+          90.0,
+          101.0,
+          116.0
+        ],
+        "monotonic": true
+      },
+      "kanji_stem": {
+        "values": [
+          49.0,
+          64.0,
+          78.5,
+          87.0,
+          100.0
+        ],
+        "monotonic": true
+      },
+      "kana_stroke": {
+        "values": [
+          50.18,
+          64.24,
+          78.53,
+          86.76,
+          99.85
+        ],
+        "monotonic": true
+      }
+    },
+    "hand_kana_ratio_range": [
+      0.85,
+      1.044
+    ]
+  },
+  "Friday Sans UI": {
+    "weights": {
+      "Light": {
+        "latin_stem": 54.29,
+        "kanji_stem": 46.67,
+        "kana_stroke": 47.79,
+        "hand_kana_vs_neighbours": {
+          "き": 0.936,
+          "ぎ": 0.901,
+          "さ": 0.963,
+          "ざ": 0.921,
+          "と": 1.016,
+          "ど": 0.954,
+          "ふ": 0.938,
+          "ぶ": 0.892,
+          "ぷ": 0.898,
+          "ゃ": 0.938,
+          "や": 0.979
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "Regular": {
+        "latin_stem": 71.43,
+        "kanji_stem": 60.95,
+        "kana_stroke": 61.19,
+        "hand_kana_vs_neighbours": {
+          "き": 0.98,
+          "ぎ": 0.933,
+          "さ": 0.991,
+          "ざ": 0.933,
+          "と": 1.028,
+          "ど": 0.951,
+          "ふ": 0.945,
+          "ぶ": 0.886,
+          "ぷ": 0.888,
+          "ゃ": 0.937,
+          "や": 0.992
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "Medium": {
+        "latin_stem": 85.71,
+        "kanji_stem": 74.76,
+        "kana_stroke": 74.79,
+        "hand_kana_vs_neighbours": {
+          "き": 0.984,
+          "ぎ": 0.927,
+          "さ": 1.011,
+          "ざ": 0.939,
+          "と": 1.014,
+          "ど": 0.924,
+          "ふ": 0.91,
+          "ぶ": 0.864,
+          "ぷ": 0.887,
+          "ゃ": 0.937,
+          "や": 0.994
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "SemiBold": {
+        "latin_stem": 96.19,
+        "kanji_stem": 82.86,
+        "kana_stroke": 82.63,
+        "hand_kana_vs_neighbours": {
+          "き": 0.991,
+          "ぎ": 0.927,
+          "さ": 1.012,
+          "ざ": 0.937,
+          "と": 1.044,
+          "ど": 0.944,
+          "ふ": 0.931,
+          "ぶ": 0.861,
+          "ぷ": 0.86,
+          "ゃ": 0.936,
+          "や": 0.989
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      },
+      "Bold": {
+        "latin_stem": 110.48,
+        "kanji_stem": 95.24,
+        "kana_stroke": 95.1,
+        "hand_kana_vs_neighbours": {
+          "き": 0.994,
+          "ぎ": 0.924,
+          "さ": 1.035,
+          "ざ": 0.943,
+          "と": 1.039,
+          "ど": 0.929,
+          "ふ": 0.927,
+          "ぶ": 0.85,
+          "ぷ": 0.853,
+          "ゃ": 0.942,
+          "や": 1.033
+        },
+        "render": {
+          "cases": 368148,
+          "errors": [],
+          "error_count": 0,
+          "empty": [],
+          "empty_count": 0
+        }
+      }
+    },
+    "ladder": {
+      "latin_stem": {
+        "values": [
+          54.29,
+          71.43,
+          85.71,
+          96.19,
+          110.48
+        ],
+        "monotonic": true
+      },
+      "kanji_stem": {
+        "values": [
+          46.67,
+          60.95,
+          74.76,
+          82.86,
+          95.24
+        ],
+        "monotonic": true
+      },
+      "kana_stroke": {
+        "values": [
+          47.79,
+          61.19,
+          74.79,
+          82.63,
+          95.1
+        ],
+        "monotonic": true
+      }
+    },
+    "hand_kana_ratio_range": [
+      0.85,
+      1.044
+    ]
+  }
+}
