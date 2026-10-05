@@ -1,95 +1,156 @@
 # Friday Fonts
 
-コーディング用の等幅書体と、日本語の本文・UI用の書体。SIL Open Font License 1.1です。
+日本語を書くための、2つの書体です。
+
+- **Friday Mono**：コードを書くための等幅書体
+- **Friday Sans**：日本語の本文と画面の文字に使う書体
+
+どちらも5つの太さ（Light / Regular / Medium / SemiBold / Bold）があり、SIL Open Font License 1.1で無料で使えます。
+
+![Friday Mono JP の5つの太さ](releases/mono-4.93/reports/weights-proof-FridayMonoJP.png)
+![Friday Sans の5つの太さ](releases/sans-2.5/reports/weights-proof-FridaySans.png)
 
 ## ダウンロード
 
-| 書体 | 現行版 | 内容 | ダウンロード |
-|---|---|---|---|
-| **Friday Mono** | 4.93 | 日本語なし、1,088文字 | Mono 4.93（公開準備中） |
-| **Friday Mono JP** | 4.93 | 日本語入り、19,312文字、斜線入り0 | 同じMono 4.93 ZIP |
-| **Friday Mono Plain JP** | 4.93 | JPとゼロ関係だけ異なる、斜線なし0 | 同じMono 4.93 ZIP |
-| **Friday Sans** | 2.5 | Inter + Noto Sans CJK JP + 手描きかな、本文用 | Sans 2.5（公開準備中） |
-| **Friday Sans UI** | 2.5 | Friday Sansを画面の文字向けに調整 | 同じSans 2.5 ZIP |
+| 書体 | 版 | ダウンロード |
+|---|---|---|
+| Friday Mono / Friday Mono JP / Friday Mono Plain JP | 4.93 | [FridayMono-4.93.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v4.93) |
+| Friday Sans / Friday Sans UI | 2.5 | [FridaySans-2.5.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v2.5) |
 
-Monoは3ファミリ × Light / Regular / Medium / SemiBold / Boldと各Italic、計30本。日本語なし版のPlainはありません。
-Sans・Sans UIは各Light / Regular / Medium / SemiBold / Boldの計10本です。各ZIPにTTF・WOFF2・ライセンス・検査記録を同梱します。
-旧版は[Releases](https://github.com/Crowlxy/FridayFonts/releases)に保存しています。
+ZIPの中は次のとおりです。
 
-旧Friday Mono 4.8以前は日本語入りです。4.91で同じ書体を選ぶ場合は、アプリの指定を **Friday Mono JP** に変更してください。
+| フォルダ・ファイル | 中身 |
+|---|---|
+| `ttf/` | パソコンにインストールするフォント |
+| `web/` | Webサイト用のWOFF2とCSS |
+| `README.md` | その版の変更点・検査結果 |
+| `licenses/` | ライセンス |
+| `SHA256SUMS.txt` | ファイルが壊れていないか確かめるためのハッシュ値 |
 
-## Mono 4.93 / Sans 2.5
+旧版は[Releases](https://github.com/Crowlxy/FridayFonts/releases)に残しています。
 
-全書体にLight（300）とSemiBold（600）を追加しました。MonoはItalicも含みます。
-Sans・Sans UIは、Windows検証候補RC3（WinProof Sans RC3 / WinProof Sans UI RC3）を正式名に戻して現行版にしました。
+## どれを使えばいい？
 
-既存のRegular / Medium / Boldは字形を変えていません。Monoは4.92、SansはRC3と同じです。
-新しいウェイトは、既存のウェイトと同じ工程（欧文・和文・手描きかな・ヒント・Windows対策・RC3修正）で作りました。
-線の太さは、欧文・漢字・かなとも全5段階で細い順に揃えています。
+| 使いたい場所 | 選ぶ書体 |
+|---|---|
+| エディタ・ターミナルで、日本語も同じ書体で表示したい | **Friday Mono JP** |
+| 同上で、ゼロ（0）に斜線が要らない | **Friday Mono Plain JP** |
+| 英数字だけで十分。日本語は別の書体に任せたい | **Friday Mono**（日本語なし、軽い） |
+| 文書・Webページ・スライドの本文 | **Friday Sans** |
+| アプリのボタン・メニューなど、画面の小さな文字 | **Friday Sans UI** |
 
-Light / SemiBoldはWindows実機で未確認です。新ウェイトの手描きかなも、まだ目視承認を受けていません。
+Friday Monoの英数字は半角（全角の半分の幅）です。Mono JPでは全角2：半角1の比率がそろうので、日本語の表や桁がずれません。
 
-- Mono 4.93：[変更・検証・残る事項](dist-mono-4.93/README.md)
-- Sans 2.5：[変更・検証・残る事項](sans/dist-2.5/README.md)
-- 作成スクリプト：[weights/](weights/)
+Sans UIは、Sansより字面を約5%小さくし、かなや句読点の間隔を詰めた、画面の小さな文字向けの版です。
 
-## Mono 4.92
+## インストール
 
-Windows Terminalで、IMEの選択文節やANSI二重下線が一重に見えるバグを修正しました。行の下側の余白を120から400 unitsへ増やし、行高を1.00emから1.28emに変更しています。Regularテスト版で二重線と行間をWindows上でユーザー確認済みです。
+使う書体のファイルを `ttf/` からインストールします。全部入れても問題ありません。
 
-全18書体に同じ修正を適用しました。4.91との差分は行の下側の余白と版情報・説明・チェックサムだけです。字形・文字幅・ヒント・収録文字・GSUB/GPOS・下線位置と太さは完全一致しています。
+### Windows
 
-全18書体のTTF/WOFF2を照合し、Terminalの計算式では計1,224条件で二重線が分離することを確認しました。全18書体をWindowsの実アプリで個別に再検証したという意味ではありません。
+1. ZIPを右クリックして「すべて展開」を選ぶ
+2. `ttf` フォルダを開き、使う `.ttf` を全部選ぶ
+3. 右クリックして「すべてのユーザーに対してインストール」を選ぶ（「インストール」でも可）
+4. 使うアプリを一度終了して、もう一度開く
 
-[変更と使い方](dist-mono-4.92/README.md) · [差分検査](dist-mono-4.92/reports/validation.json) · [作成スクリプト](build_mono_492.py)
+古い版が入っている場合は、上書きを求められたら「はい」を選んでください。
 
-### 4.91から継承した内容と検査記録
+### macOS
 
-RC3のかな・縦書き・記号・囲み記号の修正と「𠮷」を反映し、Italicにも同じ修正方針を適用しました。
-Italic専用の欧文字形・ヒントとCVT/prepを維持し、漢字の移動上限をItalicの輪郭で独立に測定しています。
-JPとPlain JPはゼロ関係だけが違います。日本語なし版の文字範囲は、OTF等幅5書体の実ファイルを比較して決めました。
+1. ZIPをダブルクリックして展開する
+2. `ttf` フォルダの `.ttf` を全部選び、ダブルクリックする
+3. Font Bookで「インストール」を押す
 
-FreeType / HarfBuzzで派生18本を検査し、Italic全字形の1,606,878描画でエラー0件。
-4.91のWindows実アプリでの確認はこれから行う段階なので、プレリリースとして配布します。
-
-- [収録方針・使い方・検査範囲](dist-mono-4.91/README.md)
-- [字形の比較見本](dist-mono-4.91/reports/proof.png)
-- [派生フォント検査](dist-mono-4.91/reports/validation.json)
-- [Italic全字形描画検査](dist-mono-4.91/reports/italic-render-audit.json)
-- [キャッシュ速度測定](dist-mono-4.91/reports/cache-benchmark.json)
-
-## Sans 2.1（旧版）
-
-結合濁点・半濁点の合成と配置、「𠮷」とIVSを修正した版です。
-[変更と検査範囲](sans/dist-2.1/README.md)。Windows実アプリでの確認が残るため、こちらもプレリリースです。
-[漢字ヒント試作](sans/grid-trial-2.1/README.md)・[かな試作2.2](sans/kana-trial-2.2/README.md)は別の比較候補です。
-
-## ソースとビルド
-
-このリポジトリにはソース、設計資料、ライセンスと検査記録を保存しています。
-TTF・WOFF2・配布ZIP・フォント内蔵比較HTMLはReleasesに集約しています。ローカルの生成物はGitの管理対象外です。
-
-ローカルの研究workspaceからのMonoビルド:
+### Linux
 
 ```sh
-InoriMono-v3-build/.venv/bin/python FridayFonts/build_mono_49.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/verify_mono_49.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/audit_italic_rc3.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/package_mono_49.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/build_mono_492.py
+mkdir -p ~/.local/share/fonts/FridayFonts
+cp ttf/*.ttf ~/.local/share/fonts/FridayFonts/
+fc-cache -f
 ```
 
-現在のスクリプトは、隣接するSource・comparisons・FridayFonts-WindowsTestと保存済み入力フォントを使用します。
-このリポジトリ単体のcloneだけで再ビルドできる構成にはなっていません。
+### アプリでの指定
 
-入力・コード・設定・ツール版のハッシュを使う工程キャッシュは `.build-cache/mono/` に保存します。
-キャッシュ内の出力ハッシュを確認し、変更した工程だけ再作成します。`--no-cache`で再利用を無効化できます。
-同一入力の再実行は約0.43秒でした。描画監査とZIP作成を含めた時間ではありません。
+**VS Code**（settings.json）
 
-## 設計とライセンス
+```json
+"editor.fontFamily": "'Friday Mono JP', monospace",
+"terminal.integrated.fontFamily": "'Friday Mono JP'"
+```
 
-[設計資料](DESIGN.md) · [OFL](OFL.txt) · [旧Mono v48の説明](RELEASE-v48.md)
+**Windows Terminal**（設定 → プロファイル → 外観 → フォント フェイス）：`Friday Mono JP`
 
-欧文はIosevka（Mono）／Inter（Sans）、和文はNoto Sans CJK JPと手描きかなです。
-SF Mono・SF Pro・ヒラギノからは設計のための数値を測定しており、それらの字形データは生成フォントへコピーしていません。
-参照した独自ライセンスのフォント自体は配布物に含めません。
+**Web**（各ZIPの `web/` の中身をサイトに置いた場合）
+
+```html
+<link rel="stylesheet" href="friday-sans.css">
+<link rel="stylesheet" href="friday-mono.css">
+<style>
+  body { font-family: "Friday Sans", sans-serif; }
+  code, pre { font-family: "Friday Mono JP", monospace; }
+</style>
+```
+
+太さは `font-weight` の300 / 400 / 500 / 600 / 700で選べます。
+
+### うまく表示されないとき
+
+- **太さを選べない（古いWindowsアプリ）**：Light・Medium・SemiBoldは「Friday Sans Light」のように、太さの付いた別の名前で並びます。古いアプリには4種類（Regular / Italic / Bold / Bold Italic）しか扱えないものがあるためです。
+- **行間が広く感じる（Friday Mono）**：Windows Terminalで二重下線が一重に見える不具合を直すため、4.92から行の高さを1.28倍にしています。アプリ側の行間設定で調整できます。
+- **0の斜線を消したい**：Friday Mono Plain JPを使ってください。どちらの版でも、OpenTypeの`zero`・`ss01`・`cv01`機能で切り替えられます。
+
+## 書体の考え方
+
+**読みやすさの基準は、実際の書体から測った数値で決める。** 欧文はSF Mono・SF Pro、和文はヒラギノ角ゴを測りました。測ったのは、線の太さ、字の大きさ、全角と半角の比率、かなと漢字の太さの比などです。それらの数値だけを使い、字形は自由に使える書体（OFL）の上で作り直しています。参照した書体の輪郭やデータは、一切含めていません。
+
+**日本語と英数字の太さを揃える。** 漢字・かな・英字の線の太さを、全5段階で測りながら合わせています。混ぜて書いても、英字だけが濃い・かなだけが薄いということが起きないようにしています。
+
+**かなの一部は手で描いた。** 「と・さ・き・ふ・や」と、その濁音・小書き（ど・ざ・ぎ・ぶ・ぷ・ゃ）は、元の書体の形を使わず、手描きの線から作っています。全ウェイトで同じ骨格を太さだけ変えています。
+
+**Windowsで崩れないことを確かめる。** Windowsは小さな文字を画面の画素に合わせて描くため、ヒント（字形の補正命令）次第で文字が崩れます。漢字には専用のヒント（Chlorophytum）を付け、変形が大きすぎる箇所には上限を設けました。Windows実機（WPF・WinUI・Edge・GDI）で比べ、見つかった問題を直しています。
+
+## 作り方
+
+| 部分 | 元にした書体 | ライセンス |
+|---|---|---|
+| Monoの英数字 | Iosevka（カスタムビルド） | OFL 1.1 |
+| Sansの英数字 | Inter 4.1 | OFL 1.1 |
+| 漢字・かな | Noto Sans CJK JP | OFL 1.1 |
+| 手描きかな | このプロジェクトで作成 | OFL 1.1 |
+
+ビルドの流れは次のとおりです。
+
+1. 各ウェイトの目標の太さと大きさを、測った数値から決める
+2. 元の書体から、その太さに合う位置の字形を取り出す。Noto・Interは可変フォントの軸、Iosevkaはウェイトごとの静的フォントを使う
+3. 全角と半角の枠に揃え、横線の太さとかなの配置を整える
+4. 欧文にttfautohint、漢字にChlorophytumでヒントを付ける
+5. Windows向けの修正（行の高さ、縦書きかな、記号、囲み文字）を入れる
+6. 全グリフを描画して、エラー・欠け・太さの順番を検査する
+
+詳しい手順と再ビルドの方法は[docs/BUILDING.md](docs/BUILDING.md)、設計の記録は[docs/DESIGN.md](docs/DESIGN.md)にあります。
+
+## フォルダ構成
+
+| フォルダ | 中身 |
+|---|---|
+| `releases/mono-4.93/`・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
+| `releases/archive/` | 旧版と試作版の説明・検査記録 |
+| `scripts/` | フォントを作るためのスクリプト・手描きデータ・ヒント設定 |
+| `docs/` | 設計の記録、ビルド手順、過去のリリースノート |
+
+## 既知の制限
+
+- Light・SemiBoldは、Windows実機での表示確認をまだ行っていません（Regular・Medium・Boldは確認済み）。
+- 日本語の約物詰め（palt / halt）は未対応です。
+- 収録していない人名・地名用の漢字などは、アプリの代替フォントで表示されます。
+
+## ライセンス
+
+フォントはSIL Open Font License 1.1です。商用・非商用を問わず無料で使え、アプリや文書への埋め込みもできます。フォント単体の販売はできません。改変版を配布するときは「Friday」以外の名前にしてください。
+
+- Friday Monoのライセンス：[scripts/OFL.txt](scripts/OFL.txt)
+- Friday Sansのライセンス：[scripts/sans/OFL.txt](scripts/sans/OFL.txt)
+- 元にした書体のライセンス：各ZIPの`licenses/`
+
+詳しくは[LICENSE.md](LICENSE.md)を見てください。
