@@ -35,6 +35,25 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 
 工程ごとのキャッシュは `.build-cache/mono/` に保存します。入力・コード・設定・ツールの版のハッシュが同じ工程は再利用し、`--no-cache` で無効にできます。
 
+## Friday Mono 5.0
+
+5.0は、配布済みの`FridayMono-4.93.zip`を入力にします。Iosevkaの再ビルドや和文の工程は通りません。手順は[releases/mono-5.0/README.md](../releases/mono-5.0/README.md)の「再生成」にあり、コマンドは`FridayFonts/`で実行します。
+
+| スクリプト（`scripts/mono50/`） | 役割 |
+|---|---|
+| `coverage_votes.py` | 6書体の収録文字を数え、残す・削る・足す文字を`coverage.json`に書く |
+| `inherited_fixes.py` | 4.93の派生ウェイトで向きが逆になった輪郭（白抜きのアキュート、切れた ogonek、チルダの切れ込み）と、Light の Ђ・℮ の崩れを直す |
+| `outline_repair.py` | 丸い字の端の折れ線と重複点を直す（ttfautohintが丸い字を丸いと判定できるようにする） |
+| `heights.py` | 大文字・数字・上に伸びる小文字・括弧などの高さをSF Monoの比率（キャップ高 / x-height 1.333、上端 / キャップ高 1.047）に合わせる。数字は平らな端をH、丸い端をOの高さにそろえる。縮めた分は縦方向にだけ太らせて横画の太さを保つ |
+| `build_mono_50.py` | 文字の整理、輪郭の修正、罫線の調整、記号の追加、行の数値・名前を設定し、ttfautohintでヒントを付ける |
+| `verify_mono_50.py` | 文字セット、輪郭、高さ揃え、数字、罫線、二重下線、シェーピング、WOFF2の検査 |
+| `compare_outlines.py` | 高さを変えていない字について、4.93と輪郭の面積差を比べる |
+| `spike_check.py` | 輪郭に針状のとげがないか調べる（目で確認済みの字は理由付きで一覧にしてある） |
+| `windows/gdi_heights.ps1`・`windows/gdi_all_glyphs.ps1` | Windows GDIで、丸い字の高さと全字形の描画を検査する（フォントはプライベート読み込み） |
+| `package_mono_50.py` | 検査結果を確認してから`releases/mono-5.0/`とZIPを作る |
+
+出力は`work/mono-5.0/`（git管理外）です。
+
 ## Friday Sans
 
 [scripts/sans/build_sans_cjk.py](../scripts/sans/build_sans_cjk.py) が、Monoと同じ和文工程を1000 unitの枠で実行します。[scripts/sans/build_sans.py](../scripts/sans/build_sans.py) がInterの欧文と合成します。

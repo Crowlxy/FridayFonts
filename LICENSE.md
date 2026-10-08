@@ -4,7 +4,7 @@ Friday MonoとFriday Sansは、SIL Open Font License 1.1で配布しています
 
 | 書体 | ライセンス本文 | 元にした書体（いずれもOFL 1.1） |
 |---|---|---|
-| Friday Mono / Friday Mono JP / Friday Mono Plain JP | [scripts/OFL.txt](scripts/OFL.txt) | Iosevka、Noto Sans CJK JP |
+| Friday Mono（4.93までのFriday Mono JP / Plain JPを含む） | [scripts/OFL.txt](scripts/OFL.txt) | Iosevka、Noto Sans CJK JP |
 | Friday Sans / Friday Sans UI | [scripts/sans/OFL.txt](scripts/sans/OFL.txt) | Inter、Noto Sans CJK JP |
 
 各リリースのZIPには、ライセンス本文と、元にした書体のライセンス（`licenses/`）を同梱しています。
