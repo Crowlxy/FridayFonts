@@ -1,0 +1,1709 @@
+{
+  "fonts": [
+    {
+      "file": "ttf\\MonoACSStudyJP-Regular.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "Regular",
+      "source_release": "4.91",
+      "source_sha256": "c8f9afd55915ad68a504f83609d97634721157244ff92fe2148d438720c45125",
+      "sha256": "cfcbac1977dca31b50bc6370fab7b1bd55962696197cd537405af8ed65cdc15c",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-Regular.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "Regular",
+      "source_release": "4.91",
+      "source_sha256": "9e4fbe5e106acaea7f06b5bc594268dd639658fe836939c035d5ac08ca780641",
+      "sha256": "651ae895ba7e71ae0d497ed403387d0bf21ab6b5e90728322b5a3c165c2b03bf",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-Regular.ttf",
+      "family": "Mono ACS Study",
+      "style": "Regular",
+      "source_release": "4.91",
+      "source_sha256": "088caa236206013e12e9753b0bc863df8d107109a94f359d17184ac42f0bc199",
+      "sha256": "6298ddf6ebf3fc874ff501c93b37a091616bc8226f5f4d98e9430b285fd6d3c8",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-Medium.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "Medium",
+      "source_release": "4.91",
+      "source_sha256": "ef1cf174b63d4cf41d46d34452bd018bf10d7baf6c8a8c7503cac2bc276fd74e",
+      "sha256": "1004794b981d3da7f37da1f831a5c26443e62c07299605d06b3a409aa9234a83",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          605
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          605
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-Medium.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "Medium",
+      "source_release": "4.91",
+      "source_sha256": "111272ba5649bef0bbd2048be7b5b82e34170357d8c14f356d186010dc2a2b66",
+      "sha256": "25702cf0a067165c0a8f824f69a788b0c16912a67135f3c7e83fa0c75eb78ef1",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          605
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          605
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-Medium.ttf",
+      "family": "Mono ACS Study",
+      "style": "Medium",
+      "source_release": "4.91",
+      "source_sha256": "b02843a074907dffd9c9aedfa5d8a73c95d6763dcd7c43248e94ad71dce4a2d6",
+      "sha256": "29b162c033a499c9349172b355179072e50be603d81ca8cdb2db9e8303deba9d",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          605
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          605
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-Bold.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "Bold",
+      "source_release": "4.91",
+      "source_sha256": "0f73fd9b11d5e01b744cedda903ec896ef75c24e698ba1418f5b4941e8087925",
+      "sha256": "5d9fa121b8e1a9d07e7e6b531a6e5323f69f57db4263e9dc3f81c296bd3e4436",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-Bold.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "Bold",
+      "source_release": "4.91",
+      "source_sha256": "05213cccfffdd32f004b45094ddbd171272f0c98a036e7d5c8b7859eff43a4f8",
+      "sha256": "3e290dd60308b20b23c247f8ea1e4f45db5f8e79013228935a27d9d6c6ad7617",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-Bold.ttf",
+      "family": "Mono ACS Study",
+      "style": "Bold",
+      "source_release": "4.91",
+      "source_sha256": "33e4ffbdb9ac83e8e130683ed1ea028d7908bff63dc11d3d5d9c17332406e10b",
+      "sha256": "a259c9cba689b81add21c829e612f1c5cdf8f5740fab79b82a9d9e3c4d27725b",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-Italic.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "Italic",
+      "source_release": "4.91",
+      "source_sha256": "1534867e0ec36fb9ba05605d23e50ce444f9cc95248468583cb20bddaee5812c",
+      "sha256": "a4fc2dbb2e8d76b570cd9a9002c511c68ed1aa71f4acfaee6ddc229001779776",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-Italic.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "Italic",
+      "source_release": "4.91",
+      "source_sha256": "5021859d327bd0e3b4b9be35888e68f9e92d2b7fff8acdfcbe298110b9ea4bac",
+      "sha256": "7f86fbd9879c0985c1be28e3c1a6d91779378db3a9dce947d3d3747351433f00",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-Italic.ttf",
+      "family": "Mono ACS Study",
+      "style": "Italic",
+      "source_release": "4.91",
+      "source_sha256": "6d57e85c9ca8806906c009cf4866b5cf57223491a59a403549cb2c1ae5d4767d",
+      "sha256": "7a39640c1c06787c93fd3815c223ab5e1a205e276c60d185755aa460b34f0bfe",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1324,
+          602
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-MediumItalic.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "MediumItalic",
+      "source_release": "4.91",
+      "source_sha256": "ca633c872815192156ffd6c16fb3b13fdc86b759b3d338d8dd38e078777324be",
+      "sha256": "0217acc0a49c780ab9ed8a81b8478fa01f8bf6a54d8033a3c25758ce2118562a",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          606
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          606
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-MediumItalic.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "MediumItalic",
+      "source_release": "4.91",
+      "source_sha256": "1a4e22592a7927fcab056e22dda2ea311a79915e2bcbd51acca124732a271999",
+      "sha256": "f3ca0c44ca7416bcd2138982a1cbdedc11591ab196b5b5b41e0ddea7ab3f95b3",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          606
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          606
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-MediumItalic.ttf",
+      "family": "Mono ACS Study",
+      "style": "MediumItalic",
+      "source_release": "4.91",
+      "source_sha256": "4bb14bce888ec1b19d0827578f3bcf3180d05ee8a55f7951d33d1a06cc9d6fac",
+      "sha256": "ba976982a58ba1e17d0d54e959557fbf4fa0bab189691e2bcc0a8ad65f8eaf98",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          606
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1325,
+          606
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-BoldItalic.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "BoldItalic",
+      "source_release": "4.91",
+      "source_sha256": "97905cda981af661827a7952143d9c107ded5b62fbaa97a32301c5cb16ba5421",
+      "sha256": "45b56a35932796e4f7e9c976817191e0ca5d04d51ca142971ba7d066ae186b9f",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-BoldItalic.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "BoldItalic",
+      "source_release": "4.91",
+      "source_sha256": "906ded41d19a3e30ded715ed594f597d9eb385951a490ca28b025ed0c06c2be1",
+      "sha256": "13fd2e23ae896ee5827777de9b43ca67a8f496ae53ae52508bf74c4a1789bf62",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-BoldItalic.ttf",
+      "family": "Mono ACS Study",
+      "style": "BoldItalic",
+      "source_release": "4.91",
+      "source_sha256": "7b167f259a4d2324004afb5453bb506801f4493af28502ed9f615923f2983974",
+      "sha256": "e8432536ee2ff67afb7eead27d1b307725d2a38d326bb53d878afe5cb3d32059",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1331,
+          613
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-Light.ttf",
+      "family": "Mono ACS Study",
+      "style": "Light",
+      "source_release": "4.93",
+      "source_sha256": "af6e0ddaadfb4373e643ba897c6ed0269dcccc99e04381e90449de9c5a65924f",
+      "sha256": "c665ab716152ac952e6e331f49188ccba8f013a0a60efc3f02bf1917ab25e483",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1323,
+          597
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1323,
+          597
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-SemiBold.ttf",
+      "family": "Mono ACS Study",
+      "style": "SemiBold",
+      "source_release": "4.93",
+      "source_sha256": "4d3cff1a42f6b4c02842ee7da6255d4a17273f5bde5856b1c1137f9f7bc2ca46",
+      "sha256": "b90dab66592655538787b9753476ce689396dfc4f141b2e6973a0173d5935302",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1327,
+          608
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1327,
+          608
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-LightItalic.ttf",
+      "family": "Mono ACS Study",
+      "style": "LightItalic",
+      "source_release": "4.93",
+      "source_sha256": "6f552c7911cbc9f3a74b5913844b1ceadbec70c24e856c599459ecd48bbaa578",
+      "sha256": "ed910a35202e104648b82a863bdd8b24f31d71695b857b2584f9a294d67b0e2f",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1323,
+          598
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1323,
+          598
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudy-SemiBoldItalic.ttf",
+      "family": "Mono ACS Study",
+      "style": "SemiBoldItalic",
+      "source_release": "4.93",
+      "source_sha256": "0dd81cd51e0ae6ff33ab415842dea8efd8cdb0cc10962065d3c751c79208bd7e",
+      "sha256": "81ce70821faf4ae302d855d8dfddbdc095589f57cab9b8ada51a56c22413c6ee",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1327,
+          609
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1327,
+          609
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-Light.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "Light",
+      "source_release": "4.93",
+      "source_sha256": "cf8e6ad815a21fd40bd417ea82bb06e1adf9d7d8292a1c7f399a860188c59d25",
+      "sha256": "88f7734a2697bdb8f2524c45503f84dc6b61c7583c6a6956e21b50f3fc87b9fb",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1323,
+          597
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1323,
+          597
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-SemiBold.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "SemiBold",
+      "source_release": "4.93",
+      "source_sha256": "a9b180a3a2435a43b028f6a8157b1572002ce365e41b6c27ec553f806133d524",
+      "sha256": "e0b8adf63320b6e83c17c87c275c12ec899ec3205d0c5bf0de168e75d15b9e0e",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1327,
+          608
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1327,
+          608
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-LightItalic.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "LightItalic",
+      "source_release": "4.93",
+      "source_sha256": "1576027658499c460096556e15a64d370519240f5966f0ff1d1b4289ad47c6fe",
+      "sha256": "ce127ef8a48cafa801f96b614677e4be4ff8deff1d27052afc8306357521f44b",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1323,
+          598
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1323,
+          598
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyJP-SemiBoldItalic.ttf",
+      "family": "Mono ACS Study JP",
+      "style": "SemiBoldItalic",
+      "source_release": "4.93",
+      "source_sha256": "71245e883d4d129c71b9e54290b8c93c3a85485c40a7d7cee4ec1d5d80681b8c",
+      "sha256": "acc21193e767bd4f71ba18c9b82a7203ae081bda1cc3065ef5e22f42a3a18578",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1327,
+          609
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1327,
+          609
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-Light.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "Light",
+      "source_release": "4.93",
+      "source_sha256": "59f1e2bb9fbe9d6782c28c6fbfa1013cf49b3d1edaa05e8c3f2cff63031ec6b5",
+      "sha256": "e362811fb8166be2e66bf4f3d823b10f808ee696454a62b52e9c9f140f8b5708",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1323,
+          597
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1323,
+          597
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-SemiBold.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "SemiBold",
+      "source_release": "4.93",
+      "source_sha256": "b1d84f3ac330190b8d457425e30ed1e10f7120243bdd869968bb54631a5a1a72",
+      "sha256": "6976c45be4c109204155b2196ea8a593fec55345e8481ce5026cb38a68e7bd50",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1327,
+          608
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1327,
+          608
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-LightItalic.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "LightItalic",
+      "source_release": "4.93",
+      "source_sha256": "d99c702ce62ed392dc5d91d16d0337f5c0f918f86918bda3d64e3bce45d0b44b",
+      "sha256": "4ad3ba26ace19721c10608711453fc946a3eb0ca749535f27ca4e1be7f1f3b3d",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1323,
+          598
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1323,
+          598
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    },
+    {
+      "file": "ttf\\MonoACSStudyPlainJP-SemiBoldItalic.ttf",
+      "family": "Mono ACS Study Plain JP",
+      "style": "SemiBoldItalic",
+      "source_release": "4.93",
+      "source_sha256": "40ea60da9cac196984c4886a7da8d9ed94590ed2c2fb89e1ffba503f782bc9a7",
+      "sha256": "a64d16ec23844906148295928841f89b926e5e64c413ef9a56e202e128503294",
+      "before": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -400,
+          0
+        ],
+        "typo": [
+          880,
+          -400,
+          0
+        ],
+        "win": [
+          1327,
+          609
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "after": {
+        "upm": 1000,
+        "hhea": [
+          880,
+          -120,
+          0
+        ],
+        "typo": [
+          880,
+          -120,
+          0
+        ],
+        "win": [
+          1327,
+          609
+        ],
+        "underline": [
+          -120,
+          60
+        ]
+      },
+      "changed_tables": [
+        "head",
+        "hhea",
+        "OS/2",
+        "name"
+      ],
+      "changed_glyphs": [],
+      "all_other_tables_byte_identical": true
+    }
+  ],
+  "verification": "all other tables byte identical; no glyph edits; native ACS new candidates not tested"
+}

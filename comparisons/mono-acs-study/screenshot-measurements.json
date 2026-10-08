@@ -1,0 +1,78 @@
+{
+  "user_labeled_493_semibold": {
+    "source": "C:\\Users\\ha.takaku\\Pictures\\Screenshots\\スクリーンショット 2026-10-08 120039.png",
+    "sha256": "21f180434a13f38270e4da9632ddade175bc5f213f0404c465a8f73190ed23e3",
+    "size": [
+      201,
+      76
+    ],
+    "rule_rows": [
+      24,
+      45,
+      66
+    ],
+    "rule_row_intervals": [
+      21,
+      21
+    ],
+    "text_bands": [
+      {
+        "top": 6,
+        "bottom": 18,
+        "height": 13,
+        "clear_rows_before_next_rule": 5
+      },
+      {
+        "top": 27,
+        "bottom": 39,
+        "height": 13,
+        "clear_rows_before_next_rule": 5
+      },
+      {
+        "top": 48,
+        "bottom": 60,
+        "height": 13,
+        "clear_rows_before_next_rule": 5
+      }
+    ],
+    "method": "cyan foreground threshold; horizontal rules separated at 100 foreground pixels; provided crops differ in weight and framing"
+  },
+  "user_labeled_491": {
+    "source": "C:\\Users\\ha.takaku\\Pictures\\Screenshots\\スクリーンショット 2026-10-08 120053.png",
+    "sha256": "6f566008faeb04ce02873607a3ddbf62de1bde4783074635c3fdbbd9ab812297",
+    "size": [
+      177,
+      65
+    ],
+    "rule_rows": [
+      22,
+      43,
+      64
+    ],
+    "rule_row_intervals": [
+      21,
+      21
+    ],
+    "text_bands": [
+      {
+        "top": 6,
+        "bottom": 20,
+        "height": 15,
+        "clear_rows_before_next_rule": 1
+      },
+      {
+        "top": 27,
+        "bottom": 41,
+        "height": 15,
+        "clear_rows_before_next_rule": 1
+      },
+      {
+        "top": 48,
+        "bottom": 62,
+        "height": 15,
+        "clear_rows_before_next_rule": 1
+      }
+    ],
+    "method": "cyan foreground threshold; horizontal rules separated at 100 foreground pixels; provided crops differ in weight and framing"
+  }
+}
