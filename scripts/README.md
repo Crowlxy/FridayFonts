@@ -10,7 +10,7 @@ Friday MonoとFriday Sansを作るためのスクリプトとデータです。�
 | `build_mono_49.py`・`build_mono_492.py`・`italic_rc3.py` | Mono 4.9〜4.92の派生（JP / Plain JP / 日本語なし、Italic、行の高さ） |
 | `derive_iosevka_weights.py`・`finish_weights_mono.py` | Mono Light / SemiBoldの欧文マスターと仕上げ |
 | `weights/` | Light / SemiBoldの全工程と、4.93・2.5の書き出し・検査 |
-| `mono50/` | Friday Mono 5.0 / 5.0.1（欧文のみ）。4.93から輪郭修正・ヒント再付与・罫線調整・収録文字の票決、検査とWindows GDI検査 |
+| `mono50/` | Friday Mono 5.0 / 5.0.1 / 5.0.2（欧文のみ）。4.93から輪郭修正・ヒント再付与・罫線調整・収録文字の票決、検査とWindows GDI検査 |
 | `sans/` | Friday Sansのビルド（和文・Inter合成・2.1の修正・試作） |
 | `tools/` | 輪郭処理（`shapes.py`）、手描きかな（`handdrawn.py`・`shared_master.py`）、測定 |
 | `drawings/` | 手描きかなの原画と、承認済みの輪郭データ |

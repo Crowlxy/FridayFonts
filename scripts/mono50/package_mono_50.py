@@ -1,4 +1,4 @@
-"""Package Friday Mono 5.0.1: releases/mono-5.0.1/ and FridayMono-5.0.1.zip.
+"""Package Friday Mono 5.0.2: releases/mono-5.0.2/ and FridayMono-5.0.2.zip.
 
     py scripts/mono50/package_mono_50.py
 
@@ -19,10 +19,10 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from build_mono_50 import OUT, ROOT, STYLES, VERSION, COVERAGE  # noqa: E402
 
-RELEASE = ROOT / 'releases/mono-5.0.1'
+RELEASE = ROOT / 'releases/mono-5.0.2'
 PREVIOUS = ROOT / 'releases/mono-4.93'
-ZIP_PATH = ROOT / 'FridayMono-5.0.1.zip'
-TOP = 'FridayMono-5.0.1'
+ZIP_PATH = ROOT / 'FridayMono-5.0.2.zip'
+TOP = 'FridayMono-5.0.2'
 REPORT_FILES = ['validation.json', 'outline-compare.json', 'gdi-heights.json', 'spike-check.json',
                 'proof-round-letters.png', 'proof-line-box.png', 'proof-styles.png',
                 'proof-proportions.png']
@@ -103,7 +103,7 @@ def main():
         files['ttf/FridayMono-%s.ttf' % style] = OUT / 'ttf' / ('FridayMono-%s.ttf' % style)
         files['web/FridayMono-%s.woff2' % style] = OUT / 'web' / ('FridayMono-%s.woff2' % style)
     sums = ''.join('%s  %s\n' % (sha(p), rel) for rel, p in sorted(files.items()))
-    (RELEASE / 'SHA256SUMS.txt').write_text(sums, encoding='utf-8')
+    (RELEASE / 'SHA256SUMS.txt').write_bytes(sums.encode('utf-8'))
     files['SHA256SUMS.txt'] = RELEASE / 'SHA256SUMS.txt'
     with zipfile.ZipFile(ZIP_PATH, 'w', zipfile.ZIP_DEFLATED) as archive:
         for rel, path in sorted(files.items()):

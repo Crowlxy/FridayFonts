@@ -27,7 +27,7 @@ What 5.0 changes, all measured against six other monospace fonts
 5. GDI metrics: usWin* came from the Japanese build (1.93 em line in GDI).
    They now cover the ink of every mapped glyph, so stacked Vietnamese and
    ring-acute capitals are not clipped in GDI (the cost is a taller GDI line).
-6. Names and OS/2: version 5.001 (5.0.1), sample text without mojibake, Unicode and
+6. Names and OS/2: version 5.002 (5.0.2), sample text without mojibake, Unicode and
    code page ranges recomputed, vertical tables from the CJK build dropped.
 """
 import hashlib
@@ -62,8 +62,8 @@ MANIFEST = ROOT / 'releases/mono-4.93/font-manifest.json'
 COVERAGE = HERE / 'coverage.json'
 OUT = ROOT / 'work/mono-5.0'
 
-VERSION = '5.001'
-REVISION = 5.001
+VERSION = '5.002'
+REVISION = 5.002
 STYLES = [('Light', 300), ('LightItalic', 300), ('Regular', 400), ('Italic', 400),
           ('Medium', 500), ('MediumItalic', 500), ('SemiBold', 600),
           ('SemiBoldItalic', 600), ('Bold', 700), ('BoldItalic', 700)]
@@ -156,6 +156,8 @@ def fix_inherited(font, style, inputs):
     for name, actions in inherited_fixes.fix_reversed(font).items():
         done[label(name)] = ', '.join('reversed contour %d %s' % a for a in actions)
     reference = TTFont(io.BytesIO(inputs['Italic' if style.endswith('Italic') else 'Regular'][0]))
+    if style == 'Light' and inherited_fixes.rebuild_light_half(font, reference):
+        done['U+00BD'] = 'denominator redrawn from the Light digit 2'
     if inherited_fixes.rebuild_from_reference(font, reference, 0x212E):
         done['U+212E'] = 'loose pieces replaced by the %s outline' % ('Italic' if style.endswith('Italic') else 'Regular')
     return done
@@ -445,7 +447,7 @@ def set_names(font, style):
     values = {
         3: 'FridayProject;%s;%s' % (VERSION, ps),
         5: 'Version %s' % VERSION,
-        10: ('Friday Mono 5.0.1: Latin-only coding font. Round letters re-hinted to '
+        10: ('Friday Mono 5.0.2: Latin-only coding font. Round letters re-hinted to '
              'the cap and x-height, line box centred on the text, box drawing '
              'fitted to the line, character set compared with six monospace fonts.'),
         19: SAMPLE,

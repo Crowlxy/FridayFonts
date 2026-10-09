@@ -31,6 +31,7 @@ import math
 
 import pathops
 from fontTools.pens.pointPen import PointToSegmentPen
+from fontTools.ttLib.tables import ttProgram
 
 NEAR = 8          # font units: a point this close to the enclosing outline runs along it
 ALONG = 0.3       # share of a contour's points that must run along the outline
@@ -254,4 +255,69 @@ def rebuild_from_reference(font, reference, cp):
     glyph.program.fromBytecode(b'')     # re-hinted later
     glyph.recalcBounds(glyf)
     font['hmtx'][name] = (font['hmtx'][name][0], glyph.xMin)
+    return True
+
+
+def rebuild_light_half(font, reference):
+    """Light U+00BD: draw the denominator 2 again from the Light digit 2.
+
+    4.93 Light has the numerator and the bar of the one-half sign, but the
+    denominator is 13 points (an angle and a loose foot of the 2), so the
+    sign reads "1 / ∠".  The other Light fractions (U+00BC, U+00BE, U+2153)
+    and every other weight are fine.  The denominator is the Light digit 2
+    scaled into the box a 2 has in the one-half sign: left, right and bottom
+    are those of the broken contour (they match the foot of the 2 that is
+    left), the top is the Light one-quarter denominator's top plus the
+    difference the Regular reference has between its one-half and
+    one-quarter denominators.  Only done when the denominator has fewer than
+    a third of the reference's points, so a fixed input is left alone.
+    """
+    from fontTools.ttLib.tables._g_l_y_f import GlyphCoordinates
+    glyf, ref_glyf = font['glyf'], reference['glyf']
+    cmap, ref_cmap = font.getBestCmap(), reference.getBestCmap()
+    if not all(cp in cmap and cp in ref_cmap for cp in (0xBD, 0xBC, 0x32)):
+        return False
+
+    def denominator(g, gl):
+        coords, flags, contours = _contours(g, gl)
+        low = min(range(len(contours)), key=lambda k: min(coords[i][1] for i in contours[k]))
+        return coords, flags, contours, low
+
+    glyph = glyf[cmap[0xBD]]
+    coords, flags, contours, low = denominator(glyph, glyf)
+    ref_half = denominator(ref_glyf[ref_cmap[0xBD]], ref_glyf)
+    if len(contours[low]) * 3 >= len(ref_half[2][ref_half[3]]):
+        return False
+    top_of = lambda d: max(d[0][i][1] for i in d[2][d[3]])
+    quarter = denominator(glyf[cmap[0xBC]], glyf)
+    ref_quarter = denominator(ref_glyf[ref_cmap[0xBC]], ref_glyf)
+    top = top_of(quarter) + top_of(ref_half) - top_of(ref_quarter)
+    old = [coords[i] for i in contours[low]]
+    left, right = min(p[0] for p in old), max(p[0] for p in old)
+    bottom = min(p[1] for p in old)
+
+    two, two_flags, two_contours = _contours(glyf[cmap[0x32]], glyf)
+    if len(two_contours) != 1:
+        return False
+    tx, ty = [p[0] for p in two], [p[1] for p in two]
+    sx = (right - left) / (max(tx) - min(tx))
+    sy = (top - bottom) / (max(ty) - min(ty))
+    drawn = [(round((x - min(tx)) * sx + left), round((y - min(ty)) * sy + bottom)) for x, y in two]
+    drawn_flags = [f & 1 for f in two_flags]
+
+    new_coords, new_flags, ends = [], [], []
+    for k, contour in enumerate(contours):
+        if k == low:
+            new_coords += drawn
+            new_flags += drawn_flags
+        else:
+            new_coords += [tuple(coords[i]) for i in contour]
+            new_flags += [flags[i] & 1 for i in contour]
+        ends.append(len(new_coords) - 1)
+    glyph.coordinates = GlyphCoordinates(new_coords)
+    glyph.flags = bytearray(new_flags)
+    glyph.endPtsOfContours = ends
+    glyph.program = ttProgram.Program()
+    glyph.program.fromBytecode(b'')     # re-hinted later
+    glyph.recalcBounds(glyf)
     return True

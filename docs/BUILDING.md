@@ -42,7 +42,7 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 | スクリプト（`scripts/mono50/`） | 役割 |
 |---|---|
 | `coverage_votes.py` | 6書体の収録文字を数え、残す・削る・足す文字を`coverage.json`に書く |
-| `inherited_fixes.py` | 4.93の派生ウェイトで向きが逆になった輪郭（白抜きのアキュート、切れた ogonek、チルダの切れ込み）と、Light の Ђ・℮ の崩れを直す |
+| `inherited_fixes.py` | 4.93の派生ウェイトで向きが逆になった輪郭（白抜きのアキュート、切れた ogonek、チルダの切れ込み）と、Light の Ђ・℮ の崩れ、Light の ½ の分母を直す |
 | `outline_repair.py` | 丸い字の端の折れ線と重複点を直す（ttfautohintが丸い字を丸いと判定できるようにする） |
 | `heights.py` | 大文字・数字・上に伸びる小文字・括弧などの高さをSF Monoの比率（キャップ高 / x-height 1.333、上端 / キャップ高 1.047）に合わせる。数字は平らな端をH、丸い端をOの高さにそろえる。縮めた分は縦方向にだけ太らせて横画の太さを保つ |
 | `build_mono_50.py` | 文字の整理、輪郭の修正、罫線の調整、記号の追加、行の数値・名前を設定し、ttfautohintでヒントを付ける |
@@ -51,7 +51,8 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 | `spike_check.py` | 輪郭に針状のとげがないか調べる（目で確認済みの字は理由付きで一覧にしてある） |
 | `windows/prepare_gdi_copy.py` | 名前表だけを変えた検査用の複製を作る（同名の旧版が入っていても、それを描かないため） |
 | `windows/gdi_heights.ps1`・`windows/gdi_all_glyphs.ps1` | Windows GDIで、丸い字の高さと全字形の描画を検査する（プライベート読み込み。描画中のフォントが対象ファイルと一致することを`GetFontData`で照合する） |
-| `package_mono_50.py` | 検査結果を確認してから`releases/mono-5.0.1/`と`FridayMono-5.0.1.zip`を作る（5.0.1。5.0の記録は`releases/mono-5.0/`に残す） |
+| `weight_ladder.py` | 直立5ウェイトを描き、隣り合うウェイトの間で、4 pxより離れたインクのかたまりが100 pxを超える字を探す（自分自身との比較では見つからない、入力から引き継いだ壊れ用。`verify_mono_50.py`から呼ぶ） |
+| `package_mono_50.py` | 検査結果を確認してから`releases/mono-5.0.2/`と`FridayMono-5.0.2.zip`を作る（5.0.2。5.0・5.0.1の記録は`releases/mono-5.0/`・`releases/mono-5.0.1/`に残す） |
 
 出力は`work/mono-5.0/`（git管理外）です。
 

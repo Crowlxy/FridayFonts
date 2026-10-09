@@ -28,6 +28,7 @@ from build_underline_trial import layout                                   # noq
 from outline_repair import count_tents                                     # noqa: E402
 import inherited_fixes                                                     # noqa: E402
 import rehint                                                              # noqa: E402
+import weight_ladder                                                       # noqa: E402
 
 REPORTS = OUT / 'reports'
 SIZES = range(9, 33)
@@ -351,6 +352,14 @@ def main():
         print('%-15s %4d chars  tents %d  box gaps %d  round-vs-flat sizes %d  digits %s'
               % (style, len(cmap), tents, len(r['box_join_gaps']), len(r['round_vs_flat_px']),
                  r['digits_aligned']), flush=True)
+    # neighbouring upright weights draw the same shape (weight_ladder.py)
+    upright = TTFont(OUT / 'ttf' / 'FridayMono-Regular.ttf').getBestCmap()
+    ladder = weight_ladder.scan(OUT / 'ttf', upright)
+    broken = {cp: v for cp, v in ladder.items() if v > weight_ladder.LIMIT}
+    report['weight_ladder'] = {'limit': weight_ladder.LIMIT, 'largest': max(ladder.values(), default=0),
+                               'broken': {'U+%04X' % cp: v for cp, v in broken.items()}}
+    check(not broken, 'weights disagree %s' % ['U+%04X' % cp for cp in broken])
+    print('weight ladder: largest unmatched piece %d px, broken %d' % (report['weight_ladder']['largest'], len(broken)))
     report['failures'] = FAIL
     (REPORTS / 'validation.json').write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding='utf-8')
     print('failures:', len(FAIL))
