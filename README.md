@@ -17,7 +17,7 @@ Friday Monoの日本語版（Friday Mono JP / Friday Mono Plain JP）は、4.93�
 | 書体 | 版 | ダウンロード |
 |---|---|---|
 | Friday Mono | 5.0.1 | [FridayMono-5.0.1.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v5.0.1) |
-| Friday Sans / Friday Sans UI | 3.0（最新・未公開） | FridaySans-3.0.zip。公開済みの最新は2.5：[FridaySans-2.5.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v2.5) |
+| Friday Sans / Friday Sans UI | 3.0 | [FridaySans-3.0.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v3.0) |
 
 ZIPの中は次のとおりです。
 
