@@ -110,3 +110,16 @@ IosevkaのLight・SemiBoldは、Iosevka本来のビルド（npm）ではあり�
 - 見本画像
 
 Windows実機での確認結果は、FridayFonts-WindowsTestの報告書にあります。
+
+## Friday Sans 3.0
+
+3.0は、配布済みの`FridaySans-2.5.zip`を入力にします（Inter・Noto Sans CJK JPのソースは使いません）。手順は[releases/sans-3.0/README.md](../releases/sans-3.0/README.md)の「再生成」にあります。
+
+| スクリプト（`scripts/sans30/`） | 役割 |
+|---|---|
+| `soften.py` | 尖った角に短い2次曲線の面取りを入れる（凸は線幅の0.19倍、凹は0.09倍） |
+| `build_sans_30.py` | 面取り、輪郭のオフセット（太らせ、字ごとに二分探索）、ヒント削除、`gasp`、Sans UIの字面拡大（em 1050→1010読み替え）、Win値・ベンダーID・空白幅・lsb/tsb・版の修正 |
+| `verify_sans_30.py` | 2.5との字形ごとの比較と、書体ごとのテーブル・メトリクスの確認 |
+| `render_check.py` | 全収録文字をFreeTypeで9〜24 pxに描画し、空描画・つぶれを検出 |
+| `make_web.py` | WOFF2（全字形版と、JIS X 0208＋欧文の軽量版）とCSS |
+| `package_sans_30.py` | ZIPと`releases/sans-3.0/`を作る |

@@ -1,0 +1,92 @@
+[
+  {
+    "family": "Friday Sans",
+    "style": "Bold",
+    "ttf": "ttf/FridaySans-Bold.ttf",
+    "sha256": "b9f19b16cb66fa3a72e9797e7e115f10d55bb480955c3943efc578c3c3e0744c",
+    "woff2": "web/FridaySans-Bold.woff2",
+    "woff2_lite": "web/lite/FridaySans-Bold.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans",
+    "style": "Light",
+    "ttf": "ttf/FridaySans-Light.ttf",
+    "sha256": "c35a7b5e841ee989b88d6a682f9237649a5128f4182c6750107635cfc5c97fec",
+    "woff2": "web/FridaySans-Light.woff2",
+    "woff2_lite": "web/lite/FridaySans-Light.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans",
+    "style": "Medium",
+    "ttf": "ttf/FridaySans-Medium.ttf",
+    "sha256": "9ddc51ed467b8a6b507d3310fab3ebceffc60623f67cc3a53909721a650b7d49",
+    "woff2": "web/FridaySans-Medium.woff2",
+    "woff2_lite": "web/lite/FridaySans-Medium.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans",
+    "style": "Regular",
+    "ttf": "ttf/FridaySans-Regular.ttf",
+    "sha256": "b4926fa40ddf8f6058cd03e9c68b22a9c169ea4886f404768ac1b8e51593c11e",
+    "woff2": "web/FridaySans-Regular.woff2",
+    "woff2_lite": "web/lite/FridaySans-Regular.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans",
+    "style": "SemiBold",
+    "ttf": "ttf/FridaySans-SemiBold.ttf",
+    "sha256": "fb9371418ebaff98fd81eb55cb2558d15d75ad4c123965ef8caa0925bd0bf1cd",
+    "woff2": "web/FridaySans-SemiBold.woff2",
+    "woff2_lite": "web/lite/FridaySans-SemiBold.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans UI",
+    "style": "Bold",
+    "ttf": "ttf/FridaySansUI-Bold.ttf",
+    "sha256": "53f1af320b377088757af2d2500f9263f8ce3ad2314684319ed106e78f7a15f8",
+    "woff2": "web/FridaySansUI-Bold.woff2",
+    "woff2_lite": "web/lite/FridaySansUI-Bold.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans UI",
+    "style": "Light",
+    "ttf": "ttf/FridaySansUI-Light.ttf",
+    "sha256": "25687c150e3f28363d297de6038bc3010b5ce366acbb4ad55d8824d4f9a42a59",
+    "woff2": "web/FridaySansUI-Light.woff2",
+    "woff2_lite": "web/lite/FridaySansUI-Light.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans UI",
+    "style": "Medium",
+    "ttf": "ttf/FridaySansUI-Medium.ttf",
+    "sha256": "968cdb714573c662ca6a349961252540a93528c7b93f75da3fd3799551db217d",
+    "woff2": "web/FridaySansUI-Medium.woff2",
+    "woff2_lite": "web/lite/FridaySansUI-Medium.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans UI",
+    "style": "Regular",
+    "ttf": "ttf/FridaySansUI-Regular.ttf",
+    "sha256": "a6ecd3620cf077d26231ddb70176e17358df25ed7bd342af42cdb12462379887",
+    "woff2": "web/FridaySansUI-Regular.woff2",
+    "woff2_lite": "web/lite/FridaySansUI-Regular.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  },
+  {
+    "family": "Friday Sans UI",
+    "style": "SemiBold",
+    "ttf": "ttf/FridaySansUI-SemiBold.ttf",
+    "sha256": "69909f75914a387de9c78c80e2dacaf36180456c6a3636e2d63269889451ade2",
+    "woff2": "web/FridaySansUI-SemiBold.woff2",
+    "woff2_lite": "web/lite/FridaySansUI-SemiBold.woff2",
+    "source": "FridaySans-2.5.zip (sans-v2.5)"
+  }
+]
