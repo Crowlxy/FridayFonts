@@ -3,7 +3,7 @@
     "family": "Friday Sans",
     "style": "Bold",
     "ttf": "ttf/FridaySans-Bold.ttf",
-    "sha256": "b9f19b16cb66fa3a72e9797e7e115f10d55bb480955c3943efc578c3c3e0744c",
+    "sha256": "d29747b0e1581364cea942de65940cf7e951440d7ee18bb5ef37bf721cf32b5e",
     "woff2": "web/FridaySans-Bold.woff2",
     "woff2_lite": "web/lite/FridaySans-Bold.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -12,7 +12,7 @@
     "family": "Friday Sans",
     "style": "Light",
     "ttf": "ttf/FridaySans-Light.ttf",
-    "sha256": "c35a7b5e841ee989b88d6a682f9237649a5128f4182c6750107635cfc5c97fec",
+    "sha256": "7f18df67c9b73cb2f59a81220da20dc4f7839839a86b018970a1dd15a6d92bd3",
     "woff2": "web/FridaySans-Light.woff2",
     "woff2_lite": "web/lite/FridaySans-Light.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -21,7 +21,7 @@
     "family": "Friday Sans",
     "style": "Medium",
     "ttf": "ttf/FridaySans-Medium.ttf",
-    "sha256": "9ddc51ed467b8a6b507d3310fab3ebceffc60623f67cc3a53909721a650b7d49",
+    "sha256": "89ce10da9c77e9c68c5ded3540b8aac2c02e8269037f92eaa39f2ecdab08c778",
     "woff2": "web/FridaySans-Medium.woff2",
     "woff2_lite": "web/lite/FridaySans-Medium.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -30,7 +30,7 @@
     "family": "Friday Sans",
     "style": "Regular",
     "ttf": "ttf/FridaySans-Regular.ttf",
-    "sha256": "b4926fa40ddf8f6058cd03e9c68b22a9c169ea4886f404768ac1b8e51593c11e",
+    "sha256": "f50f96a8ab914e446839545ba92e1b1cf2bef7a9aa3dc25d8b48d6d1c00904c9",
     "woff2": "web/FridaySans-Regular.woff2",
     "woff2_lite": "web/lite/FridaySans-Regular.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -39,7 +39,7 @@
     "family": "Friday Sans",
     "style": "SemiBold",
     "ttf": "ttf/FridaySans-SemiBold.ttf",
-    "sha256": "fb9371418ebaff98fd81eb55cb2558d15d75ad4c123965ef8caa0925bd0bf1cd",
+    "sha256": "0ee04acaeccd51151731e681d6da7cfefe411ba510760e34ca8561da8ac56440",
     "woff2": "web/FridaySans-SemiBold.woff2",
     "woff2_lite": "web/lite/FridaySans-SemiBold.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -48,7 +48,7 @@
     "family": "Friday Sans UI",
     "style": "Bold",
     "ttf": "ttf/FridaySansUI-Bold.ttf",
-    "sha256": "53f1af320b377088757af2d2500f9263f8ce3ad2314684319ed106e78f7a15f8",
+    "sha256": "f6f92ae7d5f3929c290e298998c28c2cd0959da3113b7ddf61124014d5a4d3ea",
     "woff2": "web/FridaySansUI-Bold.woff2",
     "woff2_lite": "web/lite/FridaySansUI-Bold.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -57,7 +57,7 @@
     "family": "Friday Sans UI",
     "style": "Light",
     "ttf": "ttf/FridaySansUI-Light.ttf",
-    "sha256": "25687c150e3f28363d297de6038bc3010b5ce366acbb4ad55d8824d4f9a42a59",
+    "sha256": "505a3cc4c2e5a4a76bbf354aaf43f7a05168fcd59ce9bb303e18c0177c5954fe",
     "woff2": "web/FridaySansUI-Light.woff2",
     "woff2_lite": "web/lite/FridaySansUI-Light.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -66,7 +66,7 @@
     "family": "Friday Sans UI",
     "style": "Medium",
     "ttf": "ttf/FridaySansUI-Medium.ttf",
-    "sha256": "968cdb714573c662ca6a349961252540a93528c7b93f75da3fd3799551db217d",
+    "sha256": "30328656d3adba548a180111a882539c77452c16c434e75ddff615f45477dd1e",
     "woff2": "web/FridaySansUI-Medium.woff2",
     "woff2_lite": "web/lite/FridaySansUI-Medium.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -75,7 +75,7 @@
     "family": "Friday Sans UI",
     "style": "Regular",
     "ttf": "ttf/FridaySansUI-Regular.ttf",
-    "sha256": "a6ecd3620cf077d26231ddb70176e17358df25ed7bd342af42cdb12462379887",
+    "sha256": "aa080426196431123a72e6457c6a5bd02f3f28fac41f24e89fda956dadfca858",
     "woff2": "web/FridaySansUI-Regular.woff2",
     "woff2_lite": "web/lite/FridaySansUI-Regular.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"
@@ -84,7 +84,7 @@
     "family": "Friday Sans UI",
     "style": "SemiBold",
     "ttf": "ttf/FridaySansUI-SemiBold.ttf",
-    "sha256": "69909f75914a387de9c78c80e2dacaf36180456c6a3636e2d63269889451ade2",
+    "sha256": "b9a4266236d391bb590082bfe695fef17c56289110e9e88f49bd8c4755382357",
     "woff2": "web/FridaySansUI-SemiBold.woff2",
     "woff2_lite": "web/lite/FridaySansUI-SemiBold.woff2",
     "source": "FridaySans-2.5.zip (sans-v2.5)"

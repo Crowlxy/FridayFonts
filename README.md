@@ -10,7 +10,7 @@
 Friday Monoの日本語版（Friday Mono JP / Friday Mono Plain JP）は、4.93で配布を終えました。
 
 ![Friday Mono 5.0.1 の10スタイル](releases/mono-5.0.1/reports/proof-styles.png)
-![Friday Sans の5つの太さ](releases/sans-2.5/reports/weights-proof-FridaySans.png)
+![Friday Sans 2.5 の5つの太さ（3.0の見本ではありません）](releases/sans-2.5/reports/weights-proof-FridaySans.png)
 
 ## ダウンロード
 
@@ -41,7 +41,7 @@ ZIPの中は次のとおりです。
 
 Friday Monoの英数字は600 units（0.6em）の等幅です。ゼロの斜線は、OpenTypeの`ss01`または`cv01`で消せます。
 
-Sans UIは、Sansより字面を約5%小さくし、かなや句読点の間隔を詰めた、画面の小さな文字向けの版です。
+Sans UIは、Sansとほぼ同じ字面（実測で約1%小さい）で、かなや句読点の間隔を詰めた、画面の小さな文字向けの版です。
 
 ## インストール
 
@@ -112,7 +112,7 @@ fc-cache -f
 
 **かなの一部は手で描いた。** 「と・さ・き・ふ・や」と、その濁音・小書き（ど・ざ・ぎ・ぶ・ぷ・ゃ）は、元の書体の形を使わず、手描きの線から作っています。全ウェイトで同じ骨格を太さだけ変えています。
 
-**Windowsで崩れないことを確かめる。** Windowsは小さな文字を画面の画素に合わせて描くため、ヒント（字形の補正命令）次第で文字が崩れます。漢字には専用のヒント（Chlorophytum）を付け、変形が大きすぎる箇所には上限を設けました。Windows実機（WPF・WinUI・Edge・GDI）で比べ、見つかった問題を直しています。
+**Windowsで崩れないことを確かめる。** Windowsは小さな文字を画面の画素に合わせて描くため、ヒント（字形の補正命令）次第で文字が崩れます。Friday Sans 2.5までは、漢字に専用のヒント（Chlorophytum）を付けていました。3.0ではヒントをすべて外し、輪郭を丸めて少し太らせています。Windows実機（WPF・WinUI・Edge・GDI）で比べ、見つかった問題を直しています。
 
 ## 作り方
 
@@ -129,7 +129,7 @@ fc-cache -f
 1. 各ウェイトの目標の太さと大きさを、測った数値から決める
 2. 元の書体から、その太さに合う位置の字形を取り出す。Noto・Interは可変フォントの軸、Iosevkaはウェイトごとの静的フォントを使う
 3. 全角と半角の枠に揃え、横線の太さとかなの配置を整える
-4. 欧文にttfautohint、漢字にChlorophytumでヒントを付ける
+4. 欧文にttfautohint、漢字にChlorophytumでヒントを付ける（Sans 2.5まで。Sans 3.0はヒントを外しています）
 5. Windows向けの修正（行の高さ、縦書きかな、記号、囲み文字）を入れる
 6. 全グリフを描画して、エラー・欠け・太さの順番を検査する
 
@@ -147,6 +147,8 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 | フォルダ | 中身 |
 |---|---|
 | `releases/mono-5.0.1/`・`releases/sans-3.0/`・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
+| `releases/mono-5.0.2/` | Mono 5.0.2（Light の ½ の修正）の記録。公開前 |
+| `reviews/` | 品質レビューの記録 |
 | `releases/mono-4.93/` | 日本語版の最後の版（Mono JP / Plain JP）の記録 |
 | `releases/archive/` | 旧版と試作版の説明・検査記録 |
 | `scripts/` | フォントを作るためのスクリプト・手描きデータ・ヒント設定 |
@@ -155,6 +157,8 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 ## 既知の制限
 
 - Light・SemiBoldは、Windows実機での表示確認をまだ行っていません（Regular・Medium・Boldは確認済み）。Friday Mono 5.0.1はGDIでの描画検査のみで、アプリでの目視確認はこれからです。
+- **Friday Sans / Sans UI の Light に、字形の壊れた漢字があります**（共・題の画が欠ける、武・昆・廃などに黒い楔が出るなど。目視で18字、検出された候補は75字）。2.5から引き継いだ問題で、Regular以上では見つかっていません。直るまで、Lightで使う漢字は字形を確認してください。[レビューの記録](reviews/2026-10-09-r3.md)、未解決の一覧は[レビュー結果.md](レビュー結果.md)
+- Friday Mono 5.0.1のLightでは、½（U+00BD）の分母が壊れています。5.0.2で直しましたが、まだ公開していません（[releases/mono-5.0.2/](releases/mono-5.0.2/README.md)）。
 - Friday Sansの日本語の約物詰め（palt / halt）は未対応です。
 - 収録していない人名・地名用の漢字などは、アプリの代替フォントで表示されます。
 

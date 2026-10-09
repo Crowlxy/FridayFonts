@@ -41,7 +41,7 @@ from fontTools.pens.cu2quPen import Cu2QuPen  # noqa: E402
 from fontTools.pens.recordingPen import RecordingPen  # noqa: E402
 import soften as S  # noqa: E402
 
-VERSION = "3.000"
+VERSION = "3.001"
 VENDOR = "FRDY"
 # Sans UI 2.5 drew its glyphs for em 1050, i.e. the kanji face was 0.850 em, smaller than
 # Yu Gothic UI (0.875), Meiryo UI (0.870) and Noto Sans JP (0.880).  3.0 reads the same
@@ -52,6 +52,11 @@ UI_LINE = (2014, -501)  # 2.5's 1017 / -253 (em 1050) re-read as em 1010 at upem
 # kanji vertical stem (units per 1000) from reports/weight-audit.json
 STEM = {"Light": 49.0, "Regular": 64.0, "Medium": 78.5, "SemiBold": 87.0, "Bold": 100.0}
 K_CONVEX, K_CONCAVE, K_EMBOLDEN = 0.19, 0.09, 0.039
+# Dense glyphs get less widening.  The same offset on every glyph makes a many-stroke kanji
+# (whose strokes and gaps are already thin) look darker than a simple one.  r = ink area of
+# the glyph / median ink area of the kanji in the same face (2.5 outline); the offset is full
+# up to r = DENSE_START and falls linearly to DENSE_FLOOR x e at r = DENSE_END.
+DENSE_START, DENSE_END, DENSE_FLOOR = 1.00, 1.15, 0.15
 
 
 def to_working_em(f, ui):
@@ -62,6 +67,29 @@ def to_working_em(f, ui):
         assert f["head"].unitsPerEm == UI_EM_OLD
         f["head"].unitsPerEm = UI_EM_NEW
     scale_upem(f, UPEM)
+
+
+def density_factor(r):
+    if r <= DENSE_START:
+        return 1.0
+    t = min(1.0, (r - DENSE_START) / (DENSE_END - DENSE_START))
+    return 1.0 - (1.0 - DENSE_FLOOR) * t
+
+
+def ink_areas(f):
+    """Absolute ink area per glyph (font units^2, the glyph as drawn), and the median over kanji."""
+    from fontTools.pens.areaPen import AreaPen
+    gs = f.getGlyphSet()
+    area = {}
+    for n in f.getGlyphOrder():
+        if f["glyf"][n].numberOfContours == 0:
+            continue
+        pen = AreaPen(gs)
+        gs[n].draw(pen)
+        area[n] = abs(pen.value)
+    cm = f.getBestCmap()
+    kanji = sorted(area[cm[cp]] for cp in range(0x4E00, 0xA000) if cp in cm and cm[cp] in area)
+    return area, kanji[len(kanji) // 2]
 
 
 def weight_of(name):
@@ -152,8 +180,9 @@ def widen(cons, e):
         except pathops.PathOpsError:      # Skia could not resolve this offset: treat as unclean
             return base, False
         q = quantized(out)       # integer rounding can fuse two contours that are 1 unit apart
-        growth = (abs(out.area) - a0) / (x * P) if P else 1.0
-        return out, len(list(q.contours)) == n0 and 0.85 <= growth <= 1.15
+        grown = (abs(out.area) - a0) / P if P else x      # mean offset actually achieved
+        # 15 % of x, but never tighter than half a unit: integer rounding alone moves a small x
+        return out, len(list(q.contours)) == n0 and abs(grown - x) <= max(0.15 * x, 0.5)
 
     out, ok = clean(e)
     used = e
@@ -204,12 +233,14 @@ def build_one(args):
     stem = STEM[weight] * scale
     dv, dc, e = K_CONVEX * stem, K_CONCAVE * stem, K_EMBOLDEN * stem
     gs, glyf = f.getGlyphSet(), f["glyf"]
+    areas, kanji_median = ink_areas(f)
     old = {}
     for n in f.getGlyphOrder():
         g = glyf[n]
         old[n] = g.yMax if g.numberOfContours != 0 else None
     vorg = {n: f["vmtx"][n][1] + old[n] for n in old if old[n] is not None}
     reduced = {}
+    lighter = {}
     kept_sharp = []
     failed = []
     t0 = time.time()
@@ -222,11 +253,19 @@ def build_one(args):
             if count(soft) != count(cons):      # e.g. squares touching at a corner: keep as drawn
                 soft = cons
                 kept_sharp.append(n)
-            glyf[n], used = widen(soft, e)
+            e_n = e * density_factor(areas[n] / kanji_median)
+            glyf[n], used = widen(soft, e_n)
+            if e_n < e and used < 0.5 * e_n:
+                # a small offset can fail where the full one succeeds (rounding splits a thin join
+                # that the full offset heals): fall back to the full amount for this glyph
+                glyf[n], used = widen(soft, e)
+                e_n = e
         except pathops.PathOpsError:
             failed.append(n)                    # leave the 2.5 outline (hints are stripped below)
             continue
-        if used < e:
+        if e_n < e:
+            lighter[n] = round(e_n, 3)
+        if used < e_n:
             reduced[n] = round(used, 3)
     strip_hints(f)
     # lsb / tsb follow the new outlines
@@ -255,7 +294,7 @@ def build_one(args):
     name = f["name"]
     fam = "Friday Sans UI" if "UI" in base else "Friday Sans"
     for r in list(name.names):
-        s = r.toUnicode() if r.isUnicode() else None
+        s = r.toUnicode()          # Mac (platform 1) records too: the unique ID there stayed 2.500
         if r.nameID == 5:
             name.setName("Version " + VERSION, 5, r.platformID, r.platEncID, r.langID)
         elif r.nameID == 3 and s:
@@ -267,7 +306,7 @@ def build_one(args):
                          10, r.platformID, r.platEncID, r.langID)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     f.save(dst)
-    return base, dict(dv=round(dv, 2), dc=round(dc, 2), e=round(e, 2), reduced=reduced, kept_sharp=kept_sharp, failed=failed,
+    return base, dict(dv=round(dv, 2), dc=round(dc, 2), e=round(e, 2), reduced=reduced, lighter=len(lighter), kept_sharp=kept_sharp, failed=failed,
                       seconds=round(time.time() - t0, 1))
 
 
