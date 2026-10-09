@@ -49,8 +49,9 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 | `verify_mono_50.py` | 文字セット、輪郭、高さ揃え、数字、罫線、二重下線、シェーピング、WOFF2の検査 |
 | `compare_outlines.py` | 高さを変えていない字について、4.93と輪郭の面積差を比べる |
 | `spike_check.py` | 輪郭に針状のとげがないか調べる（目で確認済みの字は理由付きで一覧にしてある） |
-| `windows/gdi_heights.ps1`・`windows/gdi_all_glyphs.ps1` | Windows GDIで、丸い字の高さと全字形の描画を検査する（フォントはプライベート読み込み） |
-| `package_mono_50.py` | 検査結果を確認してから`releases/mono-5.0/`とZIPを作る |
+| `windows/prepare_gdi_copy.py` | 名前表だけを変えた検査用の複製を作る（同名の旧版が入っていても、それを描かないため） |
+| `windows/gdi_heights.ps1`・`windows/gdi_all_glyphs.ps1` | Windows GDIで、丸い字の高さと全字形の描画を検査する（プライベート読み込み。描画中のフォントが対象ファイルと一致することを`GetFontData`で照合する） |
+| `package_mono_50.py` | 検査結果を確認してから`releases/mono-5.0.1/`と`FridayMono-5.0.1.zip`を作る（5.0.1。5.0の記録は`releases/mono-5.0/`に残す） |
 
 出力は`work/mono-5.0/`（git管理外）です。
 

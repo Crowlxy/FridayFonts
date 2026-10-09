@@ -1,0 +1,2561 @@
+{
+ "styles": {
+  "Light": {
+   "sha256": "7fae8585ec9ebb6114807bd123b219a5003faa5170733b041eb5aa9093a4286e",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 521,
+    "H": 694,
+    "l": 727,
+    "barred_l": 727,
+    "l_caron": 757,
+    "d": 727,
+    "zero": 702,
+    "one": 694,
+    "target_cap": 694.207,
+    "target_ascender": 727.114
+   },
+   "digit_ends": {
+    "0": {
+     "top": 702,
+     "bottom": -8,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "1": {
+     "top": 694,
+     "bottom": -1,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      694,
+      -1
+     ]
+    },
+    "2": {
+     "top": 702,
+     "bottom": -1,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -1
+     ]
+    },
+    "3": {
+     "top": 702,
+     "bottom": -8,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "4": {
+     "top": 694,
+     "bottom": -1,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      694,
+      -1
+     ]
+    },
+    "5": {
+     "top": 694,
+     "bottom": -8,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      694,
+      -8
+     ]
+    },
+    "6": {
+     "top": 694,
+     "bottom": -8,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      694,
+      -8
+     ]
+    },
+    "7": {
+     "top": 694,
+     "bottom": -1,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      694,
+      -1
+     ]
+    },
+    "8": {
+     "top": 702,
+     "bottom": -8,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "9": {
+     "top": 702,
+     "bottom": -1,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -1
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     62,
+     62
+    ],
+    "E#0": [
+     60,
+     60
+    ],
+    "E#1": [
+     62,
+     62
+    ],
+    "E#2": [
+     62,
+     62
+    ],
+    "T#0": [
+     60,
+     60
+    ],
+    "l#0": [
+     60,
+     60
+    ],
+    "l#1": [
+     67,
+     66
+    ],
+    "seven#0": [
+     59,
+     58
+    ],
+    "seven#1": [
+     202,
+     184
+    ],
+    "bracketleft#0": [
+     58,
+     59
+    ],
+    "bracketleft#1": [
+     58,
+     59
+    ],
+    "f#0": [
+     60,
+     60
+    ],
+    "f#1": [
+     67,
+     66
+    ],
+    "O#0": [
+     60,
+     60
+    ],
+    "O#1": [
+     61,
+     61
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -19.0,
+   "ink_extent": [
+    1148,
+    324
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono Light",
+    "2": "Regular",
+    "3": "FridayProject;5.001;FridayMono-Light",
+    "4": "Friday Mono Light",
+    "5": "Version 5.001",
+    "6": "FridayMono-Light",
+    "16": "Friday Mono",
+    "17": "Light",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "LightItalic": {
+   "sha256": "9a539ae898a6bb6b01bdaf4099b357d87ea73d7e5d76d03fbe3a07cd34054793",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 521,
+    "H": 694,
+    "l": 727,
+    "barred_l": 727,
+    "l_caron": 757,
+    "d": 727,
+    "zero": 702,
+    "one": 694,
+    "target_cap": 694.207,
+    "target_ascender": 727.114
+   },
+   "digit_ends": {
+    "0": {
+     "top": 702,
+     "bottom": -8,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "1": {
+     "top": 694,
+     "bottom": -1,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      694,
+      -1
+     ]
+    },
+    "2": {
+     "top": 702,
+     "bottom": -1,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -1
+     ]
+    },
+    "3": {
+     "top": 702,
+     "bottom": -8,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "4": {
+     "top": 694,
+     "bottom": -1,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      694,
+      -1
+     ]
+    },
+    "5": {
+     "top": 694,
+     "bottom": -8,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      694,
+      -8
+     ]
+    },
+    "6": {
+     "top": 694,
+     "bottom": -8,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      694,
+      -8
+     ]
+    },
+    "7": {
+     "top": 694,
+     "bottom": -1,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      694,
+      -1
+     ]
+    },
+    "8": {
+     "top": 702,
+     "bottom": -8,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "9": {
+     "top": 702,
+     "bottom": -1,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -1
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     61,
+     61
+    ],
+    "E#0": [
+     59,
+     59
+    ],
+    "E#1": [
+     61,
+     61
+    ],
+    "E#2": [
+     61,
+     61
+    ],
+    "T#0": [
+     59,
+     59
+    ],
+    "l#0": [
+     59,
+     59
+    ],
+    "l#1": [
+     66,
+     65
+    ],
+    "seven#0": [
+     59,
+     58
+    ],
+    "seven#1": [
+     211,
+     194
+    ],
+    "bracketleft#0": [
+     57,
+     58
+    ],
+    "bracketleft#1": [
+     57,
+     58
+    ],
+    "O#0": [
+     61,
+     61
+    ],
+    "O#1": [
+     66,
+     65
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -19.0,
+   "ink_extent": [
+    1150,
+    323
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono Light",
+    "2": "Italic",
+    "3": "FridayProject;5.001;FridayMono-LightItalic",
+    "4": "Friday Mono Light Italic",
+    "5": "Version 5.001",
+    "6": "FridayMono-LightItalic",
+    "16": "Friday Mono",
+    "17": "Light Italic",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "Regular": {
+   "sha256": "b08cb0d2eb0ee90cc47ffbd544603183c113e6aa9bf116c2d41e3e30bb86be00",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 522,
+    "H": 696,
+    "l": 729,
+    "barred_l": 729,
+    "l_caron": 759,
+    "d": 729,
+    "zero": 703,
+    "one": 696,
+    "target_cap": 695.539,
+    "target_ascender": 728.51
+   },
+   "digit_ends": {
+    "0": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "1": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "2": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    },
+    "3": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "4": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "5": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "6": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "7": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "8": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "9": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     80,
+     80
+    ],
+    "E#0": [
+     80,
+     80
+    ],
+    "E#1": [
+     80,
+     80
+    ],
+    "E#2": [
+     80,
+     80
+    ],
+    "T#0": [
+     80,
+     80
+    ],
+    "l#0": [
+     78,
+     78
+    ],
+    "l#1": [
+     90,
+     88
+    ],
+    "seven#0": [
+     80,
+     80
+    ],
+    "seven#1": [
+     250,
+     227
+    ],
+    "bracketleft#0": [
+     78,
+     78
+    ],
+    "bracketleft#1": [
+     78,
+     78
+    ],
+    "f#0": [
+     78,
+     78
+    ],
+    "f#1": [
+     90,
+     88
+    ],
+    "O#0": [
+     80,
+     80
+    ],
+    "O#1": [
+     80,
+     80
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.0,
+   "ink_extent": [
+    1153,
+    327
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono",
+    "2": "Regular",
+    "3": "FridayProject;5.001;FridayMono-Regular",
+    "4": "Friday Mono Regular",
+    "5": "Version 5.001",
+    "6": "FridayMono-Regular",
+    "16": "Friday Mono",
+    "17": "Regular",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "Italic": {
+   "sha256": "2b02f3d0eb6b750f831e48bace39781447492362e3ee3aa968f94d86a8a9979a",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 522,
+    "H": 696,
+    "l": 729,
+    "barred_l": 729,
+    "l_caron": 759,
+    "d": 729,
+    "zero": 703,
+    "one": 696,
+    "target_cap": 695.539,
+    "target_ascender": 728.51
+   },
+   "digit_ends": {
+    "0": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "1": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "2": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    },
+    "3": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "4": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "5": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "6": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "7": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "8": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "9": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     80,
+     80
+    ],
+    "E#0": [
+     80,
+     80
+    ],
+    "E#1": [
+     80,
+     80
+    ],
+    "E#2": [
+     80,
+     80
+    ],
+    "T#0": [
+     80,
+     80
+    ],
+    "l#0": [
+     78,
+     78
+    ],
+    "l#1": [
+     90,
+     88
+    ],
+    "seven#0": [
+     80,
+     80
+    ],
+    "seven#1": [
+     267,
+     244
+    ],
+    "bracketleft#0": [
+     78,
+     78
+    ],
+    "bracketleft#1": [
+     78,
+     78
+    ],
+    "O#0": [
+     82,
+     81
+    ],
+    "O#1": [
+     85,
+     85
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.0,
+   "ink_extent": [
+    1155,
+    326
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono",
+    "2": "Italic",
+    "3": "FridayProject;5.001;FridayMono-Italic",
+    "4": "Friday Mono Italic",
+    "5": "Version 5.001",
+    "6": "FridayMono-Italic",
+    "16": "Friday Mono",
+    "17": "Italic",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "Medium": {
+   "sha256": "03897e5e0a45108f89e50dd2814793d42d019c09978e03d07148843231424598",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 522,
+    "H": 696,
+    "l": 729,
+    "barred_l": 729,
+    "l_caron": 762,
+    "d": 729,
+    "zero": 703,
+    "one": 696,
+    "target_cap": 695.539,
+    "target_ascender": 728.51
+   },
+   "digit_ends": {
+    "0": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "1": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "2": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    },
+    "3": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "4": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "5": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "6": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "7": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "8": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "9": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     92,
+     92
+    ],
+    "E#0": [
+     93,
+     93
+    ],
+    "E#1": [
+     94,
+     94
+    ],
+    "E#2": [
+     94,
+     94
+    ],
+    "T#0": [
+     93,
+     93
+    ],
+    "l#0": [
+     91,
+     91
+    ],
+    "l#1": [
+     105,
+     101
+    ],
+    "seven#0": [
+     93,
+     92
+    ],
+    "seven#1": [
+     296,
+     270
+    ],
+    "bracketleft#0": [
+     91,
+     91
+    ],
+    "bracketleft#1": [
+     91,
+     91
+    ],
+    "f#0": [
+     91,
+     91
+    ],
+    "f#1": [
+     105,
+     101
+    ],
+    "O#0": [
+     93,
+     93
+    ],
+    "O#1": [
+     93,
+     93
+    ],
+    "quotedbl#0": [
+     264,
+     264
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.0,
+   "ink_extent": [
+    1155,
+    328
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono Medium",
+    "2": "Regular",
+    "3": "FridayProject;5.001;FridayMono-Medium",
+    "4": "Friday Mono Medium",
+    "5": "Version 5.001",
+    "6": "FridayMono-Medium",
+    "16": "Friday Mono",
+    "17": "Medium",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "MediumItalic": {
+   "sha256": "481e78a41ca6b7970b78b66e9f2e95f77c519e996ec0d9e47780993ba172290e",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 522,
+    "H": 696,
+    "l": 729,
+    "barred_l": 729,
+    "l_caron": 762,
+    "d": 729,
+    "zero": 703,
+    "one": 696,
+    "target_cap": 695.539,
+    "target_ascender": 728.51
+   },
+   "digit_ends": {
+    "0": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "1": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "2": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    },
+    "3": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "4": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "5": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "6": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -9
+     ]
+    },
+    "7": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "8": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      703,
+      -9
+     ]
+    },
+    "9": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      703,
+      -2
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     92,
+     92
+    ],
+    "E#0": [
+     93,
+     93
+    ],
+    "E#1": [
+     94,
+     94
+    ],
+    "E#2": [
+     94,
+     94
+    ],
+    "T#0": [
+     93,
+     93
+    ],
+    "l#0": [
+     774,
+     731
+    ],
+    "seven#0": [
+     93,
+     92
+    ],
+    "seven#1": [
+     315,
+     287
+    ],
+    "bracketleft#0": [
+     91,
+     91
+    ],
+    "bracketleft#1": [
+     91,
+     91
+    ],
+    "O#0": [
+     96,
+     95
+    ],
+    "O#1": [
+     100,
+     100
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.0,
+   "ink_extent": [
+    1157,
+    328
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono Medium",
+    "2": "Italic",
+    "3": "FridayProject;5.001;FridayMono-MediumItalic",
+    "4": "Friday Mono Medium Italic",
+    "5": "Version 5.001",
+    "6": "FridayMono-MediumItalic",
+    "16": "Friday Mono",
+    "17": "Medium Italic",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "SemiBold": {
+   "sha256": "ce63b0cfb665b049bff39142db544e986eb184a241b0df5c0170a7576fdade8a",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 522,
+    "H": 696,
+    "l": 729,
+    "barred_l": 729,
+    "l_caron": 762,
+    "d": 729,
+    "zero": 703,
+    "one": 696,
+    "target_cap": 695.539,
+    "target_ascender": 728.51
+   },
+   "digit_ends": {
+    "0": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "1": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "2": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -2
+     ]
+    },
+    "3": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "4": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "5": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -8
+     ]
+    },
+    "6": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -8
+     ]
+    },
+    "7": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "8": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "9": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -2
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     104,
+     104
+    ],
+    "E#0": [
+     105,
+     105
+    ],
+    "E#1": [
+     106,
+     106
+    ],
+    "E#2": [
+     108,
+     108
+    ],
+    "T#0": [
+     106,
+     106
+    ],
+    "l#0": [
+     103,
+     103
+    ],
+    "l#1": [
+     120,
+     115
+    ],
+    "seven#0": [
+     107,
+     106
+    ],
+    "seven#1": [
+     331,
+     301
+    ],
+    "bracketleft#0": [
+     105,
+     105
+    ],
+    "bracketleft#1": [
+     105,
+     105
+    ],
+    "f#0": [
+     103,
+     103
+    ],
+    "f#1": [
+     121,
+     116
+    ],
+    "O#0": [
+     104,
+     104
+    ],
+    "O#1": [
+     106,
+     106
+    ],
+    "quotedbl#0": [
+     346,
+     346
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.0,
+   "ink_extent": [
+    1157,
+    330
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono SemiBold",
+    "2": "Regular",
+    "3": "FridayProject;5.001;FridayMono-SemiBold",
+    "4": "Friday Mono SemiBold",
+    "5": "Version 5.001",
+    "6": "FridayMono-SemiBold",
+    "16": "Friday Mono",
+    "17": "SemiBold",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "SemiBoldItalic": {
+   "sha256": "ed52522eeab019e885fad76fa1a1fdf995e47845d509bacabfd14a6a07d456ba",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 522,
+    "H": 696,
+    "l": 729,
+    "barred_l": 729,
+    "l_caron": 762,
+    "d": 729,
+    "zero": 703,
+    "one": 696,
+    "target_cap": 695.539,
+    "target_ascender": 728.51
+   },
+   "digit_ends": {
+    "0": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "1": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "2": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -2
+     ]
+    },
+    "3": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "4": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "5": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -8
+     ]
+    },
+    "6": {
+     "top": 696,
+     "bottom": -9,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      696,
+      -8
+     ]
+    },
+    "7": {
+     "top": 696,
+     "bottom": -2,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      696,
+      -2
+     ]
+    },
+    "8": {
+     "top": 703,
+     "bottom": -9,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      702,
+      -8
+     ]
+    },
+    "9": {
+     "top": 703,
+     "bottom": -2,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      702,
+      -2
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     104,
+     104
+    ],
+    "E#0": [
+     104,
+     104
+    ],
+    "E#1": [
+     105,
+     105
+    ],
+    "E#2": [
+     108,
+     108
+    ],
+    "T#0": [
+     106,
+     106
+    ],
+    "l#0": [
+     773,
+     731
+    ],
+    "seven#0": [
+     107,
+     106
+    ],
+    "seven#1": [
+     347,
+     315
+    ],
+    "bracketleft#0": [
+     105,
+     105
+    ],
+    "bracketleft#1": [
+     105,
+     105
+    ],
+    "O#0": [
+     109,
+     108
+    ],
+    "O#1": [
+     111,
+     111
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.0,
+   "ink_extent": [
+    1159,
+    330
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono SemiBold",
+    "2": "Italic",
+    "3": "FridayProject;5.001;FridayMono-SemiBoldItalic",
+    "4": "Friday Mono SemiBold Italic",
+    "5": "Version 5.001",
+    "6": "FridayMono-SemiBoldItalic",
+    "16": "Friday Mono",
+    "17": "SemiBold Italic",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "Bold": {
+   "sha256": "1a31dec161fa21a79dc4622023287980970e064fe41b394816edf870b5a5baa9",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 523,
+    "H": 697,
+    "l": 730,
+    "barred_l": 730,
+    "l_caron": 769,
+    "d": 730,
+    "zero": 704,
+    "one": 697,
+    "target_cap": 696.872,
+    "target_ascender": 729.905
+   },
+   "digit_ends": {
+    "0": {
+     "top": 704,
+     "bottom": -10,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      704,
+      -10
+     ]
+    },
+    "1": {
+     "top": 697,
+     "bottom": -3,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      697,
+      -3
+     ]
+    },
+    "2": {
+     "top": 704,
+     "bottom": -3,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      704,
+      -3
+     ]
+    },
+    "3": {
+     "top": 704,
+     "bottom": -10,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      704,
+      -10
+     ]
+    },
+    "4": {
+     "top": 697,
+     "bottom": -3,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      697,
+      -3
+     ]
+    },
+    "5": {
+     "top": 697,
+     "bottom": -10,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      697,
+      -10
+     ]
+    },
+    "6": {
+     "top": 697,
+     "bottom": -10,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      697,
+      -10
+     ]
+    },
+    "7": {
+     "top": 697,
+     "bottom": -3,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      697,
+      -3
+     ]
+    },
+    "8": {
+     "top": 704,
+     "bottom": -10,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      704,
+      -10
+     ]
+    },
+    "9": {
+     "top": 704,
+     "bottom": -3,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      704,
+      -3
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     123,
+     123
+    ],
+    "E#0": [
+     123,
+     123
+    ],
+    "E#1": [
+     124,
+     124
+    ],
+    "E#2": [
+     124,
+     124
+    ],
+    "T#0": [
+     122,
+     122
+    ],
+    "l#0": [
+     119,
+     119
+    ],
+    "l#1": [
+     138,
+     132
+    ],
+    "seven#0": [
+     122,
+     121
+    ],
+    "seven#1": [
+     407,
+     371
+    ],
+    "bracketleft#0": [
+     119,
+     120
+    ],
+    "bracketleft#1": [
+     119,
+     120
+    ],
+    "f#0": [
+     121,
+     121
+    ],
+    "f#1": [
+     138,
+     132
+    ],
+    "O#0": [
+     122,
+     122
+    ],
+    "O#1": [
+     122,
+     122
+    ],
+    "quotedbl#0": [
+     336,
+     336
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.5,
+   "ink_extent": [
+    1162,
+    331
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono",
+    "2": "Bold",
+    "3": "FridayProject;5.001;FridayMono-Bold",
+    "4": "Friday Mono Bold",
+    "5": "Version 5.001",
+    "6": "FridayMono-Bold",
+    "16": "Friday Mono",
+    "17": "Bold",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  },
+  "BoldItalic": {
+   "sha256": "4e6e9b7653199505c269e02d5bb4150157618242d950b91b8496f53db0244954",
+   "characters": 1062,
+   "glyphs": 1251,
+   "outline_bbox_changed": [],
+   "advance_changed": [],
+   "heights": {
+    "x": 523,
+    "H": 697,
+    "l": 730,
+    "barred_l": 730,
+    "l_caron": 769,
+    "d": 730,
+    "zero": 704,
+    "one": 697,
+    "target_cap": 696.872,
+    "target_ascender": 729.905
+   },
+   "digit_ends": {
+    "0": {
+     "top": 704,
+     "bottom": -10,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      704,
+      -10
+     ]
+    },
+    "1": {
+     "top": 697,
+     "bottom": -3,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      697,
+      -3
+     ]
+    },
+    "2": {
+     "top": 704,
+     "bottom": -3,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      704,
+      -3
+     ]
+    },
+    "3": {
+     "top": 704,
+     "bottom": -10,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      704,
+      -10
+     ]
+    },
+    "4": {
+     "top": 697,
+     "bottom": -3,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      697,
+      -3
+     ]
+    },
+    "5": {
+     "top": 697,
+     "bottom": -10,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      697,
+      -10
+     ]
+    },
+    "6": {
+     "top": 697,
+     "bottom": -10,
+     "kind": {
+      "top": "flat",
+      "bottom": "round"
+     },
+     "want": [
+      697,
+      -10
+     ]
+    },
+    "7": {
+     "top": 697,
+     "bottom": -3,
+     "kind": {
+      "top": "flat",
+      "bottom": "flat"
+     },
+     "want": [
+      697,
+      -3
+     ]
+    },
+    "8": {
+     "top": 704,
+     "bottom": -10,
+     "kind": {
+      "top": "round",
+      "bottom": "round"
+     },
+     "want": [
+      704,
+      -10
+     ]
+    },
+    "9": {
+     "top": 704,
+     "bottom": -3,
+     "kind": {
+      "top": "round",
+      "bottom": "flat"
+     },
+     "want": [
+      704,
+      -3
+     ]
+    }
+   },
+   "reversed_contours_left": {},
+   "strokes_old_new": {
+    "H#0": [
+     123,
+     123
+    ],
+    "E#0": [
+     123,
+     123
+    ],
+    "E#1": [
+     124,
+     124
+    ],
+    "E#2": [
+     124,
+     124
+    ],
+    "T#0": [
+     741,
+     122
+    ],
+    "l#0": [
+     776,
+     733
+    ],
+    "seven#0": [
+     545,
+     503
+    ],
+    "bracketleft#0": [
+     119,
+     120
+    ],
+    "bracketleft#1": [
+     119,
+     120
+    ],
+    "O#0": [
+     135,
+     133
+    ],
+    "O#1": [
+     140,
+     138
+    ]
+   },
+   "faceted_extrema_left": 0,
+   "advances": [
+    0,
+    600
+   ],
+   "box_join_gaps": [],
+   "round_vs_flat_px": {},
+   "digits_aligned": true,
+   "render_errors": [],
+   "render_empty": [],
+   "hhea": [
+    968,
+    -312,
+    0
+   ],
+   "typo": [
+    968,
+    -312,
+    0
+   ],
+   "win": [
+    1164,
+    331
+   ],
+   "line_centre_minus_cap_centre": -20.5,
+   "ink_extent": [
+    1164,
+    331
+   ],
+   "double_underline_separate": 68,
+   "names": {
+    "1": "Friday Mono",
+    "2": "Bold Italic",
+    "3": "FridayProject;5.001;FridayMono-BoldItalic",
+    "4": "Friday Mono Bold Italic",
+    "5": "Version 5.001",
+    "6": "FridayMono-BoldItalic",
+    "16": "Friday Mono",
+    "17": "Bold Italic",
+    "19": "Friday Mono 0123456789 Il1| O0 {} => != <= -> www"
+   },
+   "features": [
+    "ccmp",
+    "cv01",
+    "mark",
+    "mkmk",
+    "ss01"
+   ],
+   "shaping": {
+    "decomposed_sequences": 384,
+    "decomposed_not_one_cell": 0,
+    "zero": "zero",
+    "zero_ss01": "zero.alt",
+    "zero_cv01": "zero.alt"
+   },
+   "woff2_matches_ttf": true
+  }
+ },
+ "failures": []
+}

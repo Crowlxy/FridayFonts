@@ -27,6 +27,23 @@ sys.path.insert(0, HERE)
 import build_sans_30 as B  # noqa: E402
 
 
+# Dense kanji whose contour count differs from 2.5 after emboldening (a narrow gap closed or
+# opened).  Recorded as (2.5 count, 3.0 count) per face and checked by eye in reports/.
+# Any other change, or a different count for these glyphs, fails the run.
+KNOWN_CONTOUR_CHANGES = {
+    "FridaySans-Bold": {"jp.uni737C": (6, 5), "jp.uni7E6D": (8, 7), "jp.uni9F4E": (11, 12)},
+    "FridaySans-Light": {"jp.glyph62569": (13, 14), "jp.uni5F8C": (5, 4), "jp.uni9B43": (7, 10)},
+    "FridaySans-Medium": {"jp.glyph62646": (5, 6), "jp.uni6B53": (5, 4)},
+    "FridaySans-Regular": {"jp.glyph62373": (10, 11), "jp.glyph62491": (10, 11), "jp.uni7027": (10, 11), "jp.uni81D8": (14, 15)},
+    "FridaySans-SemiBold": {"jp.uni6516": (11, 12)},
+    "FridaySansUI-Bold": {"jp.uni5DB8": (7, 9), "jp.uni7E6D": (8, 7)},
+    "FridaySansUI-Light": {"jp.glyph62569": (13, 14), "jp.uni5F8C": (5, 4), "jp.uni9B43": (7, 10)},
+    "FridaySansUI-Medium": {"jp.glyph62646": (5, 6)},
+    "FridaySansUI-Regular": {"jp.glyph62373": (10, 11), "jp.glyph62491": (10, 11), "jp.uni7027": (10, 11), "jp.uni81D8": (14, 15), "jp.uni8CF8": (12, 13)},
+    "FridaySansUI-SemiBold": {"jp.uni6516": (11, 12)},
+}
+
+
 def to_path(gs, name):
     p = pathops.Path()
     gs[name].draw(p.getPen(glyphSet=gs))
@@ -101,6 +118,45 @@ def glyph_checks(args):
     return base, dict(summary=summary, median_growth=med, e=e)
 
 
+def layout_digest(font, tag):
+    """Content of a GSUB/GPOS table as XML text, so a changed lookup is not mistaken for an equal one."""
+    from fontTools.misc.xmlWriter import XMLWriter
+    import io
+    buf = io.StringIO()
+    w = XMLWriter(buf)
+    font[tag].toXML(w, font)
+    return buf.getvalue()
+
+
+def glyph_failures(base, summary):
+    """Glyph-level issues that are not recorded as known: each one fails the run."""
+    bad = []
+    known = KNOWN_CONTOUR_CHANGES.get(base, {})
+    for k, (count, rows) in summary.items():
+        if k == "contour_count":
+            bad += [(k, row[0]) for row in rows if known.get(row[0]) != tuple(row[1:])]
+            if count > len(rows):
+                bad.append((k, "%d more" % (count - len(rows))))
+        elif count:
+            bad += [(k, "%d glyphs" % count)]
+    return bad
+
+
+def face_failures(f, ui):
+    """Face-level checks that must hold; each name is a reason to exit non-zero."""
+    bad = []
+    if f["glyphs"][0] != f["glyphs"][1]:
+        bad.append("glyphs")
+    for k in ("cmap_equal", "order_equal", "typo_same", "hhea_same", "gsub_gpos_same", "win_covers"):
+        if not f[k]:
+            bad.append(k)
+    if f["hinting_left"]:
+        bad.append("hinting_left")
+    if set(f["tables_lost"]) - {"cvt ", "fpgm", "prep"}:      # 3.0 drops the TrueType hinting on purpose
+        bad.append("tables_lost")
+    return bad
+
+
 def face_checks(dst, src):
     a, b = load_src(src), TTFont(dst)
     out = {}
@@ -121,6 +177,7 @@ def face_checks(dst, src):
         a["hhea"].ascent, a["hhea"].descent, a["hhea"].lineGap)) if not ui else         (b["hhea"].ascent, b["hhea"].descent, b["hhea"].lineGap) == (want[0], want[1], 0)
     out["gsub_gpos_same"] = all(
         len(a[t].table.LookupList.Lookup) == len(b[t].table.LookupList.Lookup)
+        and layout_digest(a, t) == layout_digest(b, t)
         for t in ("GSUB", "GPOS"))
     # win metrics must cover every glyph
     g = b["glyf"]
@@ -156,10 +213,21 @@ def main():
         print("   face:", {k: f[k] for k in ("glyphs", "cmap_equal", "order_equal", "hinting_left", "gasp",
                                             "tables_lost", "vend", "win", "typo_same", "hhea_same",
                                             "gsub_gpos_same", "win_covers", "name5")})
-        bad += sum(counts.values())
+        failed = glyph_failures(base, s)
+        if failed:
+            print("   GLYPH CHECK FAILED:", failed[:12])
+        bad += len(failed)
+        failed = face_failures(f, "SansUI" in base)
+        if failed:
+            print("   FACE CHECK FAILED:", failed)
+            bad += len(failed)
     if a.report:
         with open(a.report, "w", encoding="utf-8") as fh:
             json.dump(report, fh, indent=1, ensure_ascii=False, default=str)
+    if bad:
+        print("FAILED: %d problem(s)" % bad)
+        return 1
+    print("OK: no problems")
     return 0
 
 

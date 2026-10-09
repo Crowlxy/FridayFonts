@@ -9,15 +9,15 @@
 
 Friday Monoの日本語版（Friday Mono JP / Friday Mono Plain JP）は、4.93で配布を終えました。
 
-![Friday Mono 5.0 の10スタイル](releases/mono-5.0/reports/proof-styles.png)
+![Friday Mono 5.0.1 の10スタイル](releases/mono-5.0.1/reports/proof-styles.png)
 ![Friday Sans の5つの太さ](releases/sans-2.5/reports/weights-proof-FridaySans.png)
 
 ## ダウンロード
 
 | 書体 | 版 | ダウンロード |
 |---|---|---|
-| Friday Mono | 5.0 | [FridayMono-5.0.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v5.0) |
-| Friday Sans / Friday Sans UI | 2.5 | [FridaySans-2.5.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v2.5) |
+| Friday Mono | 5.0.1 | [FridayMono-5.0.1.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v5.0.1) |
+| Friday Sans / Friday Sans UI | 3.0（最新・未公開） | FridaySans-3.0.zip。公開済みの最新は2.5：[FridaySans-2.5.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v2.5) |
 
 ZIPの中は次のとおりです。
 
@@ -146,7 +146,7 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 
 | フォルダ | 中身 |
 |---|---|
-| `releases/mono-5.0/`・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
+| `releases/mono-5.0.1/`・`releases/sans-3.0/`・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
 | `releases/mono-4.93/` | 日本語版の最後の版（Mono JP / Plain JP）の記録 |
 | `releases/archive/` | 旧版と試作版の説明・検査記録 |
 | `scripts/` | フォントを作るためのスクリプト・手描きデータ・ヒント設定 |
@@ -154,7 +154,7 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 
 ## 既知の制限
 
-- Light・SemiBoldは、Windows実機での表示確認をまだ行っていません（Regular・Medium・Boldは確認済み）。Friday Mono 5.0はGDIでの描画検査のみで、アプリでの目視確認はこれからです。
+- Light・SemiBoldは、Windows実機での表示確認をまだ行っていません（Regular・Medium・Boldは確認済み）。Friday Mono 5.0.1はGDIでの描画検査のみで、アプリでの目視確認はこれからです。
 - Friday Sansの日本語の約物詰め（palt / halt）は未対応です。
 - 収録していない人名・地名用の漢字などは、アプリの代替フォントで表示されます。
 

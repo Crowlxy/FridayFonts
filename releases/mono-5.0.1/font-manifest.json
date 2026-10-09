@@ -1,0 +1,122 @@
+[
+ {
+  "family": "Friday Mono",
+  "style": "Light",
+  "weight": 300,
+  "italic": false,
+  "ttf": "ttf/FridayMono-Light.ttf",
+  "woff2": "web/FridayMono-Light.woff2",
+  "sha256": "7fae8585ec9ebb6114807bd123b219a5003faa5170733b041eb5aa9093a4286e",
+  "woff2_sha256": "3c51def570262ff78da9a4747f3c54f530752e1c2ecf68499d4c3452a842bcd3",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-Light.ttf",
+  "source_sha256": "af6e0ddaadfb4373e643ba897c6ed0269dcccc99e04381e90449de9c5a65924f"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "LightItalic",
+  "weight": 300,
+  "italic": true,
+  "ttf": "ttf/FridayMono-LightItalic.ttf",
+  "woff2": "web/FridayMono-LightItalic.woff2",
+  "sha256": "9a539ae898a6bb6b01bdaf4099b357d87ea73d7e5d76d03fbe3a07cd34054793",
+  "woff2_sha256": "fe63beefbf89f16768b5ab34dd6aac6cf0324d0cf52524fcde84ab6b6ce98dc8",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-LightItalic.ttf",
+  "source_sha256": "6f552c7911cbc9f3a74b5913844b1ceadbec70c24e856c599459ecd48bbaa578"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "Regular",
+  "weight": 400,
+  "italic": false,
+  "ttf": "ttf/FridayMono-Regular.ttf",
+  "woff2": "web/FridayMono-Regular.woff2",
+  "sha256": "b08cb0d2eb0ee90cc47ffbd544603183c113e6aa9bf116c2d41e3e30bb86be00",
+  "woff2_sha256": "910fd171db5f620e0937378b8e8863a260a0752a945429fb88e59da57664634c",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-Regular.ttf",
+  "source_sha256": "f50613cebe1ee348268be01c7792d89b8fab88e7c2a88e9bbcaa20ed12d12855"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "Italic",
+  "weight": 400,
+  "italic": true,
+  "ttf": "ttf/FridayMono-Italic.ttf",
+  "woff2": "web/FridayMono-Italic.woff2",
+  "sha256": "2b02f3d0eb6b750f831e48bace39781447492362e3ee3aa968f94d86a8a9979a",
+  "woff2_sha256": "399dfba019c8b928c429640b7c5d378f322626027b96b96a221e6033767393ed",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-Italic.ttf",
+  "source_sha256": "b35a40f5a4384998d15faaaf0e74219b66d94698a38a260193bef4ab14f39742"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "Medium",
+  "weight": 500,
+  "italic": false,
+  "ttf": "ttf/FridayMono-Medium.ttf",
+  "woff2": "web/FridayMono-Medium.woff2",
+  "sha256": "03897e5e0a45108f89e50dd2814793d42d019c09978e03d07148843231424598",
+  "woff2_sha256": "6d78f097be84ece1a709600f140423890a4f52aaff1fa7b905ee1cdd5508167f",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-Medium.ttf",
+  "source_sha256": "8237dab44df091c6c079cfbe8f69de1d6b5cde63537a433640419adbe5a650c5"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "MediumItalic",
+  "weight": 500,
+  "italic": true,
+  "ttf": "ttf/FridayMono-MediumItalic.ttf",
+  "woff2": "web/FridayMono-MediumItalic.woff2",
+  "sha256": "481e78a41ca6b7970b78b66e9f2e95f77c519e996ec0d9e47780993ba172290e",
+  "woff2_sha256": "6bb7619ef54cce7f3645eeeebcfae2ab7199b04001386920732ff76ac7f96373",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-MediumItalic.ttf",
+  "source_sha256": "65f89be29dd958f75ee352393a191862cfd59447d16b8d1c20d0af700d18887b"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "SemiBold",
+  "weight": 600,
+  "italic": false,
+  "ttf": "ttf/FridayMono-SemiBold.ttf",
+  "woff2": "web/FridayMono-SemiBold.woff2",
+  "sha256": "ce63b0cfb665b049bff39142db544e986eb184a241b0df5c0170a7576fdade8a",
+  "woff2_sha256": "cc6b69cedbbf29c5613f44547d115078239b3cf1b42ca6ace8c1b9675ad5c29a",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-SemiBold.ttf",
+  "source_sha256": "4d3cff1a42f6b4c02842ee7da6255d4a17273f5bde5856b1c1137f9f7bc2ca46"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "SemiBoldItalic",
+  "weight": 600,
+  "italic": true,
+  "ttf": "ttf/FridayMono-SemiBoldItalic.ttf",
+  "woff2": "web/FridayMono-SemiBoldItalic.woff2",
+  "sha256": "ed52522eeab019e885fad76fa1a1fdf995e47845d509bacabfd14a6a07d456ba",
+  "woff2_sha256": "783414eac452d4e4e8ee64658251840a502993eef2421998f3cea8e1be702225",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-SemiBoldItalic.ttf",
+  "source_sha256": "0dd81cd51e0ae6ff33ab415842dea8efd8cdb0cc10962065d3c751c79208bd7e"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "Bold",
+  "weight": 700,
+  "italic": false,
+  "ttf": "ttf/FridayMono-Bold.ttf",
+  "woff2": "web/FridayMono-Bold.woff2",
+  "sha256": "1a31dec161fa21a79dc4622023287980970e064fe41b394816edf870b5a5baa9",
+  "woff2_sha256": "d7b44b22ebff62c9d01360b8f3cc12daf87af30868ad588abdb584f4f1102a03",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-Bold.ttf",
+  "source_sha256": "7ffa9bebc67bc36b5f4f7d58fbcb341fec8435524e12b2d7e81ef5aec9abd3b8"
+ },
+ {
+  "family": "Friday Mono",
+  "style": "BoldItalic",
+  "weight": 700,
+  "italic": true,
+  "ttf": "ttf/FridayMono-BoldItalic.ttf",
+  "woff2": "web/FridayMono-BoldItalic.woff2",
+  "sha256": "4e6e9b7653199505c269e02d5bb4150157618242d950b91b8496f53db0244954",
+  "woff2_sha256": "e56a4a9e316a88a35738f68279243ac0e60d0e40eb09fb83d974d3663daf8574",
+  "source": "FridayMono-4.93.zip:FridayMono-4.93/ttf/FridayMono-BoldItalic.ttf",
+  "source_sha256": "8bf4ab025bb64d4760d67d08529bed3f4027c8a5745fa9b1720f72b7779b4a80"
+ }
+]

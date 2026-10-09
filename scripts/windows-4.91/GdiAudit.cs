@@ -15,6 +15,16 @@ public static class Mono491GdiAudit {
  [DllImport("gdi32.dll",CharSet=CharSet.Unicode)]static extern int GetTextFace(IntPtr d,int n,StringBuilder b);
  [DllImport("gdi32.dll",CharSet=CharSet.Unicode)]static extern bool GetTextMetrics(IntPtr d,out TM t);
  [DllImport("gdi32.dll",CharSet=CharSet.Unicode,SetLastError=true)]static extern uint GetGlyphOutline(IntPtr d,uint c,uint format,out GM m,uint size,byte[] data,ref Mat t);
+ [DllImport("gdi32.dll",SetLastError=true)]static extern uint GetFontData(IntPtr d,uint table,uint offset,byte[] buf,uint n);
+ // The font GDI actually draws with must be the file under test, byte for byte: a same-named older face (installed or loaded earlier) would otherwise pass.
+ static void RequireSameFont(IntPtr dc,string path){
+  uint n=GetFontData(dc,0,0,null,0);if(n==0xffffffff||n==0)throw new Exception("GetFontData failed for "+path);
+  var got=new byte[n];if(GetFontData(dc,0,0,got,n)!=n)throw new Exception("GetFontData short read for "+path);
+  var want=File.ReadAllBytes(path);
+  using(var sha=System.Security.Cryptography.SHA256.Create()){
+   if(want.Length!=got.Length||Convert.ToBase64String(sha.ComputeHash(want))!=Convert.ToBase64String(sha.ComputeHash(got)))throw new Exception("GDI selected a different font than "+path+" ("+got.Length+" vs "+want.Length+" bytes)");
+  }
+ }
  public static string Run(string path,string family,int weight,int glyphs,bool italic,string output){
   if(AddFontResourceEx(path,0x10,IntPtr.Zero)==0)throw new Exception("Cannot load private font: "+path);
   var dc=CreateCompatibleDC(IntPtr.Zero);var records=new List<string>();int cases=0;var issues=new List<string>();
@@ -22,7 +32,7 @@ public static class Mono491GdiAudit {
    foreach(int size in new int[]{9,10,11,12,13,14,15,16,17,18,20,24,32}){
     var font=CreateFont(-size,0,0,0,weight,italic?1u:0u,0,0,1,0,0,4,0,family);if(font==IntPtr.Zero)throw new Exception("CreateFont failed");var old=SelectObject(dc,font);
     try{
-     var face=new StringBuilder(256);GetTextFace(dc,face.Capacity,face);if(face.ToString()!=family)throw new Exception("GDI fallback: "+face);
+     var face=new StringBuilder(256);GetTextFace(dc,face.Capacity,face);if(face.ToString()!=family)throw new Exception("GDI fallback: "+face);RequireSameFont(dc,path);
      TM tm;if(!GetTextMetrics(dc,out tm))throw new Exception("No GDI metrics");if((tm.italic!=0)!=italic || tm.weight!=weight)throw new Exception("GDI style fallback");
      var mat=new Mat {a=new Fixed{value=1},d=new Fixed{value=1}};
      for(int gid=0;gid<glyphs;gid++){

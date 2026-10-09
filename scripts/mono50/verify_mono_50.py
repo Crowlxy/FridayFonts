@@ -14,6 +14,7 @@ import zipfile
 from pathlib import Path
 
 import uharfbuzz as hb
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont
 
@@ -308,6 +309,15 @@ def main():
         r['typo'] = [os2.sTypoAscender, os2.sTypoDescender, os2.sTypoLineGap]
         r['win'] = [os2.usWinAscent, os2.usWinDescent]
         r['line_centre_minus_cap_centre'] = (hh.ascent + hh.descent) / 2 - os2.sCapHeight / 2
+        gs = new.getGlyphSet()
+        top = bottom = 0
+        for gname in new.getGlyphOrder():
+            bp = BoundsPen(gs)
+            gs[gname].draw(bp)
+            if bp.bounds:
+                top, bottom = max(top, bp.bounds[3]), max(bottom, -bp.bounds[1])
+        r['ink_extent'] = [top, bottom]
+        check(os2.usWinAscent >= top and os2.usWinDescent >= bottom, '%s usWin does not cover the ink %s' % (style, r['ink_extent']))
         check(r['hhea'] == r['typo'] == [ASCENT, DESCENT, 0], '%s line metrics' % style)
         ul = [layout(new, p, d) for p in range(8, 25) for d in (96, 120, 144, 192)]
         r['double_underline_separate'] = sum(c['visible_gap'] >= 1 for c in ul)

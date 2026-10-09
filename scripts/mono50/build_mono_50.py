@@ -25,10 +25,9 @@ What 5.0 changes, all measured against six other monospace fonts
    mapped are mapped, 22 geometric and punctuation characters are derived
    from Friday's own outlines.
 5. GDI metrics: usWin* came from the Japanese build (1.93 em line in GDI).
-   They now cover Latin, Greek, Cyrillic and box drawing; stacked
-   Vietnamese and ring-acute capitals may clip in GDI only, as they do in
-   the reference fonts.
-6. Names and OS/2: version 5.000, sample text without mojibake, Unicode and
+   They now cover the ink of every mapped glyph, so stacked Vietnamese and
+   ring-acute capitals are not clipped in GDI (the cost is a taller GDI line).
+6. Names and OS/2: version 5.001 (5.0.1), sample text without mojibake, Unicode and
    code page ranges recomputed, vertical tables from the CJK build dropped.
 """
 import hashlib
@@ -41,6 +40,7 @@ import zipfile
 from pathlib import Path
 
 from fontTools.misc.transform import Transform
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.transformPen import TransformPen
@@ -62,8 +62,8 @@ MANIFEST = ROOT / 'releases/mono-4.93/font-manifest.json'
 COVERAGE = HERE / 'coverage.json'
 OUT = ROOT / 'work/mono-5.0'
 
-VERSION = '5.000'
-REVISION = 5.0
+VERSION = '5.001'
+REVISION = 5.001
 STYLES = [('Light', 300), ('LightItalic', 300), ('Regular', 400), ('Italic', 400),
           ('Medium', 500), ('MediumItalic', 500), ('SemiBold', 600),
           ('SemiBoldItalic', 600), ('Bold', 700), ('BoldItalic', 700)]
@@ -75,7 +75,6 @@ NO_SNAP = {0x2571, 0x2572, 0x2573, 0x2591, 0x2592, 0x2593}
 SNAP = 12
 ADVANCE = 600
 SYMBOL_AXIS = 340                           # centre of Iosevka's geometric shapes
-WIN_COVER = [(0x20, 0x17F), (0x370, 0x3FF), (0x400, 0x45F), BOX]
 WIN_MARGIN = 32
 SAMPLE = 'Friday Mono 0123456789 Il1| O0 {} => != <= -> www'
 
@@ -411,18 +410,17 @@ def add_glyphs(font, made):
 # --- metrics and names ---------------------------------------------------------
 
 def family_win(fonts):
+    """Ink extent of every glyph (mapped or not), composites included, from the drawn outlines."""
     top = bottom = 0
     for font in fonts.values():
-        glyf, cmap = font['glyf'], font.getBestCmap()
-        for cp, name in cmap.items():
-            if not any(a <= cp <= b for a, b in WIN_COVER):
+        glyphs = font.getGlyphSet()
+        for name in font.getGlyphOrder():
+            pen = BoundsPen(glyphs)
+            glyphs[name].draw(pen)
+            if pen.bounds is None:
                 continue
-            glyph = glyf[name]
-            if glyph.numberOfContours == 0:
-                continue
-            glyph.recalcBounds(glyf)
-            top = max(top, glyph.yMax)
-            bottom = max(bottom, -glyph.yMin)
+            top = max(top, math.ceil(pen.bounds[3]))
+            bottom = max(bottom, math.ceil(-pen.bounds[1]))
     # ttfautohint's Windows-compatibility mode puts a blue zone on usWinAscent;
     # within ~27 units of the line top it pulls the top edge of the box
     # verticals (968) and collapses them at 9-23 px.  Keep a clear margin.
@@ -447,7 +445,7 @@ def set_names(font, style):
     values = {
         3: 'FridayProject;%s;%s' % (VERSION, ps),
         5: 'Version %s' % VERSION,
-        10: ('Friday Mono 5.0: Latin-only coding font. Round letters re-hinted to '
+        10: ('Friday Mono 5.0.1: Latin-only coding font. Round letters re-hinted to '
              'the cap and x-height, line box centred on the text, box drawing '
              'fitted to the line, character set compared with six monospace fonts.'),
         19: SAMPLE,
