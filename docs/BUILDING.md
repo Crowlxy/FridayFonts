@@ -54,7 +54,9 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 | `windows/prepare_gdi_copy.py` | 名前表だけを変えた検査用の複製を作る（同名の旧版が入っていても、それを描かないため） |
 | `windows/gdi_heights.ps1`・`windows/gdi_all_glyphs.ps1` | Windows GDIで、丸い字の高さと全字形の描画を検査する（プライベート読み込み。描画中のフォントが対象ファイルと一致することを`GetFontData`で照合する） |
 | `weight_ladder.py` | 直立5ウェイトを描き、隣り合うウェイトの間で、4 pxより離れたインクのかたまりが100 pxを超える字を探す（自分自身との比較では見つからない、入力から引き継いだ壊れ用。`verify_mono_50.py`から呼ぶ） |
-| `package_mono_50.py` | 検査結果を確認してから候補版の配布物を作る。`MONO_LIGHT_GROW=5` では `releases/mono-5.0.3/` と `FridayMono-5.0.3.zip`。環境変数なしでは5.0.2。旧版の記録は別ディレクトリに残す |
+| `ligatures.py` | **5.1.0 の候補**：`MONO_LIGATURES=1` のとき、コーディング合字 27 種（`ss02`）を描いて GSUB に足す。字は各スタイルの `= - < > /` から作る（棒の太さ・山形の角度と線の太さ・先端の平らな部分を字から測る。斜体は傾きを戻してから組み、また傾ける）。先頭の n−1 文字は空グリフ `lig.spc`、最後の文字は左へはみ出す合字グリフ（advance 600）。重なりは `removeOverlaps` で結合。環境変数なしでは何も変わらない |
+| `proof_ligatures.py` | 合字の見本（`proof-ligatures.png`＝Regular の合字なし／あり、`proof-ligatures-styles.png`＝全10スタイル）。`--paper <Paper Mono の ttf>` で参考列つきの比較図（見るだけ。フォントには使わない） |
+| `package_mono_50.py` | 検査結果を確認してから候補版の配布物を作る。`MONO_LIGHT_GROW=5` では `releases/mono-5.0.3/` と `FridayMono-5.0.3.zip`、さらに `MONO_LIGATURES=1` では `releases/mono-5.1.0/` と `FridayMono-5.1.0.zip`（`lig_check.py` が通らないと作らない）。環境変数なしでは5.0.2。旧版の記録は別ディレクトリに残す |
 
 出力は`work/mono-5.0/`（git管理外）です。
 
@@ -138,6 +140,8 @@ Windows実機での確認結果は、FridayFonts-WindowsTestの報告書にあ�
 |---|---|
 | `fontspector -p universal <ttf...> --json out.json` | Google Fonts 系の universal プロファイル。Mac 名・ltag・空白・`head.flags`・名前の欠けなどを拾う |
 | `scripts/qa/browser_check.py` | WOFF2 を Chromium・Firefox・WebKit（Playwright）で読み込み、見本を描いて PNG にする |
+| `scripts/qa/lig_check.py --dir <ttf dir> [--baseline <旧版の ttf dir>]` | Mono のコーディング合字（`ss02`）の検査：27 種の組版（空グリフ＋合字）・続く並びが合字にならないこと・`ss01` との併用・輪郭（結合済み・向き・はみ出し）。`--baseline` で、合字なしの組版が旧版と同じことも確かめる |
+| `scripts/qa/lig_browser.py --web <web dir> --out <dir>` | 合字を Chromium・Firefox・WebKit で、オン／オフを描き比べる |
 | `scripts/qa/shape_regress.py --old <dir> --new <dir>` | 2 つのビルドを HarfBuzz で組み比べる（字形列・送り・オフセット） |
 | `scripts/qa/ff_validate.py` | FontForge の検査（自己交差・極値の欠け）。`scripts/fontforge.cmd -lang=py -script ...` で実行 |
 | `diffenator2 diff -fb <旧> -fa <新> --no-diffbrowsers` | 旧版と新版の字形差の HTML（実行すると `build.ninja` ができるので、ルートに残さない） |

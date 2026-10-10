@@ -1,0 +1,20 @@
+{
+ "chromium": {
+  "faces_loaded": true,
+  "ligating_rows_changed": "10/10",
+  "plain_rows_identical": true,
+  "ok": true
+ },
+ "firefox": {
+  "faces_loaded": true,
+  "ligating_rows_changed": "10/10",
+  "plain_rows_identical": true,
+  "ok": true
+ },
+ "webkit": {
+  "faces_loaded": true,
+  "ligating_rows_changed": "10/10",
+  "plain_rows_identical": true,
+  "ok": true
+ }
+}

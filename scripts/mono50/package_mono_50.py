@@ -12,15 +12,15 @@ except the font binaries.
 import hashlib
 import json
 import shutil
+import subprocess
 import sys
 import zipfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from build_mono_50 import OUT, ROOT, STYLES, VERSION, COVERAGE  # noqa: E402
+from build_mono_50 import OUT, ROOT, STYLES, VERSION, SHORT, COVERAGE, LIGATURES  # noqa: E402
 
-SHORT = '5.0.%d' % int(VERSION[-1])
 RELEASE = ROOT / ('releases/mono-' + SHORT)
 PREVIOUS = ROOT / 'releases/mono-4.93'
 ZIP_PATH = ROOT / ('FridayMono-%s.zip' % SHORT)
@@ -30,6 +30,8 @@ REPORT_FILES = ['validation.json', 'outline-compare.json', 'gdi-heights.json', '
                 'proof-proportions.png']
 if (OUT / 'reports' / 'proof-light-vs-regular.png').exists():       # proof_light.py: only for the 5.0.3 candidate
     REPORT_FILES.append('proof-light-vs-regular.png')
+if LIGATURES:                                                       # 5.1: ss02 coding ligatures
+    REPORT_FILES += ['proof-ligatures.png', 'proof-ligatures-styles.png', 'lig-check.txt']
 
 
 def sha(path):
@@ -65,7 +67,18 @@ def require_clean_reports():
             raise SystemExit('validation.json is older than %s' % ttf.name)
 
 
+def require_ligature_checks():
+    """5.1: scripts/qa/lig_check.py must pass on the built faces (shaping, negatives, outlines)."""
+    run = subprocess.run([sys.executable, '-I', '-X', 'utf8', str(ROOT / 'scripts/qa/lig_check.py'),
+                          '--dir', str(OUT / 'ttf')], capture_output=True, text=True, encoding='utf-8')
+    (OUT / 'reports' / 'lig-check.txt').write_text(run.stdout, encoding='utf-8')
+    if run.returncode:
+        raise SystemExit('lig_check failed: ' + run.stdout[-1500:])
+
+
 def main():
+    if LIGATURES:
+        require_ligature_checks()
     require_clean_reports()
     if RELEASE.exists():
         for child in RELEASE.iterdir():
@@ -81,6 +94,13 @@ def main():
         shutil.copy(OUT / 'reports' / name, RELEASE / 'reports' / name)
     for path in (OUT / 'reports' / 'gdi').glob('*.json'):
         shutil.copy(path, RELEASE / 'reports' / 'gdi' / path.name)
+    for name in ('fontspector-5.1.txt',):                           # optional: written by hand after the QA run
+        if (OUT / 'reports' / name).exists():
+            shutil.copy(OUT / 'reports' / name, RELEASE / 'reports' / name)
+    if LIGATURES and (OUT / 'qa-lig').exists():                     # lig_browser.py: ss02 in Chromium / Firefox / WebKit
+        for path in sorted((OUT / 'qa-lig').glob('FridayMono-ss02-*.png')) + [OUT / 'qa-lig' / 'lig-browser.json']:
+            if path.exists():
+                shutil.copy(path, RELEASE / 'reports' / path.name)
     shutil.copy(COVERAGE, RELEASE / 'reports' / 'coverage.json')
     shutil.copy(OUT / 'build-log.json', RELEASE / 'reports' / 'build-log.json')
     shutil.copy(OUT / 'web' / 'friday-mono.css', RELEASE / 'web' / 'friday-mono.css')

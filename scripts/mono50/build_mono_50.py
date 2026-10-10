@@ -58,6 +58,7 @@ from outline_repair import repair_glyph    # noqa: E402
 import heights                            # noqa: E402
 import light_stem                         # noqa: E402
 import inherited_fixes                    # noqa: E402
+import ligatures                          # noqa: E402
 
 ZIP = ROOT / 'FridayMono-4.93.zip'
 MANIFEST = ROOT / 'releases/mono-4.93/font-manifest.json'
@@ -68,9 +69,16 @@ COVERAGE = HERE / 'coverage.json'
 # Left at 0 the Light faces stay as in 5.0.2 (the name, head.flags and FeatureParams changes still apply).  MONO_OUT names another output folder (a candidate build).
 LIGHT_GROW = float(os.environ.get('MONO_LIGHT_GROW', '0'))
 OUT = ROOT / os.environ.get('MONO_OUT', 'work/mono-5.0')
+# MONO_LIGATURES=1 adds the opt-in coding ligatures (ss02, ligatures.py): version 5.1.0.  Without it the
+# build is the 5.0.x one and the default shaping of the 5.1 build is identical to it.
+LIGATURES = os.environ.get('MONO_LIGATURES') == '1'
 
-VERSION = '5.003' if LIGHT_GROW else '5.002'
-REVISION = 5.003 if LIGHT_GROW else 5.002
+if LIGATURES:
+    VERSION, REVISION, SHORT = '5.100', 5.100, '5.1.0'
+else:
+    VERSION = '5.003' if LIGHT_GROW else '5.002'
+    REVISION = 5.003 if LIGHT_GROW else 5.002
+    SHORT = '5.0.%d' % int(VERSION[-1])
 STYLES = [('Light', 300), ('LightItalic', 300), ('Regular', 400), ('Italic', 400),
           ('Medium', 500), ('MediumItalic', 500), ('SemiBold', 600),
           ('SemiBoldItalic', 600), ('Bold', 700), ('BoldItalic', 700)]
@@ -454,10 +462,10 @@ def set_names(font, style):
     values = {
         3: 'FridayProject;%s;%s' % (VERSION, ps),
         5: 'Version %s' % VERSION,
-        10: ('Friday Mono 5.0.%d: Latin-only coding font. Round letters re-hinted to '
+        10: ('Friday Mono %s: Latin-only coding font. Round letters re-hinted to '
              'the cap and x-height, line box centred on the text, box drawing '
              'fitted to the line, character set compared with six monospace fonts.'
-             % int(VERSION[-1])),
+             % SHORT),
         19: SAMPLE,
     }
     for nid, text in values.items():
@@ -478,7 +486,7 @@ def name_features(font):
     from fontTools.ttLib.tables import otTables
     name = font['name']
     nid = max([256] + [r.nameID + 1 for r in name.names if r.nameID >= 256])
-    labels = {'ss01': 'Zero without slash', 'cv01': 'Zero without slash'}
+    labels = {'ss01': 'Zero without slash', 'cv01': 'Zero without slash', ligatures.FEATURE: ligatures.LABEL}
     for rec in font['GSUB'].table.FeatureList.FeatureRecord:
         text = labels.get(rec.FeatureTag)
         if not text or rec.Feature.FeatureParams is not None:
@@ -529,10 +537,11 @@ def main():
         if LIGHT_GROW and style in ('Light', 'LightItalic'):
             ref = TTFont(io.BytesIO(inputs[style][0]))
             inherited['light_stem']['needle_tips_removed'] = light_stem.trim_needles(font, ref)
+        lig_glyphs = ligatures.add(font) if LIGATURES else []
         fonts[style] = font
         log[style] = {'input_sha256': digest, 'inherited_fixes': inherited, 'points_dropped': dropped,
                       'tents_repaired': tents, 'box_glyphs_fitted': boxes,
-                      'glyphs_added': new, 'redrawn': ['U+25B2', 'U+25BC'],
+                      'glyphs_added': new, 'ligature_glyphs': lig_glyphs, 'redrawn': ['U+25B2', 'U+25BC'],
                       'heights': {k: round(v, 3) for k, v in targets.items()},
                       'height_classes': heights.summary(plans),
                       'height_plans': {n: p.kind for n, p in plans.items()},

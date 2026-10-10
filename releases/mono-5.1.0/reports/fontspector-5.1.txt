@@ -1,0 +1,530 @@
+Running 1133 checks on 10 files in 1 family
+Testing: work/mono-5.1/ttf
+  Section: Opentype Specification Checks
+
+>> opentype/STAT/ital_axis
+WARN: [no-stat-table]: Static font is missing the 'STAT' table.
+
+Testing: work/mono-5.1/ttf/FridayMono-Bold.ttf
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• uni1ED1 (U+1ED1): found 3, expected one of: [4, 5, 8]
+• uni1ED3 (U+1ED3): found 3, expected one of: [4, 5, 8]
+• uni1FC8 (unencoded): found 1, expected one of: [2, 4]
+• uni1FCA (unencoded): found 1, expected one of: [2, 4]
+• uni1FEA (unencoded): found 1, expected one of: [2]
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+• greater_equal.liga (unencoded): found 1, expected one of: [2, 3, 4]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+Testing: work/mono-5.1/ttf/FridayMono-BoldItalic.ttf
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/italic_angle
+WARN: [negative]: The value of post.italicAngle is negative, which is likely a mistake and should become positive for 
+left-leaning Italics.
+post.italicAngle: -10
+angle calculated from outlines: 0.9)
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• Upsilontonos (U+038E): found 1, expected one of: [2, 3, 4]
+• uni1ED1 (U+1ED1): found 3, expected one of: [4, 5, 8]
+• uni1FC8 (unencoded): found 1, expected one of: [2, 4]
+• uni1FCA (unencoded): found 1, expected one of: [2, 4]
+• uni1FEA (unencoded): found 1, expected one of: [2]
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+• greater_equal.liga (unencoded): found 1, expected one of: [2, 3, 4]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+Testing: work/mono-5.1/ttf/FridayMono-Italic.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/italic_angle
+WARN: [negative]: The value of post.italicAngle is negative, which is likely a mistake and should become positive for 
+left-leaning Italics.
+post.italicAngle: -10
+angle calculated from outlines: 1.0)
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+Testing: work/mono-5.1/ttf/FridayMono-Light.ttf
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+Testing: work/mono-5.1/ttf/FridayMono-LightItalic.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/italic_angle
+WARN: [negative]: The value of post.italicAngle is negative, which is likely a mistake and should become positive for 
+left-leaning Italics.
+post.italicAngle: -10
+angle calculated from outlines: 1.0)
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+Testing: work/mono-5.1/ttf/FridayMono-Medium.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+Testing: work/mono-5.1/ttf/FridayMono-MediumItalic.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/italic_angle
+WARN: [negative]: The value of post.italicAngle is negative, which is likely a mistake and should become positive for 
+left-leaning Italics.
+post.italicAngle: -10
+angle calculated from outlines: 1.0)
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+Testing: work/mono-5.1/ttf/FridayMono-Regular.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+Testing: work/mono-5.1/ttf/FridayMono-SemiBold.ttf
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• uni1ED1 (U+1ED1): found 3, expected one of: [4, 5, 8]
+• uni1ED3 (U+1ED3): found 3, expected one of: [4, 5, 8]
+• uni1FC8 (unencoded): found 1, expected one of: [2, 4]
+• uni1FCA (unencoded): found 1, expected one of: [2, 4]
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+Testing: work/mono-5.1/ttf/FridayMono-SemiBoldItalic.ttf
+  Section: Opentype Specification Checks
+
+>> opentype/fsselection_wws
+WARN: [no-wws-without-wws-names]: OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS 
+Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.
+
+>> opentype/italic_angle
+WARN: [negative]: The value of post.italicAngle is negative, which is likely a mistake and should become positive for 
+left-leaning Italics.
+post.italicAngle: -10
+angle calculated from outlines: 1.0)
+
+>> opentype/monospace
+WARN: [bad-numberOfHMetrics]: The OpenType spec recommends at 
+https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but 
+this font has 1225 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font.
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+WARN: [decomposed-outline]: Lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: dcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: lcaron is decomposed and therefore could not be checked. Please check manually.
+
+WARN: [decomposed-outline]: tcaron is decomposed and therefore could not be checked. Please check manually.
+
+>> case_mapping
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E30
+
+FAIL: [missing-case-counterparts]: Missing case-swapping counterpart for U+1E6E
+
+>> contour_count
+WARN: [contour-count]: This check inspects the glyph outlines and detects the total number of contours in each of them. 
+The expected values are
+ inferred from the typical amounts of contours observed in a    
+ large collection of reference font families. The divergences   
+ listed below may simply indicate a significantly different     
+ design on some of your glyphs. On the other hand, some of these
+ may flag actual bugs in the font such as glyphs mapped to an   
+ incorrect codepoint. Please consider reviewing the design and  
+ codepoint assignment of these to make sure they are correct.   
+
+
+The following glyphs do not have the recommended number of contours:
+• uni1ED1 (U+1ED1): found 3, expected one of: [4, 5, 8]
+• uni1ED3 (U+1ED3): found 3, expected one of: [4, 5, 8]
+• uni1FCA (unencoded): found 1, expected one of: [2, 4]
+• equal_equal_equal.liga (unencoded): found 2, expected one of: [3]
+
+>> soft_hyphen
+WARN: [softhyphen]: This font has a 'Soft Hyphen' character.
+
+Ran 1133 checks in 4.543s
+
+Summary:
+  SKIP: 397 INFO: 20 PASS: 650 WARN: 86 FAIL: 20 FATAL: 0 ERROR: 0 

@@ -1,0 +1,11 @@
+FridayMono-Bold.ttf            OK
+FridayMono-BoldItalic.ttf      OK
+FridayMono-Italic.ttf          OK
+FridayMono-Light.ttf           OK
+FridayMono-LightItalic.ttf     OK
+FridayMono-Medium.ttf          OK
+FridayMono-MediumItalic.ttf    OK
+FridayMono-Regular.ttf         OK
+FridayMono-SemiBold.ttf        OK
+FridayMono-SemiBoldItalic.ttf  OK
+ligature failures: 0

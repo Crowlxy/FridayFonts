@@ -41,6 +41,8 @@ ZIPの中は次のとおりです。
 
 Friday Monoの英数字は600 units（0.6em）の等幅です。ゼロの斜線は、OpenTypeの`ss01`または`cv01`で消せます。
 
+コーディング用の合字（`->` `=>` `!=` `>=` `|>` など27種）は、5.1.0の**候補**で`ss02`として入っています（標準はオフ。公開前。[releases/mono-5.1.0/](releases/mono-5.1.0/README.md)）。
+
 Sans UIは、Sansとほぼ同じ字面（実測で約1%小さい）で、かなや句読点の間隔を詰めた、画面の小さな文字向けの版です。
 
 ## インストール
@@ -147,6 +149,7 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 | フォルダ | 中身 |
 |---|---|
 | `releases/mono-5.0.3/`・`releases/sans-3.0/`（Sans 3.002）・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
+| `releases/mono-5.1.0/` | Mono 5.1.0（コーディング合字 `ss02` を足した**候補**）の記録。承認前・公開前 |
 | `releases/mono-5.0.1/`・`releases/mono-5.0.2/` | Mono 5.0.1 と、5.0.2（Light の ½ の修正。公開せず 5.0.3 に含めた）の記録 |
 | `scripts/qa/` | ブラウザ（Chromium・Firefox・WebKit）での読み込み、HarfBuzz の組版の回帰、FontForge の検査（`docs/FONT-TOOLS.md` のツールを使う） |
 | `reviews/` | 品質レビューの記録 |
@@ -160,6 +163,7 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 - Light・SemiBoldは、Windows実機での表示確認をまだ行っていません（Regular・Medium・Boldは確認済み）。Friday Mono 5.0.1はGDIでの描画検査のみで、アプリでの目視確認はこれからです。
 - **Friday Sans / Sans UI の Light の壊れた漢字（共・題の画の欠け、武・昆・廃などの黒い楔）は、3.002 で直しました**（95字を作り直し）。3.002 は GitHub の [`sans-v3.002`](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v3.002) で公開しました。旧版 3.0（`sans-v3.0`、内部版 3.000）の Light には壊れが残っているので、3.002 を使ってください。[3.002 の記録](releases/sans-3.0/README.md)、[レビューの記録](reviews/2026-10-09-r3.md)、未解決の一覧は[レビュー結果.md](レビュー結果.md)
 - Friday Mono 5.0.3のLight・LightItalicは、5.0.1より線を太くしました（62 → 66 units）。13〜24 pxのWindows・Macの実機で、Regularと並べた見え方はまだ確認していません。細い／太いと感じたら知らせてください。5.0.1のLightにあった½（U+00BD）の分母の壊れも、5.0.3で直っています（[releases/mono-5.0.3/](releases/mono-5.0.3/README.md)）。
+- Friday Mono 5.1.0（候補）の合字は、Windows Terminal・VS Code・Macの実機での確認がまだです。`ss02`を指定できないアプリでは出ません。波線（`~`）を使うもの、`::` `:=` `..` などは未対応です（[releases/mono-5.1.0/](releases/mono-5.1.0/README.md)）。
 - Friday Sansの日本語の約物詰め（palt / halt）は未対応です。
 - 収録していない人名・地名用の漢字などは、アプリの代替フォントで表示されます。
 
