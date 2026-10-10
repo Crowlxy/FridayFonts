@@ -1,6 +1,6 @@
-# Friday Sans 3.0: ヒントなしの影響の監査（生出力）
+# Friday Sans 3.002: ヒントなしの影響の監査（生出力）
 
-実行: `FridayFonts/work/sans-3.0` で `python ../../scripts/sans30/audit_unhinted.py --out ... --kanji 600` と下の3本。各字を1字ずつ測り、平均にしていません。
+実行: `FridayFonts/work/sans-3.0` で `python ../../scripts/sans30/audit_unhinted.py --out audit/audit-unhinted.json --kanji 600` と下の3本。参照フォントは `reference/` の Hiragino W3・Noto Sans JP（wght 400）・Inter（opsz 14・wght 400 に固定）・SF Pro Text Regular。各字を1字ずつ測り、平均にしていません。
 
 ## 1. 高さ（audit_height_audit.py）
 ```
@@ -28,21 +28,21 @@ x/cap/digit1/zero top (‰)                                  546/768/768/778 544
   digit     n= 10 median ratio 1.070 | per-glyph p5 1.067 p95 1.072 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 0%
   hiragana  n= 83 median ratio 1.079 | per-glyph p5 1.072 p95 1.084 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 1%
   katakana  n= 86 median ratio 1.077 | per-glyph p5 1.072 p95 1.084 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 1%
-  kanji     n=600 median ratio 1.087 | per-glyph p5 1.073 p95 1.100 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 6%
+  kanji     n=600 median ratio 1.083 | per-glyph p5 1.021 p95 1.094 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 6%
 == Friday 3.0 / Hiragino W3
   lower     n= 26 median ratio 1.013 | per-glyph p5 0.918 p95 1.071 | glyphs off the class median by >10%:   1 (3.8%), >20%: 0, worst 10%
   upper     n= 26 median ratio 1.037 | per-glyph p5 1.005 p95 1.090 | glyphs off the class median by >10%:   1 (3.8%), >20%: 0, worst 13%
   digit     n= 10 median ratio 1.032 | per-glyph p5 0.972 p95 1.087 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 6%
   hiragana  n= 83 median ratio 1.070 | per-glyph p5 0.965 p95 1.178 | glyphs off the class median by >10%:  10 (12.0%), >20%: 0, worst 16%
   katakana  n= 86 median ratio 1.070 | per-glyph p5 1.001 p95 1.180 | glyphs off the class median by >10%:   6 (7.0%), >20%: 0, worst 15%
-  kanji     n=600 median ratio 1.083 | per-glyph p5 1.031 p95 1.131 | glyphs off the class median by >10%:   1 (0.2%), >20%: 0, worst 12%
+  kanji     n=600 median ratio 1.071 | per-glyph p5 1.006 p95 1.125 | glyphs off the class median by >10%:   2 (0.3%), >20%: 0, worst 11%
 == Friday 3.0 / Noto Sans JP 400
   lower     n= 26 median ratio 0.909 | per-glyph p5 0.823 p95 1.078 | glyphs off the class median by >10%:   6 (23.1%), >20%: 1, worst 22%
   upper     n= 26 median ratio 1.028 | per-glyph p5 0.954 p95 1.149 | glyphs off the class median by >10%:   3 (11.5%), >20%: 0, worst 17%
   digit     n= 10 median ratio 1.106 | per-glyph p5 0.894 p95 1.169 | glyphs off the class median by >10%:   1 (10.0%), >20%: 1, worst 30%
   hiragana  n= 83 median ratio 0.961 | per-glyph p5 0.933 p95 0.981 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 9%
   katakana  n= 86 median ratio 0.938 | per-glyph p5 0.926 p95 0.948 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 7%
-  kanji     n=600 median ratio 0.937 | per-glyph p5 0.912 p95 0.962 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 8%
+  kanji     n=600 median ratio 0.928 | per-glyph p5 0.896 p95 0.950 | glyphs off the class median by >10%:   0 (0.0%), >20%: 0, worst 5%
 == (参考) Friday 2.5 / Hiragino W3
   lower     n= 26 median ratio 0.946 | per-glyph p5 0.857 p95 0.999 | glyphs off the class median by >10%:   1 (3.8%), >20%: 0, worst 11%
   upper     n= 26 median ratio 0.972 | per-glyph p5 0.939 p95 1.022 | glyphs off the class median by >10%:   1 (3.8%), >20%: 0, worst 13%
@@ -67,7 +67,7 @@ x/cap/digit1/zero top (‰)                                  546/768/768/778 544
   kanji     n=600 median ratio 1.154 | per-glyph p5 1.096 p95 1.215 | glyphs off the class median by >10%:   3 (0.5%), >20%: 0, worst 12%
 ```
 
-## 3. 位置（サブピクセル位相）による濃さの変動が大きい字（audit_phase_worst.py）
+## 3. 位相ごとの濃さのゆれ（audit_phase_worst.py）
 ```
 Friday Sans 3.0  12 worst: l:0.50 i:0.44 j:0.37 r:0.34 m:0.30 k:0.24 J:0.24 L:0.23 b:0.22 T:0.21 | mean range 0.119
 Friday Sans 3.0  14 worst: L:0.24 I:0.21 1:0.18 B:0.17 D:0.16 H:0.16 E:0.16 J:0.15 P:0.13 u:0.12 | mean range 0.068

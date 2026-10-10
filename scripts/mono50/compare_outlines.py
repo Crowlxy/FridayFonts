@@ -30,6 +30,7 @@ sys.path.insert(0, str(HERE))
 from build_mono_50 import BOX, OUT, STYLES, ZIP  # noqa: E402
 
 LIMIT = 0.01          # area(old XOR new) / area(old)
+LIMIT_WIDENED = 0.25  # a Light face widened by light_stem.py differs by the offset (about 8 %); a broken contour is far above
 
 
 def path_of(font, name):
@@ -62,13 +63,14 @@ def main():
             xor = pathops.op(a, b, pathops.PathOp.XOR)
             rows.append((abs(xor.area) / ink, 'U+%04X' % cp))
         rows.sort(reverse=True)
-        bad = [r for r in rows if r[0] > LIMIT]
+        limit = LIMIT_WIDENED if log['inherited_fixes'].get('light_stem') else LIMIT
+        bad = [r for r in rows if r[0] > limit]
         failed |= bool(bad)
-        report[style] = {'compared': len(rows), 'limit': LIMIT, 'over_limit': bad,
+        report[style] = {'compared': len(rows), 'limit': limit, 'over_limit': bad,
                          'worst': rows[:5],
                          'mean': sum(r[0] for r in rows) / len(rows)}
         print('%-15s compared %4d  over %.1f%%: %d  mean %.4f%%  worst %s'
-              % (style, len(rows), LIMIT * 100, len(bad), report[style]['mean'] * 100,
+              % (style, len(rows), limit * 100, len(bad), report[style]['mean'] * 100,
                  [(round(r * 100, 3), c) for r, c in rows[:3]]), flush=True)
     (OUT / 'reports').mkdir(exist_ok=True)
     (OUT / 'reports' / 'outline-compare.json').write_text(json.dumps(report, indent=1), encoding='utf-8')

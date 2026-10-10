@@ -43,3 +43,19 @@ __pycache__/
 # Hiragino (SCREEN) are measured only and must never enter this repository.
 SFMonoFonts/
 Hiragino Sans/
+
+# Unpacked release folders (the zips are the Release assets).
+/FridayMono-5.0/
+/FridayMono-5.0.1/
+/FridayMono-5.0.2/
+/FridayMono-5.0.3/
+/FridaySans-3.0/
+
+# Reference fonts the author placed for measuring (Inter, Noto Sans JP, SF Mono / SF Pro, Hiragino).
+# SF and Hiragino cannot be redistributed.
+/reference/
+/FridaySans-3.002/
+
+# ninja files left by diffenator2
+build.ninja
+.ninja_log

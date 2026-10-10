@@ -40,6 +40,7 @@ def heights_proof(tmp):
              ('5.0 Regular', str(OUT / 'ttf/FridayMono-Regular.ttf')),
              ('Cascadia Mono', 'C:/Windows/Fonts/CascadiaMono.ttf'),
              ('Consolas', 'C:/Windows/Fonts/consola.ttf')]
+    fonts = [f for f in fonts if Path(f[1]).exists()]       # Cascadia Mono is not on every PC
     text = 'HCOGSD xoces'
     sizes = (11, 13, 16)
     scale = 4

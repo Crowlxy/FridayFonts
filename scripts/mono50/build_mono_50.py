@@ -34,6 +34,7 @@ import hashlib
 import io
 import json
 import math
+import os
 import shutil
 import sys
 import zipfile
@@ -55,15 +56,21 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent))
 from outline_repair import repair_glyph    # noqa: E402
 import heights                            # noqa: E402
+import light_stem                         # noqa: E402
 import inherited_fixes                    # noqa: E402
 
 ZIP = ROOT / 'FridayMono-4.93.zip'
 MANIFEST = ROOT / 'releases/mono-4.93/font-manifest.json'
 COVERAGE = HERE / 'coverage.json'
-OUT = ROOT / 'work/mono-5.0'
+# MONO_LIGHT_GROW=5 widens the Light / LightItalic stems by 5 units (62 -> 66-67; light_stem.py).
+# 5 is the largest that ttfautohint hints cleanly: at 6 and 7 the tops of 7 and 9 land on a
+# different pixel row from the other digits at 10-24 px.
+# Left at 0 the Light faces stay as in 5.0.2 (the name, head.flags and FeatureParams changes still apply).  MONO_OUT names another output folder (a candidate build).
+LIGHT_GROW = float(os.environ.get('MONO_LIGHT_GROW', '0'))
+OUT = ROOT / os.environ.get('MONO_OUT', 'work/mono-5.0')
 
-VERSION = '5.002'
-REVISION = 5.002
+VERSION = '5.003' if LIGHT_GROW else '5.002'
+REVISION = 5.003 if LIGHT_GROW else 5.002
 STYLES = [('Light', 300), ('LightItalic', 300), ('Regular', 400), ('Italic', 400),
           ('Medium', 500), ('MediumItalic', 500), ('SemiBold', 600),
           ('SemiBoldItalic', 600), ('Bold', 700), ('BoldItalic', 700)]
@@ -447,17 +454,50 @@ def set_names(font, style):
     values = {
         3: 'FridayProject;%s;%s' % (VERSION, ps),
         5: 'Version %s' % VERSION,
-        10: ('Friday Mono 5.0.2: Latin-only coding font. Round letters re-hinted to '
+        10: ('Friday Mono 5.0.%d: Latin-only coding font. Round letters re-hinted to '
              'the cap and x-height, line box centred on the text, box drawing '
-             'fitted to the line, character set compared with six monospace fonts.'),
+             'fitted to the line, character set compared with six monospace fonts.'
+             % int(VERSION[-1])),
         19: SAMPLE,
     }
-    mac = any(rec.platformID == 1 for rec in name.names)
     for nid, text in values.items():
         name.removeNames(nameID=nid)
         name.setName(text, nid, 3, 1, 0x409)
-        if mac:
-            name.setName(text, nid, 1, 0, 0)
+    # Fontspector (universal profile): no Mac records (Windows ones carry every name), and no
+    # trailing white space in any record.
+    name.names = [rec for rec in name.names if rec.platformID != 1]
+    for rec in name.names:
+        text = rec.toUnicode()
+        if text != text.strip():
+            rec.string = text.strip()
+
+
+def name_features(font):
+    """ss01 and cv01 both swap the slashed zero for a plain one; give them UI names (Fontspector:
+    a stylistic set needs a description in the name table).  Uses IDs from 256 up."""
+    from fontTools.ttLib.tables import otTables
+    name = font['name']
+    nid = max([256] + [r.nameID + 1 for r in name.names if r.nameID >= 256])
+    labels = {'ss01': 'Zero without slash', 'cv01': 'Zero without slash'}
+    for rec in font['GSUB'].table.FeatureList.FeatureRecord:
+        text = labels.get(rec.FeatureTag)
+        if not text or rec.Feature.FeatureParams is not None:
+            continue
+        if rec.FeatureTag.startswith('ss'):
+            params = otTables.FeatureParamsStylisticSet()
+            params.Version = 0
+            params.UINameID = nid
+        else:
+            params = otTables.FeatureParamsCharacterVariants()
+            params.Format = 0
+            params.FeatUILabelNameID = nid
+            params.FeatUITooltipTextNameID = params.SampleTextNameID = 0
+            params.NumNamedParameters = params.FirstParamUILabelNameID = 0
+            params.CharCount = 0
+            params.Character = []
+        rec.Feature.FeatureParams = params
+        name.setName(text, nid, 3, 1, 0x409)
+        nid += 1
 
 
 def main():
@@ -473,6 +513,8 @@ def main():
         font = TTFont(io.BytesIO(data))
         apply_coverage(font, coverage)
         inherited = fix_inherited(font, style, inputs)
+        if LIGHT_GROW and style in ('Light', 'LightItalic'):
+            inherited['light_stem'] = light_stem.thicken(font, inputs, style.endswith('Italic'), LIGHT_GROW)
         dropped, tents = repair_outlines(font)
         boxes = fit_box_drawing(font)
         made = derive_symbols(font, wanted)
@@ -484,6 +526,9 @@ def main():
             repair_glyph(font['glyf'][name], font['glyf'])
         anchors = heights.move_anchors(font, plans)
         font['OS/2'].sCapHeight = round(targets['new_cap'])
+        if LIGHT_GROW and style in ('Light', 'LightItalic'):
+            ref = TTFont(io.BytesIO(inputs[style][0]))
+            inherited['light_stem']['needle_tips_removed'] = light_stem.trim_needles(font, ref)
         fonts[style] = font
         log[style] = {'input_sha256': digest, 'inherited_fixes': inherited, 'points_dropped': dropped,
                       'tents_repaired': tents, 'box_glyphs_fitted': boxes,
@@ -504,6 +549,7 @@ def main():
         font = fonts[style]
         set_metrics(font, win)
         set_names(font, style)
+        name_features(font)
         font.save(OUT / 'unhinted' / ('FridayMono-%s.ttf' % style))
 
     import rehint                                     # scripts/rehint.py
@@ -514,6 +560,7 @@ def main():
     for path in sorted(hinted.glob('*.ttf')):
         font = TTFont(path)
         font['gasp'].gaspRange = {0xFFFF: 0x000F}
+        font['head'].flags |= 0x8                 # hinted: round ppem to an integer (Fontspector)
         font.save(path)
     web = OUT / 'web'
     web.mkdir()

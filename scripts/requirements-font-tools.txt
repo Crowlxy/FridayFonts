@@ -1,0 +1,17 @@
+fonttools
+ufoLib2
+diffenator2==0.5.0
+# Newer language metadata requires protobuf incompatible with Diffenator 2.
+gflanguages==0.7.7
+glyphsets==1.0.0
+fontmake
+uharfbuzz
+skia-pathops
+playwright
+vttLib
+freetype-py
+ttfautohint-py
+# Build, WOFF2 generation and whole-glyph raster audits.
+brotli==1.2.0
+scipy==1.18.1
+scikit-image==0.26.0

@@ -10,14 +10,14 @@
 Friday Monoの日本語版（Friday Mono JP / Friday Mono Plain JP）は、4.93で配布を終えました。
 
 ![Friday Mono 5.0.1 の10スタイル](releases/mono-5.0.1/reports/proof-styles.png)
-![Friday Sans 2.5 の5つの太さ（3.0の見本ではありません）](releases/sans-2.5/reports/weights-proof-FridaySans.png)
+![Friday Sans 3.002 の5つの太さ](releases/sans-3.0/reports/weights-proof-FridaySans.png)
 
 ## ダウンロード
 
 | 書体 | 版 | ダウンロード |
 |---|---|---|
 | Friday Mono | 5.0.1 | [FridayMono-5.0.1.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/mono-v5.0.1) |
-| Friday Sans / Friday Sans UI | 3.0 | [FridaySans-3.0.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v3.0) |
+| Friday Sans / Friday Sans UI | 3.002 | [FridaySans-3.002.zip](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v3.002) |
 
 ZIPの中は次のとおりです。
 
@@ -146,8 +146,10 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 
 | フォルダ | 中身 |
 |---|---|
-| `releases/mono-5.0.1/`・`releases/sans-3.0/`・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
+| `releases/mono-5.0.1/`・`releases/sans-3.0/`（Sans 3.002）・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
 | `releases/mono-5.0.2/` | Mono 5.0.2（Light の ½ の修正）の記録。公開前 |
+| `releases/mono-5.0.3/` | Mono 5.0.3（Light の線を太くした**候補**）の記録。承認前・公開前 |
+| `scripts/qa/` | ブラウザ（Chromium・Firefox・WebKit）での読み込み、HarfBuzz の組版の回帰、FontForge の検査（`docs/FONT-TOOLS.md` のツールを使う） |
 | `reviews/` | 品質レビューの記録 |
 | `releases/mono-4.93/` | 日本語版の最後の版（Mono JP / Plain JP）の記録 |
 | `releases/archive/` | 旧版と試作版の説明・検査記録 |
@@ -157,8 +159,8 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 ## 既知の制限
 
 - Light・SemiBoldは、Windows実機での表示確認をまだ行っていません（Regular・Medium・Boldは確認済み）。Friday Mono 5.0.1はGDIでの描画検査のみで、アプリでの目視確認はこれからです。
-- **Friday Sans / Sans UI の Light に、字形の壊れた漢字があります**（共・題の画が欠ける、武・昆・廃などに黒い楔が出るなど。目視で18字、検出された候補は75字）。2.5から引き継いだ問題で、Regular以上では見つかっていません。直るまで、Lightで使う漢字は字形を確認してください。[レビューの記録](reviews/2026-10-09-r3.md)、未解決の一覧は[レビュー結果.md](レビュー結果.md)
-- Friday Mono 5.0.1のLightでは、½（U+00BD）の分母が壊れています。5.0.2で直しましたが、まだ公開していません（[releases/mono-5.0.2/](releases/mono-5.0.2/README.md)）。
+- **Friday Sans / Sans UI の Light の壊れた漢字（共・題の画の欠け、武・昆・廃などの黒い楔）は、3.002 で直しました**（95字を作り直し）。3.002 は GitHub の [`sans-v3.002`](https://github.com/Crowlxy/FridayFonts/releases/tag/sans-v3.002) で公開しました。旧版 3.0（`sans-v3.0`、内部版 3.000）の Light には壊れが残っているので、3.002 を使ってください。[3.002 の記録](releases/sans-3.0/README.md)、[レビューの記録](reviews/2026-10-09-r3.md)、未解決の一覧は[レビュー結果.md](レビュー結果.md)
+- Friday Mono 5.0.1のLightでは、½（U+00BD）の分母が壊れています。5.0.2で直しましたが、まだ公開していません（[releases/mono-5.0.2/](releases/mono-5.0.2/README.md)）。5.0.3は、5.0.2に加えて Light を太くした**候補**で、承認待ちです（[releases/mono-5.0.3/](releases/mono-5.0.3/README.md)）。
 - Friday Sansの日本語の約物詰め（palt / halt）は未対応です。
 - 収録していない人名・地名用の漢字などは、アプリの代替フォントで表示されます。
 

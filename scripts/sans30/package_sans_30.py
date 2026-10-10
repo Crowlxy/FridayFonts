@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Assemble FridaySans-3.0.zip and releases/sans-3.0/ from work/sans-3.0.
+"""Assemble FridaySans-<version>.zip (3.002: FridaySans-3.002.zip) and releases/sans-3.0/ from work/sans-3.0.
 
     python package_sans_30.py            (run in FridayFonts/)
 """
@@ -8,12 +8,17 @@ import hashlib
 import json
 import os
 import shutil
+import sys
 import zipfile
 
 ROOT = os.getcwd()
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_sans_30 as B  # noqa: E402
+
+NAME = "FridaySans-%s" % B.VERSION      # the zip and its top folder carry the full version: 3.000, 3.001 and 3.002 are three builds
 WORK = os.path.join(ROOT, "work", "sans-3.0")
 REL = os.path.join(ROOT, "releases", "sans-3.0")
-STAGE = os.path.join(WORK, "stage", "FridaySans-3.0")
+STAGE = os.path.join(WORK, "stage", NAME)
 OLD = os.path.join(ROOT, "releases", "sans-2.5")
 
 
@@ -63,14 +68,14 @@ def main():
     with open(os.path.join(STAGE, "SHA256SUMS.txt"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(sums) + "\n")
 
-    zpath = os.path.join(ROOT, "FridaySans-3.0.zip")
+    zpath = os.path.join(ROOT, NAME + ".zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         for d, _, files in os.walk(STAGE):
             for f in sorted(files):
                 p = os.path.join(d, f)
-                z.write(p, os.path.join("FridaySans-3.0", os.path.relpath(p, STAGE)))
+                z.write(p, os.path.join(NAME, os.path.relpath(p, STAGE)))
     with open(zpath + ".sha256", "w") as fh:
-        fh.write("%s *FridaySans-3.0.zip\n" % sha(zpath))
+        fh.write("%s *%s.zip\n" % (sha(zpath), NAME))
 
     # light-weight records kept in the repository (fonts themselves go to the Release)
     os.makedirs(os.path.join(REL, "reports"), exist_ok=True)

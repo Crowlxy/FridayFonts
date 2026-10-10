@@ -7,6 +7,10 @@
 Per glyph: contour count, ink growth against a clean offset, bounding box, outline
 direction, advance.  Per face: tables, metrics, glyph set, GSUB/GPOS lookups.
 
+Light kanji that 3.0 rebuilds from Regular (repair_light.py) are compared with Regular instead
+(--weights, xweight.py): no weight may carry ink its neighbour lacks or lack a stroke it has.
+That check does not depend on 2.5, so it also catches a defect that 2.5 already had.
+
 There is no local-excess (tile) guard.  Where a narrow gap closes in only one place the
 whole-glyph growth ratio can miss it; the build bisects the offset on topology and growth,
 and the dense kanji (談 薬 鶏 遮 坐 鬱) are checked by eye in reports/ instead.
@@ -25,6 +29,9 @@ import pathops
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import build_sans_30 as B  # noqa: E402
+import repair_light as RL  # noqa: E402
+import fixups as FX  # noqa: E402
+import xweight as XW  # noqa: E402
 
 
 # Dense kanji whose contour count differs from 2.5 after emboldening (a narrow gap closed or
@@ -66,10 +73,17 @@ def glyph_checks(args):
     e = B.K_EMBOLDEN * B.STEM[weight] * scale
     ga, gb = a.getGlyphSet(), b.getGlyphSet()
     A, Bg = a["glyf"], b["glyf"]
-    issues = {"contour_count": [], "empty": [], "growth": [], "bbox": [], "orientation": [],
+    issues = {"contour_count": [], "fused": [], "empty": [], "growth": [], "bbox": [], "orientation": [],
               "advance": [], "composite_changed": []}
     ratios = []
+    light = TTFont(src.replace("-" + weight, "-Light")) if weight != "Light" else a
+    light_zero = {n for n in light.getGlyphOrder() if light["hmtx"][n][0] == 0 and light["glyf"][n].numberOfContours > 0}
+    rebuilt = set(RL.load_list()["glyphs"]) if weight == "Light" else set()
+    if weight == "Bold":
+        rebuilt.add(FX.SCRIPT_G)        # moved down 214 units on purpose (fixups.lower_bold_script_g)
     for n in a.getGlyphOrder():
+        if n in rebuilt:
+            continue        # a new outline by design; the weight check below looks at it
         ca, cb = A[n].numberOfContours, Bg[n].numberOfContours
         if A[n].isComposite() != Bg[n].isComposite():
             issues["composite_changed"].append(n)
@@ -90,7 +104,20 @@ def glyph_checks(args):
         sb.simplify(fix_winding=True)
         na, nb = len(list(sa.contours)), len(list(sb.contours))
         if na != nb:
-            issues["contour_count"].append((n, na, nb))
+            # Two contours that touch within a unit fuse under any widening (build_sans_30.widen
+            # takes the topology after half a unit as its reference): not a defect, but the
+            # change must be exactly that one.
+            try:
+                # the same base widen() starts from: softened (or as drawn when softening splits it)
+                st = B.STEM[weight] * 2.0
+                cons = B.S.contours_from(ga, n)
+                soft = [B.S.soften_contour(c, B.K_CONVEX * st, B.K_CONCAVE * st) for c in cons]
+                hb = B.seg_path(soft if B.count(soft) == B.count(cons) else cons)
+                hb.simplify(fix_winding=True, keep_starting_points=False, clockwise=True)
+                nh = len(list(B.quantized(B.offset_path(hb, 0.5)).contours))
+            except pathops.PathOpsError:
+                nh = None
+            issues["fused" if (nb == nh and nb < na) else "contour_count"].append((n, na, nb))
         aa, ab = abs(sa.area), abs(sb.area)
         per = B.perimeter(sa) or 0
         if per and aa:
@@ -112,8 +139,9 @@ def glyph_checks(args):
         if ap_.value > 0:
             issues["orientation"].append(n)
         if a["hmtx"][n][0] != b["hmtx"][n][0] and not (0x2000 <= 0 <= 0x2003):
-            issues["advance"].append((n, a["hmtx"][n][0], b["hmtx"][n][0]))
-    summary = {k: (len(v), v[:12]) for k, v in issues.items()}
+            if not (b["hmtx"][n][0] == 0 and n in light_zero):     # zero-width marks match Light (fixups.zero_width_like_light)
+                issues["advance"].append((n, a["hmtx"][n][0], b["hmtx"][n][0]))
+    summary = {k: (len(v), v[:400] if k == "fused" else v[:12]) for k, v in issues.items()}
     med = sorted(ratios)[len(ratios) // 2] if ratios else None
     return base, dict(summary=summary, median_growth=med, e=e)
 
@@ -125,7 +153,8 @@ def layout_digest(font, tag):
     buf = io.StringIO()
     w = XMLWriter(buf)
     font[tag].toXML(w, font)
-    return buf.getvalue()
+    import re
+    return re.sub(r"<!--.*?-->", "", buf.getvalue(), flags=re.S)    # name comments differ once the names exist
 
 
 def glyph_failures(base, summary):
@@ -137,8 +166,68 @@ def glyph_failures(base, summary):
             bad += [(k, row[0]) for row in rows if known.get(row[0]) != tuple(row[1:])]
             if count > len(rows):
                 bad.append((k, "%d more" % (count - len(rows))))
+        elif k == "fused":
+            pass            # hairline fusions, listed in the report
         elif count:
             bad += [(k, "%d glyphs" % count)]
+    return bad
+
+
+def missing_feature_names(font):
+    """Name IDs that a FeatureParams points at and the name table lacks."""
+    have = {r.nameID for r in font["name"].names}
+    bad = set()
+    for tag in ("GSUB", "GPOS"):
+        if tag in font:
+            for rec in font[tag].table.FeatureList.FeatureRecord:
+                p = rec.Feature.FeatureParams
+                for attr in ("UINameID", "FeatUILabelNameID", "FeatUITooltipTextNameID", "SampleTextNameID"):
+                    nid = getattr(p, attr, 0) if p is not None else 0
+                    if nid and nid not in have:
+                        bad.add(nid)
+    return sorted(bad)
+
+
+def weight_failures(directory):
+    """Run xweight.py on every neighbouring pair of each family in `directory`."""
+    bad = []
+    for fam in ("FridaySans", "FridaySansUI"):
+        for lo, hi in zip(XW.ORDER, XW.ORDER[1:]):
+            pl = os.path.join(directory, "%s-%s.ttf" % (fam, lo))
+            ph = os.path.join(directory, "%s-%s.ttf" % (fam, hi))
+            if not (os.path.exists(pl) and os.path.exists(ph)):
+                continue
+            r = XW.check_pair(pl, ph)
+            print("   weights %s %s:%s -> %d glyph(s) with ink the neighbour lacks or missing strokes" % (fam, lo, hi, len(r)))
+            bad += [("weights %s %s:%s" % (fam, lo, hi), n) for n in sorted(r)]
+    return bad
+
+
+def ladder_failures(src_dir, directory):
+    """Kanji whose area step to the next heavier weight is under B.LADDER_KEEP of the 2.5 step
+    (or negative).  3.0's density rule must not flatten the weight ladder."""
+    bad = []
+    for fam, ui in (("FridaySans", False), ("FridaySansUI", True)):
+        a25, a30 = {}, {}
+        for w in B.WEIGHTS:
+            p25 = os.path.join(src_dir, "%s-%s.ttf" % (fam, w))
+            p30 = os.path.join(directory, "%s-%s.ttf" % (fam, w))
+            if not (os.path.exists(p25) and os.path.exists(p30)):
+                break
+            a25[w] = B._areas(B.prepared_face(p25, ui))
+            a30[w] = B._areas(TTFont(p30))
+        else:
+            for lo, hi in zip(B.WEIGHTS, B.WEIGHTS[1:]):
+                weak = []
+                for n, a in a30[lo].items():
+                    if n not in a30[hi] or n not in a25[lo] or n not in a25[hi]:
+                        continue
+                    s25 = a25[hi][n] / a25[lo][n] - 1
+                    s30 = a30[hi][n] / a - 1
+                    if s25 >= 0.01 and s30 < B.LADDER_KEEP * s25 * 0.98:       # 2 % slack for rounding
+                        weak.append(n)
+                print("   ladder %s %s:%s -> %d glyph(s) under %.0f %% of the 2.5 step" % (fam, lo, hi, len(weak), 100 * B.LADDER_KEEP))
+                bad += [("ladder %s %s:%s" % (fam, lo, hi), n) for n in sorted(weak)]
     return bad
 
 
@@ -150,9 +239,11 @@ def face_failures(f, ui):
     for k in ("cmap_equal", "order_equal", "typo_same", "hhea_same", "gsub_gpos_same", "win_covers"):
         if not f[k]:
             bad.append(k)
+    if f["feature_names_missing"]:
+        bad.append("feature_names_missing")
     if f["hinting_left"]:
         bad.append("hinting_left")
-    if set(f["tables_lost"]) - {"cvt ", "fpgm", "prep"}:      # 3.0 drops the TrueType hinting on purpose
+    if set(f["tables_lost"]) - {"cvt ", "fpgm", "prep", "ltag"}:      # 3.0 drops the TrueType hinting on purpose, and ltag (AAT) with the Mac names
         bad.append("tables_lost")
     return bad
 
@@ -160,9 +251,15 @@ def face_failures(f, ui):
 def face_checks(dst, src):
     a, b = load_src(src), TTFont(dst)
     out = {}
-    out["glyphs"] = (a["maxp"].numGlyphs, b["maxp"].numGlyphs)
-    out["cmap_equal"] = a.getBestCmap() == b.getBestCmap()
-    out["order_equal"] = a.getGlyphOrder() == b.getGlyphOrder()
+    # 3.0 adds U+2252 (fixups.add_approx_equal); everything else must be the 2.5 set
+    added = FX.APPROX_NAME if FX.APPROX in b.getBestCmap() and FX.APPROX not in a.getBestCmap() else None
+    bcmap = {cp: n for cp, n in b.getBestCmap().items() if n != added}
+    border = [n for n in b.getGlyphOrder() if n != added]
+    out["glyphs"] = (a["maxp"].numGlyphs, b["maxp"].numGlyphs - (1 if added else 0))
+    out["added"] = added
+    out["cmap_equal"] = a.getBestCmap() == bcmap
+    out["order_equal"] = a.getGlyphOrder() == border
+    out["feature_names_missing"] = missing_feature_names(b)
     out["hinting_left"] = [t for t in ("fpgm", "prep", "cvt ") if t in b]
     out["gasp"] = b["gasp"].gaspRange
     out["tables_lost"] = sorted(set(a.keys()) - set(b.keys()))
@@ -194,6 +291,7 @@ def main():
     ap.add_argument("--src", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--report", default="")
+    ap.add_argument("--no-weights", action="store_true", help="skip the neighbouring-weight check (about 10 minutes)")
     a = ap.parse_args()
     outs = sorted(glob.glob(os.path.join(a.out, "*.ttf")))
     jobs = [(os.path.join(a.src, os.path.basename(p)), p) for p in outs]
@@ -211,7 +309,7 @@ def main():
         print(base, "median growth/side %.2f (e=%.2f)" % (r["median_growth"], r["e"]), counts or "glyph checks clean")
         f = r["face"]
         print("   face:", {k: f[k] for k in ("glyphs", "cmap_equal", "order_equal", "hinting_left", "gasp",
-                                            "tables_lost", "vend", "win", "typo_same", "hhea_same",
+                                            "tables_lost", "added", "feature_names_missing", "vend", "win", "typo_same", "hhea_same",
                                             "gsub_gpos_same", "win_covers", "name5")})
         failed = glyph_failures(base, s)
         if failed:
@@ -221,6 +319,11 @@ def main():
         if failed:
             print("   FACE CHECK FAILED:", failed)
             bad += len(failed)
+    if not a.no_weights:
+        failed = weight_failures(a.out) + ladder_failures(a.src, a.out)
+        if failed:
+            print("   WEIGHT CHECK FAILED:", failed[:20])
+        bad += len(failed)
     if a.report:
         with open(a.report, "w", encoding="utf-8") as fh:
             json.dump(report, fh, indent=1, ensure_ascii=False, default=str)

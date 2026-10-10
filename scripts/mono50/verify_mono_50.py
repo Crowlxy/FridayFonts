@@ -142,11 +142,17 @@ def stroke_check(old, new):
     return out
 
 
-def strokes_kept(strokes, stroke):
-    """Horizontal strokes (runs no longer than 1.5 stems) within 2 units or 5 %."""
+def strokes_kept(strokes, stroke, grow=0):
+    """Horizontal strokes (runs no longer than 1.5 stems) within 2 units or 5 %.  A Light face
+    that light_stem.py widened by `grow` units must instead have grown by about that much."""
     bad = {}
     for key, (a, b) in strokes.items():
-        if a <= 1.5 * stroke and abs(a - b) > max(2, 0.05 * a):
+        if a > 1.5 * stroke:
+            continue
+        if grow:
+            if not grow - 2 <= b - a <= grow + 3:
+                bad[key] = (a, b)
+        elif abs(a - b) > max(2, 0.05 * a):
             bad[key] = (a, b)
     return bad
 
@@ -209,6 +215,8 @@ def main():
         log = json.loads((OUT / 'build-log.json').read_text())['styles'][style]
         planned = set(log['height_plans'])
         repaired = {int(k[2:], 16) for k in log['inherited_fixes'] if k.startswith('U+')}
+        grow = log['inherited_fixes'].get('light_stem', {}).get('grow', 0)     # Light widened on purpose
+        slack = grow + 1.5 if grow else 0     # an edge moves by at most the stem growth
         moved, adv = [], []
         for cp, name in cmap.items():
             if cp not in ocmap or BOX[0] <= cp <= BOX[1] or cp in REDRAWN:
@@ -223,7 +231,8 @@ def main():
             if g.numberOfContours and og.numberOfContours:
                 g.recalcBounds(glyf)
                 og.recalcBounds(oglyf)
-                if (g.xMin, g.yMin, g.xMax, g.yMax) != (og.xMin, og.yMin, og.xMax, og.yMax):
+                if any(abs(a - b) > slack for a, b in zip((g.xMin, g.yMin, g.xMax, g.yMax),
+                                                          (og.xMin, og.yMin, og.xMax, og.yMax))):
                     moved.append('U+%04X' % cp)
         r['outline_bbox_changed'] = moved
         r['advance_changed'] = adv
@@ -273,7 +282,7 @@ def main():
                   '%s U+%04X contours %d' % (style, cp, glyf[cmap[cp]].numberOfContours))
         strokes = stroke_check(old, new)
         r['strokes_old_new'] = strokes
-        bad_strokes = strokes_kept(strokes, h['stroke'])
+        bad_strokes = strokes_kept(strokes, h['stroke'], grow)
         check(not bad_strokes, '%s strokes changed %s' % (style, bad_strokes))
         tents = sum(count_tents(glyf[n], glyf, (1,)) for n in new.getGlyphOrder())
         r['faceted_extrema_left'] = tents

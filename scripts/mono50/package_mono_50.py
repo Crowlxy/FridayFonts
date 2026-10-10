@@ -1,4 +1,5 @@
-"""Package Friday Mono 5.0.2: releases/mono-5.0.2/ and FridayMono-5.0.2.zip.
+"""Package Friday Mono 5.0.x (the build's VERSION): releases/mono-5.0.x/ and FridayMono-5.0.x.zip.
+(5.0.2 is the build without MONO_LIGHT_GROW; 5.0.3 is the Light-widened candidate.)
 
     py scripts/mono50/package_mono_50.py
 
@@ -19,13 +20,16 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from build_mono_50 import OUT, ROOT, STYLES, VERSION, COVERAGE  # noqa: E402
 
-RELEASE = ROOT / 'releases/mono-5.0.2'
+SHORT = '5.0.%d' % int(VERSION[-1])
+RELEASE = ROOT / ('releases/mono-' + SHORT)
 PREVIOUS = ROOT / 'releases/mono-4.93'
-ZIP_PATH = ROOT / 'FridayMono-5.0.2.zip'
-TOP = 'FridayMono-5.0.2'
+ZIP_PATH = ROOT / ('FridayMono-%s.zip' % SHORT)
+TOP = 'FridayMono-' + SHORT
 REPORT_FILES = ['validation.json', 'outline-compare.json', 'gdi-heights.json', 'spike-check.json',
                 'proof-round-letters.png', 'proof-line-box.png', 'proof-styles.png',
                 'proof-proportions.png']
+if (OUT / 'reports' / 'proof-light-vs-regular.png').exists():       # proof_light.py: only for the 5.0.3 candidate
+    REPORT_FILES.append('proof-light-vs-regular.png')
 
 
 def sha(path):

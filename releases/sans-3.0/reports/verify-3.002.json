@@ -1,0 +1,1248 @@
+{
+ "FridaySans-Bold": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    5,
+    [
+     [
+      "jp.uni5135",
+      11,
+      9
+     ],
+     [
+      "jp.uni68CF",
+      5,
+      4
+     ],
+     [
+      "jp.uni7646",
+      9,
+      8
+     ],
+     [
+      "jp.uni7E6D",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F4E",
+      11,
+      10
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 7.560802833530106,
+  "e": 7.8,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2660,
+    1083
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1081,
+    2660
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySans-Light": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    10,
+    [
+     [
+      "jp.uni503B",
+      6,
+      5
+     ],
+     [
+      "jp.uni5F8C",
+      5,
+      4
+     ],
+     [
+      "jp.uni6160",
+      6,
+      5
+     ],
+     [
+      "jp.uni69C3",
+      9,
+      8
+     ],
+     [
+      "jp.uni7620",
+      9,
+      8
+     ],
+     [
+      "jp.uni8B66",
+      11,
+      10
+     ],
+     [
+      "jp.uni9DAC",
+      13,
+      12
+     ],
+     [
+      "jp.glyph62569",
+      13,
+      12
+     ],
+     [
+      "jp.glyph62652",
+      8,
+      7
+     ],
+     [
+      "jp.glyph62771",
+      7,
+      6
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 3.8533949389540383,
+  "e": 3.822,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2660,
+    1083
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1081,
+    2648
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySans-Medium": {
+  "summary": {
+   "contour_count": [
+    1,
+    [
+     [
+      "jp.uni6B53",
+      5,
+      4
+     ]
+    ]
+   ],
+   "fused": [
+    19,
+    [
+     [
+      "jp.uni61C7",
+      12,
+      11
+     ],
+     [
+      "jp.uni6712",
+      5,
+      4
+     ],
+     [
+      "jp.uni6AE4",
+      6,
+      5
+     ],
+     [
+      "jp.uni780C",
+      4,
+      3
+     ],
+     [
+      "jp.uni7E9B",
+      16,
+      15
+     ],
+     [
+      "jp.uni9699",
+      7,
+      6
+     ],
+     [
+      "jp.uni96B3",
+      8,
+      7
+     ],
+     [
+      "jp.uni9ECF",
+      6,
+      5
+     ],
+     [
+      "jp.uni9F5F",
+      9,
+      8
+     ],
+     [
+      "jp.uni9F60",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F61",
+      7,
+      6
+     ],
+     [
+      "jp.uni9F66",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F6A",
+      7,
+      6
+     ],
+     [
+      "jp.uni9F6C",
+      9,
+      8
+     ],
+     [
+      "jp.uni9F70",
+      10,
+      9
+     ],
+     [
+      "jp.uniFA41",
+      6,
+      5
+     ],
+     [
+      "jp.u29EC4",
+      13,
+      12
+     ],
+     [
+      "jp.glyph62646",
+      5,
+      4
+     ],
+     [
+      "jp.glyph62691",
+      10,
+      9
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 5.857084039243159,
+  "e": 6.123,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2660,
+    1083
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1082,
+    2653
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySans-Regular": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    9,
+    [
+     [
+      "jp.uni683E",
+      4,
+      3
+     ],
+     [
+      "jp.uni7027",
+      10,
+      9
+     ],
+     [
+      "jp.uni78CE",
+      6,
+      5
+     ],
+     [
+      "jp.uni81D8",
+      14,
+      13
+     ],
+     [
+      "jp.uni9DED",
+      14,
+      13
+     ],
+     [
+      "jp.u25DA1",
+      11,
+      10
+     ],
+     [
+      "jp.glyph62373",
+      10,
+      9
+     ],
+     [
+      "jp.u2F8EA",
+      6,
+      5
+     ],
+     [
+      "jp.glyph62491",
+      10,
+      9
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 4.877384830153559,
+  "e": 4.992,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2660,
+    1083
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1079,
+    2649
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySans-SemiBold": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    9,
+    [
+     [
+      "jp.uni51BD",
+      6,
+      5
+     ],
+     [
+      "jp.uni57F6",
+      2,
+      1
+     ],
+     [
+      "jp.uni6516",
+      11,
+      10
+     ],
+     [
+      "jp.uni6FDF",
+      8,
+      7
+     ],
+     [
+      "jp.uni70F1",
+      7,
+      6
+     ],
+     [
+      "jp.uni8077",
+      9,
+      8
+     ],
+     [
+      "jp.uni8B94",
+      13,
+      12
+     ],
+     [
+      "jp.uni9DDF",
+      10,
+      9
+     ],
+     [
+      "jp.uniFA45",
+      9,
+      8
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 6.630225440898797,
+  "e": 6.786,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2660,
+    1083
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1083,
+    2656
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySansUI-Bold": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    7,
+    [
+     [
+      "jp.uni5135",
+      11,
+      9
+     ],
+     [
+      "jp.uni566D",
+      7,
+      6
+     ],
+     [
+      "jp.uni5DB8",
+      7,
+      6
+     ],
+     [
+      "jp.uni68CF",
+      5,
+      4
+     ],
+     [
+      "jp.uni7646",
+      9,
+      8
+     ],
+     [
+      "jp.uni7E6D",
+      8,
+      7
+     ],
+     [
+      "jp.uni9ED0",
+      5,
+      4
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 7.558267680008654,
+  "e": 7.8,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2634,
+    1072
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1070,
+    2634
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySansUI-Light": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    11,
+    [
+     [
+      "jp.uni503B",
+      6,
+      5
+     ],
+     [
+      "jp.uni5F8C",
+      5,
+      4
+     ],
+     [
+      "jp.uni6160",
+      6,
+      5
+     ],
+     [
+      "jp.uni69C3",
+      9,
+      8
+     ],
+     [
+      "jp.uni7620",
+      9,
+      8
+     ],
+     [
+      "jp.uni8B66",
+      11,
+      10
+     ],
+     [
+      "jp.uni9DAC",
+      13,
+      12
+     ],
+     [
+      "jp.u1F221",
+      9,
+      8
+     ],
+     [
+      "jp.glyph62569",
+      13,
+      12
+     ],
+     [
+      "jp.glyph62652",
+      8,
+      7
+     ],
+     [
+      "jp.glyph62771",
+      7,
+      6
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 3.860291405703213,
+  "e": 3.822,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2634,
+    1072
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1070,
+    2622
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySansUI-Medium": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    16,
+    [
+     [
+      "jp.uni5BC7",
+      4,
+      3
+     ],
+     [
+      "jp.uni6712",
+      5,
+      4
+     ],
+     [
+      "jp.uni6AE4",
+      6,
+      5
+     ],
+     [
+      "jp.uni7E9B",
+      16,
+      15
+     ],
+     [
+      "jp.uni9699",
+      7,
+      6
+     ],
+     [
+      "jp.uni9ECF",
+      6,
+      5
+     ],
+     [
+      "jp.uni9F58",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F60",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F61",
+      7,
+      6
+     ],
+     [
+      "jp.uni9F63",
+      6,
+      5
+     ],
+     [
+      "jp.uni9F66",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F69",
+      8,
+      7
+     ],
+     [
+      "jp.uni9F6A",
+      7,
+      6
+     ],
+     [
+      "jp.uniFA41",
+      6,
+      5
+     ],
+     [
+      "jp.glyph62646",
+      5,
+      4
+     ],
+     [
+      "jp.glyph62691",
+      10,
+      9
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 5.861116707317967,
+  "e": 6.123,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2634,
+    1072
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1071,
+    2627
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySansUI-Regular": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    9,
+    [
+     [
+      "jp.uni683E",
+      4,
+      3
+     ],
+     [
+      "jp.uni7027",
+      10,
+      9
+     ],
+     [
+      "jp.uni78CE",
+      6,
+      5
+     ],
+     [
+      "jp.uni81D8",
+      14,
+      13
+     ],
+     [
+      "jp.uni8CF8",
+      12,
+      11
+     ],
+     [
+      "jp.uni9DED",
+      14,
+      13
+     ],
+     [
+      "jp.glyph62373",
+      10,
+      9
+     ],
+     [
+      "jp.u2F8EA",
+      6,
+      5
+     ],
+     [
+      "jp.glyph62491",
+      10,
+      9
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 4.882142081501843,
+  "e": 4.992,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2634,
+    1072
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1068,
+    2623
+   ],
+   "name5": "Version 3.002"
+  }
+ },
+ "FridaySansUI-SemiBold": {
+  "summary": {
+   "contour_count": [
+    0,
+    []
+   ],
+   "fused": [
+    7,
+    [
+     [
+      "jp.uni51BD",
+      6,
+      5
+     ],
+     [
+      "jp.uni6516",
+      11,
+      10
+     ],
+     [
+      "jp.uni70F1",
+      7,
+      6
+     ],
+     [
+      "jp.uni715C",
+      10,
+      9
+     ],
+     [
+      "jp.uni8077",
+      9,
+      8
+     ],
+     [
+      "jp.uni85E5",
+      5,
+      4
+     ],
+     [
+      "jp.uniFA45",
+      9,
+      8
+     ]
+    ]
+   ],
+   "empty": [
+    0,
+    []
+   ],
+   "growth": [
+    0,
+    []
+   ],
+   "bbox": [
+    0,
+    []
+   ],
+   "orientation": [
+    0,
+    []
+   ],
+   "advance": [
+    0,
+    []
+   ],
+   "composite_changed": [
+    0,
+    []
+   ]
+  },
+  "median_growth": 6.630588702750898,
+  "e": 6.786,
+  "face": {
+   "glyphs": [
+    16758,
+    16758
+   ],
+   "added": "jp.uni2252",
+   "cmap_equal": true,
+   "order_equal": true,
+   "feature_names_missing": [],
+   "hinting_left": [],
+   "gasp": {
+    "65535": 10
+   },
+   "tables_lost": [
+    "cvt ",
+    "fpgm",
+    "ltag",
+    "prep"
+   ],
+   "vend": "FRDY",
+   "win": [
+    2634,
+    1072
+   ],
+   "typo_same": true,
+   "hhea_same": true,
+   "gsub_gpos_same": true,
+   "win_covers": true,
+   "head_bbox": [
+    -1072,
+    2630
+   ],
+   "name5": "Version 3.002"
+  }
+ }
+}
