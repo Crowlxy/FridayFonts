@@ -1,8 +1,8 @@
-# Friday Mono 5.0.3（候補・未承認）/ 2026-10-10
+# Friday Mono 5.0.3 / 2026-10-10
 
-5.0.2 の **Light と LightItalic の線を太くした候補**です。ユーザーの承認が済むまで、公開しません（公開は GitHub Release `mono-v5.0.3` の作成になります）。ほかの8スタイルは、字形（座標）・字幅・cmap・行の値が 5.0.2 と同じです。ただし **`head.flags`・name テーブル・GSUB の FeatureParams は、全10スタイルで 5.0.2 と違います**（下の「3.」）。`head.flags` のビット 3 は、整数でない ppem での拡縮に効くため、**承認の確認は Light だけでなく Regular でも**お願いします。5.0 の説明は [../mono-5.0/README.md](../mono-5.0/README.md)、5.0.2 は [../mono-5.0.2/README.md](../mono-5.0.2/README.md) にあります。
+5.0.2 の **Light と LightItalic の線を太くした版**です。GitHub Release `mono-v5.0.3` で公開しました（5.0.2 は公開していないので、5.0.3 が 5.0.1 の次の公開版です）。ほかの8スタイルは、字形（座標）・字幅・cmap・行の値が 5.0.2 と同じです。ただし **`head.flags`・name テーブル・GSUB の FeatureParams は、全10スタイルで 5.0.2 と違います**（下の「3.」）。`head.flags` のビット 3 は、整数でない ppem での拡縮に効くため、**実機での確認は Light だけでなく Regular でも**お願いします。5.0 の説明は [../mono-5.0/README.md](../mono-5.0/README.md)、5.0.2 は [../mono-5.0.2/README.md](../mono-5.0.2/README.md) にあります。
 
-> **承認してほしいこと：** Light の太さ。13〜24 px の Windows・Mac で Regular と並べて、この太さでよいか。細すぎる／まだ細いと感じたら、`MONO_LIGHT_GROW`（下記）を変えて作り直します。
+> **確認してほしいこと：** Light の太さ。13〜24 px の Windows・Mac で Regular と並べて、この太さでよいか。細すぎる／まだ細いと感じたら、`MONO_LIGHT_GROW`（下記）を変えて作り直します。
 
 ## 何が変わったか
 
@@ -54,7 +54,7 @@ B・§・Β・В・Ḃ・Ḅ・Ḇ（Light）と B・§・Ǫ・Ǭ・Ḅ（LightI
 
 ## 未確認
 
-- ClearType の実画面（WPF・Office・Edge・Windows Terminal）、macOS・iOS・Android での Light の見え方。**承認に必要なのはこの確認です。**
+- ClearType の実画面（WPF・Office・Edge・Windows Terminal）、macOS・iOS・Android での Light の見え方。**公開後も、この確認は残っています。**
 - 見本：`reports/proof-light-vs-regular.png`（Light 5.0.2・5.0.3・Regular を 13〜24 px で並べた。FreeType・グレースケール）、`reports/proof-styles.png` ほか。13〜24 px の比較は FreeType（ヒント適用、グレースケール）で、ClearType ではありません。
 
 ## 再生成
