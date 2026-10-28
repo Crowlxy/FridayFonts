@@ -6,9 +6,8 @@ Friday Fontsのビルドは、作者のローカル作業環境を前提にし�
 |---|---|
 | 隣の `Source/`（Iosevka・Noto Sans CJK JP・Inter） | 元にする書体 |
 | 隣の `FridayFonts-WindowsTest/`・`comparisons/`・`InoriMono-v3-build/` | Windows対策の工程と、途中の作業ファイル |
-| Python 3.12＋fontTools（[scripts/requirements-v47.txt](../scripts/requirements-v47.txt)） | ビルド本体 |
+| Python＋fontTools（[scripts/requirements-font-tools.txt](../scripts/requirements-font-tools.txt)） | ビルド本体 |
 | ttfautohint・HarfBuzz（hb-shape）・FreeType | ヒント付けと検査 |
-| Node.js＋Chlorophytum（[scripts/chlorophytum/package.json](../scripts/chlorophytum/package.json)） | 漢字のヒント付け |
 
 SF Mono・ヒラギノは数値の測定にだけ使い、出力には入りません。これらはApple・SCREENのライセンスで再配布できないため、リポジトリにも含めていません。
 
@@ -16,14 +15,7 @@ SF Mono・ヒラギノは数値の測定にだけ使い、出力には入りま�
 
 ## Friday Mono
 
-R/M/B（4.91・4.92まで）：
-
-```sh
-InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_49.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/verify_mono_49.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/audit_italic_rc3.py
-InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
-```
+4.9 系（R/M/B）のビルド・検査スクリプトは整理で削除しました。再現するときは「過去版の再現」を参照してください。
 
 字形の中心は [scripts/build_inori_v3.py](../scripts/build_inori_v3.py) です。測った数値は、すべてこのファイルの冒頭に定数として書いてあります。
 
@@ -31,13 +23,13 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 - 和文：Noto Sans CJK JPの可変軸から、漢字・ひらがな・カタカナを別々の太さで取り出します。
 - 手描きかな：[scripts/drawings/](../scripts/drawings/) の線から作ります。
 
-[scripts/validate.py](../scripts/validate.py) と [scripts/test_build.py](../scripts/test_build.py) が、ビルドの前提を検査します。
+[scripts/validate.py](../scripts/validate.py) が、ビルドの前提を検査します。
 
 工程ごとのキャッシュは `.build-cache/mono/` に保存します。入力・コード・設定・ツールの版のハッシュが同じ工程は再利用し、`--no-cache` で無効にできます。
 
 ## Friday Mono 5.0
 
-5.0は、配布済みの`FridayMono-4.93.zip`を入力にします。Iosevkaの再ビルドや和文の工程は通りません。手順は[releases/mono-5.0/README.md](../releases/mono-5.0/README.md)の「再生成」にあり、コマンドは`FridayFonts/`で実行します。
+5.0は、配布済みの`FridayMono-4.93.zip`を入力にします。Iosevkaの再ビルドや和文の工程は通りません。手順は[releases/mono-5.0.3/README.md](../releases/mono-5.0.3/README.md)の「再生成」にあり、コマンドは`FridayFonts/`で実行します。
 
 | スクリプト（`scripts/mono50/`） | 役割 |
 |---|---|
@@ -60,46 +52,19 @@ InoriMono-v3-build/.venv/bin/python FridayFonts/scripts/build_mono_492.py
 
 出力は`work/mono-5.0/`（git管理外）です。
 
-## Friday Sans
+## 過去版の再現
 
-[scripts/sans/build_sans_cjk.py](../scripts/sans/build_sans_cjk.py) が、Monoと同じ和文工程を1000 unitの枠で実行します。[scripts/sans/build_sans.py](../scripts/sans/build_sans.py) がInterの欧文と合成します。
+次のスクリプトと記録は、現行のビルド（Mono 5.x・Sans 3.x）が使わないため、2026-10-28 の整理でリポジトリから削除しました。削除前の状態はコミット `b64f582` に残っています。
 
-2.0以降の手順：
-1. 統合ビルド：`comparisons/unified-sans-trial`
-2. 2.1の修正（合成半濁点、𠮷）：[scripts/sans/build_2_1.py](../scripts/sans/build_2_1.py)
-3. Windows対策とRC1〜RC3：`FridayFonts-WindowsTest`
+| 版 | 削除したもの | 取り出し方 |
+|---|---|---|
+| Mono 4.8〜4.93 | `build_mono_49.py`・`build_mono_492.py`・`package_mono_49.py`・`verify_mono_49.py`・`italic_rc3.py`・`audit_*`・`weights/`・`cjkhint.py`・`chlorophytum/` など | `git show b64f582:scripts/<パス>` |
+| Sans 1.1〜2.5 | `scripts/sans/`（和文・Inter合成・2.1の修正・かな試作） | 同上 |
+| 旧版の記録 | `releases/archive/`・`releases/mono-5.0`・`5.0.1`・`5.0.2`、`docs/RELEASE-*` | `git show b64f582:releases/<パス>` |
 
-## Light / SemiBold（Mono 4.93・Sans 2.5）
+Mono 5.0 / Sans 3.0 以降は、配布済みの ZIP（Mono 4.93・Sans 2.5 / 3.002）を入力にするので、これらは再生成に要りません。削除した理由と一覧は [docs/CLEANUP-2026-10-28.md](CLEANUP-2026-10-28.md) にあります。
 
-R/M/Bと同じ工程を、2つのウェイトでもう一度通します。工程は [scripts/weights/build_weights.py](../scripts/weights/build_weights.py) にまとめてあり、次の順に実行します。
-
-```sh
-PY=InoriMono-v3-build/.venv/bin/python
-W=FridayFonts/scripts/weights/build_weights.py
-$PY $W iosevka        # 欧文マスター（下記）
-$PY $W mono-raw       # Monoの組み立て
-$PY $W mono-finish    # ttfautohint・漢字ヒント（初回は1書体あたり約1〜2時間）
-$PY $W mono-v48
-$PY $W sans-cjk
-$PY $W sans-unity --hint
-$PY $W sans-20
-$PY $W sans-21
-$PY $W ws-mirror      # FridayFonts-WindowsTest-weights を作る
-$PY $W ws-caps
-$PY $W ws-guard
-$PY $W ws-balance
-$PY $W ws-ui
-$PY $W ws-lab
-$PY $W ws-rc
-$PY FridayFonts/scripts/weights/release_mono.py
-$PY FridayFonts/scripts/weights/release_sans.py
-$PY FridayFonts/scripts/weights/verify_mono_weights.py
-$PY FridayFonts/scripts/weights/audit_weights.py FridayFonts/releases/mono-4.93 FridayFonts/releases/sans-2.5
-```
-
-既存のスクリプトはコピーして読み込み、スタイル名と入出力フォルダだけを書き換えて実行します。書き換えは文字列で行い、一致しなければ止まるようにしてあります。元のファイルや出荷済みの配布物には書き込みません。
-
-### Iosevka Light / SemiBoldについて
+### Iosevka Light / SemiBoldについて（`derive_iosevka_weights.py`・`mono50/light_stem.py`）
 
 IosevkaのLight・SemiBoldは、Iosevka本来のビルド（npm）ではありません。既存のRegular・Mediumの輪郭を目標の線幅まで細らせ・太らせて作っています（[scripts/derive_iosevka_weights.py](../scripts/derive_iosevka_weights.py)）。
 

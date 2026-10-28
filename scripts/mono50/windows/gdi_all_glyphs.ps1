@@ -3,7 +3,7 @@
 # 4.91 audit class (private font load, nothing installed).
 param([string]$Dir,[string]$Out)
 $ErrorActionPreference='Stop'
-Add-Type -Path (Join-Path $PSScriptRoot '../../windows-4.91/GdiAudit.cs')
+Add-Type -Path (Join-Path $PSScriptRoot 'GdiAudit.cs')
 Add-Type -AssemblyName PresentationCore
 New-Item -ItemType Directory -Force $Out|Out-Null
 $styles=@{Light=300;LightItalic=300;Regular=400;Italic=400;Medium=500;MediumItalic=500;SemiBold=600;SemiBoldItalic=600;Bold=700;BoldItalic=700}

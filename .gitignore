@@ -7,9 +7,6 @@
 *.zip
 *.zip.sha256
 releases/**/windows-check.html
-releases/archive/sans-*trial*/preview.html
-releases/archive/sans-*/proof-*.png
-releases/archive/sans-*/shaping-fix.png
 
 # Local build output and caches.
 .build-cache/
@@ -24,8 +21,6 @@ fonts-hinted/
 trial/
 scripts/build-weights/
 scripts/rc3-italic/ttf/
-scripts/chlorophytum/node_modules/
-scripts/chlorophytum/cache/
 *.log
 __pycache__/
 .venv/

@@ -1,6 +1,6 @@
 # Friday Mono 5.0.3 / 2026-10-10
 
-5.0.2 の **Light と LightItalic の線を太くした版**です。GitHub Release `mono-v5.0.3` で公開しました（5.0.2 は公開していないので、5.0.3 が 5.0.1 の次の公開版です）。ほかの8スタイルは、字形（座標）・字幅・cmap・行の値が 5.0.2 と同じです。ただし **`head.flags`・name テーブル・GSUB の FeatureParams は、全10スタイルで 5.0.2 と違います**（下の「3.」）。`head.flags` のビット 3 は、整数でない ppem での拡縮に効くため、**実機での確認は Light だけでなく Regular でも**お願いします。5.0 の説明は [../mono-5.0/README.md](../mono-5.0/README.md)、5.0.2 は [../mono-5.0.2/README.md](../mono-5.0.2/README.md) にあります。
+5.0.2 の **Light と LightItalic の線を太くした版**です。GitHub Release `mono-v5.0.3` で公開しました（5.0.2 は公開していないので、5.0.3 が 5.0.1 の次の公開版です）。ほかの8スタイルは、字形（座標）・字幅・cmap・行の値が 5.0.2 と同じです。ただし **`head.flags`・name テーブル・GSUB の FeatureParams は、全10スタイルで 5.0.2 と違います**（下の「3.」）。`head.flags` のビット 3 は、整数でない ppem での拡縮に効くため、**実機での確認は Light だけでなく Regular でも**お願いします。5.0 の説明は `releases/mono-5.0/README.md`（整理で削除。`git show b64f582:releases/mono-5.0/README.md`）、5.0.2 は `releases/mono-5.0.2/README.md`（整理で削除。`git show b64f582:releases/mono-5.0.2/README.md`） にあります。
 
 > **確認してほしいこと：** Light の太さ。13〜24 px の Windows・Mac で Regular と並べて、この太さでよいか。細すぎる／まだ細いと感じたら、`MONO_LIGHT_GROW`（下記）を変えて作り直します。
 
@@ -59,7 +59,7 @@ B・§・Β・В・Ḃ・Ḅ・Ḇ（Light）と B・§・Ǫ・Ǭ・Ḅ（LightI
 
 ## 再生成
 
-`FridayMono-4.93.zip`（正規配布。マニフェストの SHA-256 で照合）を `FridayFonts/` に置き、5.0 と同じ手順に環境変数を付けて実行します（[../mono-5.0/README.md](../mono-5.0/README.md) の「再生成」）。
+`FridayMono-4.93.zip`（正規配布。マニフェストの SHA-256 で照合）を `FridayFonts/` に置き、5.0 と同じ手順に環境変数を付けて実行します（`releases/mono-5.0/README.md`（整理で削除。`git show b64f582:releases/mono-5.0/README.md`） の「再生成」）。
 
 ```sh
 MONO_LIGHT_GROW=5 py scripts/mono50/build_mono_50.py

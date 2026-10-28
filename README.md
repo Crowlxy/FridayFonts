@@ -148,15 +148,13 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 
 | フォルダ | 中身 |
 |---|---|
-| `releases/mono-5.0.3/`・`releases/sans-3.0/`（Sans 3.002）・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
+| `releases/mono-5.0.3/`・`releases/sans-3.0/`（Sans 3.002）・`releases/sans-3.1.0/`・`releases/sans-2.5/` | 現行版の説明・検査記録・見本（フォント本体はReleasesのZIP） |
 | `releases/mono-5.1.0/` | Mono 5.1.0（コーディング合字 `ss02` を足した**候補**）の記録。承認前・公開前 |
-| `releases/mono-5.0.1/`・`releases/mono-5.0.2/` | Mono 5.0.1 と、5.0.2（Light の ½ の修正。公開せず 5.0.3 に含めた）の記録 |
 | `scripts/qa/` | ブラウザ（Chromium・Firefox・WebKit）での読み込み、HarfBuzz の組版の回帰、FontForge の検査（`docs/FONT-TOOLS.md` のツールを使う） |
 | `reviews/` | 品質レビューの記録 |
 | `releases/mono-4.93/` | 日本語版の最後の版（Mono JP / Plain JP）の記録 |
-| `releases/archive/` | 旧版と試作版の説明・検査記録 |
-| `scripts/` | フォントを作るためのスクリプト・手描きデータ・ヒント設定 |
-| `docs/` | 設計の記録、ビルド手順、過去のリリースノート |
+| `scripts/` | フォントを作るためのスクリプト・手描きデータ（現行の Mono 5.x・Sans 3.x に使うものだけ） |
+| `docs/` | 設計の記録、ビルド手順、整理の記録（[CLEANUP-2026-10-28.md](docs/CLEANUP-2026-10-28.md)）。削除した旧版・旧スクリプトはコミット `b64f582` から取り出せる |
 
 ## 既知の制限
 
@@ -172,7 +170,7 @@ Friday Mono 5.0は、4.93の配布フォントを入力にして、`scripts/mono
 フォントはSIL Open Font License 1.1です。商用・非商用を問わず無料で使え、アプリや文書への埋め込みもできます。フォント単体の販売はできません。改変版を配布するときは「Friday」以外の名前にしてください。
 
 - Friday Monoのライセンス：[scripts/OFL.txt](scripts/OFL.txt)
-- Friday Sansのライセンス：[scripts/sans/OFL.txt](scripts/sans/OFL.txt)
+- Friday Sansのライセンス：[releases/sans-3.1.0/OFL.txt](releases/sans-3.1.0/OFL.txt)
 - 元にした書体のライセンス：各ZIPの`licenses/`
 
 詳しくは[LICENSE.md](LICENSE.md)を見てください。
