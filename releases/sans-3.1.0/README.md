@@ -20,4 +20,4 @@ Friday Sans 3.002 を基にしたローカルビルドです。Light・Regular�
 ./.venv/Scripts/python.exe -X utf8 scripts/sans30/package_sans_310.py --ttf work/sans-3.1.0/ttf --web work/sans-3.1.0/web --out work/sans-3.1.0/package
 ```
 
-ウェブ用 lite は既存の JIS X 0208・Latin 等の部分集合であり、すべての文字を含むものではありません。フォントの内部ファミリー名は 3.002 と同じです。インストール時の既存版との競合に注意してください。
+ウェブ用 lite は既存の JIS X 0208・Latin 等の部分集合であり、すべての文字を含むものではありません。フォントの内部ファミリー名は 3.002 と同じ（`Friday Sans`・`Friday Sans UI`）で、3.002 の上位版として置き換える前提です。版は name ID 5（`Version 3.100`）と `font-manifest.json` で区別できます。インストールするときは、先に 3.002 を削除してください。
