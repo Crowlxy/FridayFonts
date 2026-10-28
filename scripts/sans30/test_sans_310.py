@@ -6,6 +6,7 @@ from fontTools.ttLib import TTFont
 import uharfbuzz as hb
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import align_baseline
+import align_overshoot
 import fix_circled_symbols
 
 src, out = map(Path, sys.argv[1:])
@@ -24,11 +25,20 @@ for path in paths:
     baseline = old['glyf'][oc[ord('H')]].yMin
     base_names = align_baseline.targets(old, baseline)
     circled = fix_circled_symbols.targets(old)
-    changed = set(base_names) | set(circled) | {oc[0x2e3a], oc[0x2e3b]}
+    rounds = align_baseline.latin_glyphs(old, align_overshoot.has_round_bottom) - set(fix_circled_symbols.targets(old))
+    changed = set(base_names) | set(rounds) | set(circled) | {oc[0x2e3a], oc[0x2e3b]}
     for char in 'HIl1':
         assert new['glyf'][nc[ord(char)]].yMin == 0
-    for char in '0O689oces':
-        assert new['glyf'][nc[ord(char)]].coordinates == old['glyf'][oc[ord(char)]].coordinates
+    # round bottoms moved with the flat feet: only y changes, by at most the foot shift, tops stay
+    for name in rounds:
+        before, after = old['glyf'][name], new['glyf'][name]
+        assert before.endPtsOfContours == after.endPtsOfContours and before.flags == after.flags, name
+        assert all(a[0] == b[0] and abs(a[1] - b[1]) <= abs(baseline) for a, b in zip(before.coordinates, after.coordinates)), name
+        assert before.yMax == after.yMax, name
+    # the same overshoot in every weight: -14 to -28 below the baseline, and no flat foot below 0
+    for char in 'OCGSUoces03568':
+        assert -28 <= new['glyf'][nc[ord(char)]].yMin <= -14, (char, new['glyf'][nc[ord(char)]].yMin)
+    assert -6 <= new['glyf'][nc[ord('t')]].yMin <= 0
     original_data, new_data = old.reader['glyf'], new.reader['glyf']
     original_loca, new_loca = old['loca'].locations, new['loca'].locations
     for i, name in enumerate(old.getGlyphOrder()):

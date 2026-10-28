@@ -92,6 +92,7 @@ Friday Sans 3.1.0 は、配布済み **3.002** の TTF を入力にし、マニ�
 |---|---|
 | `soften.py` | 尖った角に短い2次曲線の面取りを入れる（凸は線幅の0.19倍、凹は0.09倍） |
 | `build_sans_30.py` | Light の壊れた漢字の作り直し（`repair_light.py`・`light_repair.json`）、≒・ℊ・結合記号の幅・ss/cv の名前（`fixups.py`）、面取り、輪郭のオフセット（太らせ、字ごとに二分探索。0.5 unit で接する輪郭は融合を許す）、ヒント削除、`gasp`、Sans UIの字面拡大（em 1050→1010読み替え）、Win値・ベンダーID・空白幅・lsb/tsb・版の修正、Mac名・ltag の削除、太さの段差の仕上げ（`ladder_pass`）、GDEF の mark クラス。`--no-ladder`・`--ladder-only`・`--finish-only` で後半だけ実行できる |
+| `align_overshoot.py` | 丸い字の下側のはみ出しを、`align_baseline.py` が足を動かした量と同じだけ動かす（課題 #22）。`build_sans_310.py` から呼ぶ。単体でも `--src <3.002のTTFディレクトリ> --out <新規TTFディレクトリ>` で実行でき、足の整列も同時に行う。`test_sans_310.py` が検査する。 |
 | `align_baseline.py` | 既存の Sans 3.0 TTF を別ディレクトリにコピーして、欧文・数字の平らな足を基準線 0 にそろえる試作。丸い部分、字幅、組版テーブルは維持。`--src <元TTFディレクトリ> --out <新規TTFディレクトリ>`。`test_align_baseline.py <元TTFディレクトリ> <新TTFディレクトリ>` で差分を検査する。 |
 | `localize_ellipsis.py` | 既存の下寄り欧文字形を使い、英語などの Latin 文脈の U+2026 を下寄りにする試作。日本語文脈と U+22EF は中央のまま。`--src <元TTFディレクトリ> --out <新規TTFディレクトリ>`。`test_localize_ellipsis.py <元TTFディレクトリ> <新TTFディレクトリ>` で組版を検査する。 |
 | `audit_glyph_references.py` | `--dir <TTFディレクトリ> --out <結果ディレクトリ>` で、Noto Sans JP とヒラギノ角ゴの共通文字を一文字ずつ比較する。差の大きさは目視確認の候補であり、数値だけで欠陥とは判定しない。 |

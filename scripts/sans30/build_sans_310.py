@@ -12,6 +12,7 @@ from fontTools.ttLib import TTFont
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import align_baseline
+import align_overshoot
 import fix_circled_symbols
 import localize_ellipsis
 
@@ -44,7 +45,9 @@ def build_one(job):
     src, dst = job
     font = TTFont(src)
     assert font['name'].getDebugName(5) == 'Version 3.002'
+    foot = font['glyf'][font.getBestCmap()[ord('H')]].yMin   # where 3.002 floats its flat feet
     baseline = len(align_baseline.align(font))
+    rounds = len(align_overshoot.fix(font, -foot))
     localize_ellipsis.localize(font)
     circled = len(fix_circled_symbols.fix(font))
     fix_long_dashes(font)
@@ -57,7 +60,7 @@ def build_one(job):
         elif record.nameID == 5:
             record.string = 'Version ' + VERSION
     font.save(dst)
-    return Path(dst).name, baseline, circled
+    return Path(dst).name, baseline, rounds, circled
 
 
 def main():
@@ -80,8 +83,8 @@ def main():
     assert len(jobs) == 10
     args.out.mkdir(parents=True, exist_ok=True)
     with Pool(4) as pool:
-        for name, baseline, circled in pool.imap_unordered(build_one, jobs):
-            print(name, 'baseline', baseline, 'circled', circled, flush=True)
+        for name, baseline, rounds, circled in pool.imap_unordered(build_one, jobs):
+            print(name, 'baseline', baseline, 'rounds', rounds, 'circled', circled, flush=True)
 
 
 if __name__ == '__main__':

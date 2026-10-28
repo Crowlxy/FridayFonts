@@ -36,11 +36,16 @@ def foot_points(g, baseline, limit):
 
 
 def targets(font, baseline):
-    glyf = font['glyf']
     limit = baseline + round(font['head'].unitsPerEm * 0.04)
+    return latin_glyphs(font, lambda g: foot_points(g, baseline, limit))
+
+
+def latin_glyphs(font, accept):
+    """Latin and digit glyphs (and what GSUB turns them into) whose outline `accept` takes."""
+    glyf = font['glyf']
     names = {name for cp, name in font.getBestCmap().items()
              if unicodedata.name(chr(cp), '').startswith(('LATIN ', 'DIGIT '))
-             and foot_points(glyf[name], baseline, limit)}
+             and accept(glyf[name])}
     if 'GSUB' not in font or font['GSUB'].table.LookupList is None:
         return names
     # Follow substitutions so stylistic alternates and ligatures keep the same baseline.
@@ -60,7 +65,7 @@ def targets(font, baseline):
                     for lig in ligatures:
                         if first in names and all(n in names for n in lig.Component):
                             extra.add(lig.LigGlyph)
-        extra = {n for n in extra if n in glyf and foot_points(glyf[n], baseline, limit)} - names
+        extra = {n for n in extra if n in glyf and accept(glyf[n])} - names
         if not extra:
             return names
         names.update(extra)
