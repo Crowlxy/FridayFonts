@@ -121,10 +121,18 @@ Windows実機での確認結果は、FridayFonts-WindowsTestの報告書にあ�
 
 3.0は、配布済みの`FridaySans-2.5.zip`を入力にします（Inter・Noto Sans CJK JPのソースは使いません）。手順は[releases/sans-3.0/README.md](../releases/sans-3.0/README.md)の「再生成」にあります。
 
+Friday Sans 3.1.0 は、配布済み **3.002** の TTF を入力にし、マニフェストの SHA-256 で各書体を照合してから追加の修正を適用します。手順は [releases/sans-3.1.0/README.md](../releases/sans-3.1.0/README.md) にあります。`sans-v3.0` の ZIP は 3.000 で、3.002 の入力ではありません。
+
 | スクリプト（`scripts/sans30/`） | 役割 |
 |---|---|
 | `soften.py` | 尖った角に短い2次曲線の面取りを入れる（凸は線幅の0.19倍、凹は0.09倍） |
 | `build_sans_30.py` | Light の壊れた漢字の作り直し（`repair_light.py`・`light_repair.json`）、≒・ℊ・結合記号の幅・ss/cv の名前（`fixups.py`）、面取り、輪郭のオフセット（太らせ、字ごとに二分探索。0.5 unit で接する輪郭は融合を許す）、ヒント削除、`gasp`、Sans UIの字面拡大（em 1050→1010読み替え）、Win値・ベンダーID・空白幅・lsb/tsb・版の修正、Mac名・ltag の削除、太さの段差の仕上げ（`ladder_pass`）、GDEF の mark クラス。`--no-ladder`・`--ladder-only`・`--finish-only` で後半だけ実行できる |
+| `align_baseline.py` | 既存の Sans 3.0 TTF を別ディレクトリにコピーして、欧文・数字の平らな足を基準線 0 にそろえる試作。丸い部分、字幅、組版テーブルは維持。`--src <元TTFディレクトリ> --out <新規TTFディレクトリ>`。`test_align_baseline.py <元TTFディレクトリ> <新TTFディレクトリ>` で差分を検査する。 |
+| `localize_ellipsis.py` | 既存の下寄り欧文字形を使い、英語などの Latin 文脈の U+2026 を下寄りにする試作。日本語文脈と U+22EF は中央のまま。`--src <元TTFディレクトリ> --out <新規TTFディレクトリ>`。`test_localize_ellipsis.py <元TTFディレクトリ> <新TTFディレクトリ>` で組版を検査する。 |
+| `audit_glyph_references.py` | `--dir <TTFディレクトリ> --out <結果ディレクトリ>` で、Noto Sans JP とヒラギノ角ゴの共通文字を一文字ずつ比較する。差の大きさは目視確認の候補であり、数値だけで欠陥とは判定しない。 |
+| `audit_all_glyphs.py` | `--dir <TTFディレクトリ> --out <結果ディレクトリ>` で、各書体の全グリフ・文字対応・描画の有無・字幅・左右の輪郭範囲を記録する。 |
+| `fix_circled_symbols.py` | `--src <元TTFディレクトリ> --out <新規TTFディレクトリ>` で、字幅からはみ出す丸付き数字・演算記号と `ss05` の囲み字形を、各書体の既存の囲み数字に合わせる。`test_fix_circled_symbols.py <元TTFディレクトリ> <新TTFディレクトリ>` で形状・字幅・組版を検証する。 |
+| `audit_glyph_precision.py` | `--dir <TTFディレクトリ> --out <結果ディレクトリ>` で、共通文字を160 pxで描画し、輪郭の範囲・字幅・局所的なインク差を各文字・各ウェイトで記録する。差は欠陥の候補であり、それだけで欠陥を意味しない。 |
 | `xweight.py` | 隣のウェイトとの比較（楔・とげ・欠けた画）。`verify_sans_30.py` から呼ぶ |
 | `verify_sans_30.py` | 2.5との字形ごとの比較、書体ごとのテーブル・メトリクスの確認、隣のウェイトとの比較、太さの段差。全部で約25分（`--no-weights` で比較と段差を省く） |
 | `render_check.py` | 全収録文字をFreeTypeで9〜24 pxに描画し、空描画・つぶれを検出 |
