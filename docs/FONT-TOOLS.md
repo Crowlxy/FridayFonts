@@ -53,6 +53,8 @@ Diffenator 2のprotobuf要件に合わせ、gflanguagesとglyphsetsを固定し�
 WOFF2生成用のBrotliと、全字形・ウェイト比較用のSciPy／scikit-imageも含みます。
 フォントのビルド・検査は `.venv/Scripts/python.exe -I -X utf8` で実行できます。
 
+※2026-11-06の監査メモ：このlockは再構築用の記録で、現在の `.venv`（8パッケージ。brotli 1.2.1・pillow 13.0.0・numpy 2.5.4など）とは一致しません。`.venv` 自体に既知の脆弱性はありませんが、lockのまま再構築すると次の既知の脆弱性を含む版が入ります（括弧内は修正版）：pillow 12.3.0（13.0.0）、filelock 4.0.12（4.2.1）、brotli 1.2.0（1.2.1）、certifi 2026.7.22（2026.10.18）、setuptools 84.0.0（84.1.0）、protobuf 3.20.3（4.25.8以降）。protobufはDiffenator 2との互換のための意図的な固定なので据え置きます。lockを更新する場合は、完全環境を新規に作って動作確認してから行います。
+
 ```powershell
 python -m venv .venv
 ./.venv/Scripts/python.exe -m pip install -r scripts/requirements-font-tools.lock.txt

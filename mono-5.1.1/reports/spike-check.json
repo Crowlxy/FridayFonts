@@ -1,0 +1,277 @@
+{
+ "Light": {
+  "spikes_4.93": 5,
+  "spikes_5.0": 2,
+  "new": {
+   "braceleft": [
+    [
+     221,
+     342
+    ]
+   ],
+   "braceright": [
+    [
+     379,
+     342
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "LightItalic": {
+  "spikes_4.93": 0,
+  "spikes_5.0": 1,
+  "new": {
+   "Uogonek": [
+    [
+     226,
+     -5
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "Regular": {
+  "spikes_4.93": 5,
+  "spikes_5.0": 8,
+  "new": {
+   "braceleft": [
+    [
+     244,
+     340
+    ]
+   ],
+   "braceright": [
+    [
+     356,
+     340
+    ]
+   ],
+   "uni20A9": [
+    [
+     407,
+     134
+    ],
+    [
+     193,
+     134
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "Italic": {
+  "spikes_4.93": 5,
+  "spikes_5.0": 8,
+  "new": {
+   "braceleft": [
+    [
+     243,
+     336
+    ]
+   ],
+   "braceright": [
+    [
+     357,
+     344
+    ]
+   ],
+   "uni20A9": [
+    [
+     357,
+     136
+    ],
+    [
+     148,
+     136
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "Medium": {
+  "spikes_4.93": 11,
+  "spikes_5.0": 6,
+  "new": {
+   "six": [
+    [
+     217,
+     386
+    ]
+   ],
+   "nine": [
+    [
+     383,
+     308
+    ]
+   ],
+   "braceleft": [
+    [
+     256,
+     340
+    ]
+   ],
+   "braceright": [
+    [
+     344,
+     340
+    ]
+   ],
+   "Uogonek": [
+    [
+     248,
+     0
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "MediumItalic": {
+  "spikes_4.93": 17,
+  "spikes_5.0": 16,
+  "new": {
+   "braceleft": [
+    [
+     255,
+     336
+    ]
+   ],
+   "braceright": [
+    [
+     345,
+     344
+    ]
+   ],
+   "uni1EAA": [
+    [
+     299,
+     555
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "SemiBold": {
+  "spikes_4.93": 4,
+  "spikes_5.0": 6,
+  "new": {
+   "nine": [
+    [
+     363,
+     279
+    ]
+   ],
+   "braceleft": [
+    [
+     273,
+     338
+    ]
+   ],
+   "braceright": [
+    [
+     327,
+     338
+    ]
+   ],
+   "registered": [
+    [
+     390,
+     447
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "SemiBoldItalic": {
+  "spikes_4.93": 1,
+  "spikes_5.0": 3,
+  "new": {
+   "eight": [
+    [
+     175,
+     363
+    ]
+   ],
+   "germandbls": [
+    [
+     121,
+     576
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "Bold": {
+  "spikes_4.93": 42,
+  "spikes_5.0": 3,
+  "new": {
+   "braceleft": [
+    [
+     284,
+     340
+    ]
+   ],
+   "braceright": [
+    [
+     316,
+     340
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "BoldItalic": {
+  "spikes_4.93": 11,
+  "spikes_5.0": 15,
+  "new": {
+   "braceleft": [
+    [
+     273,
+     72
+    ],
+    [
+     283,
+     336
+    ]
+   ],
+   "braceright": [
+    [
+     327,
+     608
+    ],
+    [
+     317,
+     344
+    ]
+   ],
+   "Adieresis": [
+    [
+     316,
+     524
+    ]
+   ],
+   "uni1E7E": [
+    [
+     273,
+     170
+    ]
+   ]
+  },
+  "new_unreviewed": {}
+ },
+ "reviewed": {
+  "braceleft": "designed point of the brace, a little sharper after the vertical scale",
+  "braceright": "same as braceleft",
+  "six": "designed joint of the stroke and the bowl",
+  "nine": "designed joint of the stroke and the bowl",
+  "eight": "designed joint of the two bowls (italic)",
+  "Uogonek": "designed joint of the ogonek",
+  "uni20A9": "designed inner notches of the W in the won sign",
+  "germandbls": "designed joint of the stem and the bowl (italic)",
+  "registered": "designed foot of the R inside the ring"
+ },
+ "reviewed_bases": {
+  "A": "designed apex of the counter of A (italic), sharper after the vertical scale",
+  "V": "designed crotch of V (italic)"
+ }
+}
